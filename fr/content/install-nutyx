@@ -187,7 +187,7 @@ mount /dev/sda1 /mnt/hd/boot/efi</kbd></pre>
 		  Si vous utilisez une autre distribution:
 		  <pre class="command"><kbd>CHROOT="coreutils" SHELL=/bin/bash KERNEL=kernel install-nutyx</kbd></pre>
         <li>
-         Une fois l'installation terminée, entrer dans la NutyX fraîchement installée via la commande:
+         Une fois l'installation terminée, entrer dans la NuTyX fraîchement installée via la commande:
          <pre class="command"><kbd>install-nutyx -ec</kbd></pre>
         <li>
          Pour la machine UEFI, installer le paquet efibootmgr:
