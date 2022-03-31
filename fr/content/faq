@@ -62,41 +62,28 @@
      la partition sera reconnue par l'installeur et donc utilisable directement par la NuTyX installée.
     </ul>
 
-   <h2>La construction des paquets dans une chroot. Quand et Pourquoi ?</h2>
-    <p>
-     L'ISO de NuTyX installe un système de base ce qui offre à l'utilisateur le choix entre deux scénarios d'utilisation de la distribution:
-
-    <h3>NuTyX peut être considérée comme une distribution dite "binaires"</h3>
-       L'utilisateur installe ses applications préférées depuis le serveur distant.
-      <p>
-       Une fois le système de base installé, l'utilisateur installe ses applications préférées comme expliqué dans la docummentation.
-      <p>
-       Une installation typique ressemble à:
-       <pre class="command_user"><kbd>get lxdm xfce4 xfce4-extra firefox gvfs ntfs-3g transmission thunderbird</kbd></pre>
+   <h2>La construction des paquets dans une chroot. Pourquoi ?</h2>
       <p>
        Les paquets binaires étant divisés en paquets de base et sous paquets (devel, doc, man, etc), seul le paquet de base sera installé.
-       Cela signifie que si l'utilisateur souhaite compiler des paquets non présents en binaire,
-       <a href="build-in-chroot">il devra impérativement compiler ces paquets dans une chroot</a> sinon la compilation échouera par manque de dépendances de developpement.
-
-    <h3>NuTyX peut être considérée comme une distribution dite "sources"</h3>
-       L'utilisateur compile ses applications préférées sur sa machine locale.
       <p>
-       Une fois le système de base installé, l' utilisateur installe les outils de développement:
-       <pre class="command_user"><kbd>get cards.devel</kbd></pre>
+       Cela signifie que:
+       <div class="important"><img alt="[Important]" src="../graphics/caution.gif" />
+        Si l'utilisateur souhaite compiler des paquets non présents en binaire,
+        <a href="build-in-chroot">il devra impérativement compiler ces paquets dans une chroot</a> sinon la compilation échouera par manque de dépendances de developpement.
+       </div>
       <p>
-       Il rapatrie les recettes disponibles:
-       <pre class="command_user"><kbd>sudo ports -u</kbd></pre>
+       La construction des paquets se font toujours dans une chroot via la commande <a href="mybld">mybld</a>.
       <p>
-       Il ajuste le fichier de configuration <b>/etc/cards.conf</b> comme ceci:
-       <pre class="output">dir /usr/ports/gui-extra
-dir /usr/ports/gui
-dir /usr/ports/cli-extra
-dir /usr/ports/cli
-dir /usr/ports/base
-base /usr/ports/base
-logdir /var/log/pkgbuild</pre>
-      Et peut maintenant compiler ses paquets <u><b>sans devoir être dans une chroot</b></u>. Pour compiler le server graphique xorg par exemple:
-      <pre class="command_user"><kbd>sudo cards depcreate xorg-server</kbd></pre>
+       Cela évite deux problèmes importants:
+       <ul>
+        <li>
+         La commande mybld va installer automatiquement TOUTES les dépendances (base, devel, man, service, etc).
+         Pas de risque de se retrouver avec des dépendances manquantes.
+        <li>
+         La commande mybld va automatiquement installer une NuTyX de base minimaliste avant la compilation.
+         Pas de risque d'oublier des dépendances.
+         Pas de risque d'avoir des dépendances non souhaitées.
+       </ul>
 
    <h2>Est-ce que NuTyX (à partir de la 9.0) est une distribution à publication continue?</h2>
     <p>

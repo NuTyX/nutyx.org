@@ -72,18 +72,7 @@
      It's worth asking why Apple's MacOS operating system never recommended this.
     </ul>
 
-   <h2>Building packages in a chroot. When and Why ?</h2>
-    <p>
-     The NuTyX ISOs install a base system which gives the user a choice between two scenarios in using the distribution:
-      <h3>NuTyX can be considered as a "binaries" distribution.</h3>
-
-       The user installs the needed binary packages by downloading them from the remote server.
-      <p>
-       Once the base system is installed, the user installs their favourite applications as explained in the online documentation.
-      <p>
-       A typical installation looks like:
-       <pre class="command_user"><kbd>get lxdm xfce4 xfce4-extra firefox gvfs ntfs-3g transmission thunderbird</kbd></pre>
-      <p>
+   <h2>Building packages in a chroot. Why ?</h2>
        All the binary packages are split into base packages and sub-packages (devel, doc, man, etc); in most cases, only the base package will be installed.
        It means:
        <div class="important"><img alt="[Important]" src="../graphics/caution.gif" />
@@ -91,26 +80,20 @@
         <a href="build-in-chroot">he (she) will have to compile those packages in a chroot</a>,
         otherwise the compilation will always fail because of missing dependencies.
        </div>
-     <h3>NuTyX can be considered as a "sources" distribution</h3>
-       The user compiles all the packages they  need on the local machine.
       <p>
-       Once the base system is installed, the user installs the development tools:
-       <pre class="command_user"><kbd>get cards.devel</kbd></pre>
+       Building packages is always done in a chroot via the <a href="mybld">mybld</a> command.
       <p>
-       He (She) downloads the availables recipes:
-       <pre class="command_user"><kbd>sudo ports -u</kbd></pre>
-      <p>
-       He (She) adjusts the <b>/etc/cards.conf</b> configuration file as:
-       <pre class="output">dir /usr/ports/gui-extra
-dir /usr/ports/gui
-dir /usr/ports/cli-extra
-dir /usr/ports/cli
-dir /usr/ports/base
-base /usr/ports/base
-logdir /var/log/pkgbuild</pre>
-      And can now compile the required packages <u><b>without being in a chroot</b></u>.
-      So, for example, to compile the graphical server xorg:
-      <pre class="command_user"><kbd>sudo cards depcreate xorg-server</kbd></pre>
+       This avoids two important problems:
+       <ul>
+        <li>
+         The mybld command will automatically install ALL dependencies (base, devel, man, service, etc).
+        No risk of ending up with missing dependencies.
+        <li>
+         The mybld command will automatically install a minimalist base NuTyX before compiling.
+         No risk of forgetting dependencies.
+         No risk of having unwanted dependencies.
+       </ul>
+
 
    <h2>Is NuTyX (from 9.0 on) a rolling release ?</h2>
     <p>
