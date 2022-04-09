@@ -285,7 +285,7 @@ make DESTDIR=$PKG install
     Cette recette (<a href="dictionary#ID080">Pkgfile</a>) est rangée dans un dossier au nom du paquet
     qui est lui-même rangé dans une <a href="dictionary#ID010">collection</a>.
    <p>
-    Les Collections se trouvent (par défaut) dans le dossier /usr/ports.
+    Les Collections se trouvent dans le dossier de votre choix.
 
   <h3>La recette</h3>
    <p>

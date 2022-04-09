@@ -301,7 +301,7 @@ build() {
   <p>
    This recipe (<a href="dictionary#ID080">Pkgfile</a>) is located in a folder call as the package name which is stored in a <a href="dictionary#ID010">collection</a>.  
   <p>
-   By default, all the collections are under the folder /usr/ports.
+   By default, all the collections are under a folder you choose.
  <h3>The recipe</h3>
   <p>
    We create first the folder: the "perso" collection and the folder of the package.
