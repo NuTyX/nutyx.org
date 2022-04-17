@@ -3,6 +3,7 @@
    Now you have a brand new base NuTyX installed.
    If you already know how to go on to get a graphical interface, you can directly check the website documentation.
    If  you wondering how to install a complete graphical interface, continue reading.
+
  <h2>Updating the meta data about available packages</h2>
   We need to inform your NuTyX about all the available packages that can be installed.
   An <a href="dictionary#ID300">alias</a> is available for that:
@@ -12,9 +13,10 @@
   <pre class="output">[/]</pre>
   Upgrade is done.
   You are now ready to install the rest of the packages to obtain a graphical NuTyX interface.
+
  <h2>Desktop installation:</h2>
   You can now choose your favorite desktop.
-  Under NuTyX: kde5, xfce4, mate, lxde, openbox, enlightenment, flwm, ratpoison, etc are available.
+  Under NuTyX: kde5, xfce4, mate, lxde, openbox, enlightenment, cinnamon, cde, flwm, ratpoison, etc are available.
   <p>
       <table>
        <caption><EM>Available desktops:</EM></caption>
@@ -53,6 +55,16 @@
          <pre class="command_user"><kbd>get enlightenment</kbd></pre>
        <tr class="odd">
         <td>
+         cinnamon
+        <td>
+         <pre class="command_user"><kbd>get cinnamon</kbd></pre>
+       <tr class="even">
+        <td>
+         cde
+        <td>
+         <pre class="command_user"><kbd>get cde</kbd></pre>
+       <tr class="odd">
+        <td>
          jwm
         <td>
          <pre class="command_user"><kbd>get jwm</kbd></pre>
@@ -78,9 +90,9 @@
          <pre class="command_user"><kbd>get flwm</kbd></pre>
          <tr class="even">
         <td>
-         i3wm
+         i3
         <td>
-         <pre class="command_user"><kbd>get i3wm</kbd></pre>
+         <pre class="command_user"><kbd>get i3</kbd></pre>
     </table>
   <p>
 
@@ -89,14 +101,37 @@
   <p>
    You can start a graphical session from a non graphical console as well.
   <h3>Automatic graphical login</h3>
-    Let's start to install the login session:
-    <pre class="command_user"><kbd>get lxdm</kbd></pre>
-    <pre class="output">[sudo] password for charly:</pre>
-    You Now enter the password you specified at the  installation and installation starts:
-    <pre class="output">/var/lib/pkg/depot/gui/lxdm/.PKGREPO
-   ...</pre>
-    No need to configure anything.
-   
+    You can choose between various login manager:
+   <table>
+    <caption><EM>Available login manager:</EM></caption>
+     <tr class="sidebar">
+      <th>Name:
+      <th>Command:
+     <tr class="odd">
+      <td>
+       lxdm
+      <td>
+       <pre class="command_user"><kbd>get lxdm</kbd></pre>
+      <tr class="even">
+      <td>
+       lxdm
+      <td>
+       <pre class="command_user"><kbd>get lightdm</kbd></pre>
+     <tr class="odd">
+      <td>
+       slim
+      <td>
+       <pre class="command_user"><kbd>get slim</kbd></pre>
+     <tr class="even">
+      <td>
+       sddm
+      <td>
+       <pre class="command_user"><kbd>get slim</kbd></pre>
+   </table>
+    <p>
+     The login managers configuration file is located in:
+     <pre class="output"><kbd>/etc/sysconfig/xdm</kbd></pre>
+
   <h3>Manual graphical login</h3>
     The <i>xdm</i> login manager will be install.
     It's a very simple application and therefore needs an <i>.xinitrc</i> configuration file at the root of the home directory.
@@ -172,40 +207,61 @@ exec xterm -geometry 80x66+0+0 -name login</pre>
          <td>
           <pre class="command_user"><kbd>get xorg-xf86-video-openchrome</kbd></pre>
      </table>
+
  <h2>Touch screen Driver</h2>
    If your machine use a touch screen, you could install the driver for it:
    <pre class="command_user"><kbd>get xorg-xf86-input-wacom</kbd></pre>
+
  <h2>Usefull applications</h2>
     You should now install a few tools that might be very useful:
+
   <h3>Compressed files tools</h3>
    <pre class="command_user"><kbd>get zip unzip</kbd></pre>
+
   <h3>Home directory and sound themes manager</h3>
    <pre class="command_user"><kbd>get xdg-user-dirs sound-theme-freedesktop</kbd></pre>
+
   <h3>Recycle bin and automatic medias mounting manager</h3>
    <pre class="command_user"><kbd>get gvfs</kbd></pre>
+
   <h3>Sound manager</h3>
    <pre class="command_user"><kbd>get alsa-utils pavucontrol</kbd></pre>
+
   <h3>NTFS (windows) formated partitions manager</h3>
    <pre class="command_user"><kbd>get ntfs-3g</kbd></pre>
+
   <h3>Internet Browser</h3>
    <pre class="command_user"><kbd>get firefox</kbd></pre>
+   or
+   <pre class="command_user"><kbd>get chromium</kbd></pre>
+   or
+   <pre class="command_user"><kbd>get chrome</kbd></pre>
+
   <h3>Mail client</h3>
    <pre class="command_user"><kbd>get thunderbird</kbd></pre>
+
   <h3>Office suite</h3>
-   <pre class="command_user"><kbd>get libreoffice</kbd></pre>
+   <pre class="command_user"><kbd>get libreoffice</kbd></pre>  <h3>Instant message</h3>
+
   <h3>Instant message</h3>
    <pre class="command_user"><kbd>get pidgin</kbd></pre>
    or
    <pre class="command_user"><kbd>get telegram-desktop</kbd></pre>
+   or
+   <pre class="command_user"><kbd>get discord</kbd></pre>
+
   <h3>Laptop pad management</h3>
    <pre class="command_user"><kbd>get xorg-xf86-input-synaptics</kbd></pre>
+
   <h3>Wireless tools management</h3>
    If you are using a wireless connection as default, install network-manager-applet:
    <pre class="command_user"><kbd>get network-manager-applet</kbd></pre>
+
  <h2>And to finish up</h2>
    The easiest way is to reboot your machine.  After reboot, you will be prompted to choose your login name via lxdm or slim.
    If you have installed <i>slim</i>, you should press F1 to select the right desktop to login to.
    <pre class="command_user"><kbd>sudo reboot</kbd></pre>
+
  <h2>Conclusion</h2>
   <p>
    I suggest that you read the section on <a href="base-commands">the base commands</a> to enable you to go further with your installation.

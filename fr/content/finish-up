@@ -15,7 +15,7 @@
  <h2>Installation d'un bureau:</h2>
   On commence par choisir un bureau.
  <p>
-  Sous NuTyX, vous avez le choix entre: kde5, xfce4, mate, lxde, openbox, enlightenment, ratpoison, flubox, flwm, i3wm, icewm, jwm, openbox, blackbox etc
+  Sous NuTyX, vous avez le choix entre: kde5, xfce4, mate, lxde, openbox, cinnamon, cde, enlightenment, ratpoison, flubox, flwm, i3, icewm, jwm, openbox, blackbox etc
   <p>
       <table>
        <caption><EM>Quelques exemples de bureaux disponibles</EM></caption>
@@ -53,6 +53,16 @@
         <td>
          <pre class="command_user"><kbd>get enlightenment</kbd></pre>
        <tr class="odd">
+         <td>
+          cinnamon
+         <td>
+          <pre class="command_user"><kbd>get cinnamon</kbd></pre>
+       <tr class="even">
+         <td>
+          cde
+         <td>
+          <pre class="command_user"><kbd>get cde</kbd></pre>
+       <tr class="odd">
         <td>
          jwm
         <td>
@@ -79,9 +89,9 @@
          <pre class="command_user"><kbd>get flwm</kbd></pre>
         <tr class="even">
         <td>
-         i3wm
+         i3
         <td>
-         <pre class="command_user"><kbd>get i3wm</kbd></pre>
+         <pre class="command_user"><kbd>get i3</kbd></pre>
      </table>
  
  <h2>Installation d'un gestionnaire de connection</h2>
@@ -89,40 +99,66 @@
    Pour lancer une session graphique sous NuTyX, vous avez le choix entre le lancement "automatique", "semi-automatique" et "manuel".
   <p>
    Le lancement d'une session graphique depuis une console non graphique est également possible.
-  <h3>Lancement graphique automatique</h3>
-   Vous installer le gestionnaire de connection:
-   <pre class="command_user"><kbd>get lxdm</kbd></pre>
-   <pre class="output">[sudo] password for thierry:</pre>
-   Vous entrez le mot de passe que vous avez choisi lors de l'installation et l'installation démarre:
-   <pre class="output">/var/lib/pkg/depot/gui/lxdm/.PKGREPO
-  ...</pre>
-   Aucune configuration supplémentaire n'est nécessaire  
-  <h3>Lancement graphique manuel</h3>
-   Le gestionnaire <i>xdm</i> est très rudimentaire, il est indispensable de configurer un fichier de configuration <i>.xinitrc</i> à placer à la racine du dossier utilisateur.
-   <pre class="command_user"><kbd>get xorg-xdm</kbd></pre>
-   Il faut maintenant configurer le fichier .xinitrc à la racine de votre dossier personnel.
-   <p>
-    On copie le fichier xinitrc fourni par le paquet <i>xorg-xinit</i> déjà installé:
-   <pre class="command_user"><kbd>cp /etc/X11/app-defaults/xinitrc ~/.xinitrc</kbd></pre>
-   Remplacez les 5 dernières lignes:
-   <pre class="output">twm &
+
+   <h3>Lancement graphique automatique</h3>
+    Vous avez le choix entre différents gestionnaire de connection:
+    <table>
+     <caption><EM>Gestionnaires de connection disponibles:</EM></caption>
+      <tr class="sidebar">
+        <th>Nom:
+        <th>Nom du paquet à installer:
+      <tr class="odd">
+       <td>
+        lxdm
+       <td>
+        <pre class="command_user"><kbd>get lxdm</kbd></pre>
+      <tr class="even">
+       <td>
+        lightdm
+       <td>
+        <pre class="command_user"><kbd>get lightdm</kbd></pre>
+      <tr class="odd">
+       <td>
+        slim
+       <td>
+        <pre class="command_user"><kbd>get slim</kbd></pre>
+      <tr class="even">
+       <td>
+        sddm
+       <td>
+        <pre class="command_user"><kbd>get sddm</kbd></pre>
+    </table>
+    <p>
+     Le fichier de configuration des gestionnaires de connection se trouve dans:
+     <pre class="output"><kbd>/etc/sysconfig/xdm</kbd></pre>
+
+
+   <h3>Lancement graphique manuel</h3>
+    Le gestionnaire <i>xdm</i> est très rudimentaire, il est indispensable de configurer un fichier de configuration <i>.xinitrc</i> à placer à la racine du dossier utilisateur.
+    <pre class="command_user"><kbd>get xorg-xdm</kbd></pre>
+    Il faut maintenant configurer le fichier .xinitrc à la racine de votre dossier personnel.
+    <p>
+     On copie le fichier xinitrc fourni par le paquet <i>xorg-xinit</i> déjà installé:
+    <pre class="command_user"><kbd>cp /etc/X11/app-defaults/xinitrc ~/.xinitrc</kbd></pre>
+    Remplacez les 5 dernières lignes:
+    <pre class="output">twm &
 xclock -geometry 50x50-1+1 &
 xterm -geometry 80x50+494+51 &
 xterm -geometry 80x20+494-0 &
 exec xterm -geometry 80x66+0+0 -name login</pre>
-   avec le nom de votre interface graphique installée ci-desssus, par exemple pour mate:
-   <pre class="output">exec mate-session</pre>
+    avec le nom de votre interface graphique installée ci-desssus, par exemple pour mate:
+    <pre class="output">exec mate-session</pre>
 
-  <h3>Lancement du serveur graphique depuis une console non graphique</h3>
-    On installe le serveur graphique et son initialisateur:
-    <pre class="command_user"><kbd>get xorg</kbd></pre>
-    Comme pour le lancement manuel du gestionnaire de connection graphique <i>xdm</i>,
-    il est indispensable de configurer un fichier de configuration <i>.xinitrc</i> à placer à la racine du dossier utilisateur.
-   <p>
-    Une fois  le fichier de configuration en place et le serveur installé, vous pouvez le démarrer en tapant la commande: 
-    <pre class="command_user"><kbd>startx</kbd></pre>
-   <p>
-    Si vous n'obtenez aucun bon résultat, vous devez très probablement installer le pilote pour votre carte graphique. 
+   <h3>Lancement du serveur graphique depuis une console non graphique</h3>
+     On installe le serveur graphique et son initialisateur:
+     <pre class="command_user"><kbd>get xorg</kbd></pre>
+     Comme pour le lancement manuel du gestionnaire de connection graphique <i>xdm</i>,
+     il est indispensable de configurer un fichier de configuration <i>.xinitrc</i> à placer à la racine du dossier utilisateur.
+    <p>
+     Une fois  le fichier de configuration en place et le serveur installé, vous pouvez le démarrer en tapant la commande: 
+     <pre class="command_user"><kbd>startx</kbd></pre>
+    <p>
+     Si vous n'obtenez aucun bon résultat, vous devez très probablement installer le pilote pour votre carte graphique. 
 
   <h2>Installation du pilote de votre carte graphique</h2>
    Si votre machine ne permet pas la gestion "KMS" ou Kernel ModeSetting qui est le mode par défaut du serveur graphique,
@@ -174,36 +210,56 @@ exec xterm -geometry 80x66+0+0 -name login</pre>
          <td>
           <pre class="command_user"><kbd>get xorg-xf86-video-openchrome</kbd></pre>
      </table>
-  <h2>Installation du pilote de votre écran tactile</h2>
+
+ <h2>Installation du pilote de votre écran tactile</h2>
    Si votre machine utilise un écran tactile,
    vous pouver installer le pilote prenant en charge la majorité des écrans tactile:
    <pre class="command_user"><kbd>get xorg-xf86-input-wacom</kbd></pre> 
-  <h2>Les applications utiles</h2>
+
+ <h2>Les applications utiles</h2>
     Vous installez maintenant les outils qui vous semblent utiles:
+
    <h3>Gestion des fichiers compressés</h3>
     <pre class="command_user"><kbd>get zip unzip</kbd></pre>
+
    <h3>Gestion des dossiers utilisateurs et des thèmes de sons </h3>    
     <pre class="command_user"><kbd>get xdg-user-dirs sound-theme-freedesktop</kbd></pre>
+
    <h3>Gestion de la corbeille et du montage automatique de clés USB</h3>
     <pre class="command_user"><kbd>get gvfs</kbd></pre>
+
    <h3>Gestion du son</h3> 
     <pre class="command_user"><kbd>get alsa-utils pavucontrol</kbd></pre>
+
    <h3>Gestion des partitions formaté en NTFS (windows)</h3>
     <pre class="command_user"><kbd>get ntfs-3g</kbd></pre>
+
    <h3>Navigateur pour surfer sur internet</h3>
     <pre class="command_user"><kbd>get firefox</kbd></pre>
+    ou
+    <pre class="command_user"><kbd>get chrome</kbd></pre>
+    ou
+    <pre class="command_user"><kbd>get chromium</kbd></pre>
+
    <h3>Client de messagerie electronique</h3>
     <pre class="command_user"><kbd>get thunderbird</kbd></pre>
+
    <h3>Suite office compatible avec Microsoft Office</h3>
     <pre class="command_user"><kbd>get libreoffice</kbd></pre>
+
    <h3>Messagerie instantanée</h3>
     <pre class="command_user"><kbd>get pidgin</kbd></pre>
     ou
     <pre class="command_user"><kbd>get telegram-desktop</kbd></pre>
-   <h3>Gestion du pad d'un ordinateur portable</h3>
-     <pre class="command_user"><kbd>get xorg-xf86-input-synaptics</kbd></pre>
-   <h3>Réseau sans fils en mode itinérant</h3>
+    ou
+    <pre class="command_user"><kbd>get discord</kbd></pre>
+
+  <h3>Gestion du pad d'un ordinateur portable</h3>
+    <pre class="command_user"><kbd>get xorg-xf86-input-synaptics</kbd></pre>
+
+  <h3>Réseau sans fils en mode itinérant</h3>
     <pre class="command_user"><kbd>get network-manager-applet</kbd></pre>
+
  <h2>Et pour finir</h2>
    Le plus simple maintenant redémarrez votre machine.
    Après le redémarrage, vous serez accueilli par le gestionnaire de connection lxdm, slim ou xdm.
