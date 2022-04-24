@@ -43,7 +43,7 @@
     <td class="lien_article">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.1-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 32bits</a>
       <p> 
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.1-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 64bits</a>
     <td>
        <p>
         L'ISO contient une installation de base sans interface graphique.
@@ -62,18 +62,16 @@
        <p>
         SHA1 32bits: 6356b978c221151532ddc1bb74b0fb15593d3f79
        <p>
-        SHA1 64bits: 5f62f5683cc4ca6e02eb07d3848b472c5b33bdd2
+        SHA1 64bits: 580bac426b104c6f68bd71d598861521d679c350
       <td>
-       Environ 734 MO
+       Environ 751.7 MO
 
    </tr>
 
    <tr class="even">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.1-CDE.iso"><img src="../graphics/downloads/cde.png" alt="logo cde"/><br/>CDE 32bits</a>
-       <p> 
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.1-CDE.iso"><img src="../graphics/downloads/cde.png" alt="logo cde"/><br/>CDE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-CDE.iso"><img src="../graphics/downloads/cde.png" alt="logo cde"/><br/>CDE 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau CDE comme interface graphique.
@@ -82,9 +80,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 32bits: 2d57c1b572a73c7e7f6b0bb713847d0e782c3f90
-       <p>
-        SHA1 64bits: e6035e9708e0cc916db331f69aec33c3cc957bac
+        SHA1 64bits: 2f2d12b3c15719c3f532c1752bbfafd5e3a28501
       <td>
        Environ 1.4 GO
 
@@ -95,7 +91,7 @@
     <td class="lien_article">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.1-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 32bits</a>
     <p>
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.1-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau OpenBox comme interface graphique.
@@ -106,7 +102,7 @@
        <p>
         SHA1 32bits: 87aaaa944cbb55fdceb7ee0fa896b400c98e7a9b
        <p>
-        SHA1 64bits: e20b57b67a1bdcbc8b2d68cc6f6a1123378f71e0
+        SHA1 64bits: 2f747b44692def6310b04d705fb0ef41a9be2fe4
       <td>
        Environ 1.4 GO
 
@@ -119,7 +115,7 @@
     <td class="lien_article">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.1-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo Lxde"/><br/>LXDE 32bits</a>
        <p> 
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.1-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo Lxde"/><br/>LXDE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo Lxde"/><br/>LXDE 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau LXDE comme interface graphique.
@@ -130,7 +126,7 @@
        <p>
         SHA1 32bits: 83248f65a3790128787e3c2a487daee7036d18c0
        <p>
-        SHA1 64bits: fbd8a844805506f8485450ee2aa289f85bd1ce3c
+        SHA1 64bits: 7d1a31da5d2012d0db1a15ceb2f4fa2ea10e50f7
       <td>
        Environ 1.4 GO
 
@@ -139,9 +135,7 @@
    <tr class="odd">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.1-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 32bits</a>
-       <p> 
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.1-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 64bits</a>
       <td>
        <p>
         L'ISO contient le bureau XFCE4 comme interface graphique.
@@ -150,9 +144,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 32bits: 22124a5f089694c49f53ef95b1b3d9e584ad8ea9
-       <p>
-        SHA1 64bits: 5afb45bf51945b8778d8312aebc7b2dbb52b569c
+        SHA1 64bits: a1a91d2b662eb5b7c10cc68847b6bb720ca0f1b7
       <td>
        Environ 1.4 GO
 
@@ -162,7 +154,7 @@
    <tr class="even">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.1-LXQT.iso"><img src="../graphics/downloads/lxqt.png" alt="logo lxqt"/><br/>LXQT 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-LXQT.iso"><img src="../graphics/downloads/lxqt.png" alt="logo lxqt"/><br/>LXQT 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau LXQT comme interface graphique.
@@ -171,7 +163,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 9bfc191f99ccec545c7032491d7c3b1c758a8a9d
+        SHA1 64bits: 98c5057b43c61ebf867c79ecb1b77276455b9f28
       <td>
        Environ 1.4 GO
 
@@ -180,7 +172,7 @@
    <tr class="odd">   
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.1-ENLIGHTENMENT.iso"><img src="../graphics/downloads/enlightenment.png" alt="logo gnome"/><br/>ENLIGHTENMENT 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-ENLIGHTENMENT.iso"><img src="../graphics/downloads/enlightenment.png" alt="logo gnome"/><br/>ENLIGHTENMENT 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau ENLIGHTENMENT comme interface graphique.
@@ -189,7 +181,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 455d9fc30e93e3497e4762eb5c28a8d20c4445ef
+        SHA1 64bits: 7559f2e20d27be8ef17fcf24888cb94866c1ad69
       <td>
        Environ 1.8 GO
 
@@ -198,7 +190,7 @@
    <tr class="even">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.1-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau MATE comme interface graphique.
@@ -207,7 +199,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: fe76b442338b0a72d75446e10b1993d898811e59
+        SHA1 64bits: 252d6177d39d9edef2af444306001d5d1c3c8253
       <td>
        Environ 1.7 GO
 
@@ -216,16 +208,16 @@
    <tr class="odd"> 
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.1-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-CINNAMON.iso"><img src="../graphics/downloads/cinnamon.png" alt="logo cinnamon"/><br/>CINNAMON 64bits</a>
     <td>
        <p>
-        L'ISO contient le bureau GNOME comme interface graphique.
+        L'ISO contient le bureau CINNAMON comme interface graphique.
        <p>
         Système d'initialisation: SystemV et systemd
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: fdf64f64b36c4c1da303d5899b1e95221f40e28b
+        SHA1 64bits: 3b9dc93fe62aff1d612e0b1d0ede1004bd913986
       <td>
        Environ 1.6 GO
 
@@ -234,7 +226,25 @@
    <tr class="even"> 
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.1-KDE5.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME 64bits</a>
+    <td>
+       <p>
+        L'ISO contient le bureau GNOME comme interface graphique.
+       <p>
+        Système d'initialisation: SystemV et systemd
+       <p>
+        kernel: Dernier kernel stable.
+       <p>
+        SHA1 64bits: f6d7b4c4c8088bc59e61d068a83b4b62e6248b3b
+      <td>
+       Environ 1.6 GO
+
+   </tr>
+
+   <tr class="odd"> 
+
+    <td class="lien_article">
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-KDE5.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau KDE5 comme interface graphique.
@@ -243,7 +253,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 00d4e6ce39272a08a57cfe0ea1db68e8c3586b85
+        SHA1 64bits: b52c7e1fce06443e9acc8e67c721d4883973e3b4
       <td>
        Environ 1.9 GO
 
@@ -293,10 +303,11 @@
   <p>
     Insérer une clé USB et vérifer son emplacement avec la commande:
     <pre class="command"><kbd>lsblk -S</kbd></pre>
-  <pre class="output">NAME HCTL       TYPE VENDOR   MODEL                 REV SERIAL           TRAN
+  <pre class="output">
+NAME HCTL       TYPE VENDOR   MODEL           REV  SERIAL           TRAN
 sda  0:0:0:0    disk ...
 sdb  2:0:0:0    disk ...
-sdc  8:0:0:0    disk TDKMedia Trans-It_Drive       PMAP 07991E033A9CAF0E usb</pre>
+sdc  8:0:0:0    disk TDKMedia Trans-It_Drive  PMAP 07991E033A9CAF0E usb</pre>
   <p>
    Transférer l'image ISO sur la clé trouvée via la commande ci-dessus (remplacer sdX avec votre clé USB)
  <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
