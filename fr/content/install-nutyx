@@ -133,7 +133,9 @@ VERSION="rolling"</pre>
            Pour une machine 'UEFI':
            Choisir une table de partition 'GPT'.
            Définir la première partition en 'Système EFI'.
-           La taille de la partition doit être de 50 Moctets ou plus.
+           La taille de la partition doit être de 50 Moctets minimum si vous installez NuTyX dans une machine virtuelle.
+           Si par contre, vous installez NuTyX en dur, sachez que l'espace utilisé sera en dessous des 400 Koctets,
+           dans ce cas une partition 'Système EFI' de 512Ko suffira.
            Formater la partition en vfat.
           <li>
            Pour une machine 'BIOS':
