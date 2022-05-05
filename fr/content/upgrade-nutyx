@@ -1,0 +1,82 @@
+<h1>Mettre à jour la distribution avec upgrade-nutyx</h1>
+ <h2>Fonctionnement</h2>
+  La méthode de mise à jour utilisée dans ce tutoriel se fait de manière transparente.
+  Cela signife qu'une fois la tâche de fond mise en place et upgrade-nutyx correctement configuré,
+  l'utilisateur n'a plus besoin de se préocuper des mises à jour.
+  Bien que le script de mise à jour soit lancé automatiquement par une tâche de fond, plusieurs critères sont nécessaires:
+  <ul>
+   <li>
+    Le téléchargement se fait sous le compte de l'utilisateur qui a installé le paquet upgrade-nutyx (<b><i>jp</i></b>) dans ce tutoriel.
+   <li>
+    Le téléchargement doit se terminer avec succès.
+   <li>
+    Aucun paquet n'a été installé dans l'interval de 2 vérifications succéssives, dans quel cas la mise à jour ne se fera pas.
+    La prochaine tentative de mise à jour est faîte au prochain démarrage lorsque la tâche de fond est déclenchée.
+   <li>
+    Si toutes les conditions précédentes sont remplies, les mises à jour s'effectuent dans la phase d'arrêt de la machine.
+   <li>
+    Si une des conditions n'est pas remplies, une nouveau cycle de recherche, téléchargement des mises à jour recommence au prochain démarrage.
+  </ul>
+ <h2>Installer upgrade-nutyx</h2>
+  Le paquet est nommé upgrade-nutyx.
+  <pre class="command_user"><kbd>sudo cards install upgrade-nutyx</kbd></pre>
+ <h2>Mise en place de la tâche de fond</h2>
+   Pour permettre de lancer automatiquement le script 'upgrade-nutyx' il faut mettre en place une tâche de fond qui lancera automatiquement le script à un temps donné.
+  <p>
+   Le paquet fcron est automatiquement installé en dépendances du paquet upgrade-nutyx.
+  <p>
+   Il existe plusieurs methodes pour configurer une tâche automatique.
+  <p>
+   Ici la tâche de fond est configurée pour être lancée à la <b>27</b>ième et <b>57</b>ième minute de chaque heure.
+  <p>
+   Ce tutoriel propose 2 méthodes.
+   <h3>Méthode 1</h3>
+    Copiez-Collez les lignes ci-dessous en prenant soin de remplacer le nom de l'utilisateur (ici <b><i>jp</i></b>) par le votre:
+    <pre class="command_user"><kbd>echo "%hourly 27,57 DISPLAY=:0.0  /sbin/upgrade-nutyx" | sudo tee -a /var/spool/fcron/jp.orig"</kbd></pre>
+    <pre class="output">[sudo] Mot de passe de jp :</pre>
+    <pre class="command_user"><kbd>sudo chown fcron:fcron /var/spool/fcron/jp.orig</kbd></pre>
+    <pre class="command_user"><kbd>sudo chmod 640 /var/spool/fcron/jp.orig</kbd></pre>
+    <pre class="command_user"><kbd>sudo fcrontab -z -u jp</kbd></pre>
+    <pre class="output">2022-05-05 09:59:24  INFO reinstalling jp's fcrontab
+2022-05-05 09:59:24  INFO installung file /tmp/fcr-Amshcy for user jp
+fcron is not running :
+  modifications will be taken into account at it's next execution.</pre>
+   <h3>Méthode 2</h3>
+    Si vous êtes familié avec l'éditeur <b>vi</b> et <b>fcrontab</b>, vous pouvez les utiliser ensemble avec la commande ci-dessous pour créer votre tâche automatique:
+    <pre class="command_user"><kbd>sudo EDITOR=/sbin/vi fcrontab -u jp -e</kbd></pre>
+    Insérez cette ligne:
+    <pre class="output">%hourly 27,57 DISPLAY=:0.0  /sbin/upgrade-nutyx</pre>
+    Si vous le souhaitez, vous pouvez également initier une recherche de mise à jour au démarrage de la machine. 
+    Il existe une documentation très complète sur le net pour la configuration de fcrontab.
+ <h2>Premier lancement de upgrade-nutyx</h2>
+  Afin d'avoir une mise à jour fonctionnelle, il est important de lancer une première et unique fois la commande 'upgrade-nutyx' sous son propre compte:
+  <pre class="command_user"><kbd>upgrade-nutyx</kbd></pre>
+  Attendez que la commande soit terminée ou que l'icone dans la barre des tâches s'affiche pour vous signaler que des mises à jour sont disponible.
+ <h2>Fichier de configuration</h2>
+  Puisque le téléchargment des paquets à mettre à jour se fait avec votre propre compte,
+  le fichier de configuration et les archives sont stockées dans votre dossier personnel.
+  <p>
+   La configuration de <b>upgrade-nutyx</b> se trouve dans le fichier: 
+   <pre class="output">/home/jp/pkg/cards.conf</pre>
+   Les archives sont stockées dans le dossier:
+   <pre class="output">/home/jp/pkg/depot</pre>
+ <h2>Redémarrage de la machine</h2>
+  Pour finaliser le processus, redémarrez le PC.
+  Si des mises à jour sont disponibles, elles seront alors installées.
+  La tâche de fond sera alors active au prochain démarrage du PC.
+ <h2>Conclusion</h2>
+  <p>
+   Il est préférable d'utiliser cette méthode plutot que <b>sudo cards upgrade</b>:
+   <ul>
+    <li>
+     Le téléchargement ne se fait pas dans le compte root.
+    <li>
+     Si le téléchargement est interrompu pour quelque raison, aucune mise à jour ne sera faite.
+    <li>
+     Pas de risque de mise à jour partielle.
+    <li>
+     Le mot de passe n'est jamais demandé pour effectuer la mise à jour,
+     elle se fait automatiquement à l'arrêt de la machine.
+    <li>
+     Une mise à jour ultérieure peut si necessaire réparer la dernière défectueuse.
+   </ul>

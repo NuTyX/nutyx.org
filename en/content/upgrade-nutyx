@@ -1,0 +1,82 @@
+<h1>Update distribution with upgrade-nutyx</h1>
+ <h2>Working</h2>
+  The update method used in this tutorial is transparent.
+  This means that once the background task is set up and upgrade-nutyx is correctly configured,
+  the user no longer needs to worry about updates.
+  Although the update script is launched automatically by a background task, several criteria are necessary:
+  <ul>
+   <li>
+    The download is done under the account of the user who installed the upgrade-nutyx package (<b><i>jp</i></b>) in this tutorial.
+   <li>
+    The download should complete successfully.
+   <li>
+    No package has been installed within the interval of 2 successive checks, in which case the update will not be done.
+    The next update attempt is made at the next startup when the background task is triggered.
+   <li>
+    If all the previous conditions are fulfilled, the updates are carried out in the stop phase of the machine.
+   <li>
+    If one of the conditions is not met, a new cycle of searching, downloading updates starts again at the next start.
+  </ul>
+ <h2>Install upgrade-nutyx</h2>
+  The package is named upgrade-nutyx.
+  <pre class="command_user"><kbd>sudo cards install upgrade-nutyx</kbd></pre>
+ <h2>Setting up the background task</h2>
+   To automatically launch the 'upgrade-nutyx' script, you must set up a background task that will automatically launch the script at a given time.
+  <p>
+   The fcron package is automatically installed as a dependency of the upgrade-nutyx package.
+  <p>
+   There are several methods to configure an automatic task.
+  <p>
+   Here the background task is configured to be launched at the <b>27</b>th and <b>57</b>th minute of every hour.
+  <p>
+   This tutorial offers 2 methods.
+   <h3>Method 1</h3>
+    Copy-Paste the lines below, taking care to replace the user's name (here <b><i>jp</i></b>) with yours:
+    <pre class="command_user"><kbd>echo "%hourly 27,57 DISPLAY=:0.0  /sbin/upgrade-nutyx" | sudo tee -a /var/spool/fcron/jp.orig"</kbd></pre>
+    <pre class="output">[sudo] Mot de passe de jp :</pre>
+    <pre class="command_user"><kbd>sudo chown fcron:fcron /var/spool/fcron/jp.orig</kbd></pre>
+    <pre class="command_user"><kbd>sudo chmod 640 /var/spool/fcron/jp.orig</kbd></pre>
+    <pre class="command_user"><kbd>sudo fcrontab -z -u jp</kbd></pre>
+    <pre class="output">2022-05-05 09:59:24  INFO reinstalling jp's fcrontab
+2022-05-05 09:59:24  INFO installung file /tmp/fcr-Amshcy for user jp
+fcron is not running :
+  modifications will be taken into account at it's next execution.</pre>    
+   <h3>Method 2</h3>
+    If you are familiar with the <b>vi</b> and <b>fcrontab</b> editor, you can use them together with the command below to create your automatic task:
+    <pre class="command_user"><kbd>sudo EDITOR=/sbin/vi fcrontab -u jp -e</kbd></pre>
+    Insert this line:
+    <pre class="output">%hourly 27,57 DISPLAY=:0.0  /sbin/upgrade-nutyx</pre>
+    If you wish, you can also initiate an update search when starting the machine.
+    There is very extensive documentation on the net for configuring fcrontab.
+ <h2>First launch of upgrade-nutyx</h2>
+  In order to have a functional update, it is important to run the 'upgrade-nutyx' command for the first and only time under your own account:
+  <pre class="command_user"><kbd>upgrade-nutyx</kbd></pre>
+  Wait for the command to complete or for the icon in the taskbar to appear to let you know that updates are available.
+ <h2>Config file</h2>
+  Since the downloading of the packages to be updated is done with your own account,
+  the configuration file and archives are stored in your home folder.
+  <p>
+   The <b>upgrade-nutyx</b> configuration is in the file:
+   <pre class="output">/home/jp/pkg/cards.conf</pre>
+   Archives are stored in the folder:
+   <pre class="output">/home/jp/pkg/depot</pre>
+ <h2>Restarting the machine</h2>
+  To finalize the process, restart the PC.
+  If updates are available, then they will be installed.
+  The background task will then be active the next time the PC is started.
+ <h2>Conclusion</h2>
+  <p>
+   It is better to use this method rather than <b>sudo cards upgrade</b>:
+   <ul>
+    <li>
+     The download is not done in the root account.
+    <li>
+     If the download is interrupted for any reason, no update will be made.
+    <li>
+     No risk of partial update.
+    <li>
+     The password is never requested to perform the update,
+     it is done automatically when the machine is stopped.
+    <li>
+     A subsequent update can, if necessary, repair the last faulty one.
+   </ul>   
