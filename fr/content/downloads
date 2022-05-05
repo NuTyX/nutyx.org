@@ -41,7 +41,7 @@
 
    <tr class="odd">
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.1-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 32bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.6-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 32bits</a>
       <p> 
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 64bits</a>
     <td>
@@ -60,7 +60,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 32bits: 6356b978c221151532ddc1bb74b0fb15593d3f79
+        SHA1 32bits: 95d093f997a04c822ae6af3183a54e13dd71d3a3
        <p>
         SHA1 64bits: 580bac426b104c6f68bd71d598861521d679c350
       <td>
@@ -89,7 +89,7 @@
    <tr class="odd">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.1-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 32bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.6-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 32bits</a>
     <p>
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 64bits</a>
     <td>
@@ -100,7 +100,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 32bits: 87aaaa944cbb55fdceb7ee0fa896b400c98e7a9b
+        SHA1 32bits: 4e2601da44813a7a2964d17fe2706a5e2980870d
        <p>
         SHA1 64bits: 2f747b44692def6310b04d705fb0ef41a9be2fe4
       <td>
@@ -113,7 +113,7 @@
    <tr class="even">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.1-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo Lxde"/><br/>LXDE 32bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.6-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo Lxde"/><br/>LXDE 32bits</a>
        <p> 
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo Lxde"/><br/>LXDE 64bits</a>
     <td>
@@ -124,7 +124,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 32bits: 83248f65a3790128787e3c2a487daee7036d18c0
+        SHA1 32bits: 038f96ea4fa92c0d90ede45f27c7d9ad436770d2
        <p>
         SHA1 64bits: 7d1a31da5d2012d0db1a15ceb2f4fa2ea10e50f7
       <td>
@@ -135,8 +135,10 @@
    <tr class="odd">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 64bits</a>
-      <td>
+      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.6-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 32bits</a>
+       <p>
+      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 64bits</a>
+    <td>
        <p>
         L'ISO contient le bureau XFCE4 comme interface graphique.
        <p>
@@ -144,8 +146,10 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
+        SHA1 32bits: 7eee1468ccf7ea75e89745381bf84333f8adcb75
+       <p>
         SHA1 64bits: a1a91d2b662eb5b7c10cc68847b6bb720ca0f1b7
-      <td>
+    <td>
        Environ 1.4 GO
 
    </tr>
