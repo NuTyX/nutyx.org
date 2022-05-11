@@ -67,6 +67,8 @@
 
    <tr class="even">
     <td class="lien_article">
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.6-CDE.iso"><img src="../graphics/downloads/cde.png" alt="logo cde"/><br/>CDE 32bits</a>
+     <p>
        <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.04.6-CDE.iso"><img src="../graphics/downloads/cde.png" alt="logo cde"/><br/>CDE 64bits</a>
     <td>
      <p>
@@ -75,6 +77,8 @@
       Init system: SystemV and systemd
      <p>
       kernel: Last stable kernel.
+     <p>
+      SHA1 32bits: 7ae5fa2f8593ba9f46268afe02a2f4a19f922bea
      <p>
       SHA1 64bits: 2f2d12b3c15719c3f532c1752bbfafd5e3a28501
       <td>
