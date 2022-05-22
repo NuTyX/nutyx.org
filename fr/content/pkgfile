@@ -1,144 +1,168 @@
-<h1>Generalitées</h2>
+<h1>Le fichier Pkgfile</h2>
+ <h2>description</h2>
+  La description décrit les fonctionnalitées du paquet en 112 caractères maximums.
  <p>
+  Rédigé en anglais.
+ <h2>url</h2>
+  L'URL spécifie l'adresse où l'on peut trouver de plus amples informations sur le paquet.
+ <h2>packager</h2>
+  Le nom de l'empaqueteur est spécifié sous forme:
+  <pre class="output">&lttnut tnut@nutyx.org&gt</pre>
+ <h2>contributors</h2>
+  La liste des empaqueteurs ayant contribué à la construction de ce paquet:
+   <pre class="output">"Tnut,Pierre,Spiky"</pre>
+
+ <h2>name</h2>
   Le nom du dossier dans lequel le(s) fichier(s) est le nom du paquet.
- <p>
-  Le dossier contient toujours le fichier Pkgfile au minimum.
- <p>
-  Le dossier peut contenir d'autres fichiers tel que des patch de corrections, script de pré-installation,
-  script de post-installation, fichier README etc..
-<h1>Le fichier Pkgfile</h1>
- <p>
-  Le Pkgfile du paquet libreoffice est un excellent exemple car il illustre la majoritée des possibilitées.
- <pre class="output">
-description="Office suite. It is largely compatible with Microsoft Office \
-(fork from OpenOffice.org)."
-url="http://www.libreoffice.org"
+  <p> 
+   Chaîne de caractères.
+  <p>
+   Le nom d'un paquet doit obligatoirement contenir des lettres minuscules uniquement.
+  <p>
+   Les caractères @ # / \ < > | ne sont pas autorisés dans le nom
+  <p>
+   La longueur maximum d'un nom est déterminé par la longueur maximum du nom de fichier.
+   Il est préférable de garder une taille la plus petite possible.
+   Deux caractères au minimum.
+ <h2>version</h2>
+   Chaîne de caractères.
+  <p>
+   Peut contenir toute valeur représentant la version des sources utilisées.
+  <ul>
+   <li>
+    20201201
+   <li>
+    21.02
+   <li>
+    git-201
+   <li>
+    development
+  </ul>
+ <h2>release</h2>
+   Valeur entière entre 1 et 999.
+  <p>
+   Utile pour informer mybld de recompiler le paquet.
+ <h2>makedepends</h2>
+  Fourni la liste des dépendances de compilation du paquet.
+ <h2>run</h2>
+  Fourni la liste des dépendances de fonctionnement du paquet.
+ <h2>set</h2>
+  Ajoute le paquet au(x) jeu(x) de paquets spécifié(s)
+  <pre class="output">(gnome cinnamon)</pre>
+ <h2>alias</h2>
+  Spécifie un nom synonyme.
+  Le synonyme doit etre unique, autrement dit, il ne peut pas s'appeler par le nom d'un autre paquet dans la même collection.
+ <h2>source</h2>
+  L'adresse des sources, le nom des fichiers necessaires pour la construction du paquet.
+  <p>
+  Les fichiers dont les noms sont spécifiés dans le tableau des sources source() doivent se trouver dans le dossier du fichier Pkgfile.
+  <p>
+  Les fichiers pre et post install ne sont pas listés dans ce tableau.
+ <h2>build</h2>
+  La variable permet de prédéfinir la façon de construire le paquet
+  <p>
+  Actuellement il existe plusieurs modes:
+  <table>
+   <caption>
+    <EM>
+     Liste des préselections
+    </EM>
+   </caption>
+   <tr class="sidebar">
+    <th>
+     valeur
+    <th>
+     Fonction résultante implémentée
+   <tr class="even">
+    <td>
+     meson
+    <td>
+     <pre class="output">mkdir build
+cd    build
+meson --prefix=/usr \
+      ../$name-$version
+ninja
+DESTDIR=$PKG ninja install
+     </pre>
+   <tr class="even">
+    <td>
+     autogen
+    <td>
+     <pre class="output">cd $name-$version
+./autogen.sh
+./configure --prefix=/usr \
+            --disable-static
+make
+make DESTDIR=$PKG install
+    </pre>
+   <tr class="even">
+    <td>
+     autoreconf
+    <td>
+     <pre class="output">cd $name-$version
+autoreconf -fiv
+./configure --prefix=/usr \
+            -disable-static
+make
+make DESTDIR=$PKG install
+     </pre>
+   <tr class="even">
+    <td>
+     autotools
+    <td>
+     <pre class="output">cd $name-$version
+./configure --prefix=/usr \
+            -disable-static
+make
+make DESTDIR=$PKG install
+     </pre>
+    <tr class="even">
+     <td>
+      python2
+     <td>
+      <pre class="output">cd $name-$version
+python2 setup.py build
+python2 setup.py install --prefix=/usr --root=$PKG
+      </pre>
+    <tr class="even">
+     <td>
+      python3
+     <td>
+      <pre class="output">cd $name-$version
+python3 setup.py build
+python3 setup.py install --prefix=/usr --root=$PKG
+      </pre>
+   <tr class="even">
+    <td>
+     xorg
+    <td>
+     <pre class="output">cd $name-$version
+./configure --prefix=/usr        \
+            --sysconfdir=/etc    \
+            --localstatedir=/var \
+            -disable-static
+make
+make DESTDIR=$PKG install
+     </pre>
+    <tr class="even">
+    <td>
+     kde5, cmake
+    <td>
+     <pre class="output">mkdir build
+cd  build
+cmake -DCMAKE_INSTALL_PREFIX=/usr  \
+      -DCMAKE_BUILD_TYPE=Release   \
+      -DCMAKE_INSTALL_LIBDIR=lib   \
+      -DBUILD_TESTING=OFF          \
+      -Wno-dev \
+      ../$name-$version
+make
+make DESTDIR=$PKG install
+     </pre>
+ 
 
-packager="tnut <tnut@nutyx.org>"
-contributors="Pierre B, Tnut, Greg"
 
-makedepends=(python perl-archive-zip unzip zip icu gtk3 cups poppler-glib
-             xorg-fontconfig libxslt kerberos xorgproto dbus-glib mesa
-             postgresql wget apache-ant apr boost clucene dbus-glib
-             libepoxy libjpeg-turbo2 xorg-glu gstreamer-plugins-base
-             libatomic-ops lcms2 librsvg libxml2 libxslt mesa neon nss
-             redland serf unixodbc doxygen gdb gnutls nasm telepathy-glib
-             xmlsec gpgme libabw libcmis cppunit hunspell hyphen mariadb)
-run=(shared-mime-info xdg-utils desktop-file-utils gtk-update-icon-cache)
 
-name=libreoffice
-version=6.4.5.2
+  </table>
 
-categories=(Office Graphics Education)
-
-PKGMK_IGNORE_UNPACK="yes"
-_url="https://download.documentfoundation.org/libreoffice/src/${version%.*}/"
-
-source=(http://www.linuxfromscratch.org/patches/blfs/svn/$name-$version-format_overflow-1.patch
-        ${_url}$name-$version.tar.xz
-  ${_url}$name-dictionaries-$version.tar.xz
-  ${_url}$name-help-$version.tar.xz
-  ${_url}$name-translations-$version.tar.xz
-        0001-Remove-check-if-root-due-to-issue-with-fakeroot.patch)
-
-prepare() {
-  unset ACLOCAL
-
-  tar -xf $name-$version.tar.xz --no-overwrite-dir
-
-  cd $name-$version
-  patch -Np1 -i ../0001-Remove-check-if-root-due-to-issue-with-fakeroot.patch
-  patch -Np1 -i ../$name-$version-format_overflow-1.patch
-  install -dm755 external/tarballs/
-  ln -sv ../../../$name-dictionaries-$version.tar.xz  external/tarballs/
-  ln -sv ../../../$name-help-$version.tar.xz          external/tarballs/
-  ln -sv ../../../$name-translations-$version.tar.xz  external/tarballs/
-
-  sed -e "/gzip -f/d" -e "s|.1.gz|.1|g" \
- -i bin/distro-install-desktop-integration
-
-  sed -e "/distro-install-file-lists/d" -i Makefile.in
-
-  sed -e 's@getURI()->c_str()@getURI().c_str()@' \
-    -i sdext/source/pdfimport/xpdfwrapper/pdfioutdev_gpl.cxx
-}
-build() {
-   cd $name-$version
-
-   ./autogen.sh --prefix=/usr \
- --sysconfdir=/etc \
- --with-vendor="NuTyX" \
- --with-lang="ar cs es de fr \
-        el ga gl hi hr hu it ja lt  \
-        lv pt fi nb nl nn da sv tr  \
-        ro sq sk sl sr th uk ru pl  \
-        zh-CN"                      \
- --with-help                 \
- --with-myspell-dicts        \
- --without-junit             \
- --without-fonts             \
- --without-system-dicts      \
- --disable-dconf             \
- --enable-gtk3               \
- --disable-odk               \
- --enable-release-build=yes  \
- --enable-python=system      \
- --with-system-apr           \
- --with-system-boost         \
- --with-system-clucene       \
- --with-system-cppunit       \
- --with-system-curl          \
- --with-system-epoxy         \
- --with-system-expat         \
- --with-system-gpgmepp       \
- --with-system-hunspell      \
- --with-system-icu           \
- --with-system-jpeg          \
- --with-system-libcmis       \
- --with-system-lcms2         \
- --with-system-libabw        \
- --with-system-libatomic_ops \
- --with-system-libpng        \
- --with-system-libxml        \
- --with-system-mariadb       \
- --with-system-neon          \
- --with-system-nss           \
- --with-system-odbc          \
- --with-system-openldap      \
- --with-system-openssl       \
- --with-system-poppler       \
- --with-system-postgresql    \
- --with-system-redland       \
- --with-system-serf          \
- --with-system-xmlsec        \
- --with-system-zlib          \
- --with-parallelism=$(getconf _NPROCESSORS_ONLN)
-
- make build-nocheck
- make DESTDIR=$PKG distro-pack-install
-        
- # Nettoyage
- rm -rf $PKG/gid_Module_*
-}
-locale_ar()
-{
-cd $PKG
-bsdtar -cf \
-$PKGMK_PACKAGE_DIR/${name}.ar${PKGMK_BUILDVER}any.$PKGMK_PACKAGE_EXT \
-usr/lib/libreoffice/help/ar \
-usr/lib/libreoffice/program/resource/ar \
-usr/lib/libreoffice/share/extensions/dict-ar \
-usr/lib/libreoffice/readmes/README_ar \
-usr/lib/libreoffice/share/registry/{Langpack-ar.xcd,res/{registry_,fcfg_langpack_}ar.xcd} \
-usr/lib/libreoffice/share/wizards/resources_ar.properties
-
-rm -r usr/lib/libreoffice/{help/ar,program/resource/ar} \
-usr/lib/libreoffice/share/extensions/dict-ar
-rm usr/lib/libreoffice/readmes/README_ar \
-usr/lib/libreoffice/share/registry/{Langpack-ar.xcd,res/{registry_,fcfg_langpack_}ar.xcd} \
-usr/lib/libreoffice/share/wizards/resources_ar.properties
-}
-locale_fr() {
-...
-}
-</pre>
+ 
