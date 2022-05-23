@@ -1,154 +1,155 @@
 <h1>Le fichier Pkgfile</h2>
- <h2>description</h2>
-  La description décrit les fonctionnalitées du paquet en 112 caractères maximums.
- <p>
-  Rédigé en anglais.
- <h2>url</h2>
-  L'URL spécifie l'adresse où l'on peut trouver de plus amples informations sur le paquet.
- <h2>packager</h2>
-  Le nom de l'empaqueteur est spécifié sous forme:
-  <pre class="output">&lttnut tnut@nutyx.org&gt</pre>
- <h2>contributors</h2>
-  La liste des empaqueteurs ayant contribué à la construction de ce paquet:
+ <h2>Les variables</h2>
+  <h3>description</h3>
+   La description décrit les fonctionnalitées du paquet en 112 caractères maximums.
+  <p>
+   Rédigé en anglais.
+  <h3>url</h3>
+   L'URL spécifie l'adresse où l'on peut trouver de plus amples informations sur le paquet.
+  <h3>packager</h3>
+   Le nom de l'empaqueteur est spécifié sous forme:
+   <pre class="output">&lttnut tnut@nutyx.org&gt</pre>
+  <h3>contributors</h3>
+   La liste des empaqueteurs ayant contribué à la construction de ce paquet:
    <pre class="output">"Tnut,Pierre,Spiky"</pre>
 
- <h2>name</h2>
-  Le nom du dossier dans lequel le(s) fichier(s) est le nom du paquet.
-  <p> 
-   Chaîne de caractères.
-  <p>
-   Le nom d'un paquet doit obligatoirement contenir des lettres minuscules uniquement.
-  <p>
-   Les caractères @ # / \ < > | ne sont pas autorisés dans le nom
-  <p>
-   La longueur maximum d'un nom est déterminé par la longueur maximum du nom de fichier.
-   Il est préférable de garder une taille la plus petite possible.
-   Deux caractères au minimum.
- <h2>version</h2>
-   Chaîne de caractères.
-  <p>
-   Peut contenir toute valeur représentant la version des sources utilisées.
-  <ul>
-   <li>
-    20201201
-   <li>
-    21.02
-   <li>
-    git-201
-   <li>
-    development
-  </ul>
- <h2>release</h2>
+  <h3>name</h3>
+   Le nom du dossier dans lequel le(s) fichier(s) est le nom du paquet.
+   <p>
+    Chaîne de caractères.
+   <p>
+    Le nom d'un paquet doit obligatoirement contenir des lettres minuscules uniquement.
+   <p>
+    Les caractères @ # / \ < > | ne sont pas autorisés dans le nom
+   <p>
+    La longueur maximum d'un nom est déterminé par la longueur maximum du nom de fichier.
+    Il est préférable de garder une taille la plus petite possible.
+    Deux caractères au minimum.
+  <h3>version</h3>
+    Chaîne de caractères.
+   <p>
+    Peut contenir toute valeur représentant la version des sources utilisées.
+   <ul>
+    <li>
+     20201201
+    <li>
+     21.02
+    <li>
+     git-201
+    <li>
+     development
+   </ul>
+  <h3>release</h3>
    Valeur entière entre 1 et 999.
-  <p>
-   Utile pour informer mybld de recompiler le paquet.
- <h2>makedepends</h2>
-  Fourni la liste des dépendances de compilation du paquet.
- <h2>run</h2>
-  Fourni la liste des dépendances de fonctionnement du paquet.
- <h2>set</h2>
-  Ajoute le paquet au(x) jeu(x) de paquets spécifié(s)
-  <pre class="output">(gnome cinnamon)</pre>
- <h2>alias</h2>
-  Spécifie un nom synonyme.
-  Le synonyme doit etre unique, autrement dit, il ne peut pas s'appeler par le nom d'un autre paquet dans la même collection.
- <h2>source</h2>
-  L'adresse des sources, le nom des fichiers necessaires pour la construction du paquet.
-  <p>
-  Les fichiers dont les noms sont spécifiés dans le tableau des sources source() doivent se trouver dans le dossier du fichier Pkgfile.
-  <p>
-  Les fichiers pre et post install ne sont pas listés dans ce tableau.
- <h2>build</h2>
-  La variable permet de prédéfinir la façon de construire le paquet
-  <p>
-  Actuellement il existe plusieurs modes:
-  <table>
-   <caption>
-    <EM>
-     Liste des préselections
-    </EM>
-   </caption>
-   <tr class="sidebar">
-    <th>
-     valeur
-    <th>
-     Fonction résultante implémentée
-   <tr class="even">
-    <td>
-     meson
-    <td>
-     <pre class="output">mkdir build
+   <p>
+    Utile pour informer mybld de recompiler le paquet.
+  <h3>makedepends</h3>
+   Fourni la liste des dépendances de compilation du paquet.
+  <h3>run</h3>
+   Fourni la liste des dépendances de fonctionnement du paquet.
+  <h3>set</h3>
+   Ajoute le paquet au(x) jeu(x) de paquets spécifié(s)
+   <pre class="output">(gnome cinnamon)</pre>
+  <h3>alias</h3>
+   Spécifie un nom synonyme.
+   Le synonyme doit etre unique, autrement dit, il ne peut pas s'appeler par le nom d'un autre paquet dans la même collection.
+  <h3>source</h3>
+    L'adresse des sources, le nom des fichiers necessaires pour la construction du paquet.
+   <p>
+    Les fichiers dont les noms sont spécifiés dans le tableau des sources source() doivent se trouver dans le dossier du fichier Pkgfile.
+   <p>
+    Les fichiers pre et post install ne sont pas listés dans ce tableau.
+  <h3>build</h3>
+    La variable permet de prédéfinir la façon de construire le paquet
+   <p>
+    Actuellement il existe plusieurs modes:
+   <table>
+    <caption>
+     <EM>
+      Liste des préselections
+     </EM>
+    </caption>
+    <tr class="sidebar">
+     <th>
+      valeur
+     <th>
+      Fonction résultante implémentée
+    <tr class="even">
+     <td>
+      meson
+     <td>
+      <pre class="output">mkdir build
 cd    build
 meson --prefix=/usr \
       ../$name-$version
 ninja
 DESTDIR=$PKG ninja install
-     </pre>
-   <tr class="even">
-    <td>
-     autogen
-    <td>
-     <pre class="output">cd $name-$version
+      </pre>
+    <tr class="even">
+     <td>
+      autogen
+     <td>
+      <pre class="output">cd $name-$version
 ./autogen.sh
 ./configure --prefix=/usr \
             --disable-static
 make
 make DESTDIR=$PKG install
-    </pre>
-   <tr class="even">
-    <td>
-     autoreconf
-    <td>
-     <pre class="output">cd $name-$version
+     </pre>
+    <tr class="even">
+     <td>
+      autoreconf
+     <td>
+      <pre class="output">cd $name-$version
 autoreconf -fiv
 ./configure --prefix=/usr \
             -disable-static
 make
 make DESTDIR=$PKG install
-     </pre>
-   <tr class="even">
-    <td>
-     autotools
-    <td>
-     <pre class="output">cd $name-$version
+      </pre>
+    <tr class="even">
+     <td>
+      autotools
+     <td>
+      <pre class="output">cd $name-$version
 ./configure --prefix=/usr \
             -disable-static
 make
 make DESTDIR=$PKG install
-     </pre>
-    <tr class="even">
-     <td>
-      python2
-     <td>
-      <pre class="output">cd $name-$version
+      </pre>
+     <tr class="even">
+      <td>
+       python2
+      <td>
+       <pre class="output">cd $name-$version
 python2 setup.py build
 python2 setup.py install --prefix=/usr --root=$PKG
-      </pre>
-    <tr class="even">
-     <td>
-      python3
-     <td>
-      <pre class="output">cd $name-$version
+       </pre>
+     <tr class="even">
+      <td>
+       python3
+      <td>
+       <pre class="output">cd $name-$version
 python3 setup.py build
 python3 setup.py install --prefix=/usr --root=$PKG
-      </pre>
-   <tr class="even">
-    <td>
-     xorg
-    <td>
-     <pre class="output">cd $name-$version
+       </pre>
+    <tr class="even">
+     <td>
+      xorg
+     <td>
+      <pre class="output">cd $name-$version
 ./configure --prefix=/usr        \
             --sysconfdir=/etc    \
             --localstatedir=/var \
             -disable-static
 make
 make DESTDIR=$PKG install
-     </pre>
-    <tr class="even">
-    <td>
-     kde5, cmake
-    <td>
-     <pre class="output">mkdir build
+      </pre>
+     <tr class="even">
+     <td>
+      kde5, cmake
+     <td>
+      <pre class="output">mkdir build
 cd  build
 cmake -DCMAKE_INSTALL_PREFIX=/usr  \
       -DCMAKE_BUILD_TYPE=Release   \
@@ -158,11 +159,28 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr  \
       ../$name-$version
 make
 make DESTDIR=$PKG install
-     </pre>
- 
+      </pre>
+   </table>
+ <h2>Les fonctions</h2>
+  Toutes les fonctions mentionnées ci-dessous sont optionnelles.
+  Il est tout à fait possible de construire un paquet sans aucune d'entre elle.
+  <h3>prepare</h3>
+    Souvent utilisée pour renommer le dossier source ou pour appliquer un patch necessaire pour la compilation.
+   <p>
+    La fonction 'prepare' est executée avant la fonction 'build' ci-dessous.
+  <h3>build</h3>
+    Fonction principale pour la compilation du paquet.
+    Si présente, elle sera toujours exécutée avant les fonctions ci-dessous.
+  <h3>package</h3>
+    Fonction optionnelle exécutée en dernier lieu. Peut être utilisée pour l'empaquetage du paquet.
+  <h3>devel</h3>
+    Fonction personnalisée si des actions spécifiques doivent être éffectuées sur le sous-paquet devel.
+  <h3>doc</h3>
+    Fonction personnalisée si des actions spécifiques doivent être éffectuées sur le sous-paquet doc.
+  <h3>lib</h3>
+    Fonction personnalisée si des actions spécifiques doivent être éffectuées sur le sous-paquet lib.
+  <h3>man</h3>
+    Fonction personnalisée si des actions spécifiques doivent être éffectuées sur le sous-paquet man.
+  <h3>service</h3>
+    Fonction personnalisée si des actions spécifiques doivent être éffectuées sur le sous-paquet service.
 
-
-
-  </table>
-
- 
