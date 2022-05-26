@@ -1,5 +1,64 @@
 <h1>Le fichier Pkgfile</h2>
- <h2>Les variables</h2>
+ <h2>Les variables d'aides pour l'empaquetage</h2>
+  <h3>PKG</h3>
+   Spécifie le dossier racine lors de l'empaquetage.
+  <h3>SRC</h3>
+   Spécifie le chemin complet du dossier racine des sources et de la compilation.
+  <h3>PKGMK_SOURCE_DIR</h3>
+   Spécifie le chemin complet du dossier dans lequel les sources sont téléchargées.
+  <h3>PKGMK_WORK_DIR</h3>
+   Spécifie le chemin complet du dossier de travail.
+  <h3>PKGMK_NO_STRIP</h3>
+   Commutateur pour déactiver la suppresion des symboles dans les binaires générés.
+   <p>
+    Activé:
+    <pre class="output">PKGMK_NO_STRIP="yes"</pre>
+   <p>
+    Défaut: "no"
+  <h3>PKGMK_IGNORE_UNPACK</h3>
+    Commutateur pour ignorer l'extraction des fichiers depuis une archive source.
+   <p>
+    Activé:
+    <pre class="output">PKGMK_IGNORE_UNPACK="yes"</pre>
+    Défaut: "no"
+  <h3>PKGMK_COMPRESS_PACKAGE</h3>
+    Commutateur pour activer la compression des archives des paquets binaires.
+   <p>
+    Défaut: "yes"
+  <h3>PKGMK_COMPRESS_MODE</h3>
+    Commutateur pour choisir le mode de compression.
+   <p>
+    Défaut: "xz"
+   <p>
+    Valeurs possibles: gz, bz2 et xz
+  <h3>PKGMK_KEEP_SOURCES</h3>
+    Commutateur pour garder les sources:
+   <p>
+    Défaut: "yes"
+  <h3>PKGMK_KEEP_LA_LIBS</h3>
+    Commutateur pour garder les librairies .la.
+   <p>
+    Défaut: "no"
+  <h3>PKGMK_CLEAN</h3>
+    Commutateur pour nettoyer les archives des paquets produits.
+   <p>
+    Défaut: "no"
+  <h3>PKGMK_GROUPS</h3>
+    Tableau des groupes possibles.
+   <p>
+    Valeurs possibles: lib, devel, man, doc, service
+   <p>
+    Défaut: (devel man doc service)
+  <h3>PKGMK_LOCALES</h3>
+    Tableau des locales générées (si existantes) à l'empaquetage.
+  <h3>PKGMK_COLLECTIONS</h3>
+    Tableau permettant à 'pkgmk' de trouver les dépendances automatiquement dans les dossiers.
+   <p>
+    Valeurs possibles: (base cli cli-extra gui gui-extra <votre_collection>)
+  <h3>PKGMK_IGNORE_REPO</h3>
+  <h3>PKGMK_IGNORE_COLLECTION</h3>
+  <h3>PKGMK_IGNORE_RUNTIMEDEPS</h3>
+ <h2>Les variables pour le paquet</h2>
   <h3>description</h3>
    La description décrit les fonctionnalitées du paquet en 112 caractères maximums.
   <p>
