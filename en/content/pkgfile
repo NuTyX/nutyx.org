@@ -1,54 +1,244 @@
- <h1>The Pkgfile file syntax</h1>
-  <h3>Introduction</h3>
-  <h3>The Description</h3>
-   <h4>Description</h4>
-    <p>A short description of the package. It has a maximum length of 110 characters.</p>
-    <p>Will be visible when we use:</p>
-    <pre class="command"><kbd>cards info mypackage
-cards info -b mypackage
-cards info -p mypackage</kbd></pre>
-    <pre class="output">....
-Description    : Here is my first package
-...</pre>
-   <h4>prefered syntax</h4>
-   <h4>possible syntax</h4>
-   <pre class="output"># Description: Here is my first package
-# Desc: Here is my first package
-# desc: Here is my first package
-pkgdesc="Here is my first package"
-description="Here is my first package"</pre>
-  <h3>The Url</h3>
-   <h4>Description</h4>
-    <p>Provide a valid url about information of the package or about the sources (if no info). If the variable is choose, it can be used in the source definition below</p>
-   <h4>prefered syntax</h4>
-    <pre class="output">url="http:downloads.nutyx.org"</pre>
-   <h4>possible syntax</h4>
-    <pre class="output"># URL: http:downloads.nutyx.org
-# url: http:downloads.nutyx.org
-url="http:downloads.nutyx.org"</pre>
-   <h3>The name</h3>
-    <h4>Description</h4>
-     <p>The name of the package cannot contains following charaters: [space]_?!</p>
-     <p>Only small characters are allows</p>
-     <p>In case you don't specify this variable, the 'name' variable will be create and set automatically by the name of the parent folder.</p>
-    <h4>prefered syntax</h4>
-     <pre class="output">name=mypackage</pre>
-   <h3>The version</h3>
-     <h4>Description</h4>
-      <p>Like the name, cannot contains following charaters: [space]_?!</p>
-     <h4>syntax</h4>
-      <pre class="output">version=11a</pre>
-   <h3>The release</h3>
-     <h4>Description</h4>
-       <p>Here comes a figure from 1 up to 99999999 max. In case we want to refer a date should be like below.</p>
-     <h4>prefered syntax</h4>
-       <pre class="output">release=20160421</pre>
-   <h3>The group</h3>
-    <h4>Description</h4>
-     <p>A group name is defined by the first serie of characters before the first minus sign. Example:</p>
-     <p>The packages:</p>
-     <pre class="output">gstreamer1</pre>
-     <p>and</p>
-     <pre class="output">gstreamer1-plugins-base</pre>
-     <p>are in the so call same group named 'gstreamer1'</p>
-    <h4>possible syntax</h4>
+<h1>The Pkgfile</h1>
+ <h2>Packaging Helper Variables</h2>
+  <h3>PKG</h3>
+   Specifies the root folder when packaging.
+  <h3>SRC</h3>
+   Specifies the full path to the sources and compilation root folder.
+  <h3>PKGMK_SOURCE_DIR</h3>
+   Specifies the full path of the folder where sources are downloaded.
+  <h3>PKGMK_WORK_DIR</h3>
+   Specifies the full path to the working folder.
+  <h3>PKGMK_NO_STRIP</h3>
+   Switch to disable the removal of symbols in generated binaries.
+   <p>
+    Enabled:
+    <pre class="output">PKGMK_NO_STRIP="yes"</pre>
+   <p>
+    Default: "no"
+  <h3>PKGMK_IGNORE_UNPACK</h3>
+    Switch to skip extracting files from a source archive.
+   <p>
+    Enabled:
+    <pre class="output">PKGMK_IGNORE_UNPACK="yes"</pre>
+    Default: "no"
+  <h3>PKGMK_COMPRESS_PACKAGE</h3>
+    Switch to enable compression of binary package archives.
+   <p>
+    Default: "yes"
+  <h3>PKGMK_COMPRESS_MODE</h3>
+    Switch to choose the compression mode.
+   <p>
+    Default: "xz"
+   <P>
+    Possible values: gz, bz2 and xz
+  <h3>PKGMK_KEEP_SOURCES</h3>
+    Switch to keep sources:
+   <P>
+    Default: "yes"
+  <h3>PKGMK_KEEP_LA_LIBS</h3>
+    Switch to keep .la libraries.
+   <p>
+    Default: "no"
+  <h3>PKGMK_CLEAN</h3>
+    Switch to clean up product package archives.
+   <p>
+    Default: "no"
+  <h3>PKGMK_GROUPS</h3>
+    Table of possible groups.
+   <p>
+    Possible values: lib, devel, man, doc, service
+   <p>
+    Default: (devel man doc service)
+  <h3>PKGMK_LOCALES</h3>
+    Array of locales generated (if any) at packaging.
+  <h3>PKGMK_COLLECTIONS</h3>
+    Table allowing 'pkgmk' to find dependencies automatically in folders.
+   <p>
+    Possible values: (base cli cli-extra gui gui-extra <your_collection>)
+  <h3>PKGMK_IGNORE_REPO</h3>
+  <h3>PKGMK_IGNORE_COLLECTION</h3>
+  <h3>PKGMK_IGNORE_RUNTIMEDEPS</h3>
+ <h2>The variables for the package</h2>
+  <h3>description</h3>
+   The description describes the features of the package in a maximum of 112 characters.
+   <p>
+    Written in English.
+  <h3>url</h3>
+   The URL specifies the address where more information about the package can be found.
+  <h3>packager</h3>
+   The packager name is specified as:
+   <pre class="output">&lttnut tnut@nutyx.org&gt</pre>
+  <h3>contributors</h3>
+   The list of packagers who contributed to the build of this package:
+   <pre class="output">"Tnut,Pierre,Spiky"</pre>
+
+  <h3>name</h3>
+   The name of the folder where the file(s) is the name of the package.
+   <p>
+    String of characters.
+   <p>
+    The name of a package must contain lowercase letters only.
+   <p>
+    The characters @ # / \ < > | are not allowed in the name
+   <p>
+    The maximum length of a name is determined by the maximum filename length.
+    It is best to keep the size as small as possible.
+    Minimum two characters.
+  <h3>version</h3>
+    String of characters.
+   <p>
+    Can contain any value representing the version of the sources used.
+   <ul>
+    <li>
+     20201201
+    <li>
+     21.02
+    <li>
+     git-201
+    <li>
+     development
+   </ul>
+  <h3>release</h3>
+    Integer value between 1 and 999.
+    <p>
+     Useful for telling mybld to recompile the package.
+  <h3>makedepends</h3>
+   Provides the list of package build dependencies.
+  <h3>run</h3>
+   Provides the list of working dependencies of the package.
+  <h3>set</h3>
+   Add the package to the specified package set(s)
+   <pre class="output">(gnome cinnamon)</pre>
+  <h3>alias</h3>
+   Specifies a synonymous name.
+   The synonym must be unique, ie it cannot be called by the name of another package in the same collection.
+  <h3>source</h3>
+   The address of the sources, the name of the files necessary for the construction of the package.
+   <p>
+    Files whose names are specified in the sources array source() must be in the folder of the Pkgfile file.
+   <p>
+    Pre and post install files are not listed in this table.
+  <h3>build</h3>
+    The variable allows to predefine the way to build the package.
+   <p>
+    Currently there are several modes:
+   <table>
+    <caption>
+     <EM>
+      List of presets
+     </EM>
+    </caption>
+    <tr class="sidebar">
+     <th>
+      value
+     <th>
+      Result function implemented
+    <tr class="even">
+     <td>
+      meson
+     <td>
+     <pre class="output">mkdir build
+cd    build
+meson --prefix=/usr \
+      ../$name-$version
+ninja
+DESTDIR=$PKG ninja install
+      </pre>
+    <tr class="even">
+     <td>
+      autogen
+     <td>
+      <pre class="output">cd $name-$version
+./autogen.sh
+./configure --prefix=/usr \
+            --disable-static
+make
+make DESTDIR=$PKG install
+     </pre>
+    <tr class="even">
+     <td>
+      autoreconf
+     <td>
+      <pre class="output">cd $name-$version
+autoreconf -fiv
+./configure --prefix=/usr \
+            -disable-static
+make
+make DESTDIR=$PKG install
+      </pre>
+    <tr class="even">
+     <td>
+      autotools
+     <td>
+      <pre class="output">cd $name-$version
+./configure --prefix=/usr \
+            -disable-static
+make
+make DESTDIR=$PKG install
+      </pre>
+     <tr class="even">
+      <td>
+       python2
+      <td>
+       <pre class="output">cd $name-$version
+python2 setup.py build
+python2 setup.py install --prefix=/usr --root=$PKG
+       </pre>
+     <tr class="even">
+      <td>
+       python3
+      <td>
+       <pre class="output">cd $name-$version
+python3 setup.py build
+python3 setup.py install --prefix=/usr --root=$PKG
+       </pre>
+    <tr class="even">
+     <td>
+      xorg
+     <td>
+      <pre class="output">cd $name-$version
+./configure --prefix=/usr        \
+            --sysconfdir=/etc    \
+            --localstatedir=/var \
+            -disable-static
+make
+make DESTDIR=$PKG install
+      </pre>
+     <tr class="even">
+     <td>
+      kde5, cmake
+     <td>
+      <pre class="output">mkdir build
+cd  build
+cmake -DCMAKE_INSTALL_PREFIX=/usr  \
+      -DCMAKE_BUILD_TYPE=Release   \
+      -DCMAKE_INSTALL_LIBDIR=lib   \
+      -DBUILD_TESTING=OFF          \
+      -Wno-dev \
+      ../$name-$version
+make
+make DESTDIR=$PKG install
+      </pre>
+   </table>
+ <h2>Functions</h2>
+  All functions mentioned below are optional.
+  It is entirely possible to build a package without any of them.
+  <h3>prepare</h3>
+    Often used to rename the source folder or to apply a patch needed for compilation.
+   <p>
+    The 'prepare' function is executed before the 'build' function below.
+  <h3>build</h3>
+    Main function for compiling the package.
+    If present, it will always be executed before the functions below.
+  <h3>package</h3>
+    Optional function performed last. Can be used for package wrapping.
+  <h3>devel</h3>
+    Custom function if specific actions should be performed on the devel subpackage.
+  <h3>doc</h3>
+    Custom function if specific actions should be performed on the doc subpackage.
+  <h3>lib</h3>
+    Custom function if specific actions should be performed on the lib subpackage.
+  <h3>man</h3>
+    Custom function if specific actions should be performed on the man subpackage.
+  <h3>service</h3>
+    Custom function if specific actions need to be performed on the service subpackage.
