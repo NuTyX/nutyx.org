@@ -1,4 +1,4 @@
-<h1>NuTyX version 22.04 manual</h1>
+<h1>NuTyX version 22.06 manual</h1>
  <h2>CONFIGURATION</h2>
     <ol>
       <li><h3>Language and locale</h3></li>
@@ -196,17 +196,17 @@ eth1       IEEE 802.11abg
         In the following example, NuTyX is installed on the first partition of the second hard drive and grub is installed on the first hard drive.
        <p>
         The configuration file will be:
-       <pre class="output">menuentry "NuTyX 22.04.0" {
+       <pre class="output">menuentry "NuTyX 22.06" {
   set root=(hd1,1)
-  linux /boot/kernel root=/dev/sdb1 ro quiet 3
-  initrd /boot/initrd
+  linux /boot/kernel-stable root=/dev/sdb1 ro quiet 3
+  initrd /boot/initrd-stable
   }</pre>
        <p>
         If we want to have an extra entry for maintenance, the entry will look like:
         <pre class="output">menuentry "NuTyX maintenance" {
   set root=(hd1,1)
-  linux /boot/kernel ro quiet 3
-  initrd /boot/initrd
+  linux /boot/kernel-stable ro quiet 3
+  initrd /boot/initrd-stable
   }</pre>
        <p>
         Note that this entry doesn't have the option <b>root=/dev/sdb1</b> so the root partition will not be mounted.

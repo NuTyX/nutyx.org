@@ -1,4 +1,4 @@
-<h1>Manuel NuTyX version 22.04</h1>
+<h1>Manuel NuTyX version 22.06</h1>
  <h2>CONFIGURATION</h2>
    <ol>
     <li><h3>La langue et la région de la machine</h3></li>
@@ -191,18 +191,18 @@ eth1       IEEE 802.11abg
       Dans l'exemple qui suit: NuTyX est installée sur la première partition du deuxième disque, grub est installé sur le premier disque.
      <p>
       Le fichier de configurations sera:
-    <pre class="output">menuentry "NuTyX 22.04" {
+    <pre class="output">menuentry "NuTyX 22.06" {
   set root=(hd1,1)
-  linux /boot/kernel root=/dev/sdb1 ro quiet 3
-  initrd /boot/initrd
+  linux /boot/kernel-stable root=/dev/sdb1 ro quiet 3
+  initrd /boot/initrd-stable
   }</pre>
     <p>
      Si l'on souhaite avoir une entrée supplémentaire pour lancer le système de maintenance:
 
     <pre class="output">menuentry "NuTyX systeme de maintenance" {
   set root=(hd1,1)
-  linux /boot/kernel ro quiet 3
-  initrd /boot/initrd
+  linux /boot/kernel-stable ro quiet 3
+  initrd /boot/initrd-stable
   }</pre>
      <p>
       Notez que l'option <b>root=/dev/sdb1</b> est supprimée.

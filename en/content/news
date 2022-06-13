@@ -1,55 +1,53 @@
-<h1>Latest news 2022-04-24</h1>
+<h1>Latest news 2022-06-13</h1>
 
- <h2>NuTyX 22.04.6 available with cards 2.5.0</h2>
+ <h2>NuTyX 22.06.1 available with cards 2.5.0</h2>
   <p>
-   The NuTyX team is happy to announce the new version of NuTyX 22.04.6 and cards 2.5.0.
+   The NuTyX team is happy to announce the new version of NuTyX 22.06.1 and cards 2.5.0.
   <p>
-   New toolchain gcc 11.3.0, glibc 2.35 and binutils 2.38.
+   New toolchain gcc 12.1.0, glibc 2.35 and binutils 2.38.
   <p>
    The xorg-server graphics server version 21.1.3,
-   the Mesa 3D library in 22.0.2, Gtk4 4.6.2
+   the Mesa 3D library in 22.1.1, Gtk4 4.6.5
    and Qt 6.3.0.
   <p>
-   The python interpreters are en 3.10.4 et 2.7.18.
+   The python interpreters are en 3.10.5 et 2.7.18.
   <p>
    The XFCE desktop environment is updated to version 4.16.0.
   <p>
    The MATE desktop environment is a 1.26.0 version .
   <p>
-   The GNOME desktop environment is also updated to version 42.0
+   The GNOME desktop environment is also updated to version 42.2
   <p>
-   The KDE desktop environment is available in Plasma 5.24.4, Framework 5.93.0
-   and applications in 22.04.0.
+   The KDE desktop environment is available in Plasma 5.24.5, Framework 5.94.0
+   and applications in 22.04.2.
   <p>
-   Available browsers are: Firefox 99.0.1, Chromium 100.0.4896.127, Epiphany 42.2, etc
+   Available browsers are: Firefox  101.0.1, Chromium 102.0.5005.115, Epiphany 42.2, etc
   <p>
-   Many desktop applications have been updated as well like Telegram-desktop 3.7.1,
-   Thunderbird 91.8.1, Scribus 1.5.8, Libreoffice 7.3.2.2, Gimp 2.10.30, etc.
+   Many desktop applications have been updated as well like Telegram-desktop 3.7.3,
+   Thunderbird 91.10.0, Scribus 1.5.8, Libreoffice 7.3.4.2, Gimp 2.10.32, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.9.311, 4.14.276, 4.19.239, 5.4.190 et 5.10.112 and 5.15.35
-   and the latest stable version 5.17.4 .
+   4.14.282, 4.19.246, 5.4.197, 5.10.121 and 5.15.46
+   and the latest stable version 5.18.3 .
   <p>
    The kernel change logs are available here:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.9.311">kernel 4.9.311 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.282">kernel 4.14.282 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.276">kernel 4.14.276 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.246">kernel 4.19.246 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.239">kernel 4.19.239 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.197">kernel 5.4.197 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.190">kernel 5.4.190 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.121">kernel 5.10.121 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.112">kernel 5.10.112 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.46">kernel 5.15.46 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.35">kernel 5.15.35 changelog</a>
-  <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.17.4">kernel 5.17.4 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.18.3">kernel 5.18.3 changelog</a>
   <p>
    
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
-   9 desktops are now available in:
+   11 desktops are now available in:
    OPENBOX,
    LXDE,
    XFCE4,
@@ -58,6 +56,7 @@
    ENLIGHTENMENT,
    MATE,
    CINNAMON,
+   BUDGIE,
    GNOME,
    KDE5.
   <p>
@@ -68,7 +67,9 @@
   <h3>ISO</h3>
    <p>
     A big effort done for making the ISO compatible with more different hardwares.
-
+   <p>
+    Gnome shows now the right keyboard in GDM login manager.
+    
  <h2>Upgrade process</h2>
   <p>
    A simple:
@@ -78,6 +79,8 @@
  <h2>Thanks</h2>
   <p>
    Thanks to Spiky for his patience and his generosity in upgrading all thoses many packages.
+  <p>
+   Thanks to BlogofraisFR for proposing the BUDGIE desktop now available on NuTyX.
   <p>
    Thanks to all you guys that have giving us positive or negative feedbacks about the distribution.
 
