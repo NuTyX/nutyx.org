@@ -29,11 +29,6 @@
        Kernel Version
       <th>
        Name of the package to install
-     <tr class="even">
-      <td>
-       4.9.x
-      <td>
-       kernel-49
      <tr class="odd">
       <td>
        4.14.x
