@@ -5,9 +5,7 @@
         <p> 
             To list them : 
             <pre class="command_user"><kbd>search kernel</kbd></pre>
-            <pre class="output">(cli-extra) kernel-49 4.9.295 The 4.9 longterm support Linux Kernel version
-...
-(cli-extra) kernel-414 4.14.260 The 4.14 longterm support Linux Kernel version
+            <pre class="output">(cli-extra) kernel-414 4.14.260 The 4.14 longterm support Linux Kernel version
 ...
 (cli-extra) kernel-419 4.19.223 The 4.19 longterm support Linux Kernel version
 ...
