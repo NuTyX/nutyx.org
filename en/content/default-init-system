@@ -9,7 +9,27 @@
         <p>
             <a href ='https://systemd.io'>systemd</a>
 
-    <h2>How to proceed</h3>
+    <h2>How to proceed</h2>
+     <h3>Install the init system</h3>
+       <table>
+        <caption><EM>Init systems:</EM></caption>
+         <tr class="sidebar">
+          <th>
+           Name
+          <th>
+           Package to install
+         <tr>
+          <td>
+           runyx
+          <td>
+           <pre class="command_user"><kbd>sudo cards install runyx</kbd></pre>
+        <tr>
+          <td>
+           systemd
+          <td>
+           <pre class="command_user"><kbd>sudo cards install systemd</kbd></pre>
+       </table>
+      <h3>Ajust GRUB</h3>
         <p>
             Edit /etc/default/grub filex:
         <p>
@@ -25,20 +45,24 @@
             <pre class="command"><kbd>grub-mkconfig -o /boot/grub/grub.cfg</kbd></pre>
 
     <h2>Remove an init system</h2>
-        <p>
-            It's possible to remove an init system if you don't use it.
-        <p>
-            To remove Runyx :
-            <pre class="command"><kbd>cards remove runyx -a</kdb></pre>
-        <p>
-            Or :
-            <pre class="command_user"><kbd>del runyx -a</kbd></pre>
-        <p>
-            For systemd :
-            <pre class="command">cards remove systemd -a</kdb></pre>
-        <p>
-            Or :
-            <pre class="command_user"><kbd>del systemd -a</kbd></pre>
+      <table>
+        <caption><EM>Init systems:</EM></caption>
+         <tr class="sidebar">
+          <th>
+           Name
+          <th>
+           Package to remove
+         <tr>
+          <td>
+           runyx
+          <td>
+           <pre class="command_user"><kbd>sudo cards remove -a runyx</kbd></pre>
+        <tr>
+          <td>
+           systemd
+          <td>
+           <pre class="command_user"><kbd>sudo cards remove -a systemd</kbd></pre>
+       </table>
 
             <h3>Warning</h3>
                 <p>

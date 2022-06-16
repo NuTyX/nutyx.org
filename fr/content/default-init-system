@@ -9,7 +9,27 @@
         <p> 
             <a href="https://systemd.io">systemd</a>
 
-    <h2>Comment procéder</h3>
+    <h2>Comment procéder</h2>
+     <h3>Installer le système d'init</h3>
+       <table>
+        <caption><EM>Systèmes d'initialisation:</EM></caption>
+         <tr class="sidebar">
+          <th>
+           Nom
+          <th>
+           Paquet à installer
+         <tr>
+          <td>
+           runyx
+          <td>
+           <pre class="command_user"><kbd>sudo cards install runyx</kbd></pre>
+        <tr>
+          <td>
+           systemd
+          <td>
+           <pre class="command_user"><kbd>sudo cards install systemd</kbd></pre>
+       </table>
+     <h3>Ajuster GRUB</h3>
         <p>
             Il vous suffit d'aller éditer le fichier /etc/default/grub à l'aide d'un quelconque éditeur de texte.
         <p>
@@ -24,27 +44,31 @@
             Pour que modifications soient effectives, il faut générer la configuration de grub.
         <p>
             Cela se fera à l'aide de cette commande :
-            <pre class="command"><kbd>grub-mkconfig -o /boot/grub/grub.cfg</kbd></pre>
+            <pre class="command_user"><kbd>sudo grub-mkconfig -o /boot/grub/grub.cfg</kbd></pre>
     
     <h2>Supprimer les systèmes d'initilisation</h2>
-        <p>
-            Il est possible de supprimer un système d'initilisation si vous ne l'utilisez pas.
-        <p>
-            Cela se fera à l'aide de la commande suivante pour runyx:
-            <pre class="command"><kbd>cards remove runyx -a</kdb></pre>
-        <p>
-            Ou :
-            <pre class="command_user"><kbd>del runyx -a</kbd></pre>
-        <p>
-            Pour systemd :
-            <pre class="command"><kbd>cards remove systemd -a</kdb></pre>
-        <p>
-            Ou :
-            <pre class="command_user"><kbd>del systemd -a</kbd></pre>
+       <table>
+        <caption><EM>Systèmes d'initialisation:</EM></caption>
+         <tr class="sidebar">
+          <th>
+           Nom
+          <th>
+           Paquet à supprimer
+         <tr>
+          <td>
+           runyx
+          <td>
+           <pre class="command_user"><kbd>sudo cards remove -a runyx</kbd></pre>
+        <tr>
+          <td>
+           systemd
+          <td>
+           <pre class="command_user"><kbd>sudo cards remove -a systemd</kbd></pre>
+       </table>
 
-                <h3>Attention</h3>
-                    <p>
-                        Il ne faut en aucun cas supprimer le paquet sysvinit qui contient des librairies essentielles au démarrage de votre système !
+       <h3>Attention</h3>
+        <p>
+         Il ne faut en aucun cas supprimer le paquet sysvinit qui contient des librairies essentielles au démarrage de votre système !
     <h2>Articles en lien</h2>
         <p>
             Relié : <a href="install-nutyx#4">install-nutyx</a>
