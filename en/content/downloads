@@ -129,8 +129,6 @@
 
     <td class="lien_article">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.6-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 32bits</a>
-       <p>
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.06.1-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 64bits</a>
     <td>
      <p>
       The ISO contains a XFCE4 desktop.
@@ -140,10 +138,8 @@
       kernel: Last stable kernel.
      <p>
       SHA1 32bits: 7eee1468ccf7ea75e89745381bf84333f8adcb75
-     <p> 
-      SHA1 64bits: 44aa92685164f13f554ae92cbf3d81acf1dbfa8e
-      <td>
-       Approx. 1.5 GO
+    <td>
+      Approx. 1.5 GO
 
    </tr>
 
@@ -160,7 +156,7 @@
       kernel: Last stable kernel.
      <p>
        SHA1 64bits: 0e6b4b87d9b695b348b68e6b8820c6bc9fd6a7a1
-      <td>
+    <td>
        Approx. 1.6 GO
 
    </tr>
