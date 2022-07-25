@@ -93,6 +93,28 @@
   <p>
    Thanks to all you guys that have giving us positive or negative feedbacks about the distribution.
 
+ <h2>Warnings</h2>
+  <p> 
+   <a href="http://grat-os.fr">Some project get inspired by NuTyX</a>.
+  <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
+    If you use directly thoses distributions, you're signing up for some pain:
+  </div>
+   
+   <ul>
+    <li>
+      Lack of continuity from the team.
+    <li>
+      Lack of support from the team.
+    <li>
+      The lack of knowledge about the finer points of distribution leads to certain more than dubious choices.
+    <li>
+      Many binaries are poorly constructed and/or do not work.
+    <li>
+      Features of cards and NuTyX discarded.
+    <li>
+      Impossibility of having an up-to-date card version given the constant evolutions.
+   </ul>
+
  <h2>Old news</h2>
   <p>
    Old news is available <a href="old-news/?C=M;O=D">here</a>.
