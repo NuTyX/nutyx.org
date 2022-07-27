@@ -95,16 +95,16 @@
 
  <h2>Warnings</h2>
   <p> 
-   <a href="http://grat-os.fr">Some project get inspired by NuTyX</a>.
+   Some project get inspired by NuTyX.
   <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
     If you use directly thoses distributions, you're signing up for some pain:
   </div>
    
    <ul>
     <li>
-      Lack of continuity from the team.
+      Lack of continuity.
     <li>
-      Lack of support from the team.
+      Lack of support.
     <li>
       The lack of knowledge about the finer points of distribution leads to certain more than dubious choices.
     <li>
