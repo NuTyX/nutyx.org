@@ -469,36 +469,6 @@ UPGRADE         ^etc/X11/XF86Config$    NO</pre>
       Exemple: <b>PKGMK_GROUPS=(devel man)</b> produira un paquet de base (qui comprendra donc la <b>doc</b> et le <b>service</b>, un paquet.man et un paquet.devel.
       </ol>
 
- <h2>GESTION DES PORTS AVEC LA GESTION DES DEPENDANCES VIA LA COMMANDE CARDS (mode utilisateur avancé)</h2>
-  <p>
-   La gestion des recettes des paquets ainsi que les dépendances de ceux-ci se fait via la commande <b>cards</b> également.
-   <ol>
-    <li><h3>Configuration de cards</h3></li>
-     <p>
-      Le fichier <b>/etc/cards.conf</b> définit les règles de fonctionnement de la commande <b>cards</b>.
-     <p>
-      Les lignes <b>dir /var/lib/pkg/depot/...</b> sont très importantes, l'ordre définit dans quel dossier la recette sera choisie si le port est en double.
-
-    <li><h3>Les commandes à savoir</h3></li>
-     <p>
-      Lister les dépendances d'un paquet et voir si elles sont installées ou pas
-      <pre class="command"><kbd>cards deptree paquetX</kbd></pre>
-     <p>
-      Voir si paquetX est disponible
-      <pre class="command"><kbd>cards search paquetX</kbd></pre>
-     <p>
-      Rechercher avec la description d'un paquet
-      <pre class="command"><kbd>cards info -p paquetX</kbd></pre>
-     <p>
-      Empaqueter et installer un port (necessite les droits du compte root)
-      <pre class="command"><kbd>cd /var/lib/pkg/depot/&lt;collection&gt;/paquetX && pkgmk -d -i</kbd></pre>
-     <p>
-      Télécharge, empaquete et installe le paquetX en une seule commande.
-      Les dépendances doivent être disponibles en binaire.
-      Celles-ci ne seront pas compilées.
-      <pre class="command"><kbd>sudo cards create -n paquetX</kbd></pre>
-      </ol>
-
  <h2>SERVICES</h2>
   <p>
    Les différents services sont disponibles sous le nom &lt;nomduservice&gt;.service.

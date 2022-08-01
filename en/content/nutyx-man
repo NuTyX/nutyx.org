@@ -444,37 +444,6 @@ UPGRADE         ^etc/X11/XF86Config$    NO</pre>
       Find out details of a package
       <pre class="command"><kbd>pkginfo -d package</kbd></pre>
 
- 
- <h2>PACKAGE MANAGEMENT USING PORTS WITH DEPENDENCY MANAGEMENT (for advanced users)</h2>
-  <p>
-   The management of recipes for packages and their dependencies is carried out using the <b>cards</b> command as well.
-   <ol><li><h3>cards configuration</h3></li>
-    <p>
-     As mentioned above, the <b>/etc/cards.conf</b> file defines rules for this command.
-    <p>
-     The line <b>dir /var/lib/pkg/depot/...</b> is very important for ports management.
-    <p>
-     The order defines the order in which directories will be searched for recipes.
-    <p>
-     If a recipe is available in two directories, the first one listed will always be used.
-  <li><h3>Commands you need to know</h3></li></ol>
-   <p>
-    List dependencies of a package and see if they are installed.
-    <pre class="command"><kbd>cards deptree package</kbd></pre>
-   <p>
-    Check if package is available
-    <pre class="command"><kbd>cards search package</kbd></pre>
-   <p>
-    Search a package with the description
-    <pre class="command"><kbd>cards info -p package</kbd></pre>
-   <p>
-    Build and install a port (needs root access)
-    <pre class="command"><kbd>cd /var/lib/pkg/depot/&lt;collection&gt;/packageX && pkgmk -d -i</kbd></pre>
-   <p>
-    Download, build and install the package in one single command
-    <pre class="command"><kbd>sudo cards create -n packageX</kbd></pre>
-    Download, build and install the package. Its dependencies MUST be already available. They will not be compiled.<p>
-
  <h2>SERVICES</h2>
   <p>
    Various service packages are available for installation under the name &lt;nameoftheservice&gt;.service.
