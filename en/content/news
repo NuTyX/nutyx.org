@@ -4,13 +4,13 @@
   <p>
    The NuTyX team is happy to announce the new version of NuTyX 22.07.0 and cards 2.5.4.
   <p>
-   New toolchain gcc 12.1.0, glibc 2.35 and binutils 2.38.
+   New toolchain gcc 12.2.0, glibc 2.36 and binutils 2.39.
   <p>
-   The xorg-server graphics server version 21.1.3,
-   the Mesa 3D library in 22.1.4, Gtk4 4.6.6
-   and Qt 6.3.0.
+   The xorg-server graphics server version 21.1.4,
+   the Mesa 3D library in 22.1.7, Gtk4 4.7.2
+   and Qt 6.3.1.
   <p>
-   The python interpreters are en 3.10.5 et 2.7.18.
+   The python interpreters are en 3.10.6 et 2.7.18.
   <p>
    The XFCE desktop environment is updated to version 4.16.0.
   <p>
@@ -18,17 +18,17 @@
   <p>
    The GNOME desktop environment is also updated to version 42.3
   <p>
-   The KDE desktop environment is available in Plasma 5.25.3, Framework 5.96.0
-   and applications in 22.04.3.
+   The KDE desktop environment is available in Plasma 5.25.4, Framework 5.97.0
+   and applications in 22.08.0.
   <p>
-   Available browsers are: Firefox 102.0.1, Chromium 103.0.5060.134, Epiphany 42.3, etc
+   Available browsers are: Firefox 104.0, Chromium 104.0.5112.101, Epiphany 42.4, etc
   <p>
-   Many desktop applications have been updated as well like Telegram-desktop 3.7.3,
-   Thunderbird 102.0.3, Scribus 1.5.8, Libreoffice 7.3.4.2, Gimp 2.10.32, etc.
+   Many desktop applications have been updated as well like Telegram-desktop 4.1.1,
+   Thunderbird 102.2.0, Scribus 1.5.8, Libreoffice 7.4.0.3, Gimp 2.10.32, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
    4.14.288, 4.19.252, 5.4.206, 5.10.131 and 5.15.57
-   and the latest stable version 5.18.14 .
+   and the latest stable version 5.19.4 .
   <p>
    The kernel change logs are available here:
   <p>
