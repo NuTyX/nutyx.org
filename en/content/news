@@ -1,8 +1,8 @@
-<h1>Latest news 2022-07-26</h1>
+<h1>Latest news 2022-09-04</h1>
 
- <h2>NuTyX 22.07.0 available with cards 2.5.4</h2>
+ <h2>NuTyX 22.09.3 available with cards 2.5.4</h2>
   <p>
-   The NuTyX team is happy to announce the new version of NuTyX 22.07.0 and cards 2.5.4.
+   The NuTyX team is happy to announce the new version of NuTyX 22.09.3 and cards 2.5.4.
   <p>
    New toolchain gcc 12.2.0, glibc 2.36 and binutils 2.39.
   <p>
@@ -21,28 +21,28 @@
    The KDE desktop environment is available in Plasma 5.25.4, Framework 5.97.0
    and applications in 22.08.0.
   <p>
-   Available browsers are: Firefox 104.0, Chromium 104.0.5112.101, Epiphany 42.4, etc
+   Available browsers are: Firefox 104.0.1, Chromium 105.0.5195.52, Epiphany 42.4, etc
   <p>
    Many desktop applications have been updated as well like Telegram-desktop 4.1.1,
-   Thunderbird 102.2.0, Scribus 1.5.8, Libreoffice 7.4.0.3, Gimp 2.10.32, etc.
+   Thunderbird 102.2.1, Scribus 1.5.8, Libreoffice 7.4.0.3, Gimp 2.10.32, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.14.288, 4.19.252, 5.4.206, 5.10.131 and 5.15.57
-   and the latest stable version 5.19.4 .
+   4.14.291, 4.19.256, 5.4.211, 5.10.140 and 5.15.64
+   and the latest stable version 5.19.6 .
   <p>
    The kernel change logs are available here:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.288">kernel 4.14.288 changelog</a>
+  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.291">kernel 4.14.291 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.252">kernel 4.19.252 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.256">kernel 4.19.256 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.206">kernel 5.4.206 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.211">kernel 5.4.211 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.131">kernel 5.10.131 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.140">kernel 5.10.140 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.57">kernel 5.15.57 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.64">kernel 5.15.64 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.57">kernel 5.18.3 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.6">kernel 5.19.6 changelog</a>
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
@@ -62,23 +62,14 @@
    They are available on the <a href="downloads">download page.</a>
 
  <h2>What's new ?</h2>
-  <h3>install-nutyx</h3>
+  <h3>setup-nutyx</h3>
   <p>
-   It's now possible to use the <pre class="command_user"><kbd>paste-nutyx</kbd></pre>
-   command when sharing output are needed.
-   Very usefull, Thanks to Spiky for the idea
+   The setup-nutyx command is used when installing NuTyX.
+   It is now again possible to install the GRUB boot procedure independently.
+   GRUB can be installed in 32-bit or 64-bit modus on an EFI machine.
   <p>
-   The <pre class="command_user"><kbd>sudo generate-nutyx</kbd></pre>
-   command when we want to (re)generate an ISO.
-  <p>
-   And finally the <pre class="command_user"><kbd>sudo chroot-nutyx</kbd></pre>
-   command let you enter into an NuTyX installed in a directory.
-
-  <h3>mybld</h3>
-   The <pre class="command_user"><kbd>mybld</kbd></pre>
-   command install a chroot and all dependencies faster.
-   Only .devel and .lib are indeed necessary for building a package.
-
+   Network configuration: if only one adapter is found, it will be directly used for the configuration.
+   No need to select any.
  <h2>Upgrade process</h2>
   <p>
    A simple:
@@ -92,28 +83,6 @@
    Thanks to DocWOPR for joining the NuTyX Team.
   <p>
    Thanks to all you guys that have giving us positive or negative feedbacks about the distribution.
-
- <h2>Warnings</h2>
-  <p> 
-   Some project get inspired by NuTyX.
-  <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
-    If you use directly thoses distributions, you're signing up for some pain:
-  </div>
-   
-   <ul>
-    <li>
-      Lack of continuity.
-    <li>
-      Lack of support.
-    <li>
-      The lack of knowledge about the finer points of distribution leads to certain more than dubious choices.
-    <li>
-      Many binaries are poorly constructed and/or do not work.
-    <li>
-      Features of cards and NuTyX discarded.
-    <li>
-      Impossibility of having an up-to-date card version given the constant evolutions.
-   </ul>
 
  <h2>Old news</h2>
   <p>

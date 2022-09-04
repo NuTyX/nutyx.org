@@ -1,6 +1,6 @@
 <h1>Downloads</h1>
  <h2>Introduction</h2>
-   The current stable release of NuTyX is named <b>22.07</b>.
+   The current stable release of NuTyX is named <b>22.09</b>.
   <p>
    ISO images are available in "Rolling" releases.
   <p>
@@ -39,9 +39,9 @@
 
    <tr class="odd">
     <td class="lien_article">
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.6-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 32bits</a>
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.07.0-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 32bits</a>
       <p> 
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.07.0-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 64bits</a>
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.09.3-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 64bits</a>
     <td>
      <p>
       The ISO contains a base system withount any graphical interface.
@@ -58,18 +58,16 @@
      <p>
       kernel: Last stable kernel.
      <p>
-        SHA1 32bits: 95d093f997a04c822ae6af3183a54e13dd71d3a3
+        SHA1 32bits: 3913863ea9ee4d4aeeaa88212cb295a2cf2423b1
      <p>
-        SHA1 64bits: bb8a320a61595c96ee834c0f1b2fb4c1fdc2367a
+        SHA1 64bits: 582f497fa9148d44d623e078dcfcf6dece224b5c
       <td>
        Approx. 774.9 MO
    </tr>
 
    <tr class="even">
     <td class="lien_article">
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.6-CDE.iso"><img src="../graphics/downloads/cde.png" alt="logo cde"/><br/>CDE 32bits</a>
-     <p>
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.07.0-CDE.iso"><img src="../graphics/downloads/cde.png" alt="logo cde"/><br/>CDE 64bits</a>
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.09.3-CDE.iso"><img src="../graphics/downloads/cde.png" alt="logo cde"/><br/>CDE 64bits</a>
     <td>
      <p>
       The ISO contains a CDE desktop.
@@ -78,18 +76,14 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 32bits: 7ae5fa2f8593ba9f46268afe02a2f4a19f922bea
-     <p>
-      SHA1 64bits: 9aa4cc05cfaa4644dae28f6901b1d9442800312e
+      SHA1 64bits: d364f25156cd7d0556c386dbe3f526512b36d6dc
       <td>
        Approx. 1.5 GO
    </tr>
 
    <tr class="odd">
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.6-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 32bits</a>
-    <p>
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.07.0-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.09.3-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 64bits</a>
     <td>
      <p>
       The ISO contains a OpenBox desktop.
@@ -98,18 +92,16 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 32bits: 4e2601da44813a7a2964d17fe2706a5e2980870d
-     <p>
-      SHA1 64bits: 1fbf35e600772dc6ba9bd935204a2262cc912728
+      SHA1 64bits: 9d075d6a52f65d40ccb2673f4ed01ece9cfd0ab3
       <td>
        Approx. 1.5 GO
    </tr>
 
    <tr class="even">
     <td class="lien_article">
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.6-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo lxde"/><br/>LXDE 32bits</a>
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.07.0-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo lxde"/><br/>LXDE 32bits</a>
      <p>
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.07.0-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo lxde"/><br/>LXDE 64bits</a>
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.09.3-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo lxde"/><br/>LXDE 64bits</a>
     <td>
      <p>
       The ISO contains a LXDE desktop.
@@ -118,9 +110,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 32bits: 038f96ea4fa92c0d90ede45f27c7d9ad436770d2
+      SHA1 32bits: 0d39a84e88ad473814e6fa6688921a3a67865235
      <p>
-      SHA1 64bits: 985eb2493bd1666e4d3dbf516d29a04c92bfd7b4
+      SHA1 64bits: 0c63bb30757d7413dc09bb58395aaec04bdd3f87
       <td>
        Approx. 1.5 GO
    </tr>
@@ -128,9 +120,7 @@
    <tr class="odd">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_i686-22.04.6-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 32bits</a>
-      <p>
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.07.0-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.09.3-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 64bits</a>
     <td>
      <p>
       The ISO contains a XFCE4 desktop.
@@ -139,9 +129,7 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 32bits: 7eee1468ccf7ea75e89745381bf84333f8adcb75
-     <p>
-      SHA1 64bits: 3f4e6422d38989853798948d296ba022027e9412
+      SHA1 64bits: 554bfc02d94189181499052e0c93d67788e54109
     <td>
       Approx. 1.5 GO
 
@@ -150,7 +138,7 @@
    <tr class="even">
 
     <td class="lien_article">
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.07.0-LXQT.iso"><img src="../graphics/downloads/lxqt.png" alt="logo lxqt"/><br/>LXQT 64bits</a>
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.09.3-LXQT.iso"><img src="../graphics/downloads/lxqt.png" alt="logo lxqt"/><br/>LXQT 64bits</a>
     <td>
      <p>
       The ISO contains a LXQT desktop.
@@ -159,7 +147,7 @@
      <p>
       kernel: Last stable kernel.
      <p>
-       SHA1 64bits: a3786aadb38a864704883d3c67431109a968c106
+       SHA1 64bits: 530ced51ea2a03b0ec4ab44948ee2df5abdc1760
     <td>
        Approx. 1.6 GO
 
@@ -167,7 +155,7 @@
 
    <tr class="odd">
     <td class="lien_article">
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.07.0-ENLIGHTENMENT.iso"><img src="../graphics/downloads/enlightenment.png" alt="logo enlightenment"/><br/>ENLIGHTENMENT 64bits</a>
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.09.3-ENLIGHTENMENT.iso"><img src="../graphics/downloads/enlightenment.png" alt="logo enlightenment"/><br/>ENLIGHTENMENT 64bits</a>
     <td>
      <p>
       The ISO contains a ENLIGHTENMENT desktop.
@@ -176,14 +164,14 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bit: 677b38624b8d3af5a07f677c82cdd4425a93c326
+      SHA1 64bit: 49b7673c6b8c06f216e1ed3a0247d16e06a399dc
       <td>
        Approx. 1.9 GO
    </tr>
 
    <tr class="even">
     <td class="lien_article">
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.07.0-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE 64bits</a>
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.09.3-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE 64bits</a>
     <td>
      <p>
       The ISO contains a MATE desktop.
@@ -192,14 +180,14 @@
      <p>
       kernel: Last stable kernel.
      <p>
-       SHA1 64bits: d1700e5535c6498edd18f77add1891df7153afeb
+       SHA1 64bits: 5145c1d8452b0dcd79405dc4b4cc138f8f81c37f
       <td>
        Approx. 1.7 GO
    </tr>
 
    <tr class="odd">
     <td class="lien_article">
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.07.0-CINNAMON.iso"><img src="../graphics/downloads/cinnamon.png" alt="logo cinnamon"/><br/>CINNAMON 64bits</a>
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.09.3-CINNAMON.iso"><img src="../graphics/downloads/cinnamon.png" alt="logo cinnamon"/><br/>CINNAMON 64bits</a>
     <td>
      <p>
       The ISO contains a CINNAMON desktop.
@@ -208,14 +196,14 @@
      <p>
       kernel: Last stable kernel.
      <p>
-        SHA1 64bits: 3287a836ae857d1627d8ae47d1cfe980fa591ecd
+        SHA1 64bits: faad512358093f88514c45069b097a13b2231af0
       <td>
        Approx. 1.7 GO
    </tr>
 
    <tr class="even">
     <td class="lien_article">
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.07.0-BUDGIE.iso"><img src="../graphics/downloads/budgie.png" alt="logo budgie"/><br/>BUDGIE 64bits</a>
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.09.3-BUDGIE.iso"><img src="../graphics/downloads/budgie.png" alt="logo budgie"/><br/>BUDGIE 64bits</a>
     <td>
      <p>
       The ISO contains a BUDGIE desktop.
@@ -224,14 +212,14 @@
      <p>
       kernel: Last stable kernel.
      <p>
-        SHA1 64bits: 37130e114e00595bc7e0f5b6cb3c4ea00f15c2b6
+        SHA1 64bits: 7a33c7d533420efe33e89ef9353ff0cb907f14b2
       <td>
        Approx. 1.6 GO
    </tr>
 
    <tr class="odd">
     <td class="lien_article">
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.07.0-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME 64bits</a>
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.09.3-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME 64bits</a>
     <td>
      <p>
       The ISO contains a GNOME desktop.
@@ -240,14 +228,14 @@
      <p>
       kernel: Last stable kernel.
      <p>
-        SHA1 64bits: 2e8616ced6cad2431323ce35d950bb40196d17b5
+        SHA1 64bits: 89f96499484ef2fbe44f477285b34ff464d277b7
       <td>
        Approx. 1.7 GO
    </tr>
 
    <tr class="even">
     <td class="lien_article">
-       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.07.0-KDE5.iso"><img src="../graphics/downloads/kde.png" alt="logo kde5"/><br/>KDE 64bits</a>
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.09.3-KDE5.iso"><img src="../graphics/downloads/kde.png" alt="logo kde5"/><br/>KDE 64bits</a>
     <td>
      <p>
       The ISO contains a KDE5 desktop.
@@ -256,7 +244,7 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: 0f8eec4f401ec09ded943adc0feb262d96f320d7
+      SHA1 64bits: e701ada8dc062cfb2675e5b7c63c3486f10d6c48
     <td>
       Approx. 1.9 GO
    </tr>
@@ -313,7 +301,7 @@ sdc  8:0:0:0    disk TDKMedia Trans-It_Drive  PMAP 07991E033A9CAF0E usb</pre>
   <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
    The following command will delete all data that is on the USB key.
   </div>
-  <pre class="command"><kbd>dd if=$LFS/NuTyX_x86_64-22.07.0-BASE.iso of=/dev/sdX status=progress
+  <pre class="command"><kbd>dd if=$LFS/NuTyX_x86_64-22.08.3-BASE.iso of=/dev/sdX status=progress
 sync</kbd></pre>
    If you are using Windows:
   <p>it is easier to burn the ISO image onto a CD-RW (if possible) ...

@@ -577,8 +577,8 @@ GUI_EXTRA="deadbeef geany firefox" \
 DEVEL="&& setup-nutyx start && echo 'ready ?' && read a" \
 CLI="dhcpcd openssh git cdrtools syslinux libisoburn dosfstools" \
 LFS="/MyIso" \
-DEPOT="/media/www/x86_64/rolling" \
-MOUNT="/media/www/x86_64/rolling" \
+DEPOT="/media/www" \
+MOUNT="/media/www" \
 install-nutyx</kbd></pre>
    <p>
     installe et produit une ISO lxde personalisée. Les variables BASE, CLI, GUI, XORG, GUI_EXTRA, DEVEL, LFS, MOUNT et DEPOT sont redéfinies.

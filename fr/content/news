@@ -1,8 +1,8 @@
-<h1>Dernière nouvelle 26-07-2022</h1>
+<h1>Dernière nouvelle 04-09-2022</h1>
 
- <h2>NuTyX 22.07.0 disponible avec cards 2.5.4</h2>
+ <h2>NuTyX 22.09.3 disponible avec cards 2.5.4</h2>
   <p>
-   Nous sommes heureux d'annoncer la nouvelle version de NuTyX 22.07.0 et cards 2.5.4.
+   Nous sommes heureux d'annoncer la nouvelle version de NuTyX 22.09.3 et cards 2.5.4.
   <p>
    Nouvelle toolchain gcc 12.2.0, glibc 2.36 et binutils 2.39.
   <p>
@@ -21,28 +21,28 @@
    L'environnement de bureau KDE est disponible en Plasma 5.25.4, Framework 5.97.0
    et les applications en 22.08.0.
   <p>
-   Les navigateurs disponibles sont entre autre: Firefox 104.0, Chromium 104.0.5112.101, Epiphany 42.4, etc
+   Les navigateurs disponibles sont entre autre: Firefox 104.0.1, Chromium 105.0.5195.52, Epiphany 42.4, etc
   <p>
    De nombreuses applications on été mise à jour également comme Telegram-desktop 4.1.1,
-   Thunderbird 102.2.0, Scribus 1.5.8, Libreoffice 7.4.0.3, Gimp 2.10.32, etc.
+   Thunderbird 102.2.1, Scribus 1.5.8, Libreoffice 7.4.0.3, Gimp 2.10.32, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.14.288, 4.19.252, 5.4.206, 5.10.131 et 5.15.57.
-   et la dernière version stable 5.19.4.
+   4.14.291, 4.19.256, 5.4.211, 5.10.140 et 5.15.64.
+   et la dernière version stable 5.19.6.
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.288">kernel 4.14.288 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.291">kernel 4.14.291 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.252">kernel 4.19.252 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.256">kernel 4.19.256 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.206">kernel 5.4.206 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.211">kernel 5.4.211 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.131">kernel 5.10.131 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.140">kernel 5.10.140 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.57">kernel 5.15.57 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.64">kernel 5.15.64 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.18.14">kernel 5.18.14 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.6">kernel 5.19.6 changelog</a>
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
@@ -62,23 +62,15 @@
    Elles sont disponibles sur <a href="downloads">la page de téléchargement.</a>
 
  <h2>Quoi de neuf ?</h2>
-  <h3>install-nutyx</h3>
+  <h3>setup-nutyx</h3>
   <p>
-   Il est possible d'utiliser la commande <pre class="command_user"><kbd>paste-nutyx</kbd></pre>
-   pour partager et obtenir plus facilement du support de la part de l'équipe de NuTyX.
-   Merci à Spiky pour cette bonne idée.
+   La commande setup-nutyx est utilisée lors de l'installation de NuTyX.
+   Il est désormais à nouveau possible d'installer la procédure d'amorçage GRUB de façon indépendante.
+   GRUB peut être installé en mode 32 bits ou 64 bits sur une machine EFI.
   <p>
-   La commande <pre class="command_user"><kbd>sudo generate-nutyx</kbd></pre>
-   permet de (re)générer une ISO NuTyX.
-  <p>
-   Et enfin <pre class="command_user"><kbd>sudo chroot-nutyx</kbd></pre>
-   permet en chroot dans une NuTyX installée dans un dossier.
-
-  <h3>mybld</h3>
-   La commande <pre class="command_user"><kbd>mybld</kbd></pre>
-   installe une NuTyX et les dépendances beaucoup rapidement.
-   Seuls les paquets .devel et .lib étant necessaire pour la construction d'un binaire.
-
+   Configuration du réseau: si un seul adapteur est trouvé, celui-ci sera directement utilisé pour la configuration.
+   Pas besoin d'en sélectionner.
+   
  <h2>Mise à jour</h2>
   <p>
    Une simple commande classique permet la mise à jour:
@@ -91,28 +83,6 @@
    Merci à DocWOPR d'avoir rejoint l'équipe de NuTyX.
   <p>
    Merci à vous tous pour vos retours positifs ou négatifs sur la distribution.
- <h2>Avertissement</h2>
-  <p> 
-   Certains projets s'inspirent de NuTyX.
-  <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
-   Si vous utilisez directement ces distributions, vous vous engagez à souffrir:
-  </div>
-   
-   <ul>
-    <li>
-     Manque de continuité.
-    <li>
-      L'absence de support.
-    <li>
-      Le manque de connaissances sur les finesses de la distibution aboutit à certains choix plus que douteux.
-    <li>
-      Nombreux binaires sont mal construits et/ou ne fonctionnent pas.
-    <li>
-      Fonctionnalités de cards et de NuTyX passées à la trappe.
-    <li>
-      Impossibilité d'avoir une version cards à jour vu les évolutions constantes.
-   </ul>
-
 
  <h2>Anciennes nouvelles</h2>
   <p>
