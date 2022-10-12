@@ -32,13 +32,15 @@
      Extra librairies and utilities for a command line interface (cli-extra)
     <li>
      Extra librairies and utilities for a graphical user interface (gui-extra)
-    <li>
-     Graphicals interface
    </ul>
-    At the moment, some  of the most common graphical interfaces are available:
-    <ul>
+    At the moment, some  of the most common graphical interfaces are available in gui-extra collection:
+   <ul>
      <li>
       GNOME
+     <li>
+      BUDGIE
+     <li>
+      CINNAMON
      <li>
       XFCE4
      <li>

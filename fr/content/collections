@@ -32,13 +32,15 @@
      Librairies et utilitaires supplémentaires pour une interface en ligne de commande (cli-extra)
     <li>
      Librairies et utilitaires supplémentaires pour une interface graphique (gui-extra)
-    <li>
-     Les Interfaces graphique
    </ul>
-    Actuellement, sont à disposition, parmis les interfaces graphique les plus courantes, on peut trouver:
-    <ul>
+    Actuellement, les interfaces graphique les plus courantes se trouvent dans la collection gui-extra:
+   <ul>
      <li>
       GNOME
+     <li>
+      BUDGIE
+     <li>
+      CINNAMON
      <li>
       XFCE4
      <li>
@@ -51,7 +53,7 @@
       LXQT
      <li>
       ENLIGHTENMENT
-    </ul>
+   </ul>
   <h2>La gestion des collections par cards</h2>
    De par leur conception, chaque collection possède son propre fichier contenant les meta-données.
    Lors d'ajout / retrait d'un paquet d'une collection, seul les meta-données de la dite collection seront modifiées.
