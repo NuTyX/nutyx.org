@@ -25,13 +25,13 @@
     <li>
      Librairies et utilitaires pour un système de base
     <li>
-     Librairies et utilitaires pour une interface en ligne de commande (CLI)
+     Librairies et utilitaires pour une interface en ligne de commande (cli)
     <li>
-     Librairies et utilitaires pour une interface graphique (GUI)
+     Librairies et utilitaires pour une interface graphique (gui)
     <li>
-     Librairies et utilitaires supplémentaires pour une interface en ligne de commande (CLI)
+     Librairies et utilitaires supplémentaires pour une interface en ligne de commande (cli-extra)
     <li>
-     Librairies et utilitaires supplémentaires pour une interface graphique (GUI)
+     Librairies et utilitaires supplémentaires pour une interface graphique (gui-extra)
     <li>
      Les Interfaces graphique
    </ul>
