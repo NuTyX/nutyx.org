@@ -7,40 +7,40 @@
    Nouvelle toolchain gcc 12.2.0, glibc 2.36 et binutils 2.39.
   <p>
    Le serveur graphique Xorg-server version 21.1.4.
-   la librairie Mesa 3D en 22.1.7, Gtk4 4.7.2
-   et Qt 6.3.1.
+   la librairie Mesa 3D en 22.1.7, Gtk4 4.8.1
+   et Qt 6.4.0.
   <p>
-   Les interpreteurs Python sont ent 3.10.6 et 2.7.18.
+   Les interpreteurs Python sont ent 3.10.8 et 2.7.18.
   <p>
-   L'environnement de bureau XFCE est mis à jour en version 4.16.0.
+   L'environnement de bureau XFCE est mis à jour en version 4.16.1.
   <p>
    L'environnement de bureau MATE est en version 1.26.0.
   <p>
-   L'environnement de bureau GNOME est également mis à jour en version 42.3
+   L'environnement de bureau GNOME est également mis à jour en version 42.4
   <p>
-   L'environnement de bureau KDE est disponible en Plasma 5.25.4, Framework 5.97.0
-   et les applications en 22.08.0.
+   L'environnement de bureau KDE est disponible en Plasma 5.26.2, Framework 5.99.0
+   et les applications en 22.08.2.
   <p>
-   Les navigateurs disponibles sont entre autre: Firefox 104.0.1, Chromium 105.0.5195.52, Epiphany 42.4, etc
+   Les navigateurs disponibles sont entre autre: Firefox 106.0.2, Chromium 107.0.5304.68, Epiphany 42.4, etc
   <p>
    De nombreuses applications on été mise à jour également comme Telegram-desktop 4.1.1,
-   Thunderbird 102.2.1, Scribus 1.5.8, Libreoffice 7.4.0.3, Gimp 2.10.32, etc.
+   Thunderbird 102.4.2, Scribus 1.5.8, Libreoffice 7.4.2.3, Gimp 2.10.32, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.14.291, 4.19.256, 5.4.211, 5.10.140 et 5.15.64.
+   4.14.296, 4.19.262, 5.4.220, 5.10.150 et 5.15.75.
    et la dernière version stable 5.19.6.
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.291">kernel 4.14.291 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.296">kernel 4.14.296 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.256">kernel 4.19.256 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.262">kernel 4.19.262 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.211">kernel 5.4.211 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.220">kernel 5.4.220 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.140">kernel 5.10.140 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.150">kernel 5.10.150 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.64">kernel 5.15.64 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.75">kernel 5.15.75 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.6">kernel 5.19.6 changelog</a>
   <p>
