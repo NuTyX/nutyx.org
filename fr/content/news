@@ -1,8 +1,8 @@
 <h1>Dernière nouvelle 04-09-2022</h1>
 
- <h2>NuTyX 22.09.3 disponible avec cards 2.5.4</h2>
+ <h2>NuTyX 22.09.3 disponible avec cards 2.6.1</h2>
   <p>
-   Nous sommes heureux d'annoncer la nouvelle version de NuTyX 22.09.3 et cards 2.5.4.
+   Nous sommes heureux d'annoncer la nouvelle version de NuTyX 22.09.3 et cards 2.6.1.
   <p>
    Nouvelle toolchain gcc 12.2.0, glibc 2.36 et binutils 2.39.
   <p>
@@ -21,14 +21,14 @@
    L'environnement de bureau KDE est disponible en Plasma 5.26.2, Framework 5.99.0
    et les applications en 22.08.2.
   <p>
-   Les navigateurs disponibles sont entre autre: Firefox 106.0.2, Chromium 107.0.5304.68, Epiphany 42.4, etc
+   Les navigateurs disponibles sont entre autre: Firefox 106.0.3, Chromium 107.0.5304.87, Epiphany 42.4, etc
   <p>
    De nombreuses applications on été mise à jour également comme Telegram-desktop 4.1.1,
-   Thunderbird 102.4.2, Scribus 1.5.8, Libreoffice 7.4.2.3, Gimp 2.10.32, etc.
+   Thunderbird 102.4.1, Scribus 1.5.8, Libreoffice 7.4.2.3, Gimp 2.10.32, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.14.296, 4.19.262, 5.4.220, 5.10.150 et 5.15.75.
-   et la dernière version stable 5.19.6.
+   4.14.296, 4.19.262, 5.4.220, 5.10.152 et 5.15.76.
+   et la dernière version stable 6.0.6.
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
@@ -38,11 +38,11 @@
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.220">kernel 5.4.220 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.150">kernel 5.10.150 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.152">kernel 5.10.152 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.75">kernel 5.15.75 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.76">kernel 5.15.76 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.6">kernel 5.19.6 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.0.6">kernel 6.0.6 changelog</a>
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
@@ -79,8 +79,6 @@
  <h2>Remerciements</h2>
   <p>
    Merci à Spiky pour sa grande patience et sa générosité pour la mise à jour des très nombreux paquets.
-  <p>
-   Merci à DocWOPR d'avoir rejoint l'équipe de NuTyX.
   <p>
    Merci à vous tous pour vos retours positifs ou négatifs sur la distribution.
 
