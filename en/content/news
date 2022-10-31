@@ -1,8 +1,8 @@
 <h1>Latest news 2022-09-04</h1>
 
- <h2>NuTyX 22.09.3 available with cards 2.5.4</h2>
+ <h2>NuTyX 22.09.3 available with cards 2.6.1</h2>
   <p>
-   The NuTyX team is happy to announce the new version of NuTyX 22.09.3 and cards 2.5.4.
+   The NuTyX team is happy to announce the new version of NuTyX 22.09.3 and cards 2.6.1.
   <p>
    New toolchain gcc 12.2.0, glibc 2.36 and binutils 2.39.
   <p>
@@ -21,14 +21,14 @@
    The KDE desktop environment is available in Plasma 5.26.2, Framework 5.99.0
    and applications in 22.08.2.
   <p>
-   Available browsers are: Firefox 106.0.2, Chromium 107.0.5304.68, Epiphany 42.4, etc
+   Available browsers are: Firefox 106.0.3, Chromium 107.0.5304.87, Epiphany 42.4, etc
   <p>
    Many desktop applications have been updated as well like Telegram-desktop 4.1.1,
-   Thunderbird 102.4.2, Scribus 1.5.8, Libreoffice 7.4.2.3, Gimp 2.10.32, etc.
+   Thunderbird 102.4.1, Scribus 1.5.8, Libreoffice 7.4.2.3, Gimp 2.10.32, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.14.296, 4.19.262, 5.4.220, 5.10.150 and 5.15.75
-   and the latest stable version 5.19.6 .
+   4.14.296, 4.19.262, 5.4.220, 5.10.152 and 5.15.76
+   and the latest stable version 6.0.6.
   <p>
    The kernel change logs are available here:
   <p>
@@ -38,11 +38,11 @@
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.220">kernel 5.4.220 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.150">kernel 5.10.150 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.152">kernel 5.10.152 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.75">kernel 5.15.75 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.76">kernel 5.15.76 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19.6">kernel 5.19.6 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.0.6">kernel 6.0.6 changelog</a>
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
@@ -79,8 +79,6 @@
  <h2>Thanks</h2>
   <p>
    Thanks to Spiky for his patience and his generosity in upgrading all thoses many packages.
-  <p>
-   Thanks to DocWOPR for joining the NuTyX Team.
   <p>
    Thanks to all you guys that have giving us positive or negative feedbacks about the distribution.
 
