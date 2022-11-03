@@ -1,13 +1,14 @@
-<h1>Dernière nouvelle 04-09-2022</h1>
+<h1>Dernière nouvelle 03-11-2022</h1>
 
- <h2>NuTyX 22.09.3 disponible avec cards 2.6.1</h2>
+
+ <h2>NuTyX 22.10.0 disponible avec cards 2.6.1</h2>
   <p>
-   Nous sommes heureux d'annoncer la nouvelle version de NuTyX 22.09.3 et cards 2.6.1.
+   Nous sommes heureux d'annoncer la nouvelle version de NuTyX 22.10.0 et cards 2.6.1.
   <p>
    Nouvelle toolchain gcc 12.2.0, glibc 2.36 et binutils 2.39.
   <p>
    Le serveur graphique Xorg-server version 21.1.4.
-   la librairie Mesa 3D en 22.1.7, Gtk4 4.8.1
+   la librairie Mesa 3D en 22.1.7, Gtk4 4.8.2
    et Qt 6.4.0.
   <p>
    Les interpreteurs Python sont ent 3.10.8 et 2.7.18.
@@ -46,10 +47,12 @@
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
-   11 bureaux sont maintenant disponibles:
+   13 bureaux sont maintenant disponibles:
+   XORG,
    OPENBOX,
    LXDE,
    XFCE4,
+   JWM,
    CDE,
    LXQT,
    ENLIGHTENMENT,

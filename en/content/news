@@ -1,13 +1,14 @@
-<h1>Latest news 2022-09-04</h1>
+<h1>Latest news 2022-11-03</h1>
 
- <h2>NuTyX 22.09.3 available with cards 2.6.1</h2>
+
+ <h2>NuTyX 22.10.0 available with cards 2.6.1</h2>
   <p>
-   The NuTyX team is happy to announce the new version of NuTyX 22.09.3 and cards 2.6.1.
+   The NuTyX team is happy to announce the new version of NuTyX 22.10.0 and cards 2.6.1.
   <p>
    New toolchain gcc 12.2.0, glibc 2.36 and binutils 2.39.
   <p>
    The xorg-server graphics server version 21.1.4,
-   the Mesa 3D library in 22.1.7, Gtk4 4.8.1
+   the Mesa 3D library in 22.1.7, Gtk4 4.8.2
    and Qt 6.4.1
   <p>
    The python interpreters are at 3.10.8 and 2.7.18.
@@ -28,7 +29,7 @@
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
    4.14.296, 4.19.262, 5.4.220, 5.10.152 and 5.15.76
-   and the latest stable version 6.0.6.
+   and the latest stable version 6.0.6 .
   <p>
    The kernel change logs are available here:
   <p>
@@ -46,10 +47,12 @@
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
-   11 desktops are now available in:
+   13 desktops are now available in:
+   XORG,
    OPENBOX,
    LXDE,
    XFCE4,
+   JWM,
    CDE,
    LXQT,
    ENLIGHTENMENT,

@@ -469,7 +469,7 @@ ISO Filename /mnt/hd/NuTyX_x86_64-21.03.0-rc4-GNOME.iso</pre>
     As we can see, new variables are now available.
    These can also be redefined at your convenience:
   <p>
-   STRICT, BASE, CLI, GUI, GUI_EXTRA, XORG, GNOME, GNOME_EXTRA, KDE5, KDE5_EXTRA, OPENBOX, JWM, LXDE, XFCE4, MATE.
+   STRICT, BASE, CLI, GUI, GUI_EXTRA, XORG, GNOME, GNOME_EXTRA, KDE5, KDE5_EXTRA, BUDGIE, CINNAMON, ENLIGHTENMENT, CDE, OPENBOX, JWM, LXDE, XFCE4, MATE.
   <p>
    Each variable specify a set of packages to be installed.
    Each ISO name use a set of thoses variables to build up the specified ISO.
@@ -539,6 +539,26 @@ ISO Filename /mnt/hd/NuTyX_x86_64-21.03.0-rc4-GNOME.iso</pre>
       MATE
      <td>
       STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + MATE
+    <tr>
+     <td>
+      CDE
+     <td>
+      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + CDE
+    <tr>
+     <td>
+      ENLIGHTENMENT
+     <td>
+      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + ENLIGHTENMENT
+    <tr>
+     <td>
+      CINNAMON
+     <td>
+      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + CINNAMON
+    <tr>
+     <td>
+      BUDGIE
+     <td>
+      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + BUDGIE
     <tr>
      <td>
       GNOME
