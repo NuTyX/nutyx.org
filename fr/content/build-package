@@ -254,6 +254,13 @@ make DESTDIR=$PKG install
 
  <a name='ID050'></a>
  <h2>Construire votre premier paquet</h2>
+
+   <div class="important"><img alt="[Important]" src="../graphics/caution.gif" />
+      Pour ce paquet, on n'utilisera pas d'environnement isolé aussi appelé <a href="dictionary#ID100">chroot</a>.
+      On verra dans un prochain article, comment construire dans cet environnement isolé.
+      C'est en effet la seule methode qui fonctionnera si l'on doit construire un paquet ayant des dépendances.
+     </div>
+
   <p>Nous connaissons les <a href="#ID010">raisons de contribuer</a>,
    <a href="#ID020">les connaissances requises</a>,
    le <a href="#ID030">format minimum d'une recette</a> et
@@ -272,11 +279,6 @@ make DESTDIR=$PKG install
    Ce tutoriel simple peut être testé sur votre NuTyX quelle que soit sa configuration.
    <p>
     La recette du paquet choisi est un petit éditeur de texte ne nécessitant aucune dépendance.
-   <div class="important"><img alt="[Important]" src="../graphics/caution.gif" />
-      Pour ce paquet, on n'utilisera pas d'environnement isolé aussi appelé <a href="dictionary#ID100">chroot</a>.
-      On verra dans un prochain article, comment construire dans cet environnement isolé.
-      Parce que c'est la seule methode qui fonctionnera si l'on doit construire un paquet ayant des dépendances.
-     </div>
 
   <h3>Un minimum d'explications</h3>
    <p>
