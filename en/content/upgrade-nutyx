@@ -1,4 +1,4 @@
-<h1>Update distribution with upgrade-nutyx</h1>
+<h1>Update the distribution with upgrade-nutyx</h1>
  <h2>Working</h2>
   The update method used in this tutorial is transparent.
   This means that once the background task is set up and upgrade-nutyx is correctly configured,

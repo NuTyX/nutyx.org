@@ -105,6 +105,17 @@
    </tr>
 
    <tr class="even">
+     <td class="lien_article">
+       <a class="url" href="upgrade-nutyx">Update the distribution with upgrade-nutyx</a>
+     </td>
+     <td>
+      You want to use an automatic upgrade method.
+      Go for it.
+      Follow the guide :) .
+      </td>
+   </tr>
+
+   <tr class="odd">
     <td class="lien_article" >
       <a class="url" href="setup-http">Setup of an HTTP server</a>
     </td>
@@ -115,7 +126,7 @@
     </td>
    </tr>
 
-   <tr class="odd">
+   <tr class="even">
     <td class="lien_article" >
       <a class="url" href="setup-nfs">Setup of a NFS server</a>
     </td>
@@ -127,7 +138,7 @@
     </td>
    </tr>
 
-   <tr class="even">
+   <tr class="odd">
     <td class="lien_article" >
       <a class="url" href="install-nutyx#5">Produce a customised ISO</a>
     </td>
@@ -139,7 +150,7 @@
     </td>
    </tr>
 
-   <tr class="odd">
+   <tr class="even">
     <td class="lien_article" >
       <a class="url" href="qemu">Config and start a virtual machine with QEMU</a>
     </td>
@@ -150,7 +161,7 @@
     </td>
    </tr>
 
-   <tr class="even">
+   <tr class="odd">
     <td class="lien_article" >
       <a class="url" href="sysvinit">Brief SysVinit overview</a>
     </td>

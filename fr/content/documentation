@@ -125,6 +125,16 @@
    </tr>
 
    <tr class="odd">
+    <td class="lien_article">
+      <a class="url" href="upgrade-nutyx">Mettre à jour la distribution avec upgrade-nutyx</a>
+    </td>
+    <td>
+     Vous souhaitez utiliser une methode de mise à jour automatisée.
+     Lancez-vous :) .
+    </td>
+   </tr>
+
+   <tr class="even">
     <td class="lien_article" >
       <a class="url" href="setup-http">Mise en place d'un serveur HTTP</a>
     </td>
@@ -135,7 +145,7 @@
     </td>
    </tr>
 
-   <tr class="even">
+   <tr class="odd">
     <td class="lien_article" >
       <a class="url" href="setup-nfs">Mise en place d'un serveur NFS</a>
     </td>
@@ -148,7 +158,7 @@
     </td>
    </tr>
 
-   <tr class="odd">
+   <tr class="even">
     <td class="lien_article" >
       <a class="url" href="setup-firewall">Mise en place d'un parefeu simple avec Iptables</a>
     </td>
@@ -159,7 +169,7 @@
     </td>
    </tr>
 
-   <tr class="even">
+   <tr class="odd">
     <td class="lien_article" >
       <a class="url" href="install-nutyx#5">Produire une ISO installable</a>
     </td>
@@ -170,7 +180,7 @@
     </td>
    </tr>
 
-   <tr class="odd">
+   <tr class="even">
     <td class="lien_article" >
       <a class="url" href="qemu">Configurer et Lancer une machine virtuelle avec QEMU</a>
     </td>
@@ -181,7 +191,7 @@
     </td>
    </tr>
 
-   <tr class="even">
+   <tr class="odd">
     <td class="lien_article" >
      <a class="url" href="sysvinit">Bref aperçu de SysVinit</a>
     </td>
