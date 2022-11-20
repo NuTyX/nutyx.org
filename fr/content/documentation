@@ -10,6 +10,7 @@
      Tous les termes utilisés dans la documentation sont référencés et expliqués dans ce petit lexique
     </td>
    </tr>   
+
    <tr class="odd">
     <td class="lien_article">
       <a class="url" href="install">Installation automatique sur une seule partition</a>
@@ -20,6 +21,7 @@
      Pour ceux qui souhaitent une première approche de l'installation sans se prendre la tête.
     </td>
    </tr>
+
    <tr class="even">
     <td class="lien_article">
       <a class="url" href="install-nutyx#4">Installation manuelle complète en utilisant une ISO LIVE</a>
@@ -31,6 +33,7 @@
      Vous pouvez utiliser n'importe quelle ISO live.
     </td>
    </tr>
+
    <tr class="odd">
     <td class="lien_article">
       <a class="url" href="finish-up">Finalisation de votre installation.</a>
@@ -41,6 +44,7 @@
     <td>
     </td>
    </tr>
+
    <tr class="even">
     <td class="lien_article" >
        <a class="url" href="base-commands">Les commandes de base</a>
@@ -50,10 +54,12 @@
     </td>
    </tr>
    </table>
+
  <h2>Guides de l'utilisateur</h2>
 
   <table width="100%" cellspacing="0">
-   <tr class="even">
+
+   <tr class="odd">
     <td class="lien_article">
      <a class="url" href="configuration-files">Fichiers de configuration</a>
     </td>
@@ -62,7 +68,8 @@
      Ne cherchez plus, ils sont tous listés.
     </td>
    </tr>
-   <tr class="odd">
+
+   <tr class="even">
     <td class="lien_article">
       <a class="url" href="grub-install">Mise en place de GRUB</a>
     </td>
@@ -73,6 +80,39 @@
      sur votre machine et de façon indépendante. Cet article vous montre la procédure en 3 ou 4 écrans.
     </td>
    </tr>
+
+   <tr class="odd">
+    <td class="lien_article">
+      <a class="url" href="change-boot-kernel">Changer de kernel de boot par défaut</a>
+    </td>
+    <td>
+     Vous souhaitez installer un kernel LTS à la place du dernier kernel stable installé par défaut
+     lors de l'installation de votre NuTyX,
+     Cet article vous montre la procédure.
+    </td>
+   </tr>
+
+   <tr class="even">
+    <td class="lien_article">
+      <a class="url" href="initrd">Construire une initrd</a>
+    </td>
+    <td>
+     Vous souhaitez utiliser une initrd avec votre kernel LTS.
+     Cet article vous montre la procédure.
+    </td>
+   </tr>
+
+   <tr class="odd">
+    <td class="lien_article">
+      <a class="url" href="default-init-system">Changer le système d'initilisation par défaut</a>
+    </td>
+    <td>
+     Vous souhaitez changer de système d'initialisation par défaut.
+     Cet article vous montre la procédure.
+     Suivez le guide :) .
+    </td>
+   </tr>
+
    <tr class="even">
     <td class="lien_article" >
       <a class="url" href="nutyx-man">Manuel de NuTyX de la version 22.10</a>
@@ -83,6 +123,7 @@
     <td>
     </td>
    </tr>
+
    <tr class="odd">
     <td class="lien_article" >
       <a class="url" href="setup-http">Mise en place d'un serveur HTTP</a>
@@ -117,7 +158,6 @@
      tout en protégeant votre machine.
     </td>
    </tr>
-   </tr>
 
    <tr class="even">
     <td class="lien_article" >
@@ -149,7 +189,9 @@
      Une brève description pas à pas sur SysVinit.
      Décrit les niveaux d'exécution et fournit l'essentiel pour aider un utilisateur à comprendre et à gérer rapidement son système.
    </tr>
+
   </table>
+
  <h2>Guides du contributeur</h2>
 
   <table width="100%" cellspacing="0">
@@ -163,6 +205,7 @@
      <a href="dictionary#ID005">paquets</a> <a href="dictionary#ID000">cards</a>.
     </td>
    </tr>
+
    <tr class="even">
     <td class="lien_article" >
       <a class="url" href="collections">Les différentes collections</a>
@@ -174,6 +217,7 @@
      Les collections sont classés en 5 ensembles distincts. Chaque ensemble a une responsabilité bien précise.
     </td>
    </tr>
+
    <tr class="odd">
     <td class="lien_article" >
       <a class="url" href="mybld">Comment construire ses paquets dans une chroot ?</a>
@@ -182,4 +226,14 @@
      Cet article explique comment construire vos paquets dans un environnement isolé.
     </td>
    </tr>
+
+   <tr class="even">
+    <td class="lien_article" >
+      <a class="url" href="pkgfile">Explication de la syntaxe du fichier Pkgfile</a>
+    </td>
+    <td>
+     Cet article donne tous les détails à propos du fichier Pkgfile.
+    </td>
+   </tr>
+
   </table>
