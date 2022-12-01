@@ -96,14 +96,23 @@ KEYMAP=fr_CH-latin1.map</kbd></pre>
         <img src="graphics/nutyx-man/EnterDomain.png">
        <p>
        Le fichier <b>/etc/sysconfig/network</b> contient toutes les informations réseau.
-       <pre class="output"><kbd>HOSTNAME='nutyx'        # Hostname of this machine
-MANAGER=''              # Network manager (wicd/networkmanager/cli/nothing)
-NETWORKWAIT='no'        # Wait or not for network
-LINKDELAY='15'          # init delay for initialisation of Networkmanager
-NETWORKDELAY='0'        # init delay to wait after initialisation of Networkmanager</kbd></pre>
+       <pre class="output"><kbd># Hostname of this machine
+HOSTNAME='nutyx'
+
+# Network manager (connman/networkmanager/cli/nothing)
+MANAGER=''
+
+# Wait or not for network
+NETWORKWAIT='no'
+
+# init delay for initialisation of Networkmanager
+LINKDELAY='15'
+
+# init delay to wait after initialisation of Networkmanager
+NETWORKDELAY='0'</kbd></pre>
          Le script s'occupant du réseau s'adaptera en fonction de l'application installée.
         <p>
-         Si <b>wicd</b> est trouvé, le service wicd sera lancé, si <b>networkmanager</b> est trouvé, le service networkmanager sera lancé.
+         Si <b>connman</b> est trouvé, le service connman sera lancé, si <b>networkmanager</b> est trouvé, le service networkmanager sera lancé.
         <p>
          Si les 2 applications sont installées, c'est le service networkmanager qui sera lancé.
         <p>
