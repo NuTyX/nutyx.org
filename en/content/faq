@@ -104,7 +104,7 @@
     <p>
      As default, NuTyX does not activate the root account but, if you wish to compile your own packages, it may be a good idea to activate the root account.
      It's very simple, type:
-     <pre class="command_user"><kbd>nu</kbd></pre>
+     <pre class="command_user"><kbd>sudo setup-nutyx -cu</kbd></pre>
      and choose <b>root</b> as user
      <p>
        <img src="graphics/faq/ActivateRoot1.png" alt="Figure 1: Specify the root account" title="Figure 1: Specify the root account"/>
