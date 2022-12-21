@@ -59,9 +59,9 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 582f497fa9148d44d623e078dcfcf6dece224b5c
+        SHA1 64bits: 31ba2190a5dba71a9c73dfd3db9cfa3ea71b1f96
      <td>
-       Environ 769.7 MO
+       Environ 806 MO
 
    </tr>
 
@@ -78,10 +78,10 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: ff1d14255831c5f46a9e5dc68f30e5e4837c6059
+        SHA1 64bits: 1457e330ce06e8af53059e80a4175bdfc8ce7998
 
       <td>
-       Environ 1.1 GO
+       Environ 1.2 GO
 
    </tr>
 
@@ -99,10 +99,10 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: bdfad5124b88815f9d362e76fd79d423479a5240
+        SHA1 64bits: 61ecb364241b61b315af278fbf3c5fde68267421
 
     <td>
-       Environ 1.4 GO
+       Environ 1.5 GO
 
    </tr>
 
@@ -119,7 +119,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 657578d54da2684c6d633685a1d2f3b20d7ff5cc
+        SHA1 64bits: 0b31360d4860afa3ae6cf20347e993bbabe5e9d5
 
     <td>
        Environ 1.5 GO
@@ -139,9 +139,9 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 13e5e96c6631d8f1a91a1c1e554182e2426210af
+        SHA1 64bits: 635b202c2ef4bfcada5305f8d89f00fb0e918210
     <td>
-       Environ 1.4 GO
+       Environ 1.5 GO
 
    </tr>
 
@@ -160,10 +160,10 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: c7919d28bfc069d662dbc3e8f0c6fd63bdbaa928
+        SHA1 64bits: fb163739035ff15ca884aff2495ce2c8d9f25a9f
 
     <td>
-      Environ 1.4 GO
+      Environ 1.5 GO
 
    </tr>
 
@@ -179,7 +179,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: fa86de2422968b4d5574cd0a4b3d0f33214b7c38
+        SHA1 64bits: 05833d540e5be7f3092c9eb5dd77a064e5d13ac0
     <td>
        Environ 1.5 GO
 
@@ -198,9 +198,9 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: a143b167330b1019a56d5494beef84bc3dd7db56
+        SHA1 64bits: 23f6eee72be39699304555520bbe3e1f0082e1c8
     <td>
-      Environ 1.5 GO
+      Environ 1.6 GO
 
    </tr>
 
@@ -216,7 +216,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 0b1cc2e17f98d79c744b535684cce65e009e9e9c
+        SHA1 64bits: 2d3b150b0fc232f951f93734b6ab65e8243f3e3b
       <td>
        Environ 1.9 GO
 
@@ -234,7 +234,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 293c0a63e5d83836a2e14c23e084bf14e8f60317
+        SHA1 64bits: 5f3cc042b2998dd0afbce607c1f156ffea0ff871
       <td>
        Environ 1.7 GO
 
@@ -252,31 +252,14 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 0af77a930d0f76ba86f3a5c5e5612df2bcf71683
+        SHA1 64bits: c0bd0817a01d161945074abb6b03389c345b279c
       <td>
        Environ 1.7 GO
 
    </tr>
 
+ 
    <tr class="even"> 
-
-    <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.12.0-BUDGIE.iso"><img src="../graphics/downloads/budgie.png" alt="logo budgie"/><br/>BUDGIE 64bits</a>
-    <td>
-       <p>
-        L'ISO contient le bureau BUDGIE comme interface graphique.
-       <p>
-        Système d'initialisation: SystemV et systemd
-       <p>
-        kernel: Dernier kernel stable.
-       <p>
-        SHA1 64bits: 91a29489c7c583bc6c5dba6ac655677fe62e5351
-      <td>
-       Environ 1.5 GO
-
-   </tr>
-
-   <tr class="odd"> 
 
     <td class="lien_article">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.12.0-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME 64bits</a>
@@ -288,13 +271,13 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 17a0dfe55819151af44447fb7f9ed58884058b97 
+        SHA1 64bits: bbf2ef1515e0f8b89c63b2c14b0f443b83280b0a
       <td>
        Environ 1.7 GO
 
    </tr>
 
-   <tr class="even"> 
+   <tr class="odd"> 
 
     <td class="lien_article">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-22.12.0-KDE5.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE 64bits</a>
@@ -306,7 +289,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 9f95a18bbf707c0a1398355f92ce05bac52ad3ea
+        SHA1 64bits: c37644a1117cc722bbd6d06cc3e1dfda9f73aced
       <td>
        Environ 2.0 GO
 
