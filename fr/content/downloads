@@ -349,7 +349,7 @@ sdc  8:0:0:0    disk TDKMedia Trans-It_Drive  PMAP 07991E033A9CAF0E usb</pre>
  <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
    La commande qui suit va supprimer toutes les données qui se trouvent sur la clé.
   </div>
-   <pre class="command"><kbd>dd if=$LFS/NuTyX_x86_64-22.12.0-BASE.iso of=/dev/sdX status=progress
+   <pre class="command"><kbd>dd if=/chemin/vers/l'/iso/NuTyX_x86_64-22.12.0-BASE.iso of=/dev/sdX status=progress
 sync</kbd></pre>  <p>
    Si vous êtes sous Windows:
   <p>

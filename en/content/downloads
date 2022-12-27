@@ -311,7 +311,7 @@ sdc  8:0:0:0    disk TDKMedia Trans-It_Drive  PMAP 07991E033A9CAF0E usb</pre>
   <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
    The following command will delete all data that is on the USB key.
   </div>
-  <pre class="command"><kbd>dd if=$LFS/NuTyX_x86_64-22.12.0-BASE.iso of=/dev/sdX status=progress
+  <pre class="command"><kbd>dd if=/path/to/the/iso/NuTyX_x86_64-22.12.0-BASE.iso of=/dev/sdX status=progress
 sync</kbd></pre>
    If you are using Windows:
   <p>it is easier to burn the ISO image onto a CD-RW (if possible) ...
