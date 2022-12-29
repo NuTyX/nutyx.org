@@ -53,6 +53,16 @@
 
   <table width="100%" cellspacing="0">
 
+   <tr class="even">
+    <td class="lien_article">
+     <a class="url" href="configuration-files">Configurations files of NuTyX</a>
+    </td>
+    <td>
+     You are looking for the location of your NuTyX configuration files.
+     Look no further, they are all listed.
+    </td>
+   </tr>
+
    <tr class="odd">
     <td class="lien_article" >
       <a class="url" href="grub-install">Setting up GRUB</a>
