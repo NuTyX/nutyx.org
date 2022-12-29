@@ -106,9 +106,12 @@
    Provides the list of package build dependencies.
   <h3>run</h3>
    Provides the list of working dependencies of the package.
+  <h3>categories</h3>
+   Normally detected automatically, if not, you can specify them here:
+   <pre class="output">categories=(Office Graphics Education)</pre>
   <h3>set</h3>
    Add the package to the specified package set(s)
-   <pre class="output">(gnome cinnamon)</pre>
+   <pre class="output">set=(gnome cinnamon)</pre>
   <h3>alias</h3>
    Specifies a synonymous name.
    The synonym must be unique, ie it cannot be called by the name of another package in the same collection.
