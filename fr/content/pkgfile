@@ -106,9 +106,12 @@
    Fourni la liste des dépendances de compilation du paquet.
   <h3>run</h3>
    Fourni la liste des dépendances de fonctionnement du paquet.
+  <h3>categories</h3>
+   Normalement détectées automatiquement, si ce n'est pas le cas, on peut les spécifier ici:
+   <pre class="output">categories=(Office Graphics Education)</pre>
   <h3>set</h3>
    Ajoute le paquet au(x) jeu(x) de paquets spécifié(s)
-   <pre class="output">(gnome cinnamon)</pre>
+   <pre class="output">set=(gnome cinnamon)</pre>
   <h3>alias</h3>
    Spécifie un nom synonyme.
    Le synonyme doit etre unique, autrement dit, il ne peut pas s'appeler par le nom d'un autre paquet dans la même collection.

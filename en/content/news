@@ -1,9 +1,9 @@
-<h1>Latest news 2022-11-03</h1>
+<h1>Latest news 2022-12-21</h1>
 
 
- <h2>NuTyX 22.10.0 available with cards 2.6.3</h2>
+ <h2>NuTyX 22.12.0 available with cards 2.6.3</h2>
   <p>
-   The NuTyX team is happy to announce the new version of NuTyX 22.10.0 and cards 2.6.3.
+   The NuTyX team is happy to announce the new version of NuTyX 22.12.0 and cards 2.6.3.
   <p>
    New toolchain gcc 12.2.0, glibc 2.36 and binutils 2.39.
   <p>
@@ -47,7 +47,7 @@
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
-   13 desktops are now available in:
+   12 desktops are now available in:
    XORG,
    OPENBOX,
    LXDE,
@@ -64,14 +64,10 @@
    They are available on the <a href="downloads">download page.</a>
 
  <h2>What's new ?</h2>
-  <h3>setup-nutyx</h3>
   <p>
-   The setup-nutyx command is used when installing NuTyX.
-   It is now again possible to install the GRUB boot procedure independently.
-   GRUB can be installed in 32-bit or 64-bit modus on an EFI machine.
+   When trying to delete an installed dependency, cards avoid to delete it and shows who's using this dependency.
   <p>
-   Network configuration: if only one adapter is found, it will be directly used for the configuration.
-   No need to select any.
+   As Python version 2 is now obsolet, it is removed from repository.
  <h2>Upgrade process</h2>
   <p>
    A simple:

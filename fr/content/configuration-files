@@ -48,9 +48,9 @@
  <h2>Chargement manuel de modules du kernel, Parametres de chargement des modules du kernel</h2>
  <ul>
   <li>
-   /etc/profile.d/modules.d/
+   /etc/sysconfig/profile.d/modules.d/
   <li>
-   /etc/modprobe.d/
+   /etc/sysconfig/modprobe.d/
  </ul>
  <h2>Création de fichiers/ dossiers (normalement temporaires) au démarrage</h2>
  <ul>
