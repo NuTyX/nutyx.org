@@ -1,9 +1,9 @@
-<h1>Groupes et utilisateur systèmes</h1>
+<h1>Utilisateurs et groupes systèmes</h1>
 
  <h2>Table des UID et GID</h2>
  <div style="width:22em;margin-left:auto;margin-right:auto;">
   <table>
-    <caption><EM>Liste des groupes et utilisateurs systèmes:</EM></caption>
+    <caption><EM>Liste des utilisateurs et groupes systèmes:</EM></caption>
      <tr class="sidebar">
       <th>
        Nom
@@ -107,6 +107,23 @@
        29
 
      <tr>
+      <td>
+       wheel
+      <td>
+
+      <td>
+       30
+
+     <tr>
+      <td>
+       mail
+      <td>
+
+      <td>
+       34
+
+
+    <tr>
       <td>
        mysql
       <td>
