@@ -246,4 +246,14 @@
     </td>
    </tr>
 
+   <tr class="odd">
+    <td class="lien_article" >
+      <a class="url" href="system-users">Tableau des utilisateurs et groupes système</a>
+    </td>
+    <td>
+     Tableau de référence des utilisateurs et groupes du système NuTyX.
+    </td>
+   </tr>
+
+
   </table>
