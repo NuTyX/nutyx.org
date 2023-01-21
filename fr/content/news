@@ -1,39 +1,39 @@
 <h1>Dernière nouvelle 21-12-2022</h1>
 
 
- <h2>NuTyX 22.12.0 disponible avec cards 2.6.3</h2>
+ <h2>NuTyX 23.01.1 disponible avec cards 2.6.3</h2>
   <p>
-   Nous sommes heureux d'annoncer la nouvelle version de NuTyX 22.12.0 et cards 2.6.3.
+   Nous sommes heureux d'annoncer la nouvelle version de NuTyX 23.01.1 et cards 2.6.3.
   <p>
-   Nouvelle toolchain gcc 12.2.0, glibc 2.36 et binutils 2.39.
+   Nouvelle toolchain gcc 12.2.0, glibc 2.36 et binutils 2.40.
   <p>
    Le serveur graphique Xorg-server version 21.1.6.
-   la librairie Mesa 3D en 22.2.3, Gtk4 4.8.2
-   et Qt 6.4.1.
+   la librairie Mesa 3D en 22.3.3, Gtk4 4.8.3
+   et Qt 6.4.2.
   <p>
    L'interpreteur Python est mis à jour en version 3.11.1.
   <p>
-   L'environnement de bureau XFCE est mis à jour en version 4.18.0.
+   L'environnement de bureau XFCE est mis à jour en version 4.18.1.
   <p>
    L'environnement de bureau MATE est en version 1.26.0.
   <p>
-   L'environnement de bureau GNOME est également mis à jour en version 43.0
+   L'environnement de bureau GNOME est également mis à jour en version 43.2
   <p>
-   L'environnement de bureau KDE est disponible en Plasma 5.26.4, Framework 5.101.0
-   et les applications en 22.12.0.
+   L'environnement de bureau KDE est disponible en Plasma 5.26.5, Framework 5.102.0
+   et les applications en 22.12.1.
   <p>
-   Les navigateurs disponibles sont entre autre: Firefox 108.0.1, Chromium 108.0.5359.124, Epiphany 40.0, etc
+   Les navigateurs disponibles sont entre autre: Firefox 109.0.1, Chromium 109.0.5414.74, Epiphany 43.0, etc
   <p>
-   De nombreuses applications on été mise à jour également comme Telegram-desktop 4.1.1,
-   Thunderbird 102.6.0, Scribus 1.5.8, Libreoffice 7.4.3.2, Gimp 2.10.32, etc.
+   De nombreuses applications on été mise à jour également comme Telegram-desktop 4.5.3,
+   Thunderbird 102.6.1, Scribus 1.5.8, Libreoffice 7.4.4.2, Gimp 2.10.32, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.14.302, 4.19.269, 5.4.228, 5.10.160 et 5.15.84.
-   et la dernière version stable 6.0.14.
+   4.14.303, 4.19.269, 5.4.228, 5.10.160, 5.15.84 et 6.0.19
+   et la dernière version stable 6.1.
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.302">kernel 4.14.302 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.303">kernel 4.14.303 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.269">kernel 4.19.269 changelog</a>
   <p>
@@ -44,6 +44,8 @@
    <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.84">kernel 5.15.84 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.0.14">kernel 6.0.14 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1">kernel 6.1 changelog</a>
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
