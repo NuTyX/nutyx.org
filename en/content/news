@@ -67,9 +67,11 @@
   <p>
    They are available on the <a href="downloads">download page.</a>
 
- <h2>What's new ?</h2>
+ <h2>Fixes</h2>
   <p>
-   Nothing special with this version. Nevertheless, more then 1000 commits were apply since the 22.12 version.
+   Impossible to choose any other kernel then the default one when generating an ISO.
+  <p>
+   More then 1000 commits have been applied since the 22.12 version.
 
  <h2>Upgrade process</h2>
   <p>

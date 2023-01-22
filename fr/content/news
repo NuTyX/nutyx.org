@@ -67,9 +67,12 @@
   <p>
    Elles sont disponibles sur <a href="downloads">la page de téléchargement.</a>
 
- <h2>Quoi de neuf ?</h2>
+ <h2>Bugs</h2>
+
   <p>
-   Pas de fix spécifique avec cette version. Néanmoins plus de 1000 commits ont été appliqués depuis la version 22.12
+   Impossible de choisir un autre kernel que le kernel par défaut pour la construction d'une ISO.
+  <p>
+   Plus de 1000 commits ont été appliqués depuis la version 22.12 .
    
  <h2>Mise à jour</h2>
   <p>
