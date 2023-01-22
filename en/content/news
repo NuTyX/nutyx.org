@@ -3,13 +3,15 @@
 
  <h2>NuTyX 23.01.1 available with cards 2.6.3</h2>
   <p>
-   The NuTyX team is happy to announce the new version of NuTyX 23.01.1 and cards 2.6.3.
+   The NuTyX team is happy to announce the new version of NuTyX 23.01.1 and cards 2.6.3 .
   <p>
-   New toolchain gcc 12.2.0, glibc 2.36 and binutils 2.40.
+   New toolchain gcc 12.2.0, glibc 2.36 and binutils 2.40 .
+  <p>
+   SysV in 3.06 and systemd in 252.4 .
   <p>
    The xorg-server graphics server version 21.1.6,
    the Mesa 3D library in 22.3.3, Gtk4 4.8.3
-   and Qt 6.4.2
+   and Qt 6.4.2 .
   <p>
    The python interpreter is updated to version 3.11.1.
   <p>
@@ -67,9 +69,8 @@
 
  <h2>What's new ?</h2>
   <p>
-   When trying to delete an installed dependency, cards avoid to delete it and shows who's using this dependency.
-  <p>
-   As Python version 2 is now obsolet, it is removed from repository.
+   Nothing special with this version. Nevertheless, more then 1000 commits were apply since the 22.12 version.
+
  <h2>Upgrade process</h2>
   <p>
    A simple:

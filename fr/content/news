@@ -3,9 +3,11 @@
 
  <h2>NuTyX 23.01.1 disponible avec cards 2.6.3</h2>
   <p>
-   Nous sommes heureux d'annoncer la nouvelle version de NuTyX 23.01.1 et cards 2.6.3.
+   Nous sommes heureux d'annoncer la nouvelle version de NuTyX 23.01.1 et cards 2.6.3 .
   <p>
-   Nouvelle toolchain gcc 12.2.0, glibc 2.36 et binutils 2.40.
+   Nouvelle toolchain gcc 12.2.0, glibc 2.36 et binutils 2.40 .
+  <p>
+   SysV en 3.06 et Systemd en 252.4 .
   <p>
    Le serveur graphique Xorg-server version 21.1.6.
    la librairie Mesa 3D en 22.3.3, Gtk4 4.8.3
@@ -67,9 +69,7 @@
 
  <h2>Quoi de neuf ?</h2>
   <p>
-   Si on essai de supprimer une dépendance, cards refuse de supprimer le paquet et affiche les paquets qui l'utilisent
-  <p>
-   Etant une version obsolète, Python version 2 a été retiré des dépots.
+   Pas de fix spécifique avec cette version. Néanmoins plus de 1000 commits ont été appliqués depuis la version 22.12
    
  <h2>Mise à jour</h2>
   <p>
@@ -78,7 +78,7 @@
 
  <h2>Remerciements</h2>
   <p>
-   Avec un merci spécial à Linux pro Magazine pour la publication d'un article sur Nutyx.
+   Avec un merci spécial à Linux pro Magazine pour la publication d'un article sur NuTyX.
   <p>
    Avec nos remerciements à l'équipe BLFS qui a aidé à résoudre quelques problèmes.
   <p>
