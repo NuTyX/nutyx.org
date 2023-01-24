@@ -4,7 +4,7 @@
             NuTyX provides several kernel. 
         <p> 
             To list them : 
-            <pre class="command_user"><kbd>search kernel</kbd></pre>
+            <pre class="command_user"><kbd>cards search kernel</kbd></pre>
             <pre class="output">(cli-extra) kernel-414 4.14.260 The 4.14 longterm support Linux Kernel version
 ...
 (cli-extra) kernel-419 4.19.223 The 4.19 longterm support Linux Kernel version
@@ -13,14 +13,16 @@
 ...
 (cli-extra) kernel-510 5.10.89 The 5.10 longterm support Linux Kernel version 
 ...
-(base) kernel 5.15.12 The latest stable kernel version
+(cli-extra) kernel-515 5.15.12 The 5.15 longterm support Linux Kernel version
+..
+(cli-extra) kernel-61 6.1.8 The 6.1 longterm support Linux Kernel version
 ..</pre>
         <p> 
             For this example, we are going to use the "kernel-419".
     <h2>Kernel installation</h2>
         <p> 
             To install the kernel (4.19) :
-            <pre class="command_user"><kbd>get kernel-419</kbd></pre>
+            <pre class="command_user"><kbd>sudo cards install kernel-419</kbd></pre>
         <p> 
             More information about cards commands :
             <a href ='base-commands'>base commands</a>
