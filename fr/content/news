@@ -1,9 +1,11 @@
 <h1>Dernière nouvelle 21-12-2022</h1>
 
 
- <h2>NuTyX 23.01.1 disponible avec cards 2.6.3</h2>
+ <h2>NuTyX 23.01.3 disponible avec cards 2.6.3</h2>
   <p>
-   Nous sommes heureux d'annoncer la nouvelle version de NuTyX 23.01.1 et cards 2.6.3 .
+   Aver la sortie de cette nouvelle version, nous célébrons également les 15 années d'existances de la distribution.
+  <p>
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.01.3 et cards 2.6.3 .
   <p>
    Nouvelle toolchain gcc 12.2.0, glibc 2.36 et binutils 2.40 .
   <p>
@@ -22,7 +24,7 @@
    L'environnement de bureau GNOME est également mis à jour en version 43.2
   <p>
    L'environnement de bureau KDE est disponible en Plasma 5.26.5, Framework 5.102.0
-   et les applications en 22.12.1.
+   et les applications en 23.01.1.
   <p>
    Les navigateurs disponibles sont entre autre: Firefox 109.0.1, Chromium 109.0.5414.74, Epiphany 43.0, etc
   <p>
@@ -30,24 +32,22 @@
    Thunderbird 102.6.1, Scribus 1.5.8, Libreoffice 7.4.4.2, Gimp 2.10.32, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.14.303, 4.19.269, 5.4.228, 5.10.160, 5.15.84 et 6.0.19
-   et la dernière version stable 6.1.
+   4.14.304, 4.19.271, 5.4.230, 5.10.165, 5.15.90
+   et la dernière version stable 6.1.8 .
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.303">kernel 4.14.303 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.304">kernel 4.14.304 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.269">kernel 4.19.269 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.270">kernel 4.19.270 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.228">kernel 5.4.228 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.230">kernel 5.4.230 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.160">kernel 5.10.160 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.165">kernel 5.10.165 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.84">kernel 5.15.84 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.90">kernel 5.15.90 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.0.14">kernel 6.0.14 changelog</a>
-  <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1">kernel 6.1 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.8">kernel 6.1.8 changelog</a>
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
@@ -67,7 +67,7 @@
   <p>
    Elles sont disponibles sur <a href="downloads">la page de téléchargement.</a>
 
- <h2>Bugs</h2>
+ <h2>Bugs corrigés</h2>
 
   <p>
    Impossible de choisir un autre kernel que le kernel par défaut pour la construction d'une ISO.
@@ -81,7 +81,7 @@
 
  <h2>Remerciements</h2>
   <p>
-   Avec un merci spécial à Linux pro Magazine pour la publication d'un article sur NuTyX.
+   Avec un merci spécial à Linux pro Magazine pour la publication d'un article sur NuTyX disponible en mars 2023.
   <p>
    Avec nos remerciements à l'équipe BLFS qui a aidé à résoudre quelques problèmes.
   <p>
