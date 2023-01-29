@@ -23,7 +23,7 @@
     Once the GIT project in place, we move to the root of it,
     indeed the command <i><b>mybld</b></i> uses information from the GIT
     (VERSION, USERNAME, EMAIL, etc).
-  <h3>Go to the root of the projet</h3>
+  <h3>Go to the root of the project</h3>
    The GIT project is cloned.
    We need to go to the root of it.
    <pre class="command_user"><kbd>cd &ltbranch&gt</kbd></pre>
