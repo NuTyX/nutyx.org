@@ -32,7 +32,7 @@
    Ce tutoriel propose 2 méthodes.
    <h3>Méthode 1</h3>
     Copiez-Collez les lignes ci-dessous en prenant soin de remplacer le nom de l'utilisateur (ici <b><i>jp</i></b>) par le votre:
-    <pre class="command_user"><kbd>echo "%hourly 27,57 DISPLAY=:0.0  /sbin/upgrade-nutyx" | sudo tee -a /var/spool/fcron/jp.orig"</kbd></pre>
+    <pre class="command_user"><kbd>echo "%hourly 27,57 DISPLAY=:0.0  /sbin/upgrade-nutyx" | sudo tee -a /var/spool/fcron/jp.orig</kbd></pre>
     <pre class="output">[sudo] Mot de passe de jp :</pre>
     <pre class="command_user"><kbd>sudo chown fcron:fcron /var/spool/fcron/jp.orig</kbd></pre>
     <pre class="command_user"><kbd>sudo chmod 640 /var/spool/fcron/jp.orig</kbd></pre>
