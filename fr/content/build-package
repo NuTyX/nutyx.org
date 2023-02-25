@@ -119,17 +119,33 @@ echo "La variable name contient la valeur: ${name}"</kbd></pre>
     Les exemples qui suit sont directement tirés de recettes existantes.
    <ul>
     <li>
-    On souhaite garder la partie gauche de la variable avant un caractère donnö ici '-'
+    On souhaite garder la partie gauche de la variable avant un caractère donné ici '-'
     <pre class="command_user"><kbd>name=qt6-tools
 basename=${name%-*}
     </kbd></pre>
     La variable basename contient "qt6"
+
     <li>
     On souhaite garder la partie droite de la variable après un charactère donné ici '-'
     <pre class="command_user"><kbd>name=qt6-tools
 basename=${name##*-}
     </kbd></pre>
     La variable basename contient "tools"
+
+    <li>
+    On souhaite garder les deux premières lettres de la variable
+    <pre class="command_user"><kbd>name=qt6-tools
+basename=${name:0:2}
+    </kbd></pre>
+    La variable basename contient "qt"
+
+    <li>
+    On souhaite supprimer une partie de la variable, ici la chaîne '6-'
+    <pre class="command_user"><kbd>name=qt6-tools
+basename=${name/6-/}
+    </kbd></pre>
+    La variable basename contient "qttools"
+
    </ul>
 
   <h3>Variables prédéfinies utilisables dans une recette</h3>
