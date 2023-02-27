@@ -114,7 +114,7 @@ echo "La variable name contient la valeur: ${name}"</kbd></pre>
 
   <h3>Manipulations de variables</h3>
    <p>
-    Dans une recette, il est très fréquent de devoir manipuler/créer/ une variable en partant d'une variable existante.
+    Dans une recette, il est très fréquent de devoir manipuler/créer une variable en partant d'une variable existante.
    <p>
     Les exemples qui suit sont directement tirés de recettes existantes.
    <ul>
@@ -124,28 +124,28 @@ echo "La variable name contient la valeur: ${name}"</kbd></pre>
 basename=${name%-*}
     </kbd></pre>
     La variable basename contient "qt6"
-
+    <p>
     <li>
     On souhaite garder la partie droite de la variable après un charactère donné ici '-'
     <pre class="command_user"><kbd>name=qt6-tools
 basename=${name##*-}
     </kbd></pre>
     La variable basename contient "tools"
-
+    <p>
     <li>
     On souhaite garder les deux premières lettres de la variable
     <pre class="command_user"><kbd>name=qt6-tools
 basename=${name:0:2}
     </kbd></pre>
     La variable basename contient "qt"
-
+    <p>
     <li>
     On souhaite supprimer une partie de la variable, ici la chaîne '6-'
     <pre class="command_user"><kbd>name=qt6-tools
 basename=${name/6-/}
     </kbd></pre>
     La variable basename contient "qttools"
-
+    <p>
    </ul>
 
   <h3>Variables prédéfinies utilisables dans une recette</h3>

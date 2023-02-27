@@ -121,6 +121,43 @@ echo "The variable name contains the value: ${name}"</pre>
      <pre class="command" ><kbd>sh DeclareVar</kbd></pre>
      <pre class="output" >The variable name contains the value: kernel</pre>
 
+  <h3>Variables manipulations</h3>
+   <p>
+    In a recipe, it's often need to create/modify a variable by using an existing one.
+   <p>
+    The following examples are taken directly from existing recipes.
+   <ul>
+    <li>
+    We want to keep the left part of the variable before a given character here '-'
+    <pre class="command_user"><kbd>name=qt6-tools
+basename=${name%-*}
+    </kbd></pre>
+    The basename variable contains "qt6"
+    <p>
+    <li>
+    We want to keep the right part of the variable after a character given here '-'
+    <pre class="command_user"><kbd>name=qt6-tools
+basename=${name##*-}
+    </kbd></pre>
+    The basename variable contains "tools"
+    <p>
+    <li>
+    We want to keep the first two letters of the variable
+    <pre class="command_user"><kbd>name=qt6-tools
+basename=${name:0:2}
+    </kbd></pre>
+    The basename variable contains "qt"
+    <p>
+    <li>
+    We want to delete part of the variable, here the string '6-'
+
+    <pre class="command_user"><kbd>name=qt6-tools
+basename=${name/6-/}
+    </kbd></pre>
+    The basename variable contains "qttools"
+    <p>
+   </ul>
+
    <h3>Using predefined variables in a recipe</h3>
     <p>
      When you construct a recipe, you will have access to a whole series of predefined variables.
