@@ -81,12 +81,14 @@ make install</pre>
 
     <p>
      Alors on y va <img src="../graphics/smiley-wink.gif" alt="Wink" title="Wink" /> pour un petit cours sur la langage de programmation BASH.
+
    <h3>Déclaration d'une variable</h3>
     <p>
      Déclarer une variable se limite à ceci:
      <pre class="command_user"><kbd>name=monpaquet</kbd></pre>
     <p>
      On déclare la variable <b>name</b> en utilisant le signe égal et la valeur de la variable est à droite du signe égal: <b>monpaquet</b>
+
    <h3>Utilisation d'une variable</h3>
     <p>
      On a appris comment déclarer une variable, c'est bien joli, mais comment fait-on pour l'utiliser, c'est à dire récupérer son contenu ?
@@ -109,6 +111,43 @@ echo "La variable name contient la valeur: ${name}"</kbd></pre>
      Lancez maintenant la commande:
     <pre class="command_user" ><kbd>sh DeclareVar</kbd></pre>
     <pre class="output" >La variable name contient la valeur: kernel</pre>
+
+  <h3>Manipulations de variables</h3>
+   <p>
+    Dans une recette, il est très fréquent de devoir manipuler/créer une variable en partant d'une variable existante.
+   <p>
+    Les exemples qui suit sont directement tirés de recettes existantes.
+   <ul>
+    <li>
+    On souhaite garder la partie gauche de la variable avant un caractère donné ici '-'
+    <pre class="command_user"><kbd>name=qt6-tools
+basename=${name%-*}
+    </kbd></pre>
+    La variable basename contient "qt6"
+    <p>
+    <li>
+    On souhaite garder la partie droite de la variable après un charactère donné ici '-'
+    <pre class="command_user"><kbd>name=qt6-tools
+basename=${name##*-}
+    </kbd></pre>
+    La variable basename contient "tools"
+    <p>
+    <li>
+    On souhaite garder les deux premières lettres de la variable
+    <pre class="command_user"><kbd>name=qt6-tools
+basename=${name:0:2}
+    </kbd></pre>
+    La variable basename contient "qt"
+    <p>
+    <li>
+    On souhaite supprimer une partie de la variable, ici la chaîne '6-'
+    <pre class="command_user"><kbd>name=qt6-tools
+basename=${name/6-/}
+    </kbd></pre>
+    La variable basename contient "qttools"
+    <p>
+   </ul>
+
   <h3>Variables prédéfinies utilisables dans une recette</h3>
     <p>
      Lorsque vous construisez une recette,vous aurez à votre disposition toute une série de variables prédéfinies.
