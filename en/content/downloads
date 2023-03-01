@@ -56,9 +56,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-        SHA1 64bits: 5c16a364e666d44ca387b4ea79a4d91884850a8c
+        SHA1 64bits: fd97927bf77a9f3ca108dfa20535dfb7fcaa0986
       <td>
-       Approx. 806 MO
+       Approx. 736 MO
    </tr>
 
    <tr class="even">
@@ -72,9 +72,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: b2cc8fe18393582d5ab139ad57ac36a6b9fc9d7b
+      SHA1 64bits: 95de8e64d804ed4f2d1ad80d75f4ebfca241eacc
     <td>
-       Approx. 1.2 GO
+       Approx. 1.1 GO
    </tr>
 
 
@@ -89,9 +89,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: 4523bdc24941f00ebc61cceb7031bad7a49c3c67
+      SHA1 64bits: ac915c129c6e61db07bf343ea44657f0771c8aaf
       <td>
-       Approx. 1.5 GO
+       Approx. 1.4 GO
    </tr>
 
 
@@ -106,9 +106,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: ff687c2d790a1298b345fd3f850b17db895adc39
+      SHA1 64bits: da63cdf38c3036106062f18a57d5f5de64170e1a
       <td>
-       Approx. 1.5 GO
+       Approx. 1.4 GO
    </tr>
 
    <tr class="odd">
@@ -122,9 +122,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: 3dc83c500f3aefa755fa03150d57f617a2155719
+      SHA1 64bits: bb39a707f328230a31a3e5a9745695146449b664
       <td>
-       Approx. 1.5 GO
+       Approx. 1.4 GO
    </tr>
 
    <tr class="even">
@@ -138,9 +138,9 @@
      <p>
       kernel: Last stable kernel.
       <p>
-      SHA1 64bits: ba56dfeaefad7199324adddf4bdd27c7e5ac405d
+      SHA1 64bits: 8a9cc9376976edd375e18e9d16360851dca65477
       <td>
-       Approx. 1.5 GO
+       Approx. 1.4 GO
    </tr>
 
    <tr class="odd">
@@ -155,7 +155,7 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: b958bbe1cf8ac80fc7d76ddf7ab47d3b3706aa2a
+      SHA1 64bits: 9196896bed4a00fc774fc666eca22eb84d39425b
     <td>
       Approx. 1.5 GO
 
@@ -173,9 +173,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-       SHA1 64bits: 3de11af6a6f48aa75a268467e87bbf3755f0f4de
+       SHA1 64bits: 9b4af6bf34db669bfa9cc10a090805676cfc304a
     <td>
-       Approx. 1.6 GO
+       Approx. 1.5 GO
 
    </tr>
 
@@ -190,9 +190,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bit: c8c78572123b0889f5ee5472d79f1874b336ad6f
+      SHA1 64bit: 89ede61ac523ccdefdc67fbc66374373ef1cbf44
       <td>
-       Approx. 1.9 GO
+       Approx. 1.8 GO
    </tr>
 
    <tr class="even">
@@ -206,9 +206,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-       SHA1 64bits: 494db006b1ba9c6190a93d29190c35013757de47
+       SHA1 64bits: 86fd9ed29c98b0044ce0d72cc08be95e120bbaf1
       <td>
-       Approx. 1.7 GO
+       Approx. 1.6 GO
    </tr>
 
    <tr class="odd">
@@ -222,12 +222,28 @@
      <p>
       kernel: Last stable kernel.
      <p>
-        SHA1 64bits: 83430a89f2d06319f6fa012f3cd80c5a0019c0d0
+        SHA1 64bits: 2c0d38a8b601dea8bf56dc1ef5f7d6012dec3e23
       <td>
        Approx. 1.7 GO
    </tr>
 
    <tr class="even">
+    <td class="lien_article">
+       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.02.1-BUDGIE.iso"><img src="../graphics/downloads/budgie.png" alt="logo budgie"/><br/>BUDGIE 64bits</a>
+    <td>
+     <p>
+      The ISO contains a BUDGIE desktop.
+     <p>
+      Init system: SystemV and systemd
+     <p>
+      kernel: Last stable kernel.
+     <p>
+        SHA1 64bits: a80a4862603fe90591c17910be445006c80facbe
+      <td>
+       Approx. 1.6 GO
+   </tr>
+
+   <tr class="odd">
     <td class="lien_article">
        <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.02.1-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME 64bits</a>
     <td>
@@ -238,12 +254,12 @@
      <p>
       kernel: Last stable kernel.
      <p>
-        SHA1 64bits: 906f90b052a854c53d3e8cfa3a4b82ac07a9a9f2
+        SHA1 64bits: d0a7a606171dfc75b8fd1ab38b3cb75f270f8fd8
       <td>
-       Approx. 1.7 GO
+       Approx. 1.6 GO
    </tr>
 
-   <tr class="odd">
+   <tr class="even">
     <td class="lien_article">
        <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.02.1-KDE5.iso"><img src="../graphics/downloads/kde.png" alt="logo kde5"/><br/>KDE 64bits</a>
     <td>
@@ -254,9 +270,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: a10bf8ad3dfeac2a11635607a6e67ada6c622bfc
+      SHA1 64bits: e4f1a9ca2fb49e3b09eb7aa3f95a8975849110ba
     <td>
-      Approx. 2.0 GO
+      Approx. 1.9 GO
    </tr>
   </table>
 
