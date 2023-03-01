@@ -1,11 +1,9 @@
 <h1>Dernière nouvelle 01-03-2023</h1>
 
 
- <h2>NuTyX 23.02.0 disponible avec cards 2.6.3</h2>
+ <h2>NuTyX 23.02.1 disponible avec cards 2.6.3</h2>
   <p>
-   Aver la sortie de cette nouvelle version, nous célébrons également les 15 années d'existances de la distribution.
-  <p>
-   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.02.0 et cards 2.6.3 .
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.02.1 et cards 2.6.3 .
   <p>
    Nouvelle toolchain gcc 12.2.0, glibc 2.37 et binutils 2.40 .
   <p>
@@ -29,10 +27,10 @@
    Les navigateurs disponibles sont entre autre: Firefox 110.0, Chromium 109.0.5414.74, Epiphany 43.1, etc
   <p>
    De nombreuses applications on été mise à jour également comme Telegram-desktop 4.6.2,
-   Thunderbird 102.6.1, Scribus 1.5.8, Libreoffice 7.4.4.2, Gimp 2.10.32, etc.
+   Thunderbird 102.8.1, Scribus 1.5.8, Libreoffice 7.5.1.1, Gimp 2.10.34, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.14.307, 4.19.274, 5.4.233, 5.10.170, 5.15.98
+   4.14.307, 4.19.274, 5.4.233, 5.10.170, 5.15.98, 6.1.14
    et la dernière version stable 6.2.1 .
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
@@ -46,6 +44,8 @@
    <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.170">kernel 5.10.170 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.96">kernel 5.15.96 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.14">kernel 6.1.14 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2.1">kernel 6.2.1 changelog</a>
   <p>
@@ -72,8 +72,6 @@
 
   <p>
    Impossible de choisir un autre kernel que le kernel par défaut pour la construction d'une ISO.
-  <p>
-   Plus de 1000 commits ont été appliqués depuis la version 22.12 .
    
  <h2>Mise à jour</h2>
   <p>

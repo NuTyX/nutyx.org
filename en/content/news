@@ -1,9 +1,7 @@
 <h1>Latest news 01-03-2023</h1>
 
 
- <h2>NuTyX 23.0.1 available with cards 2.6.3</h2>
-  <p>
-   This new release is the landmark of the 15 year anniversary of NuTyX.
+ <h2>NuTyX 23.02.1 available with cards 2.6.3</h2>
   <p>
    Spiky and me are happy to announce the new version of NuTyX 23.02.1 and cards 2.6.3 .
   <p>
@@ -29,10 +27,10 @@
    Available browsers are: Firefox 110.0, Chromium 109.0.5414.74, Epiphany 43.1, etc
   <p>
    Many desktop applications have been updated as well like Telegram-desktop 4.6.2,
-   Thunderbird 102.8.0, Scribus 1.5.8, Libreoffice 7.5.1.1, Gimp 2.10.34, etc.
+   Thunderbird 102.8.1, Scribus 1.5.8, Libreoffice 7.5.1.1, Gimp 2.10.34, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.14.307, 4.19.274, 5.4.233, 5.10.170, 5.15.96
+   4.14.307, 4.19.274, 5.4.233, 5.10.170, 5.15.96, 6.1.14
    and the latest stable version 6.2.1 .
   <p>
    The kernel change logs are available here:
@@ -46,6 +44,8 @@
    <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.170">kernel 5.10.170 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.96">kernel 5.15.96 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.14">kernel 6.1.14 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2.1">kernel 6.2.1 changelog</a>
   <p>
