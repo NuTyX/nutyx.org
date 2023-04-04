@@ -1,53 +1,53 @@
-<h1>Dernière nouvelle 01-03-2023</h1>
+<h1>Dernière nouvelle 01-04-2023</h1>
 
 
- <h2>NuTyX 23.02.1 disponible avec cards 2.6.3</h2>
+ <h2>NuTyX 23.04.1 disponible avec cards 2.6.3</h2>
   <p>
-   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.02.1 et cards 2.6.3 .
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.04.1 et cards 2.6.3 .
   <p>
    Nouvelle toolchain gcc 12.2.0, glibc 2.37 et binutils 2.40 .
   <p>
-   SysV en 3.06 et Systemd en 252.4 .
+   SysV en 3.06 et Systemd en 253.0 .
   <p>
-   Le serveur graphique Xorg-server version 21.1.7.
-   la librairie Mesa 3D en 22.3.5, Gtk4 4.8.3
-   et Qt 6.4.2.
+   Le serveur graphique Xorg-server version 21.1.8.
+   la librairie Mesa 3D en 23.0.1, Gtk4 4.10.1
+   et Qt 6.4.3.
   <p>
    L'interpreteur Python est mis à jour en version 3.11.2.
   <p>
-   L'environnement de bureau XFCE est mis à jour en version 4.18.1.
+   L'environnement de bureau XFCE est mis à jour en version 4.18.3.
   <p>
    L'environnement de bureau MATE est en version 1.26.0.
   <p>
-   L'environnement de bureau GNOME est également mis à jour en version 43.3
+   L'environnement de bureau GNOME est également mis à jour en version 44.0
   <p>
-   L'environnement de bureau KDE est disponible en Plasma 5.27.1, Framework 5.103.0
-   et les applications en 22.12.2.
+   L'environnement de bureau KDE est disponible en Plasma 5.27.3, Framework 5.104.0
+   et les applications en 22.12.3.
   <p>
-   Les navigateurs disponibles sont entre autre: Firefox 110.0, Chromium 109.0.5414.74, Epiphany 43.1, etc
+   Les navigateurs disponibles sont entre autre: Firefox 111.0.1, Chromium 111.0.5563.146, Epiphany 44.0, etc
   <p>
-   De nombreuses applications on été mise à jour également comme Telegram-desktop 4.6.2,
-   Thunderbird 102.8.1, Scribus 1.5.8, Libreoffice 7.5.1.1, Gimp 2.10.34, etc.
+   De nombreuses applications on été mise à jour également comme Telegram-desktop 4.7.1,
+   Thunderbird 102.9.1, Scribus 1.5.8, Libreoffice 7.5.1.1, Gimp 2.10.34, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.14.307, 4.19.274, 5.4.233, 5.10.170, 5.15.98, 6.1.14
-   et la dernière version stable 6.2.1 .
+   4.14.311, 4.19.279, 5.4.239, 5.10.176, 5.15.105, 6.1.22
+   et la dernière version stable 6.2.9 .
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.307">kernel 4.14.307 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.311">kernel 4.14.311 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.274">kernel 4.19.274 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.279">kernel 4.19.279 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.233">kernel 5.4.233 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.239">kernel 5.4.239 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.170">kernel 5.10.170 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.176">kernel 5.10.176 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.96">kernel 5.15.96 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.105">kernel 5.15.105 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.14">kernel 6.1.14 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.22">kernel 6.1.22 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2.1">kernel 6.2.1 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2.9">kernel 6.2.9 changelog</a>
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
