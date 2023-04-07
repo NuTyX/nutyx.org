@@ -1,7 +1,7 @@
 <h1>Dernière nouvelle 01-04-2023</h1>
 
 
- <h2>NuTyX 23.04.1 disponible avec cards 2.6.3</h2>
+ <h2>NuTyX 23.04.2 disponible avec cards 2.6.3</h2>
   <p>
    Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.04.1 et cards 2.6.3 .
   <p>
@@ -30,16 +30,16 @@
    Thunderbird 102.9.1, Scribus 1.5.8, Libreoffice 7.5.2.2, Gimp 2.10.34, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.14.311, 4.19.279, 5.4.239, 5.10.177, 5.15.106, 6.1.23
-   et la dernière version stable 6.2.9 .
+   4.14.312, 4.19.280, 5.4.240, 5.10.177, 5.15.106, 6.1.23
+   et la dernière version stable 6.2.10 .
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.311">kernel 4.14.311 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.312">kernel 4.14.312 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.279">kernel 4.19.279 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.280">kernel 4.19.280 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.239">kernel 5.4.239 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.240">kernel 5.4.240 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.177">kernel 5.10.177 changelog</a>
   <p>
@@ -47,7 +47,7 @@
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.23">kernel 6.1.23 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2.9">kernel 6.2.9 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2.10">kernel 6.2.10 changelog</a>
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
@@ -71,7 +71,7 @@
  <h2>Bugs corrigés</h2>
 
   <p>
-   Impossible de choisir un autre kernel que le kernel par défaut pour la construction d'une ISO.
+   Impossible de choisir un autre système de fichier que ext4 kernel lors de l'installation.
    
  <h2>Mise à jour</h2>
   <p>
@@ -79,8 +79,6 @@
    </p><pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
 
  <h2>Remerciements</h2>
-  <p>
-   Avec un merci spécial à Linux pro Magazine pour la publication d'un article sur NuTyX disponible en mars 2023.
   <p>
    Avec nos remerciements à l'équipe BLFS qui a aidé à résoudre quelques problèmes.
   <p>
