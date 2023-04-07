@@ -11,9 +11,9 @@
   <p>
    The xorg-server graphics server version 21.1.8,
    the Mesa 3D library in 23.0.1, Gtk4 4.10.1
-   and Qt 6.4.3 .
+   and Qt 6.5.0.
   <p>
-   The python interpreter is updated to version 3.11.2.
+   The python interpreter is updated to version 3.11.3.
   <p>
    The XFCE desktop environment is updated to version 4.18.3.
   <p>
@@ -21,16 +21,16 @@
   <p>
    The GNOME desktop environment is also updated to version 44.0
    <p>
-   The KDE desktop environment is available in Plasma 5.27.3, Framework 5.104.0
+   The KDE desktop environment is available in Plasma 5.27.4, Framework 5.104.0
    and applications in 22.12.3.
   <p>
    Available browsers are: Firefox 111.0.1, Chromium 111.0.5563.146, Epiphany 44.0, etc
   <p>
    Many desktop applications have been updated as well like Telegram-desktop 4.7.1,
-   Thunderbird 102.9.1, Scribus 1.5.8, Libreoffice 7.5.1.1, Gimp 2.10.34, etc.
+   Thunderbird 102.9.1, Scribus 1.5.8, Libreoffice 7.5.2.2, Gimp 2.10.34, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.14.311, 4.19.279, 5.4.239, 5.10.176, 5.15.105, 6.1.22
+   4.14.311, 4.19.279, 5.4.239, 5.10.177, 5.15.106, 6.1.23
    and the latest stable version 6.2.9 .
   <p>
    The kernel change logs are available here:
@@ -41,11 +41,11 @@
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.239">kernel 5.4.239 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.176">kernel 5.10.176 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.177">kernel 5.10.177 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.105">kernel 5.15.105 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.106">kernel 5.15.106 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.22">kernel 6.1.22 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.23">kernel 6.1.23 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2.9">kernel 6.2.9 changelog</a>
   <p>
