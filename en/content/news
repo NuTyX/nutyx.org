@@ -1,9 +1,9 @@
 <h1>Latest news 01-04-2023</h1>
 
 
- <h2>NuTyX 23.04.1 available with cards 2.6.3</h2>
+ <h2>NuTyX 23.04.2 available with cards 2.6.3</h2>
   <p>
-   Spiky and me are happy to announce the new version of NuTyX 23.04.1 and cards 2.6.3 .
+   Spiky and me are happy to announce the new version of NuTyX 23.04.2 and cards 2.6.3 .
   <p>
    New toolchain gcc 12.2.0, glibc 2.37 and binutils 2.40 .
   <p>
@@ -30,16 +30,16 @@
    Thunderbird 102.9.1, Scribus 1.5.8, Libreoffice 7.5.2.2, Gimp 2.10.34, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.14.311, 4.19.279, 5.4.239, 5.10.177, 5.15.106, 6.1.23
-   and the latest stable version 6.2.9 .
+   4.14.312, 4.19.280, 5.4.240, 5.10.177, 5.15.106, 6.1.23
+   and the latest stable version 6.2.10 .
   <p>
    The kernel change logs are available here:
   <p>
-  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.311">kernel 4.14.311 changelog</a>
+  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.312">kernel 4.14.312 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.279">kernel 4.19.279 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.280">kernel 4.19.280 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.239">kernel 5.4.239 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.240">kernel 5.4.240 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.177">kernel 5.10.177 changelog</a>
   <p>
@@ -47,7 +47,7 @@
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.23">kernel 6.1.23 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2.9">kernel 6.2.9 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2.10">kernel 6.2.10 changelog</a>
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
@@ -70,9 +70,7 @@
 
  <h2>Bugs fixes</h2>
   <p>
-   Impossible to choose any other kernel then the default one when generating an ISO.
-  <p>
-   More then 1000 commits have been applied since the 22.12 version.
+   Impossible to use any other file system then ext3/4.
 
  <h2>Upgrade process</h2>
   <p>
@@ -81,8 +79,6 @@
    will make it.
    
  <h2>Thanks</h2>
-  <p>
-   With special thanks to Linux pro Magazine for releasing an artical on NuTyX available in march 2023.
   <p>
    With Thanks to the BLFS Team which helped out with a few problems we encountered.
   <p>
