@@ -3,7 +3,9 @@
  <h2>Le clavier</h2>
   <ul>
    <li>
-    /etc/X11/xorg.xonf.d/20-keyboard.conf
+    /etc/sysconfig/console
+   <li>
+    /etc/X11/xorg.xonf.d/00-keyboard.conf
   </ul>
  <h2>Le réseau, nom de la machine</h2>
 <ul>
