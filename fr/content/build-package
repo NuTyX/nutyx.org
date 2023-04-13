@@ -234,7 +234,7 @@ version=2.6.4
 release=1
 
 # Emplacement des sources du paquet qui sera empaqueté
-source=(https://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
+source=(https://ftp.gnome.org/pub/gnome/sources/$name/${version:0:3}/$name-$version.tar.xz)
 
 # Définition de la recette proprement dite, souvent constitué des trois commandes standards
 build() {
@@ -247,17 +247,7 @@ make DESTDIR=$PKG install
     Si vous comparez cet exemple avec un port officiel de NuTyX,
     vous constaterez que ce dernier contient plus d'informations.
     C'est ce que nous verrons dans le prochain paragraphe.
-    Une ligne vous a peut-être attiré votre attention:
-    <pre class="output">https://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/</pre>
-   <p>
-    La syntaxe ${version%.*} permet de substituer une valeur à N chiffres en une valeur à N-1 chiffres.
-    C'est très souvent le cas pour les sources des paquets gnome. Dans notre exemple donc, la ligne:
-    <pre class="output">https://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/</pre>
-   <p>
-    est identique à
-    <pre class="output">https://ftp.gnome.org/pub/gnome/sources/$name/2.6/</pre>
-   <p>
-    puisque la variable <u>version</u>=2.6.4
+
   <h3>Exemple pratique d'une recette</h3>
    <h4>Le fichier libxfce4util/Pkgfile</h4>
     <pre class="output">description="libxfce4util, base library for Xfce"
@@ -272,7 +262,7 @@ makedepends=(glib intltool)
 name=libxfce4util
 version=4.14.1
 release=1
-source=(http://archive.xfce.org/src/xfce/${name}/${version%.*}/${name}-$version.tar.bz2)
+source=(http://archive.xfce.org/src/xfce/${name}/${version:0:3}/$name-$version.tar.xz)
 
 build() {
 cd ${name}-$version

@@ -252,7 +252,7 @@ version=2.6.4
 release=1
 
 # Location of the sources of the package to be built
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version:0.3}/$name-$version.tar.xz)
 
 # Recipe for building the package (often uses three standard commands)
 build() {
@@ -263,17 +263,7 @@ make DESTDIR=$PKG install
 }</pre>
    <p>
     If you compare this example with an official NuTyX port, you can see that the official one contains more information.
-    We will see this in the next paragraph. One line could catch you:
-   <pre class="output">http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/</pre>
-   <p>
-    The syntax ${version%.*} allows us to substitute a variable of N digits for a variable of N-1 digits.
-    It's often necessary for the sources of gnome packages. In our example, the line:
-   <pre class="output">http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/</pre>
-   <p>
-    is identical to
-   <pre class="output">http://ftp.gnome.org/pub/gnome/sources/$name/2.6/</pre>
-   <p>
-    since the variable <u>version</u>=2.6.4
+    We will see this in the next paragraph.
 
   <h3>Practical example of a port</h3>
    <h4>The libxfce4util/Pkgfile file</h4>
@@ -289,7 +279,7 @@ name=libxfce4util
 version=4.8.2
 release=1
 
-source=(http://archive.xfce.org/src/xfce/${name}/${version%.*}/${name}-$version.tar.bz2)
+source=(http://archive.xfce.org/src/xfce/${name}/${version:0.3}/$name-$version.tar.xz)
 
 build() {
 
