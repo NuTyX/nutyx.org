@@ -3,6 +3,8 @@
  <h2>The keyboard</h2>
   <ul>
    <li>
+    /etc/sysconfig/console
+   <li>
     /etc/X11/xorg.xonf.d/20-keyboard.conf
   </ul>
  <h2>The network and machine name</h2>
