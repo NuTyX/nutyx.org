@@ -39,7 +39,9 @@
      <li>
        <a class="url" href="https://www.linuxquestions.org/questions/nutyx-125/">LinuxQuestions.org</a>
      <li>
-      <a class="url" href="https://github.com/NuTyX">Le git (les sources de NuTyX).</a>
+      <a class="url" href="https://github.com/NuTyX">Les sources officielles de NuTyX.</a>
+     <li>
+      <a class="url" href="https://github.com/NuTyX-packages">Les paquets proposés par les utilisateurs.</a>
      <li>
       <a class="url" href="https://www.youtube.com/channel/UCkjOkxMwZhmdD3QlGsivtFA">YouTube</a>
      <li>
