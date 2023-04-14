@@ -1,4 +1,4 @@
-<h1>Latest news 01-04-2023</h1>
+<h1>Latest news 08-04-2023</h1>
 
 
  <h2>NuTyX 23.04.2 available with cards 2.6.3</h2>
@@ -10,14 +10,18 @@
    SysV in 3.06 and systemd in 253.0 .
   <p>
    The xorg-server graphics server version 21.1.8,
-   the Mesa 3D library in 23.0.1, Gtk4 4.10.1
+   the Mesa 3D library in 23.0.2, Gtk4 4.10.1
    and Qt 6.5.0.
+  <p>
+   The nvidia driver is update to version  530.41.03 .
+   The legacy driver 470.xx series in version 470.182.03 .
+   The legacy driver 390.xx series in version 390.157 .
   <p>
    The python interpreter is updated to version 3.11.3.
   <p>
    The XFCE desktop environment is updated to version 4.18.3.
   <p>
-   The MATE desktop environment is a 1.26.0 version .
+   The MATE desktop environment is a 1.26.1 version .
   <p>
    The GNOME desktop environment is also updated to version 44.0
    <p>
@@ -70,7 +74,12 @@
 
  <h2>Bugs fixes</h2>
   <p>
-   Impossible to use any other file system then ext3/4.
+   Impossible to use any other file system then ext3/4 at installation time.
+   The initrd doesn't detect the choosen file system.
+  <p>
+   If an ISO is created with the 4.14.x kernel, it won't start.
+  <p>
+   The nautilus file manager requires the gtk4 library as a dependency, it is not installed automatically.
 
  <h2>Upgrade process</h2>
   <p>
