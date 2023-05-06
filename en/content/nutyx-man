@@ -493,6 +493,7 @@ Here are listed the configuration files mentioned in this manual. You may like t
 /boot/grub/grub.cfg,
 /etc/fstab,
 /etc/profile.d/i18n.sh,
+/var/log/install.log,
 /var/lib/pkg/nutyx-version,
 /var/lib/pkg/pkgadd.conf</b></pre>
   <h2>AUTHORS</h2>

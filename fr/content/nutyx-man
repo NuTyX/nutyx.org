@@ -526,6 +526,7 @@ UPGRADE         ^etc/X11/XF86Config$    NO</pre>
 /boot/grub/grub.cfg,
 /etc/fstab,
 /etc/profile.d/i18n.sh,
+/var/log/install.log,
 /var/lib/pkg/nutyx-version,
 /var/lib/pkg/pkgadd.conf</b></pre>
 
