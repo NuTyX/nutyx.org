@@ -471,7 +471,7 @@ UPGRADE         ^etc/X11/XF86Config$    NO</pre>
      <p>
       Most of the services have there own logs.If you have a ssh connection problem, some info will be found in the file <b>/var/log/auth.log</b> of the ssh server.
      <p>
-      To find out about installed binary packages, check the file <b>/var/log/cards.log</b>.
+      To find out about installed binary packages, check the file <b>/var/log/install.log</b>.
 
  <h2>ONLINE HELP</h2>
     <p>

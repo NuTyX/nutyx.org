@@ -507,7 +507,7 @@ UPGRADE         ^etc/X11/XF86Config$    NO</pre>
    <p>
     Si vous avez un problème de connection ssh, une source d'info peut se trouver dans le fichier <b>/var/log/auth.log</b> du serveur ssh.
    <p>
-    Pour connaître l'historique des paquets binaires installés, consultez le fichier <b>/var/log/cards.log</b>.
+    Pour connaître l'historique des paquets binaires installés, consultez le fichier <b>/var/log/install.log</b>.
 
  <h2>AIDE EN LIGNE</h2>
   <p>
