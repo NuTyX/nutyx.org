@@ -1,4 +1,4 @@
-<h1>Latest news 08-04-2023</h1>
+<h1>Latest news 13-05-2023</h1>
 
 
  <h2>NuTyX 23.05.0 available with cards 2.6.7</h2>
@@ -28,7 +28,7 @@
    The KDE desktop environment is available in Plasma 5.27.5, Framework 5.105.0
    and applications in 23.04.0.
   <p>
-   Available browsers are: Firefox 112.0.2, Chromium 113.0.5672.63, Epiphany 44.2, etc
+   Available browsers are: Firefox 113.0, Chromium 113.0.5672.63, Epiphany 44.2, etc
   <p>
    Many desktop applications have been updated as well like Telegram-desktop 4.8.1,
    Thunderbird 102.10.1, Scribus 1.5.8, Libreoffice 7.5.3.2, Gimp 2.10.34, etc.
@@ -74,12 +74,9 @@
 
  <h2>Bugs fixes</h2>
   <p>
-   Impossible to use any other file system then ext3/4 at installation time.
-   The initrd doesn't detect the choosen file system.
+   Wrong keyboard layout in Xorg/Wayland if choosing bepo keyboard.
   <p>
-   If an ISO is created with the 4.14.x kernel, it won't start.
-  <p>
-   The nautilus file manager requires the gtk4 library as a dependency, it is not installed automatically.
+   Concept mistake: The mybld command needs the cards.devel package.
 
  <h2>Upgrade process</h2>
   <p>
