@@ -77,6 +77,9 @@
    Wrong keyboard layout in Xorg/Wayland if choosing bepo keyboard.
   <p>
    Concept mistake: The mybld command needs the cards.devel package.
+  <p>
+   The mybld command doen't check if sources are available when
+   passing the new version as an argument.
 
  <h2>Upgrade process</h2>
   <p>

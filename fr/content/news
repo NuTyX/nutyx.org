@@ -79,7 +79,8 @@
   <p>
    Erreur de concept: La commande mybld necessite le paquet cards.devel. 
   <p>
-  
+   La commande mybld ne vérifie pas si les sources d'un paquet sont disponibles si l'on passe
+   la nouvelle version d'un paquet en argument.
  <h2>Mise à jour</h2>
   <p>
    Une simple commande classique permet la mise à jour:
