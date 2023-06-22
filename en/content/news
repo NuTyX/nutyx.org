@@ -1,57 +1,57 @@
-<h1>Latest news 13-05-2023</h1>
+<h1>Latest news 22-06-2023</h1>
 
 
- <h2>NuTyX 23.05.0 available with cards 2.6.7</h2>
+ <h2>NuTyX 23.06.? available with cards 2.6.93</h2>
   <p>
-   Spiky and me are happy to announce the new version of NuTyX 23.05.0 and cards 2.6.7 .
+   Spiky and me are happy to announce the new version of NuTyX 23.06.? and cards 2.6.93 .
   <p>
    New toolchain gcc 13.1.0, glibc 2.37 and binutils 2.40 .
   <p>
    SysV in 3.06 and systemd in 253.0 .
   <p>
    The xorg-server graphics server version 21.1.8,
-   the Mesa 3D library in 23.0.3, Gtk4 4.10.3
-   and Qt 6.5.0.
+   the Mesa 3D library in 23.1.2, Gtk4 4.10.4
+   and Qt 6.5.1.
   <p>
    The nvidia driver is update to version  530.41.03 .
    The legacy driver 470.xx series in version 470.182.03 .
    The legacy driver 390.xx series in version 390.157 .
   <p>
-   The python interpreter is updated to version 3.11.3.
+   The python interpreter is updated to version 3.11.4.
   <p>
    The XFCE desktop environment is updated to version 4.18.3.
   <p>
    The MATE desktop environment is a 1.26.1 version .
   <p>
-   The GNOME desktop environment is also updated to version 44.0
+   The GNOME desktop environment is also updated to version 44.2
    <p>
-   The KDE desktop environment is available in Plasma 5.27.5, Framework 5.105.0
-   and applications in 23.04.0.
+   The KDE desktop environment is available in Plasma 5.27.5, Framework 5.107.0
+   and applications in 23.04.2.
   <p>
-   Available browsers are: Firefox 113.0, Chromium 113.0.5672.63, Epiphany 44.2, etc
+   Available browsers are: Firefox 114.0.2, Chromium 114.0.5735.90, Epiphany 44.3, etc
   <p>
-   Many desktop applications have been updated as well like Telegram-desktop 4.8.1,
-   Thunderbird 102.10.1, Scribus 1.5.8, Libreoffice 7.5.3.2, Gimp 2.10.34, etc.
+   Many desktop applications have been updated as well like Telegram-desktop 4.8.4,
+   Thunderbird 102.12.0, Scribus 1.5.8, Libreoffice 7.5.4.2, Gimp 2.10.34, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.14.314, 4.19.282, 5.4.242, 5.10.179, 5.15.111, 6.1.28
-   and the latest stable version 6.3.2 .
+   4.14.316, 4.19.286, 5.4.247, 5.10.184, 5.15.116, 6.1.34
+   and the latest stable version 6.3.8 .
   <p>
    The kernel change logs are available here:
   <p>
-  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.314">kernel 4.14.314 changelog</a>
+  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.316">kernel 4.14.316 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.282">kernel 4.19.282 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.286">kernel 4.19.286 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.242">kernel 5.4.242 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.247">kernel 5.4.247 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.179">kernel 5.10.179 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.184">kernel 5.10.184 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.111">kernel 5.15.111 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.116">kernel 5.15.116 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.28">kernel 6.1.28 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.34">kernel 6.1.34 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.3.2">kernel 6.3.2 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.3.8">kernel 6.3.8 changelog</a>
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
