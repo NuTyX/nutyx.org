@@ -1,0 +1,466 @@
+First I want to thank Linux Magazine for giving me the chance to do this interview.
+
+<h2>0. Presentation</h2>
+
+My name is Thierry Nuttens and I am going to introduce you to the NuTyX project that I have maintained for over 16 years now.
+<p>
+ My friend Spiky has become my right arm for over 3 years.
+
+<h2>1. NuTyX Philosophy</h2>
+
+I use NuTyX or Linux if you prefer because I think it's an operating system that meets my expectations.
+<p>
+ Even though in recent years Linux has become more and more complex, it is still a great tool for me.
+<p>
+ I tend to always want to understand the inner workings of what I put together.
+ NuTyX is no exception to this rule.
+
+<p>
+ When I started discovering this system of explanation, more than 17 years ago (it's not that far after all).
+ I didn't understand much about the "free" world.
+<p>
+ I had the opportunity to test several different distributions, even if there were not as many as today.
+ Besides, Ubuntu was making its debut...
+ What interested me the most was to have a high-performance, reliable and easy-to-maintain system.
+
+<h2>2. The influence of LFS/BLFS</h2>
+
+My vision of Linux changed radically when I discovered the LFS project.
+<p>
+ A project where (almost) everything is explained.
+ From building a chrooted system to building the build toolchain to finally get a working operating system built yourself.
+<p>
+ Even today, I am still learning from this project. simple and TRANSPARENT maintenance.
+ Something impossible to obtain with a “closed” OS.
+<p>
+ Finally after several compilations of the LFS, I looked into the problem of managing all these files installed on my hard disk….
+ We must keep a trace, a history.
+ How to update and how to find out what is the version of this or that utility
+ without having to know the specific command for each of these applications.
+<p>
+ I then came across the CRUX project which offered exactly the package manager I needed.
+<p>
+ This small command line utility offered the Creation, Addition, Deletion and some basic information of the installed files, I was satisfied…
+<p>
+  Almost
+<p>
+<p>
+ Not only were the orders simple, they were quick and the icing on the cake, the commands were compiled statically which allowed to install the compiled packages and archived as tar files in a destination folder using almost any other distribution.
+<p>
+ NuTyX was created
+<p>
+ I had one problem not the least.
+<p>
+ The CRUX utility did not offer downloading or dependency management in a simple way like its basic tools.
+ It can be said that NuTyX dragged this drawback for almost 6 years.
+ The various attempts have never really been conclusive.
+<p>
+ So I decided to create my own package manager.
+ The sources of pkgutils (the CRUX manager) being obviously available,
+ I then started to "fork" the CRUX utility.
+<p>
+ CARDS was created.
+<p>
+ We are two people active on NuTyX to ensure the continuous updating of the packages offered.
+ It is our main occupation.
+<p>
+ The number of packages on NuTyX is approaching 2000.
+ If we add the automatically generated subpackets, we reach 4500 packets.
+
+<h2>3. NuTyX is no longer a Linux From Scratch</h2>
+
+ We start with its installation, today it is possible to install NuTyX in many ways.
+ For beginners, several ISOs (LXDE, XFCE, MATE, KDE, GNOME, CINNAMON ready to install.
+<p>
+ Each ISO allows automatic, semi-manual installation in direct mode or live mode, from the ram or from the mounted ISO, and finally a script allows you to install the distribution in manual mode.
+<p>
+ In addition to the latest stable kernel, all LTS kernels are available.
+ Each LTS kernel is a separate package. The version of the packages kernel-414, kernel-419, kernel-54, kernel-510, kernel-515 and kernel-61 never changes, only upstream patches are applied. They are available throughout the life of these.
+<p>
+ Once reached the end of life, cards inform the user during the installation/update.
+<p>
+ A tutorial explains how to proceed to change kernel.
+<p>
+ Busybox commands are available in the /sbin system folders as a fallback system.
+ They are available as a last resort if the complete order is missing.
+<p>
+ As on LFS, the two init systems sysV and systemd are offered but unlike LFS.
+ The two coexist without worries on the NuTyX.
+<p>
+ Some modifications are necessary in the source code of systemd but nothing too serious.
+ All packages using systemd are compiled with the systemd option.
+ Thanks to the concept of automatically generated subpackages that I will explain later, only the systemd library is necessary for NuTyX to work in sysV mode.
+<p>
+ The systemd.lib package is always part of a NuTyX base system.
+ This poses no problem with the operation of sysV
+<p>
+ Spiky uses the NuTyX in systemd mode for his personal use and for updating his packages.
+ I almost exclusively use NuTyX in sysV mode on my desktop and server machines.
+
+<p>
+ Lxdm, lightdm, xdm, slim, gdm, sddm or dtlogin are available as session manager choices.
+
+<h3>NuTyX packages are organized into collections.</h3>
+
+ Three collections form the heart of the system:
+<p>
+ - base, cli and gui.
+<p>
+ The cli-extra and gui-extra collections, as their names suggest, make up the set of command-line (cli-extra) and graphical (gui-extra) extra packages.
+<p>
+ The packages consist of base packages and sub-packages.
+ The subpackages are classified by group:
+<p>
+ <ul>
+  <li>
+   devel: development packages
+  <li>
+   man: manual packages
+  <li>
+   lib: library packages
+  <li>
+   doc: documentation packages
+  <li>
+   service: service packages
+</ul>
+<p>
+ The nutyx package exists, it contains the folder structure of a linux system.
+ It also contains two very useful scripts:
+<p>
+ setup-nutyx for configuring:
+ <ul>
+   <li>
+    The wired and wireless network.
+   <li>
+    The locale used.
+   <li>
+    The keyboard.
+   <li>
+    The clock.
+   <li>
+    The user.
+  </ul>
+<p>
+ install-nutyx (and its 2 links generate-nutyx and chroot-nutyx) allows:
+ <ul>
+  <li>
+    Installing basic (or more complex) NuTyX in a folder (perhaps a partition mounted in the folder).
+  <li>
+    Added default configuration files.
+  <li>
+    Mainly for the installation above but can be used separately.
+  <li>
+    Generating a NuTyX ISO.
+  <li>
+    Enter a NuTyX installed in a folder
+  </ul>
+<p>
+ The upgrade-nutyx package allows updating transparently and completely automatically.
+<p>
+ Once properly configured, the user no longer has to worry about updates, the package takes care of everything.
+<p>
+ A small icon appears when the updates are available, ie downloaded successfully and ready to be installed.
+<p>
+ The packages to be updated are installed when the machine is shut down.
+
+<h3>NuTyX comes in two flavors or branches<h3>
+
+A semi-frozen “rolling” version:
+<p>
+ Final package updates such as browsers, video, audio and other players as well as security updates are also made continuously.
+<p>
+ Updates on the rolling version are only done by myself.
+<p>
+ It is no longer necessary to reinstall the distribution with each new version.
+<p>
+<p>
+A continuously updated “testing” version:
+<p>
+ It is used for the preparation of the next rolling version.
+<p>
+ Spiky takes care of 95% of the work which consists in updating all the packages of the different collections.
+<p>
+ Given the extent of the updates, this "testing" version is not strongly recommended in "production" or on a machine of the end user.
+
+<h2>4. Difference between CARDS and other package managers.</h2>
+
+CARDS is written in a low level language.
+<p>
+ Thanks to C++, the code base remains modest in size, and the number of operational dependencies is reduced to a strict minimum.
+<p>
+ On the other hand, the manager is judiciously made up of 2 main commands, one of which:
+<p>
+- pkgadd (and its links pkginfo, pkgrm) is compiled statically.
+<p>
+ This allows for a very minimalist (chroot) installation.
+<p>
+ Thanks to C++, the development of cards is very simple (for a very long time I only used vim to code).
+<p>
+ No complex development tools are required.
+<p>
+<p>
+ This package manager is fast... very fast.
+<p>
+ An installation with the correct arguments takes 11 seconds.
+ In the example above, a copy of the repository is in the local /srv/www folder:
+
+
+  <pre class="command"><kbd># time (DEPOT=/srv/www MOUNT=/srv/www install-nutyx)
+..
+real 0m10.824s
+user 0m9.389s
+sys 0m1.230s
+#
+</kbd></pre>
+
+<h3>CARDS and NuTyX go hand in hand.</h3>
+ For example the mybld central command uses the install-nutyx script for its operation.
+ <p>
+  Packages are ALWAYS built in a chrooted environment.
+
+<h3>The original concepts of CARDS:</h3>
+
+The collections are interdependent but independent of each other.
+<p>
+ It is quite possible to choose some of the collections available in binary and to create your own collections at the same time.
+ Only the base collection is really essential.
+<p>
+ The other collections are free to use.
+ A hierarchy nevertheless exists: The "gui" collection depends on the collection of the "cli" collection which itself depends on the "base" collection.
+<p>
+ At the same time, the cli-extra collection depends on the "cli" collection which depends on...
+ and the "gui-extra" collection will depend on the "gui" collection which depends on...
+<p>
+ The mybld script is sufficient for binary package management.
+<p>
+ It has some very handy options for the packager. 
+<p>
+ For example, the command:
+<pre class="command_user"><kbd>mybld 5.18.2 5.18.3</kbd></pre>
+will compile all packages whose version is 5.18.2 to version 5.18.3 and this in the correct order of collections AND packages.
+<p>
+ Once the build is complete, the user can accept the commits and cards will update the recipe git automatically.
+<p>
+ Updating firefox for example is as simple as:
+<pre class="command_user"><kbd>mybld firefox 108.0.2</kbd></pre>
+
+<p>
+ CARDS being a fork of the CRUX Pkgutils package manager,
+ it seemed logical to me to keep as many existing functionalities as possible.
+<p>
+ A NuTyX recipe is therefore logically similar to that of CRUX with many additions:
+ <ul>
+  <li>
+   Packager
+  <li>
+   Contributors
+  <li>
+   Categories
+  <li>
+   Groups
+  <li>
+   Locales
+  <li>
+   Package set
+  <li>
+   Aliases
+  <li>
+   Runtime dependencies
+  <li>
+   Circular dependencies
+  <li>
+   Compilation dependencies
+ </ul>
+<p>
+ Predefined functions for compiling similar packages like xorg, kde, python.
+ Inspired this time by ArchLinux, the prepare() and package() functions are also available.
+<p>
+ Other functions specific to the standard groups available are also provided if the predefined functions are insufficient:
+ <ul>
+  <li>
+   devel()
+  <li>
+    doc()
+  <li>
+   service()
+  <li>
+   lib()
+  <li>
+  and man()
+ </ul>
+
+As explained above, cards automatically manage the separation of base packages and sub-packages
+(devel, doc, service, lib, man and all defined locales).
+<p>
+ The user does not have to worry about the locales of his packages since all the packages are provided with the subpackages of locales.
+<p>
+ That is, if a Spanish user installs firefox as a package, the Spanish locale is installed automatically.
+<p>
+ No need to search for packages like under many distributions.
+<p>
+  When searching with CARDS, the search method will search in the following order:
+<p>
+ The category, package set, name, description, URL, packager, and version.
+ We can therefore for example search for all the packages of a certain version.
+ A very practical function.
+<p>
+ The management of orphan dependencies is completely transparent and greatly simplifies the life of users.
+<p>
+ A dependency that is no longer used by any user-installed package is automatically removed.
+
+<p>
+ Unlike other package managers, CARDS does not allow you to blacklist a package, i.e. make it impossible to update it.
+<p>
+ The reason is very simple, blacklisting a package can very quickly render the operating system unusable.
+<p>
+ Imagine you blacklist icu (highly sensitive library).
+<p>
+ Under NuTyX, a new version of this library implies that all the packages dependent on this library are updated.
+<p>
+ So if for example blacklisting the icu library would be possible, during the next update of it, the operating system would be unusable.
+<p>
+<p>
+ A simple command is enough to make a complete update.
+<p>
+ The "cards upgrade" command synchronizes metadata info with the remote server, downloads updates of obsolete installed packages, update obsolete packages, removes installed package archives.
+<p>
+ The user should not worry about it.
+<p>
+ An interesting function on CARDS is the base command which allows you to return to a base system without risk (if correctly configured).
+<p>
+ A folder containing the name of each package to keep is sufficient.
+ By default, the base collection folder is used.
+ But you can very well add other folders if you wish.
+<p>
+ cards base -r then removes all packages that are not listed in that folder(s).
+ I use this feature in the test battery which I will explain later.
+<p>
+<p>
+ And finally, what really makes the difference with other package managers, CARDS is also used as the rendering engine of the nutyx.org site.
+<p>
+ The site is powered by CARDS.
+<p>
+ The reason is very simple, the main function of the site is the search for NuTyX packages.
+<p>
+  It is not possible to login on the nutyx.org site.
+
+<p>
+ Last point, no cookies are installed when visiting the site www.nutyx.org.
+
+<h2>5. NuTyX Target Audience</h2>
+This is a recurring topic on NuTyX.
+<p>
+ There is no graphical installer and therefore installing NuTyX is scary from the first screen.
+<p>
+ If a new user has never installed an operating system other than Windows ® or Apple ®, he will naturally be shocked by NuTyX.
+<p>
+ It's very ugly and probably won't work...
+<p><p>
+ Despite this, in the list of installation possibilities there is indeed a completely automatic installation i.e. partitioning, formatting and boot installation will be done without any user intervention.
+<p>
+ The reason for this approach was twofold:
+<p>
+ The first being for me, who has to test each ISO produced, it is extremely simple and fast.
+ This saves me having to choose the same options for each new installation.
+<p>
+ The second being for the new user
+ which in 90% of cases will do a first test in a virtual machine, therefore with a completely blank disk devoid of any partitions (required conditions to trigger a possible automatic installation).
+<p>
+ Even if the user is an expert, he can very quickly install a NuTyX completely automatically.
+
+<h2>6. Organization of the NuTyX project.</h2>
+
+The organization is very simple.
+<p>
+ We are three people on the project.
+<p>
+ Spiky, whom I salute very warmly, is exclusively responsible for updating packages on the “testing” version.
+ He is very responsive, and takes full advantage of the simplicity of mybld.
+<p>
+ Guth, whom I also salute very warmly, is a very discreet but very important person.
+ He is responsible for the proper functioning of the master repository server.
+ In 16 years, I don't remember having had a break.
+ He does an extraordinary job.
+<p>
+ I support Spiky when he is in trouble with certain packages.
+<p>
+ I update security vulnerabilities, kernels, browsers and other applications not providing dependencies on the "rolling" version.
+ I maintain the documentation pages on the nutyx.org site.
+<p>
+ CARDS is also one of my daily tasks.
+ Sometimes I find new features to implement.
+<p>
+ When the freeze of the "testing" version arrives (i.e. more or less every 1 to 2 months)
+ I take the branch that Spiky prepared me so well and I start my battery of tests:
+ <ul>
+  <li>
+   Merging of the rolling branch to testing
+  <li>
+   Installation of ALL packages to detect some duplicate files, missing or obsolete dependencies.
+  <li>
+   I generate all the ISOs and test them all in a virtual machine.
+  <li>
+   Together Spiky (in English) and I (in French) are writing the news announcing the next version of NuTyX available.
+  <li>
+   Once the “testing” version has stabilized and therefore passed all the above tests.
+   The “rolling” version is overwritten with the “testing” version,
+  <li>
+   ISOs are generated in “rolling” version and published.
+  <li>
+   The installation script available on nutyx.org is updated.
+  <li>
+   The pages of the nutyx.org site are updated with the new version.
+   The news is published on the site and on the nutyx-annonce@nutyx.org mailing list.
+  <li>
+   And the cycle begins again.
+ </ul>
+<h2>7. Statistics and acknowledgments</h2>
+
+ I could, if I wanted to, obtain statistics on the number of pages visited on the site of tuxfamily.org at:
+ https://stats.tuxfamily.org/nutyx.org
+<p>
+ To know the number of downloads of ISOs, you have to go to the site https://sourgeforge.net/projects/nutyx/files.
+<p>
+ The ISOs are updated there each time the new NuTyX version is released.
+<p>
+ I admit that I don't pay much attention to it.
+<p>
+ I believe this is a very specific project with specific expectations that first meet my needs.
+<p>
+ I am aware that today the level of requirement of an OS has become very high. It is very difficult for me to meet all these requirements.
+<p>
+ I would like to warmly thank Spiky again for his unfailing commitment to the project.
+ He is a very precious person who helps me every day in the progress of this magnificent project.
+<p>
+ A huge thank you also to the Tuxfamily team for the logistical support of the nutyx.org site and the forums forum.nutyx and forums.nutyx.org.
+ A big thank you especially to Sylvain who will have allowed the integration of the site and the access to the forums.
+ The site being written in ... C++...
+<h2>8. I'm Spiky</h2>
+  Let me introduce myself, I,m Spiky.
+<p>
+  I was a long time LFS/BLFS user, I was also looking for a package manager for my LFS.
+<p>
+  I looked at Pacman, Apt, Rpm, I then stummble across NuTyX knowing Thierry Nuttens (Tnut) from LFS.
+<p>
+ I installed NuTyX and found it work just as I liked fast installation and a small installed size even with Gnome.
+<p>
+ I would remove NuTyX and reinstall it Using the install-script which i found, just what I wanted (My now prefered way to install).
+<p>
+  I carried on using NuTyX alongside LFS, I was looking to implement CARDS into my LFS system and go my own way, but i just didn't have the required knowledge and I was also enjoying the community, 
+<p>
+ You could speak to the creator which is almost impossible with other distro's, and it is still like this today a new user can interact with the team and not be belittled.
+<p>
+ Help is always availble.
+<p>
+<p>
+  CARDS has grown since i started using it, there are many additions to it, Create an ISO, even create a Customized ISO as you wish to have it, with your choice of packages.
+<p>
+ This I find usefull for installation on other machines.
+<p>
+ There is also a script to create a qemu vm and start it, which again is 1 of my favorites.
+<p>
+  I joined the Team and started working alongside Thierry Nuttens helping to update packages.
+<p>
+ My main worry was breaking things but Tnut gave me confidence that nothing would go wrong, ha ha proved him wrong sometimes, But the mybld scipt just makes things build and work.
+<p>
+  All in all this distro seems to have everything combind into it.
