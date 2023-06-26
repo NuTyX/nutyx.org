@@ -1,9 +1,9 @@
 <h1>Dernière nouvelle 22-06-2023</h1>
 
 
- <h2>NuTyX 23.06.? disponible avec cards 2.6.97</h2>
+ <h2>NuTyX 23.06.1 disponible avec cards 2.6.96</h2>
   <p>
-   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.06.? et cards 2.6.97 .
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.06.1 et cards 2.6.96 .
   <p>
    Nouvelle toolchain gcc 13.1.0, glibc 2.37 et binutils 2.40 .
   <p>
@@ -13,7 +13,7 @@
    la librairie Mesa 3D en 23.1.2, Gtk4 4.10.4
    et Qt 6.5.1.
   <p>
-   Le pilote nvidia est mis à jour en version  530.41.03 .
+   Le pilote nvidia est mis à jour en version 535.54.03 .
    Le pilote nvidia de la série 470.xx en version 470.182.03 .
    Le pilote nvidia de la série 390.xx en version 390.157 .
   <p>
@@ -25,7 +25,7 @@
   <p>
    L'environnement de bureau GNOME est également mis à jour en version 44.2
   <p>
-   L'environnement de bureau KDE est disponible en Plasma 5.27.5, Framework 5.107.0
+   L'environnement de bureau KDE est disponible en Plasma 5.27.6, Framework 5.107.0
    et les applications en 23.04.2.
   <p>
    Les navigateurs disponibles sont entre autre: Firefox 114.0.2, Chromium 114.0.5735.90, Epiphany 44.3, etc
@@ -34,22 +34,22 @@
    Thunderbird 102.12.0, Scribus 1.5.8, Libreoffice 7.5.4.2, Gimp 2.10.34, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.14.316, 4.19.286, 5.4.247, 5.10.184, 5.15.116, 6.1.34
+   4.14.319, 4.19.287, 5.4.248, 5.10.185, 5.15.118, 6.1.35
    et la dernière version stable 6.3.9 .
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.316">kernel 4.14.316 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.319">kernel 4.14.319 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.286">kernel 4.19.286 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.287">kernel 4.19.287 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.247">kernel 5.4.247 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.248">kernel 5.4.248 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.184">kernel 5.10.184 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.185">kernel 5.10.185 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.116">kernel 5.15.116 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.118">kernel 5.15.118 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.34">kernel 6.1.34 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.35">kernel 6.1.35 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.3.9">kernel 6.3.9 changelog</a>
   <p>
@@ -72,15 +72,20 @@
   <p>
    Elles sont disponibles sur <a href="downloads">la page de téléchargement.</a>
 
- <h2>Bugs corrigés</h2>
+ <h2>Quoi de neuf</h2>
 
   <p>
-   La configuration du clavier est incorrecte sous xorg/wayland si l'on choisi le clavier bepo.
+   Avec l'aide précieux de Dan (MiyoLinux), nous proposons une nouvelle ISO JWM customisé avec un nouveau thème mis en place par Dan.
+
   <p>
-   Erreur de concept: La commande mybld necessite le paquet cards.devel. 
+   L'outil flcards a été rafraichi et propose désormais une inteface encore plus simple.
+
   <p>
-   La commande mybld ne vérifie pas si les sources d'un paquet sont disponibles si l'on passe
-   la nouvelle version d'un paquet en argument.
+   Le paquet packagekit a été ajouté, un backend pour cards a été ajouté et est toujours en cours de développement.
+   Cela signifie qu'il sera bientôt possible d'installer/supprimer/mettre à jour les paquets NuTyX depuis les applications discover ou nome-packagekit.
+  <p>
+   La commande mybld -s necessite désormais un paquet/une collection comme argument.
+
  <h2>Mise à jour</h2>
   <p>
    Une simple commande classique permet la mise à jour:
@@ -88,7 +93,11 @@
 
  <h2>Remerciements</h2>
   <p>
+   Merci à Skythrew de nous avoir aidés à résoudre certains problèmes liés aux paquets.
+  <p>
    Avec nos remerciements à l'équipe BLFS qui a aidé à résoudre quelques problèmes.
+  <p>
+   Merci à Dan pour son magnifique travail sur le thème personnalisé de l'ISO JWM.
   <p>
    Merci à Spiky pour sa grande patience et sa générosité pour la mise à jour des très nombreux paquets.
   <p>
