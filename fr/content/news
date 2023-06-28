@@ -15,7 +15,7 @@
 
   <p>
    Le paquet packagekit a été ajouté, un backend pour cards a été ajouté et est toujours en cours de développement.
-   Cela signifie qu'il sera bientôt possible d'installer/supprimer/mettre à jour les paquets NuTyX depuis les applications discover ou nome-packagekit.
+   Cela signifie qu'il sera bientôt possible d'installer/supprimer/mettre à jour les paquets NuTyX depuis les applications discover ou gnome-packagekit.
   <p>
    La commande mybld -s necessite désormais un paquet/une collection comme argument.
 
