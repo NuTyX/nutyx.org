@@ -4,8 +4,23 @@
  <h2>NuTyX 23.06.1 available with cards 2.6.96</h2>
   <p>
    Spiky and me are happy to announce the new version of NuTyX 23.06.1 and cards 2.6.96 .
+
+ <h2>What's new</h2>
   <p>
-   New toolchain gcc 13.1.0, glibc 2.37 and binutils 2.40 .
+   With the invaluable help of Dan (MiyoLinux), we're offering a new custom ISO JWM with a new theme implemented by Dan.
+
+  <p>
+   The flcards tool has been refreshed and now offers an even simpler interface.
+
+  <p>
+   The packagekit package has been added, and a backend for cards have been added and is under development.
+   Means soon it will be possible to install, remove, upgrade NuTyX packages from the discover/gnome-packagekit applications.
+  <p>
+   The mybld -s command now requires a package/collection as an argument.
+
+  <p>
+   The interview given to Linux Magazine is published in full <a href="interview">on the site</a>.
+
   <p>
    SysV in 3.06 and systemd in 253.0 .
   <p>
@@ -71,19 +86,6 @@
    KDE5.
   <p>
    They are available on the <a href="downloads">download page.</a>
-
- <h2>What's new</h2>
-  <p>
-   With the invaluable help of Dan (MiyoLinux), we're offering a new custom ISO JWM with a new theme implemented by Dan.
-
-  <p>
-   The flcards tool has been refreshed and now offers an even simpler interface.
-
-  <p>
-   The packagekit package has been added, and a backend for cards have been added and is under development.
-   Means soon it will be possible to install, remove, upgrade NuTyX packages from the discover/gnome-packagekit applications.
-  <p>
-   The mybld -s command now requires a package/collection as an argument.
 
  <h2>Upgrade process</h2>
   <p>

@@ -1,11 +1,28 @@
-<h1>Dernière nouvelle 22-06-2023</h1>
+<h1>Dernière nouvelle 26-06-2023</h1>
 
 
  <h2>NuTyX 23.06.1 disponible avec cards 2.6.96</h2>
   <p>
    Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.06.1 et cards 2.6.96 .
+ 
+ <h2>Quoi de neuf</h2>
+
   <p>
-   Nouvelle toolchain gcc 13.1.0, glibc 2.37 et binutils 2.40 .
+   Avec l'aide précieux de Dan (MiyoLinux), nous proposons une nouvelle ISO JWM customisé avec un nouveau thème mis en place par Dan.
+
+  <p>
+   L'outil flcards a été rafraichi et propose désormais une inteface encore plus simple.
+
+  <p>
+   Le paquet packagekit a été ajouté, un backend pour cards a été ajouté et est toujours en cours de développement.
+   Cela signifie qu'il sera bientôt possible d'installer/supprimer/mettre à jour les paquets NuTyX depuis les applications discover ou nome-packagekit.
+  <p>
+   La commande mybld -s necessite désormais un paquet/une collection comme argument.
+
+  <p>
+   L'interview donnée à Linux Magazine est publiée dans son intégralitée <a href="interview">sur le site</a>.
+
+
   <p>
    SysV en 3.06 et Systemd en 253.0 .
   <p>
@@ -72,19 +89,6 @@
   <p>
    Elles sont disponibles sur <a href="downloads">la page de téléchargement.</a>
 
- <h2>Quoi de neuf</h2>
-
-  <p>
-   Avec l'aide précieux de Dan (MiyoLinux), nous proposons une nouvelle ISO JWM customisé avec un nouveau thème mis en place par Dan.
-
-  <p>
-   L'outil flcards a été rafraichi et propose désormais une inteface encore plus simple.
-
-  <p>
-   Le paquet packagekit a été ajouté, un backend pour cards a été ajouté et est toujours en cours de développement.
-   Cela signifie qu'il sera bientôt possible d'installer/supprimer/mettre à jour les paquets NuTyX depuis les applications discover ou nome-packagekit.
-  <p>
-   La commande mybld -s necessite désormais un paquet/une collection comme argument.
 
  <h2>Mise à jour</h2>
   <p>
