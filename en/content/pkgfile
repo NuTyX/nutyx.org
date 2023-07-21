@@ -65,6 +65,9 @@
     Written in English.
   <h3>url</h3>
    The URL specifies the address where more information about the package can be found.
+  <h3>license</h3>
+   The license name is specified as:
+   <pre class="output">"GPL2, LGPL3"</pre>
   <h3>packager</h3>
    The packager name is specified as:
    <pre class="output">&lttnut tnut@nutyx.org&gt</pre>

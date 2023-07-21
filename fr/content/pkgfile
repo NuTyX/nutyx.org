@@ -65,6 +65,9 @@
    Rédigé en anglais.
   <h3>url</h3>
    L'URL spécifie l'adresse où l'on peut trouver de plus amples informations sur le paquet.
+  <h3>license</h3>
+   La license est spécifiée sous forme par exemple:
+   <pre class="output">"GPL2, LGPL3"</pre>
   <h3>packager</h3>
    Le nom de l'empaqueteur est spécifié sous forme:
    <pre class="output">&lttnut tnut@nutyx.org&gt</pre>
