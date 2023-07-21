@@ -97,9 +97,6 @@ git config --global user.email "james@nutyx.org"</kbd></pre>
     For example, to use the <i>gui</i> collection, run the command:
     <pre class="command_user"><kbd>for i in base cli gui; do mybld -s $i;done</kbd></pre>
    <p>
-    If you want to recover the entire collection, run the same command but without arguments:
-    <pre class="command_user"><kbd>mybld -s</kbd></pre>
-   <p>
     You can specify a custom address and version in the <b>~/.mybld</b> configuration file
     via the <b>URL</b> and <b>VERSION</b> variables.
 
