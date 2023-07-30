@@ -25,11 +25,11 @@
    SysV in 3.06 and systemd in 253.0 .
   <p>
    The xorg-server graphics server version 21.1.8,
-   the Mesa 3D library in 23.1.2, Gtk4 4.10.4
+   the Mesa 3D library in 23.1.4, Gtk4 4.10.4
    and Qt 6.5.1.
   <p>
-   The nvidia driver is update to version  530.41.03 .
-   The legacy driver 470.xx series in version 470.182.03 .
+   The nvidia driver is update to version  535.86.05 .
+   The legacy driver 470.xx series in version 470.199.02 .
    The legacy driver 390.xx series in version 390.157 .
   <p>
    The python interpreter is updated to version 3.11.4.
@@ -40,33 +40,33 @@
   <p>
    The GNOME desktop environment is also updated to version 44.2
    <p>
-   The KDE desktop environment is available in Plasma 5.27.6, Framework 5.107.0
-   and applications in 23.04.2.
+   The KDE desktop environment is available in Plasma 5.27.6, Framework 5.108.0
+   and applications in 23.04.3.
   <p>
-   Available browsers are: Firefox 114.0.2, Chromium 114.0.5735.90, Epiphany 44.3, etc
+   Available browsers are: Firefox 115.0.2, Chromium 114.0.5735.198, Epiphany 44.5, etc
   <p>
    Many desktop applications have been updated as well like Telegram-desktop 4.8.4,
-   Thunderbird 102.12.0, Scribus 1.5.8, Libreoffice 7.5.4.2, Gimp 2.10.34, etc.
+   Thunderbird 115.0.1, Scribus 1.5.8, Libreoffice 7.5.4.2, Gimp 2.10.34, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.14.319, 4.19.287, 5.4.248, 5.10.185, 5.15.118, 6.1.35
-   and the latest stable version 6.3.9 .
+   4.14.320, 4.19.289, 5.4.250, 5.10.187, 5.15.122, 6.1.41
+   and the latest stable version 6.4.4 .
   <p>
    The kernel change logs are available here:
   <p>
-  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.319">kernel 4.14.319 changelog</a>
+  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.320">kernel 4.14.320 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.287">kernel 4.19.287 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.289">kernel 4.19.289 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.248">kernel 5.4.248 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.250">kernel 5.4.250 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.185">kernel 5.10.185 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.187">kernel 5.10.187 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.118">kernel 5.15.118 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.122">kernel 5.15.122 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.35">kernel 6.1.35 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.41">kernel 6.1.41 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.3.9">kernel 6.3.9 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.4.4">kernel 6.4.4 changelog</a>
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
@@ -95,7 +95,7 @@
    
  <h2>Thanks</h2>
   <p>
-   Thanks to Skythrew for help us on some packages issues.
+   Thanks to Skythrew for helping us on some packages issues.
   <p>
    With Thanks to the BLFS Team which helped out with a few problems we encountered.
   <p>
