@@ -1,9 +1,9 @@
-<h1>Dernière nouvelle 30-07-2023</h1>
+<h1>Dernière nouvelle 29-08-2023</h1>
 
 
- <h2>NuTyX 23.07.0 disponible avec cards 2.6.99</h2>
+ <h2>NuTyX 23.07.0 disponible avec cards 2.6.100</h2>
   <p>
-   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.07.0 et cards 2.6.99 .
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.07.0 et cards 2.6.100 .
  
  <h2>Quoi de neuf</h2>
 
@@ -27,12 +27,12 @@
    SysV en 3.06 et Systemd en 253.0 .
   <p>
    Le serveur graphique Xorg-server version 21.1.8.
-   la librairie Mesa 3D en 23.1.4, Gtk4 4.10.4
-   et Qt 6.5.1.
+   la librairie Mesa 3D en 23.1.5, Gtk4 4.12.4
+   et Qt 6.5.2.
   <p>
-   Le pilote nvidia est mis à jour en version 535.86.05 .
+   Le pilote nvidia est mis à jour en version 535.104.05 .
    Le pilote nvidia de la série 470.xx en version 470.199.02 .
-   Le pilote nvidia de la série 390.xx en version 390.157 .
+   Le pilote nvidia de la série 390.xx en version 390.157.12 .
   <p>
    L'interpreteur Python est mis à jour en version 3.11.4.
   <p>
@@ -40,35 +40,35 @@
   <p>
    L'environnement de bureau MATE est en version 1.26.1.
   <p>
-   L'environnement de bureau GNOME est également mis à jour en version 44.2
+   L'environnement de bureau GNOME est également mis à jour en version 44.3
   <p>
-   L'environnement de bureau KDE est disponible en Plasma 5.27.6, Framework 5.108.0
+   L'environnement de bureau KDE est disponible en Plasma 5.27.7, Framework 5.108.0
    et les applications en 23.04.3.
   <p>
-   Les navigateurs disponibles sont entre autre: Firefox 115.0.2, Chromium 114.0.5735.198, Epiphany 44.5, etc
+   Les navigateurs disponibles sont entre autre: Firefox 116.0.3, Chromium 116.0.5845.110, Epiphany 44.6, etc
   <p>
-   De nombreuses applications on été mise à jour également comme Telegram-desktop 4.8.4,
-   Thunderbird 115.0.1, Scribus 1.5.8, Libreoffice 7.5.4.2, Gimp 2.10.34, etc.
+   De nombreuses applications on été mise à jour également comme Telegram-desktop 4.9.2,
+   Thunderbird 115.1.1, Scribus 1.5.8, Libreoffice 7.5.4.2, Gimp 2.10.34, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.14.320, 4.19.289, 5.4.249, 5.10.187, 5.15.122, 6.1.41
-   et la dernière version stable 6.4.4 .
+   4.14.323, 4.19.292, 5.4.254, 5.10.192, 5.15.128, 6.1.49
+   et la dernière version stable 6.5 .
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.320">kernel 4.14.320 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.323">kernel 4.14.323 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.289">kernel 4.19.289 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.292">kernel 4.19.292 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.250">kernel 5.4.250 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.254">kernel 5.4.254 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.187">kernel 5.10.187 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.192">kernel 5.10.192 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.122">kernel 5.15.122 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.128">kernel 5.15.128 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.41">kernel 6.1.41 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.49">kernel 6.1.49 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.4.4">kernel 6.4.4 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.5">kernel 6.5 changelog</a>
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
