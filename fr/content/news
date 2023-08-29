@@ -1,14 +1,20 @@
 <h1>Dernière nouvelle 29-08-2023</h1>
 
 
- <h2>NuTyX 23.07.0 disponible avec cards 2.6.100</h2>
+ <h2>NuTyX 23.08.0 disponible avec cards 2.6.100</h2>
   <p>
-   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.07.0 et cards 2.6.100 .
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.08.0 et cards 2.6.100 .
  
  <h2>Quoi de neuf</h2>
 
   <p>
-   Avec l'aide précieux de Dan (MiyoLinux), nous proposons une nouvelle ISO JWM customisé avec un nouveau thème mis en place par Dan.
+   De très vieux bugs sur l'installateur et sur flcards ont enfin été corrigés:
+		<ul>
+			<li>
+				L'installateur ne permet pas d'installer une ISO personnalisée à 100 %
+			<li>
+				Dans flcards, les barres de navigation ne fonctionnent pas.
+		</ul>
 
   <p>
    L'outil flcards a été rafraichi et propose désormais une inteface encore plus simple.
