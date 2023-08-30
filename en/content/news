@@ -1,4 +1,4 @@
-<h1>Latest news 29-08-2023</h1>
+<h1>Latest news 30-08-2023</h1>
 
 
  <h2>NuTyX 23.08.0 available with cards 2.6.100</h2>
@@ -7,27 +7,15 @@
 
  <h2>What's new</h2>
   <p>
-   Some very old bugs in the installer and flcards have finally been fixed:
-		<ul>
-			<li>
-				Installer does not allow 100% custom ISO installation.
-			<li>
-				In flcards, the navigation bars do not work.
-		</ul>
+   Some very looong standing old bugs in the installer and flcards have finally been fixed:
+    <ul>
+     <li>
+      The installer does not allow 100% custom ISO installation.
+     <li>
+      In flcards, the navigation bars do not work.
+    </ul>
 
-  <p>
-   The flcards tool has been refreshed and now offers an even simpler interface.
-
-  <p>
-   The packagekit package has been added, and a backend for cards have been added and is under development.
-   Means soon it will be possible to install, remove, upgrade NuTyX packages from the discover/gnome-packagekit applications.
-  <p>
-   The mybld -s command now requires a package/collection as an argument.
-
-  <p>
-   The interview given to Linux Magazine is published in full <a href="interview">on the site</a>.
-
-  <p>
+ <p>
    SysV in 3.06 and systemd in 253.0 .
   <p>
    The xorg-server graphics server version 21.1.8,
@@ -98,7 +86,7 @@
    A simple:
  </p><pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
    will make it.
-   
+
  <h2>Thanks</h2>
   <p>
    Thanks to Skythrew for helping us on some packages issues.
