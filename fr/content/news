@@ -15,6 +15,8 @@
      <li>
       L'iso Cinnamon ne se lance pas.
     <li>
+      La liste des certificats n'est plus mise à jour et empêche le bon fonctionnement de la commande wget sur les sites en https.
+    <li>
       Les paquets mdadm et lvm2 ne sont pas installé par défaut dans les ISOs.
     <li>
       L'outil flcards ne concerve pas l'affichaage de la sélection de paquets à supprimer / à installer
