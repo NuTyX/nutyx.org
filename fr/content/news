@@ -29,7 +29,7 @@
    SysV en 3.06 et Systemd en 253.0 .
   <p>
    Le serveur graphique Xorg-server version 21.1.8.
-   la librairie Mesa 3D en 23.1.5, Gtk4 4.12.4
+   la librairie Mesa 3D en 23.1.8, Gtk4 4.12.4
    et Qt 6.5.2.
   <p>
     <ul>
