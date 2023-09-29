@@ -8,7 +8,7 @@
  <h2>Bugs corrigés</h2>
 
   <p>
-   <table width="100%" cellspacing="0">
+   <table width="60%" cellspacing="0">
     <tr>
      <td>
       L'iso LXQT ne se lance pas.
@@ -43,17 +43,13 @@ Les paquets mdadm et lvm2 ne sont pas installé par défaut dans les ISOs.
     </tr>
     <tr>
      <td>
-Les paquets mdadm et lvm2 ne sont pas installé par défaut dans les ISOs.
+L'outil flcards ne concerve pas l'affichaage de la sélection de paquets à supprimer / à installer.
      </td>
      <td>
       Fixé
      </td>
     </tr>
   </table>
-
-  <p>
-   L'outil flcards est en constante amélioration.
-
   <p>
    SysV en 3.06 et Systemd en 253.0 .
   <p>
