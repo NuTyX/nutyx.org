@@ -5,22 +5,51 @@
   <p>
    Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.09.0 et cards 2.7.0 .
 
- <h2>Quoi de neuf</h2>
+ <h2>Bugs corrigés</h2>
 
   <p>
-   Bugs corrigés:
-    <ul>
-     <li>
+   <table width="100%" cellspacing="0">
+    <tr>
+     <td>
       L'iso LXQT ne se lance pas.
-     <li>
+     </td>
+     <td>
+      Fixé
+     </td>
+    </tr>
+    <tr>
+     <td>
       L'iso Cinnamon ne se lance pas.
-    <li>
+     </td>
+     <td>
+      Fixé
+     </td>
+    </tr>
+    <tr>
+     <td>
       La liste des certificats n'est plus mise à jour et empêche le bon fonctionnement de la commande wget sur les sites en https.
-    <li>
-      Les paquets mdadm et lvm2 ne sont pas installé par défaut dans les ISOs.
-    <li>
-      L'outil flcards ne concerve pas l'affichaage de la sélection de paquets à supprimer / à installer
-    </ul>
+     </td>
+     <td>
+      Fixé
+     </td>
+    </tr>
+    <tr>
+     <td>
+Les paquets mdadm et lvm2 ne sont pas installé par défaut dans les ISOs.
+     </td>
+     <td>
+      Fixé
+     </td>
+    </tr>
+    <tr>
+     <td>
+Les paquets mdadm et lvm2 ne sont pas installé par défaut dans les ISOs.
+     </td>
+     <td>
+      Fixé
+     </td>
+    </tr>
+  </table>
 
   <p>
    L'outil flcards est en constante amélioration.
