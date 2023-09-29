@@ -1,66 +1,107 @@
-<h1>Latest news 30-08-2023</h1>
+<h1>Latest news 30-09-2023</h1>
 
 
- <h2>NuTyX 23.08.0 available with cards 2.6.100</h2>
+ <h2>NuTyX 23.09.0 available with cards 2.7.0</h2>
   <p>
-   Spiky and me are happy to announce the new version of NuTyX 23.08.0 and cards 2.6.100 .
+   Spiky and me are happy to announce the new version of NuTyX 23.09.0 and cards 2.7.0 .
 
- <h2>What's new</h2>
+ <h2>Fixed bugs</h2>
   <p>
-   Some very looong standing old bugs in the installer and flcards have finally been fixed:
-    <ul>
-     <li>
-      The installer does not allow 100% custom ISO installation.
-     <li>
-      In flcards, the navigation bars do not work.
-    </ul>
+   <table width="60%" cellspacing="0">
+    <tr>
+     <td>
+      The LXQT ISO doens't start.
+     </td>
+     <td>
+      Fixed
+     </td>
+    </tr>
+    <tr>
+     <td>
+      The Cinnamon ISO doesn't start.
+     </td>
+     <td>
+      Fixed
+     </td>
+    </tr>
+    <tr>
+     <td>
+      The list of certificates is no longer updated and prevents the wget command from working properly on https sites.
+     </td>
+     <td>
+      Fixed
+     </td>
+    </tr>
+    <tr>
+     <td>
+The mdadm and lvm2 packages are not installed by default in ISOs, which prevents NuTyX from being installed on a RAID system or on logical volumes.
+     </td>
+     <td>
+      Fixed
+     </td>
+    </tr>
+    <tr>
+     <td>
+The flcards tool does not retain the display of the selection of packages to be removed/installed.
+     </td>
+     <td>
+      Fixed
+     </td>
+    </tr>
+  </table>
 
+ <h2>Updated packages</h2>
  <p>
    SysV in 3.06 and systemd in 253.0 .
   <p>
    The xorg-server graphics server version 21.1.8,
-   the Mesa 3D library in 23.1.5, Gtk4 4.12.0
+   the Mesa 3D library in 23.1.8, Gtk4 4.12.0
    and Qt 6.5.2.
   <p>
-   The nvidia driver is update to version  535.104.05 .
-   The legacy driver 470.xx series in version 470.199.02 .
-   The legacy driver 390.xx series in version 390.157.12 .
+   <ul>
+    <li>
+     The nvidia driver is update to version  535.113.01 .
+    <li>
+     The legacy driver 470.xx series in version 470.199.02 .
+    <li>
+     The legacy driver 390.xx series in version 390.157.12 .
+   </ul>
   <p>
-   The python interpreter is updated to version 3.11.4.
+   The python interpreter is updated to version 3.11.5.
   <p>
    The XFCE desktop environment is updated to version 4.18.3.
   <p>
-   The MATE desktop environment is a 1.26.1 version .
+   The MATE desktop environment is a 1.26.2 version .
   <p>
    The GNOME desktop environment is also updated to version 44.3
    <p>
-   The KDE desktop environment is available in Plasma 5.27.7, Framework 5.108.0
-   and applications in 23.04.3.
+   The KDE desktop environment is available in Plasma 5.27.8, Framework 5.110.0
+   and applications in 23.08.1.
   <p>
-   Available browsers are: Firefox 116.0.3, Chromium 116.0.5845.110, Epiphany 44.6, etc
+   Available browsers are: Firefox 117.0.1, Epiphany 44.6, etc
   <p>
-   Many desktop applications have been updated as well like Telegram-desktop 4.9.2,
-   Thunderbird 115.1.1, Scribus 1.5.8, Libreoffice 7.5.4.2, Gimp 2.10.34, etc.
+   Many desktop applications have been updated as well like Telegram-desktop 4.9.9,
+   Thunderbird 115.2.3, Scribus 1.5.8, Libreoffice 7.5.4.2, Gimp 2.10.34, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.14.323, 4.19.292, 5.4.254, 5.10.192, 5.15.128, 6.1.49
-   and the latest stable version 6.5 .
+   4.14.326, 4.19.295, 5.4.257, 5.10.197, 5.15.133, 6.1.55
+   and the latest stable version 6.5.5 .
   <p>
    The kernel change logs are available here:
   <p>
-  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.323">kernel 4.14.323 changelog</a>
+  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.326">kernel 4.14.326 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.292">kernel 4.19.292 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.295">kernel 4.19.295 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.254">kernel 5.4.254 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.257">kernel 5.4.257 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.192">kernel 5.10.192 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.197">kernel 5.10.197 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.128">kernel 5.15.128 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.133">kernel 5.15.133 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.49">kernel 6.1.49 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.55">kernel 6.1.55 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.5">kernel 6.5 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.5.5">kernel 6.5.5 changelog</a>
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
@@ -89,11 +130,7 @@
 
  <h2>Thanks</h2>
   <p>
-   Thanks to Skythrew for helping us on some packages issues.
-  <p>
    With Thanks to the BLFS Team which helped out with a few problems we encountered.
-  <p>
-   Thanks to Dan for his beautifull work on the customized JWM theme ISO.
   <p>
    Thanks to Spiky for his patience and his generosity in upgrading all thoses many packages.
   <p>

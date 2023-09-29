@@ -1,4 +1,4 @@
-<h1>Dernière nouvelle 29-09-2023</h1>
+<h1>Dernière nouvelle 30-09-2023</h1>
 
 
  <h2>NuTyX 23.09.0 disponible avec cards 2.7.0</h2>
@@ -35,7 +35,7 @@
     </tr>
     <tr>
      <td>
-Les paquets mdadm et lvm2 ne sont pas installé par défaut dans les ISOs.
+Les paquets mdadm et lvm2 ne sont pas installés par défaut dans les ISOs, ce qui empêche l'installation de NuTyX sur un système RAID ou sur des volumes logiques.
      </td>
      <td>
       Fixé
@@ -43,13 +43,14 @@ Les paquets mdadm et lvm2 ne sont pas installé par défaut dans les ISOs.
     </tr>
     <tr>
      <td>
-L'outil flcards ne concerve pas l'affichaage de la sélection de paquets à supprimer / à installer.
+L'outil flcards ne conserve pas l'affichage de la sélection de paquets à supprimer / à installer.
      </td>
      <td>
       Fixé
      </td>
     </tr>
   </table>
+ <h2>Paquets mis à jour</h2>
   <p>
    SysV en 3.06 et Systemd en 253.0 .
   <p>
@@ -77,7 +78,7 @@ L'outil flcards ne concerve pas l'affichaage de la sélection de paquets à supp
    L'environnement de bureau KDE est disponible en Plasma 5.27.8, Framework 5.110.0
    et les applications en 23.08.1.
   <p>
-   Les navigateurs disponibles sont entre autre: Firefox 116.0.3, Epiphany 44.6, etc
+   Les navigateurs disponibles sont entre autre: Firefox 117.0.1, Epiphany 44.6, etc
   <p>
    De nombreuses applications on été mise à jour également comme Telegram-desktop 4.9.9,
    Thunderbird 115.2.3, Scribus 1.5.8, Libreoffice 7.5.4.2, Gimp 2.10.34, etc.
