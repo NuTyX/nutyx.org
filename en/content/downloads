@@ -56,9 +56,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-        SHA1 64bits: ff7763a6a18376f5d2da865b83264897a085f2a3
+        SHA1 64bits: 6695dd17af9ab697e8e9f2d2cbe1e9b41233f175
       <td>
-       Approx. 780 MO
+       Approx. 800 MO
    </tr>
 
    <tr class="even">
@@ -72,9 +72,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: 8ee8733a5438c363d93bcaeff507b13b940ef634
+      SHA1 64bits: daeababe837c21ae1fb225e4d551a8a9d983a354
     <td>
-       Approx. 1.1 GO
+       Approx. 1.2 GO
    </tr>
 
 
@@ -89,9 +89,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: 6a6238908d6e9afda8cd278fee1a982de1e3d975
+      SHA1 64bits: 52a8769ee51c9d0d72979b4ec9b117462c5ca5d9
       <td>
-       Approx. 1.4 GO
+       Approx. 1.5 GO
    </tr>
 
 
@@ -106,9 +106,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: d17a2abae91b3fe3d587776467b1153caffbd000
+      SHA1 64bits: 704a2d2cd99803639c93c28dabf9093045808636
       <td>
-       Approx. 1.3 GO
+       Approx. 1.4 GO
    </tr>
 
    <tr class="odd">
@@ -122,9 +122,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: 34146a2eb39dfee7ab37ca4c5a4104f98ac7f38c
+      SHA1 64bits: a8af5f398d0a6a45bd8ab180ec451e4d858ccedd
       <td>
-       Approx. 1.3 GO
+       Approx. 1.4 GO
    </tr>
 
    <tr class="even">
@@ -138,9 +138,9 @@
      <p>
       kernel: Last stable kernel.
       <p>
-      SHA1 64bits: 2245e8e72919f0a88634e5bdb6cd87fd577c36a2
+      SHA1 64bits: 1d6e54f888d5d09259f3ab0e1d726fd94d808d68
       <td>
-       Approx. 1.3 GO
+       Approx. 1.4 GO
    </tr>
 
    <tr class="odd">
@@ -155,7 +155,7 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: 69c33575e006c54bb027e50f25f532650f7f7962
+      SHA1 64bits: 3acdcd905a4ed68e253f8b0c20b809791d9256dd
     <td>
       Approx. 1.4 GO
 
@@ -173,9 +173,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-       SHA1 64bits: 3d349cae69d8533f18ec6a4dc0ff23abdfd799fd
+       SHA1 64bits: df7a1c72b3c1d39defa04e003d10119c1858fc12
     <td>
-       Approx. 1.4 GO
+       Approx. 1.5 GO
 
    </tr>
 
@@ -190,7 +190,7 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bit: 36a6fe69c5453123695575a861b4e19c6d8b3d55
+      SHA1 64bit: b4f59368c8bae1188ee4923be507976cf1e74647
       <td>
        Approx. 1.8 GO
    </tr>
@@ -206,9 +206,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-       SHA1 64bits: 85b69e39815329629953853e51c8cf2cf139b40b
+       SHA1 64bits: aff9ffa9a5a5550806a7522617eb8a6260824492
       <td>
-       Approx. 1.5 GO
+       Approx. 1.6 GO
    </tr>
 
    <tr class="odd">
@@ -222,7 +222,7 @@
      <p>
       kernel: Last stable kernel.
      <p>
-        SHA1 64bits: e32db0e1fd780a0cff02916f92612332958f5468
+        SHA1 64bits: b5322d9fcb663abb79655908acc30dd3831c56df
       <td>
        Approx. 1.6 GO
    </tr>
@@ -238,9 +238,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-        SHA1 64bits: f91060dbe7b171a25b7788c18ade6cfa901e2b03
+        SHA1 64bits: 9391bd62cbb712f2cff81a33fea83f2378c5ed8b
       <td>
-       Approx. 1.5 GO
+       Approx. 1.6 GO
    </tr>
 
    <tr class="odd">
@@ -254,9 +254,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-        SHA1 64bits: 940037ec018b3054d456cbd964abefbb7a04b0d8
+        SHA1 64bits: a78c29f54b4b542ca7e163f13eb39608c9e3bce6
       <td>
-       Approx. 1.6 GO
+       Approx. 1.7 GO
    </tr>
 
    <tr class="even">
@@ -270,9 +270,9 @@
      <p>
       kernel: Last stable kernel.
      <p>
-      SHA1 64bits: f059f6f0f652e34d89315959edd3e17a9af7fd76
+      SHA1 64bits: 175094e69deddaa9bc9f686b0a3ace9241706274
     <td>
-      Approx. 1.8 GO
+      Approx. 2.0 GO
    </tr>
   </table>
 
