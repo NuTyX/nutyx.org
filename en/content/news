@@ -1,4 +1,4 @@
-<h1>Latest news 30-09-2023</h1>
+<h1>Latest news 04-11-2023</h1>
 
 
  <h2>NuTyX 23.11.0 available with cards 2.7.1</h2>
@@ -10,7 +10,7 @@
    <table width="60%" cellspacing="0">
     <tr>
      <td>
-      The LXQT ISO doens't start.
+      cards list -p doesn't display any version-release info.
      </td>
      <td>
       Fixed
@@ -18,7 +18,7 @@
     </tr>
     <tr>
      <td>
-      The Cinnamon ISO doesn't start.
+      cards info -p <package_name> displays no info.
      </td>
      <td>
       Fixed
@@ -26,23 +26,8 @@
     </tr>
     <tr>
      <td>
-      The list of certificates is no longer updated and prevents the wget command from working properly on https sites.
-     </td>
-     <td>
-      Fixed
-     </td>
-    </tr>
-    <tr>
-     <td>
-The mdadm and lvm2 packages are not installed by default in ISOs, which prevents NuTyX from being installed on a RAID system or on logical volumes.
-     </td>
-     <td>
-      Fixed
-     </td>
-    </tr>
-    <tr>
-     <td>
-The flcards tool does not retain the display of the selection of packages to be removed/installed.
+      install-nutyx -ec mounts the folders each time the command is run.
+      You end up with the same setup several times.
      </td>
      <td>
       Fixed

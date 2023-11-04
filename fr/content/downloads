@@ -1,6 +1,6 @@
 <h1>Téléchargements</h1>
  <h2>Introduction</h2>
-   La version stable actuelle de NuTyX est la <b>23.09</b>.
+   La version stable actuelle de NuTyX est la <b>23.11</b>.
   <p>
    Les ISOs sont disponibles en 64 bits "Rolling" releases.
   <p>
@@ -42,7 +42,7 @@
    <tr class="odd">
 
     <td class="lien_article"> 
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 64bits</a>
     <td>
        <p>
         L'ISO contient une installation de base sans interface graphique.
@@ -59,16 +59,16 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 6695dd17af9ab697e8e9f2d2cbe1e9b41233f175
+        SHA1 64bits: 5280acc27dd0526fa7d4beeae0f856cc1a4d0b92
      <td>
-       Environ 800.1 MO
+       Environ 836 MO
 
    </tr>
 
    <tr class="even">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-XORG.iso"><img src="../graphics/downloads/xorg.png" alt="logo xorg"/><br/>XORG 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-XORG.iso"><img src="../graphics/downloads/xorg.png" alt="logo xorg"/><br/>XORG 64bits</a>
 
     <td>
        <p>
@@ -78,7 +78,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: daeababe837c21ae1fb225e4d551a8a9d983a354
+        SHA1 64bits: 37f261dedf2f2b14c58d5a9ce443044f1434aea9
 
       <td>
        Environ 1.2 GO
@@ -89,7 +89,7 @@
    <tr class="odd">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-JWM.iso"><img src="../graphics/downloads/jwm-blue.png" alt="logo jwm"/><br/>JWM 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-JWM.iso"><img src="../graphics/downloads/jwm-blue.png" alt="logo jwm"/><br/>JWM 64bits</a>
 
     <td>
        <p>
@@ -99,7 +99,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 52a8769ee51c9d0d72979b4ec9b117462c5ca5d9
+        SHA1 64bits: a261a60214346c252f8249f6ea9016ee5642d86a
 
     <td>
        Environ 1.5 GO
@@ -109,7 +109,7 @@
    <tr class="even">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-CDE.iso"><img src="../graphics/downloads/cde.png" alt="logo cde"/><br/>CDE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-CDE.iso"><img src="../graphics/downloads/cde.png" alt="logo cde"/><br/>CDE 64bits</a>
 
     <td>
        <p>
@@ -119,7 +119,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 704a2d2cd99803639c93c28dabf9093045808636
+        SHA1 64bits: 50d20f64aa24c92e37163ce46cc1602ed4aab997
 
     <td>
        Environ 1.4 GO
@@ -129,7 +129,7 @@
    <tr class="odd">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 64bits</a>
 
     <td>
        <p>
@@ -139,7 +139,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: a8af5f398d0a6a45bd8ab180ec451e4d858ccedd
+        SHA1 64bits: 7e0376cd44ba7d57ab7d3b649dbac0b2a3c76d83
     <td>
        Environ 1.4 GO
 
@@ -150,7 +150,7 @@
    <tr class="even">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo Lxde"/><br/>LXDE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo Lxde"/><br/>LXDE 64bits</a>
 
     <td>
        <p>
@@ -160,7 +160,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 1d6e54f888d5d09259f3ab0e1d726fd94d808d68
+        SHA1 64bits: e08851ba769c8b5bd3ad5f640434468e246c32f5
 
     <td>
       Environ 1.4 GO
@@ -170,7 +170,7 @@
    <tr class="odd">
 
     <td class="lien_article">
-      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 64bits</a>
+      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau XFCE4 comme interface graphique.
@@ -179,7 +179,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 3acdcd905a4ed68e253f8b0c20b809791d9256dd
+        SHA1 64bits: 52cbb61e7222fa247a35bd621034fceec07a3842
     <td>
        Environ 1.4 GO
 
@@ -189,7 +189,7 @@
    <tr class="even">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-LXQT.iso"><img src="../graphics/downloads/lxqt.png" alt="logo lxqt"/><br/>LXQT 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-LXQT.iso"><img src="../graphics/downloads/lxqt.png" alt="logo lxqt"/><br/>LXQT 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau LXQT comme interface graphique.
@@ -198,7 +198,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: df7a1c72b3c1d39defa04e003d10119c1858fc12
+        SHA1 64bits: ac1a125bdeccf598e56bbb92784c54339e8c8264
     <td>
       Environ 1.5 GO
 
@@ -207,7 +207,7 @@
    <tr class="odd">   
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-ENLIGHTENMENT.iso"><img src="../graphics/downloads/enlightenment.png" alt="logo enlightenment"/><br/>ENLIGHTENMENT 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-ENLIGHTENMENT.iso"><img src="../graphics/downloads/enlightenment.png" alt="logo enlightenment"/><br/>ENLIGHTENMENT 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau ENLIGHTENMENT comme interface graphique.
@@ -216,16 +216,16 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: b4f59368c8bae1188ee4923be507976cf1e74647
+        SHA1 64bits: 86998c66d99fa59053a9878ab4f7de1c3dec36f2
       <td>
-       Environ 1.8 GO
+       Environ 1.9 GO
 
    </tr>
 
    <tr class="even">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau MATE comme interface graphique.
@@ -234,16 +234,16 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: aff9ffa9a5a5550806a7522617eb8a6260824492
+        SHA1 64bits: e60bf0986a41ed811502146a0dee474c39cdbcc7
       <td>
-       Environ 1.5 GO
+       Environ 1.7 GO
 
    </tr>
 
    <tr class="odd"> 
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-CINNAMON.iso"><img src="../graphics/downloads/cinnamon.png" alt="logo cinnamon"/><br/>CINNAMON 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-CINNAMON.iso"><img src="../graphics/downloads/cinnamon.png" alt="logo cinnamon"/><br/>CINNAMON 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau CINNAMON comme interface graphique.
@@ -252,7 +252,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: b5322d9fcb663abb79655908acc30dd3831c56df
+        SHA1 64bits: 492506748fc7982cd844c6db4ebbcded868c191e
       <td>
        Environ 1.6 GO
 
@@ -261,7 +261,7 @@
    <tr class="even"> 
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-BUDGIE.iso"><img src="../graphics/downloads/budgie.png" alt="logo budgie"/><br/>BUDGIE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-BUDGIE.iso"><img src="../graphics/downloads/budgie.png" alt="logo budgie"/><br/>BUDGIE 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau BUDGIE comme interface graphique.
@@ -270,7 +270,7 @@
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 9391bd62cbb712f2cff81a33fea83f2378c5ed8b
+        SHA1 64bits: daebe82c74fc8121cd9d037da79b982286d28485
       <td>
        Environ 1.6 GO
 
@@ -279,7 +279,7 @@ s
    <tr class="odd">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau GNOME comme interface graphique.
@@ -288,7 +288,7 @@ s
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: a78c29f54b4b542ca7e163f13eb39608c9e3bce6
+        SHA1 64bits: b2701ec6727c2ee262a4a813911728916988b8d1
       <td>
        Environ 1.7 GO
 
@@ -297,7 +297,7 @@ s
    <tr class="even">
 
     <td class="lien_article">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.09.0-KDE5.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-23.11.0-KDE5.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE 64bits</a>
     <td>
        <p>
         L'ISO contient le bureau KDE5 comme interface graphique.
@@ -306,7 +306,7 @@ s
        <p>
         kernel: Dernier kernel stable.
        <p>
-        SHA1 64bits: 175094e69deddaa9bc9f686b0a3ace9241706274
+        SHA1 64bits: 38fc93fbf9693d6164f2b5b9041522ae56537e2f
       <td>
        Environ 2.0 GO
 
@@ -366,7 +366,7 @@ sdc  8:0:0:0    disk TDKMedia Trans-It_Drive  PMAP 07991E033A9CAF0E usb</pre>
  <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
    La commande qui suit va supprimer toutes les données qui se trouvent sur la clé.
   </div>
-   <pre class="command"><kbd>dd if=/chemin/vers/l'/iso/NuTyX_x86_64-23.09.0-BASE.iso of=/dev/sdX status=progress
+   <pre class="command"><kbd>dd if=/chemin/vers/l'/iso/NuTyX_x86_64-23.11.0-BASE.iso of=/dev/sdX status=progress
 sync</kbd></pre>  <p>
    Si vous êtes sous Windows:
   <p>
