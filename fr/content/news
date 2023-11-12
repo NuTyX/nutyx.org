@@ -19,7 +19,7 @@
     </tr>
     <tr>
      <td>
-      cards info -p <nom_de_paquet> n'affiche aucune info.
+      cards info -p &lt;nom_de_paquet&gt; n'affiche aucune info.
      </td>
      <td>
       Fixé

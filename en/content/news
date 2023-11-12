@@ -18,7 +18,7 @@
     </tr>
     <tr>
      <td>
-      cards info -p <package_name> displays no info.
+      cards info -p &lt;package_name&gt; displays no info.
      </td>
      <td>
       Fixed
