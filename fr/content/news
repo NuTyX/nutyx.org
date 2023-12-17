@@ -1,9 +1,9 @@
-<h1>Dernière nouvelle 04-11-2023</h1>
+<h1>Dernière nouvelle 17-12-2023</h1>
 
 
- <h2>NuTyX 23.11.0 disponible avec cards 2.7.1</h2>
+ <h2>NuTyX 23.12.0 disponible avec cards 2.7.2</h2>
   <p>
-   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.11.0 et cards 2.7.1 .
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.12.0 et cards 2.7.2 .
 
  <h2>Bugs corrigés</h2>
 
@@ -39,54 +39,54 @@
   <p>
    SysV en 3.06 et Systemd en 253.0 .
   <p>
-   Le serveur graphique Xorg-server version 21.1.9.
+   Le serveur graphique Xorg-server version 21.1.10.
    la librairie Mesa 3D en 23.2.1, Gtk4 4.12.4
-   et Qt 6.6.0.
+   et Qt 6.6.1.
   <p>
     <ul>
       <li>
-        Le pilote nvidia est mis à jour en version 535.113.01 .
+        Le pilote nvidia est mis à jour en version 535.129.03 .
       <li>
-        Le pilote nvidia de la série 470.xx en version 470.199.02 .
+        Le pilote nvidia de la série 470.xx en version 470.223.02 .
       <li>
-        Le pilote nvidia de la série 390.xx en version 390.157.12 .
+        Le pilote nvidia de la série 390.xx en version 390.157.13 .
    </ul>
   <p>
-   L'interpreteur Python est mis à jour en version 3.11.5.
+   L'interpreteur Python est mis à jour en version 3.11.6.
   <p>
    L'environnement de bureau XFCE est mis à jour en version 4.18.3.
   <p>
    L'environnement de bureau MATE est en version 1.26.2.
   <p>
-   L'environnement de bureau GNOME est également mis à jour en version 45.0
+   L'environnement de bureau GNOME est également mis à jour en version 45.2
   <p>
-   L'environnement de bureau KDE est disponible en Plasma 5.27.9, Framework 5.111.0
-   et les applications en 23.08.2.
+   L'environnement de bureau KDE est disponible en Plasma 5.27.10, Framework 5.112.0
+   et les applications en 23.08.4.
   <p>
-   Les navigateurs disponibles sont entre autre: Firefox 119.0, Epiphany 45.0, etc
+   Les navigateurs disponibles sont entre autre: Firefox 120.0.1, Epiphany 45.1, etc
   <p>
-   De nombreuses applications on été mise à jour également comme Telegram-desktop 4.10.3,
-   Thunderbird 115.4.1, Scribus 1.5.8, Libreoffice 7.5.4.2, Gimp 2.10.34, etc.
+   De nombreuses applications on été mise à jour également comme Telegram-desktop 4.12.2,
+   Thunderbird 115.5.2, Scribus 1.5.8, Libreoffice 7.6.3.2, Gimp 2.10.36, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.14.328, 4.19.297, 5.4.259, 5.10.199, 5.15.137, 6.1.60
-   et la dernière version stable 6.5.9 .
+   4.14.333, 4.19.302, 5.4.264, 5.10.204, 5.15.143, 6.1.68
+   et la dernière version stable 6.5.13.
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.328">kernel 4.14.328 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.333">kernel 4.14.333 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.297">kernel 4.19.297 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.302">kernel 4.19.302 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.259">kernel 5.4.259 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.264">kernel 5.4.264 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.199">kernel 5.10.199 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.204">kernel 5.10.204 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.137">kernel 5.15.137 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.143">kernel 5.15.143 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.60">kernel 6.1.60 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.68">kernel 6.1.68 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.5.9">kernel 6.5.9 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.5.13">kernel 6.5.13 changelog</a>
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
