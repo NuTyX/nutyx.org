@@ -1,9 +1,9 @@
-<h1>Latest news 04-11-2023</h1>
+<h1>Latest news 17-12-2023</h1>
 
 
- <h2>NuTyX 23.11.0 available with cards 2.7.1</h2>
+ <h2>NuTyX 23.12.0 available with cards 2.7.2</h2>
   <p>
-   Spiky and me are happy to announce the new version of NuTyX 23.11.0 and cards 2.7.1 .
+   Spiky and me are happy to announce the new version of NuTyX 23.12.0 and cards 2.7.2 .
 
  <h2>Fixed bugs</h2>
   <p>
@@ -39,54 +39,54 @@
  <p>
    SysV in 3.06 and systemd in 253.0 .
   <p>
-   The xorg-server graphics server version 21.1.9,
-   the Mesa 3D library in 23.2.1, Gtk4 4.12.0
-   and Qt 6.6.0.
+   The xorg-server graphics server version 21.1.10,
+   the Mesa 3D library in 23.2.1, Gtk4 4.12.4
+   and Qt 6.6.1.
   <p>
    <ul>
     <li>
-     The nvidia driver is update to version  535.113.01 .
+     The nvidia driver is update to version  535.129.03 .
     <li>
-     The legacy driver 470.xx series in version 470.199.02 .
+     The legacy driver 470.xx series in version 470.223.02 .
     <li>
-     The legacy driver 390.xx series in version 390.157.12 .
+     The legacy driver 390.xx series in version 390.157.13 .
    </ul>
   <p>
-   The python interpreter is updated to version 3.11.5.
+   The python interpreter is updated to version 3.11.6.
   <p>
    The XFCE desktop environment is updated to version 4.18.3.
   <p>
    The MATE desktop environment is a 1.26.2 version .
   <p>
-   The GNOME desktop environment is also updated to version 45.0
+   The GNOME desktop environment is also updated to version 45.2
    <p>
-   The KDE desktop environment is available in Plasma 5.27.9, Framework 5.111.0
-   and applications in 23.08.2.
+   The KDE desktop environment is available in Plasma 5.27.10, Framework 5.112.0
+   and applications in 23.08.4.
   <p>
-   Available browsers are: Firefox 119.0, Epiphany 45.0, etc
+   Available browsers are: Firefox 120.0.1, Epiphany 45.1, etc
   <p>
-   Many desktop applications have been updated as well like Telegram-desktop 4.10.3,
-   Thunderbird 115.4.1, Scribus 1.5.8, Libreoffice 7.5.4.2, Gimp 2.10.34, etc.
+   Many desktop applications have been updated as well like Telegram-desktop 4.12.2,
+   Thunderbird 115.5.2, Scribus 1.5.8, Libreoffice 7.6.3.2, Gimp 2.10.36, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.14.328, 4.19.297, 5.4.259, 5.10.199, 5.15.137, 6.1.60
-   and the latest stable version 6.5.9 .
+   4.14.333, 4.19.302, 5.4.264, 5.10.204, 5.15.143, 6.1.68
+   and the latest stable version 6.5.13 .
   <p>
    The kernel change logs are available here:
   <p>
-  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.328">kernel 4.14.328 changelog</a>
+  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.333">kernel 4.14.333 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.297">kernel 4.19.297 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.302">kernel 4.19.302 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.259">kernel 5.4.259 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.264">kernel 5.4.264 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.199">kernel 5.10.199 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.204">kernel 5.10.204 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.137">kernel 5.15.137 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.143">kernel 5.15.143 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.60">kernel 6.1.60 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.68">kernel 6.1.68 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.5.9">kernel 6.5.9 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.5.13">kernel 6.5.13 changelog</a>
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
