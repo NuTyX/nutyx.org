@@ -1,16 +1,16 @@
-<h1>Latest news 17-12-2023</h1>
+<h1>Latest news 21-12-2023</h1>
 
 
- <h2>NuTyX 23.12.0 available with cards 2.7.2</h2>
+ <h2>NuTyX 23.12.2 available with cards 2.7.2</h2>
   <p>
-   Spiky and me are happy to announce the new version of NuTyX 23.12.0 and cards 2.7.2 .
+   Spiky and me are happy to announce the new version of NuTyX 23.12.2 and cards 2.7.2 .
 
  <h2>Fixed bugs</h2>
   <p>
    <table width="60%" cellspacing="0">
     <tr>
      <td>
-      cards list -p doesn't display any version-release info.
+      The generate-nutyx does give the possibility to choose another kernel then the default one.
      </td>
      <td>
       Fixed
@@ -18,16 +18,7 @@
     </tr>
     <tr>
      <td>
-      cards info -p &lt;package_name&gt; displays no info.
-     </td>
-     <td>
-      Fixed
-     </td>
-    </tr>
-    <tr>
-     <td>
-      install-nutyx -ec mounts the folders each time the command is run.
-      You end up with the same setup several times.
+      The linux-firmware is very big (more then 1 GB).
      </td>
      <td>
       Fixed
@@ -69,34 +60,35 @@
    Thunderbird 115.5.2, Scribus 1.5.8, Libreoffice 7.6.3.2, Gimp 2.10.36, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.14.333, 4.19.302, 5.4.264, 5.10.204, 5.15.143, 6.1.68
+   4.14.334, 4.19.303, 5.4.265, 5.10.205, 5.15.144, 6.1.69 and 6.6.8
    and the latest stable version 6.5.13.
   <p>
    The kernel change logs are available here:
   <p>
-  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.333">kernel 4.14.333 changelog</a>
+  <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.334">kernel 4.14.334 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.302">kernel 4.19.302 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.303">kernel 4.19.303 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.264">kernel 5.4.264 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.265">kernel 5.4.265 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.204">kernel 5.10.204 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.205">kernel 5.10.205 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.143">kernel 5.15.143 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.144">kernel 5.15.144 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.68">kernel 6.1.68 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.69">kernel 6.1.69 changelog</a>
   <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.8">kernel 6.6.8 changelog</a>
+ <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.5.13">kernel 6.5.13 changelog</a>
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
-   13 desktops are now available in:
+   12 desktops are now available in:
    XORG,
    OPENBOX,
    LXDE,
    XFCE4,
    JWM,
-   CDE,
    LXQT,
    ENLIGHTENMENT,
    MATE,

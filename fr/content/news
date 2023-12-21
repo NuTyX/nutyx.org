@@ -1,9 +1,9 @@
-<h1>Dernière nouvelle 17-12-2023</h1>
+<h1>Dernière nouvelle 21-12-2023</h1>
 
 
- <h2>NuTyX 23.12.0 disponible avec cards 2.7.2</h2>
+ <h2>NuTyX 23.12.2 disponible avec cards 2.7.2</h2>
   <p>
-   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.12.0 et cards 2.7.2 .
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 23.12.2 et cards 2.7.2 .
 
  <h2>Bugs corrigés</h2>
 
@@ -11,7 +11,7 @@
    <table width="60%" cellspacing="0">
     <tr>
      <td>
-      cards list -p n'affiche aucune info de version-release.
+      Le script generate-nutyx ne permet d'utiliser un autre kernel que le kernel par défaut.
      </td>
      <td>
       Fixé
@@ -19,16 +19,7 @@
     </tr>
     <tr>
      <td>
-      cards info -p &lt;nom_de_paquet&gt; n'affiche aucune info.
-     </td>
-     <td>
-      Fixé
-     </td>
-    </tr>
-    <tr>
-     <td>
-      install-nutyx -ec monte les dossiers à chaque relance de la commande.
-      On se retrouve avec plusieur fois le même montage.
+      Le paquet linux-firmware est très volumineux
      </td>
      <td>
       Fixé
@@ -69,34 +60,35 @@
    Thunderbird 115.5.2, Scribus 1.5.8, Libreoffice 7.6.3.2, Gimp 2.10.36, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.14.333, 4.19.302, 5.4.264, 5.10.204, 5.15.143, 6.1.68
+   4.14.334, 4.19.303, 5.4.265, 5.10.205, 5.15.144, 6.1.69 et 6.6.8
    et la dernière version stable 6.5.13.
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.333">kernel 4.14.333 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.334">kernel 4.14.334 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.302">kernel 4.19.302 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.303">kernel 4.19.303 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.264">kernel 5.4.264 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.265">kernel 5.4.265 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.204">kernel 5.10.204 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.205">kernel 5.10.205 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.143">kernel 5.15.143 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.144">kernel 5.15.144 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.68">kernel 6.1.68 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.69">kernel 6.1.69 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.8">kernel 6.6.8 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.5.13">kernel 6.5.13 changelog</a>
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
-   13 bureaux sont maintenant disponibles:
+   12 bureaux sont maintenant disponibles:
    XORG,
    OPENBOX,
    LXDE,
    XFCE4,
    JWM,
-   CDE,
    LXQT,
    ENLIGHTENMENT,
    MATE,
