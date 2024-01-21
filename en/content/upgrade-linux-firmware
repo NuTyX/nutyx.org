@@ -1,0 +1,166 @@
+<h1>Updating the linux-firmware package</h1>
+ <h2>Why update the linux-firmware package</h2>
+ At the time of writing, the linux-firmware package is over 1 Gbyte in size.
+ <pre class="command_user"><kbd>cards info linux-firmware</kbd></pre>
+ <pre class="output">Name: linux-firmware
+Description : The linux kernel firmware set of files. More and more hardware requires this package
+Group : 
+Collection : base
+URL : https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+License : GPL
+Contributor(s) : Spiky
+Packager : tnut <tnut@nutyx.org>
+Version : 20240115
+Release: 1
+Build date: Wed Jan 17, 2024 10:01:01
+Installation date: Fri 19 Jan 2024 11:44:27
+Installed size: 1.09 Gbytes
+...</pre>
+   <p>
+    Using this tutorial, you may recover 1GB of disk space.
+   <p>
+     But before starting the procedure, we make sure that the NuTyX is up to date:
+     <pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
+   <p>
+    If your installation is from January 2024 or more recent, go directly to the paragraph <a href="#4">Identify the firmware loaded at startup</a
+   <p>
+    Now the linux-firmware package is available through the linux-firmware package set.
+   <p>
+    The package set version 20240111 contains 206 as can be seen with the command below:
+    <pre class="command_user"><kbd>cards info -S linux-firmware</kbd></pre>
+    <pre class="output">206</pre>
+   <p>
+    In the vast majority of cases, only one or 2 packages from
+    of the linux-firmware package set is really necessary.
+    We will therefore replace the linux-firmware package with one or 2 packages from the linux-firmware package set.
+  <h2>Remove linux-firmware package</h2>
+     We therefore first delete the linux-firmware package.
+    <p>
+     You must pass the -a option because the package is in the base collection.
+     A package in this collection cannot be deleted conventionally.
+    <pre class="command_user"><kbd>sudo cards remove -a linux-firmware</kbd></pre>
+    <pre class="output">[sudo] Thierry's password:
+Get info on 1055 packages: 100%
+REMOVE: (base) linux-firmware 20240115-1, 4228 files: 100%</pre>
+   <div class="important">
+     <img alt="[Important]" src="../graphics/caution.gif" />
+     At this stage, you should definitely not restart the machine yet, you risk finding yourself
+     with a non-functional system. FIRST INSTALL the linux-firmware package set.
+   </div>
+
+  <h2>Install the linux-firmware package set</h2>
+   You can now install the linux-firmware package set without risk.
+   <pre class="command_user"><kbd>sudo cards install linux-firmware</kbd></pre>
+   <pre class="output">[sudo] Thierry's password:
+   3c574_cs-firmware 20240115-1 780B (1.01 MB/s) 100% - 0 s
+   3c589_cs-firmware 20240115-1 776B (700.99 KB/s) 100% - 0 s
+   acenic-firmware 20240115-1 37.20 KB (42.47 MB/s) 100% - 0 s
+   adreno-firmware 20240115-1 118.47 KB (83.14 MB/s) 100% - 0 s
+   ...
+   ..
+   .
+   xhci-tegra-firmware 20240115-1 195.21 KB (154.44 MB/s) 100% - 0 s
+   yam-firmware 20240115-1 5.87 KB (11.67 MB/s) 100% - 0 s
+Get info on 1054 packages: 100%
+   ADD: (base) 3c574_cs-firmware 20240115-1, 9 files: 100%
+   ADD: (base) 3c589_cs-firmware 20240115-1, 9 files: 100%
+   ADD: (base) acenic-firmware 20240115-1, 10 files: 100%
+   ADD: (base) adreno-firmware 20240115-1, 41 files: 100%
+   ...
+   ..
+   .
+   ADD: (base) xhci-tegra-firmware 20240115-1, 16 files: 100%
+   ADD: (base) yam-firmware 20240115-1, 10 files: 100%
+post-installation: started
+   /sbin/ldconfig -r /
+post-installation: finished</pre>
+   We can now identify the firmware loaded at startup.
+  <h2>Identify firmware loaded at startup</h2>
+  To do this, we have a system command: dmesg.
+  The command must be launched via the root account to obtain the desired information.
+   <pre class="command_user"><kbd>sudo dmesg|grep --ignore-case firmware</kbd></pre>
+   <pre class="output">[    9.750874] i915 0000:00:02.0: [drm] Finished loading DMC firmware i915/adls_dmc_ver2_01.bin (v2.1)
+[    9.756127] i915 0000:00:02.0: [drm] GT0: GuC firmware i915/tgl_guc_70.bin version 70.13.1
+[    9.756131] i915 0000:00:02.0: [drm] GT0: HuC firmware i915/tgl_huc.bin version 7.9.3
+</pre>
+  As we can see, the machine concerned requires 3 firmwares.
+  We just need to identify the ownership of the firmware concerned:
+  <pre class="command_user"><kbd>cards query adls_dmc_ver2_01.bin</kbd></pre>
+  <pre class="output">Get info on 1260 packages: 100%
+Package File
+i915-firmware lib/firmware/i915/adls_dmc_ver2_01.bin</pre>
+  <pre class="command_user"><kbd></kbd></pre>
+  <pre class="output">Get info on 1260 packages: 100%
+Package File
+i915-firmware lib/firmware/i915/tgl_guc_70.bin</pre>
+  <pre class="command_user"><kbd></kbd></pre>
+  <pre class="output">Get info on 1260 packages: 100%
+Package File
+i915-firmware lib/firmware/i915/tgl_huc.bin</pre>
+   BINGO. This machine only uses one package of the packages set:
+   <b>i915-firmware</b>
+   We can check the package:
+   <pre class="command_user"><kbd>cards info i915-firmware</kbd></pre>
+<pre class="output">Get info on 1260 packages: 100%
+Name: i915-firmware
+Description: i915 -- Intel Integrated Graphics driver
+Package sets: linux-firmware
+Group              :
+Collection: basic
+URL: https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+License: GPL
+Contributor(s): Spiky
+Packager: tnut <tnut@nutyx.org>
+Version: 20240115
+Release: 1
+Construction date: Wed Jan 17, 2024 10:36:48
+Installation date: Sun Jan 21, 2024 2:02:43 PM
+Installed size: 26.90 Mbytes
+Number of files: 133 file(s)
+Arch: x86_64
+Install. manual: Yes</pre>
+ 
+  <h2>Remove the linux-firmware packages set</h2>
+  We no longer need the other 205 packages in the game.
+  We will therefore first delete the entire game to install only the package(s) concerned:
+    <pre class="command_user"><kbd>sudo cards remove -a linux-firmware</kbd></pre>
+    <pre class="output">[sudo] Thierry's password:
+Get info on 1260 packages: 100%
+REMOVE: (base) 3c574_cs-firmware 20240115-1, 3 files: 100%
+REMOVE: (base) 3c589_cs-firmware 20240115-1, 3 files: 100%
+REMOVE: (base) acenic-firmware 20240115-1, 5 files: 100%
+...
+..
+.
+REMOVE: (base) xhci-rcar-firmware 20240115-1, 5 files: 100%
+REMOVE: (base) xhci-tegra-firmware 20240115-1, 11 files: 100%
+REMOVE: (base) yam-firmware 20240115-1, 6 files: 100%</pre>
+  <div class="important">
+     <img alt="[Important]" src="../graphics/caution.gif" />
+     Again, at this stage, you should definitely not use the command sudo cards upgrade.
+     As this command remove all the packages in cache. In case of reboot you might end up
+      with a non-functional system. FIRST INSTALL the relevant package(s).
+   </div>
+
+  <h2>Install the relevant package(s)</h2>
+   We can now install the necessary package for the proper functioning of the machine:
+   <pre class="command_user"><kbd>sudo cards install i915-firmware r8169-firmware</kbd></pre>
+   <pre class="output">[sudo] Thierry's password:
+Get info on 1054 packages: 100%
+   ADD: (base) i915-firmware 20240115-1, 133 files: 100 %
+   ADD: (base) r8169-firmware 20240115-1, 32 files: 100 %
+post-installation: started
+   /sbin/ldconfig -r /
+post-installation: finished</pre>
+
+  <h2>Restart the machine</h2>
+   We can now restart to check that everything went well.
+
+  <h2>Conclusion</h2>
+   You now have a limited number of packages for the firmwares machine.
+   In our example, the size decreased from <b><i>1.09 GBytes</i></b> to <b><i>26.90 MBytes</i></b>
+   or almost <b><i>1Gbyte</i></b> of disk space recovered.
+   <p>
+   You can also double-check the command output:
+     <pre class="command_user"><kbd>sudo dmesg|grep --ignore-case firmware</kbd></pre>
+   If a new message appears, repeat the procedure using <a href="#4">the same method.</a>

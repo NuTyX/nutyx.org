@@ -1,0 +1,166 @@
+<h1>Mise à jour du paquet linux-firmware</h1>
+ <h2>Pourquoi mettre à jour le paquet linux-firmware</h2>
+ Au moment de la rédaction de cet article, le paquet linux-firmware a une taille de + de 1 Goctet.
+ <pre class="command_user"><kbd>cards info linux-firmware</kbd></pre>
+ <pre class="output">Nom                 : linux-firmware
+Description         : The linux kernel firmware set of files. More and more hardware requires this package
+Groupe              : 
+Collection          : base
+URL                 : https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+License             : GPL
+Contributeur(s)     : Spiky
+Empaqueteur         : tnut <tnut@nutyx.org>
+Version             : 20240115
+Release             : 1
+Date de construction: mer 17 jan 2024 10:01:01
+Date d'installation : ven 19 jan 2024 11:44:27
+Taille installée    :  1.09 Goctets
+...</pre>
+  <p>
+   A l'aide de ce tutoriel, vous allez peut-être récuperer un 1Goctet d'espace disque.
+  <p>
+    Mais avant de commencer la procédure, on s'assure que la NuTyX est à jour:
+    <pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
+  <p>
+   Si votre installation date de janvier 2024 ou plus récente, allez directement au paragraphe <a href="#4">Identifier les firmwares chargés au démarrage</a>
+  <p>
+   Désormais, le paquet linux-firmware est disponible via le jeu de paquets linux-firmware.
+  <p>
+   La version 20240111 du jeu de paquets en contient 206 comme on peut le voir avec la commande ci-dessous:
+   <pre class="command_user"><kbd>cards info -S linux-firmware</kbd></pre>
+   <pre class="output">206</pre>
+  <p>
+   Dans la grande majorité des cas, seul un ou 2 paquets en provenance
+   du jeu de paquets linux-firmware est vraiment necessaire.
+   On va donc remplacer le paquet linux-firmware par un ou 2 paquets en provenance du jeu de paquet linux-firmware.
+ <h2>Supprimer le paquet linux-firmware</h2>
+    On supprime donc d'abord le paquet linux-firmware.
+   <p>
+    Il faut passer l'option -a en effet le paquet se trouve dans la collection base.
+    Un paquet de cette collection ne peut pas être supprimé de façon conventionnelle.
+   <pre class="command_user"><kbd>sudo cards remove -a linux-firmware</kbd></pre>
+   <pre class="output">[sudo] Mot de passe de thierry : 
+Obtenir les infos sur les 1055 paquets: 100 %
+SUPPRIME: (base) linux-firmware 20240115-1, 4228 fichiers: 100 %</pre>
+  <div class="important">
+    <img alt="[Important]" src="../graphics/caution.gif" />
+    A ce stade, il ne faut surtout pas encore redémarrer la machine, vous risquez de vous retrouver
+    avec un système non fonctionnel. INSTALLER D'ABORD le jeu de paquets linux-firmware.   
+  </div>
+
+ <h2>Installer le jeu de paquets linux-firmware</h2>
+  On peut maintenant installer le jeu de paquets linux-firmware sans risques.
+  <pre class="command_user"><kbd>sudo cards install linux-firmware</kbd></pre>
+  <pre class="output">[sudo] Mot de passe de thierry : 
+  3c574_cs-firmware 20240115-1   780B ( 1.01 MB/s) 100 % - 0 s 
+  3c589_cs-firmware 20240115-1   776B (700.99 KB/s) 100 % - 0 s 
+  acenic-firmware 20240115-1   37.20 KB (42.47 MB/s) 100 % - 0 s 
+  adreno-firmware 20240115-1   118.47 KB (83.14 MB/s) 100 % - 0 s 
+  ...
+  ..
+  .
+  xhci-tegra-firmware 20240115-1   195.21 KB (154.44 MB/s) 100 % - 0 s 
+  yam-firmware 20240115-1    5.87 KB (11.67 MB/s) 100 % - 0 s 
+Obtenir les infos sur les 1054 paquets: 100 %
+  AJOUTE: (base) 3c574_cs-firmware 20240115-1, 9 fichiers: 100 %
+  AJOUTE: (base) 3c589_cs-firmware 20240115-1, 9 fichiers: 100 %
+  AJOUTE: (base) acenic-firmware 20240115-1, 10 fichiers: 100 %
+  AJOUTE: (base) adreno-firmware 20240115-1, 41 fichiers: 100 %
+  ...
+  ..
+  .
+  AJOUTE: (base) xhci-tegra-firmware 20240115-1, 16 fichiers: 100 %
+  AJOUTE: (base) yam-firmware 20240115-1, 10 fichiers: 100 %
+post-installation: démarrée
+  /sbin/ldconfig -r /
+post-installation: finie</pre>
+  On peut maintenant identifier les firmwares chargés au démarrage de la machine.
+ <h2>Identifier les firmwares chargés au démarrage</h2>
+ Pour cela, on dispose d'une commande système: dmesg.
+ La commande doit être lancé via le compte root pour obtenir les informations voulus.
+  <pre class="command_user"><kbd>sudo dmesg|grep --ignore-case firmware</kbd></pre>
+  <pre class="output">[    9.750874] i915 0000:00:02.0: [drm] Finished loading DMC firmware i915/adls_dmc_ver2_01.bin (v2.1)
+[    9.756127] i915 0000:00:02.0: [drm] GT0: GuC firmware i915/tgl_guc_70.bin version 70.13.1
+[    9.756131] i915 0000:00:02.0: [drm] GT0: HuC firmware i915/tgl_huc.bin version 7.9.3
+</pre>
+ Comme on peut le voir la machine concernée necessite 3 firmwares.
+ Il nous suffit d'identifier l'appartenance des firmwares concernés:
+ <pre class="command_user"><kbd>cards query adls_dmc_ver2_01.bin</kbd></pre>
+ <pre class="output">Obtenir les infos sur les 1260 paquets: 100 %
+Paquet         Fichier
+i915-firmware  lib/firmware/i915/adls_dmc_ver2_01.bin</pre>
+ <pre class="command_user"><kbd></kbd></pre>
+ <pre class="output">Obtenir les infos sur les 1260 paquets: 100 %
+Paquet         Fichier
+i915-firmware  lib/firmware/i915/tgl_guc_70.bin</pre>
+ <pre class="command_user"><kbd></kbd></pre>
+ <pre class="output">Obtenir les infos sur les 1260 paquets: 100 %
+Paquet         Fichier
+i915-firmware  lib/firmware/i915/tgl_huc.bin</pre>
+  BINGO. Cette machine n'utilise qu'un seul paquet du jeu, le paquet:
+  <b>i915-firmware</b>
+  On peut vérifier le paquet:
+  <pre class="command_user"><kbd>cards info i915-firmware</kbd></pre>
+<pre class="output">Obtenir les infos sur les 1260 paquets: 100 %
+Nom                 : i915-firmware
+Description         : i915 -- Intel Integrated Graphics driver
+Jeux de paquets     :  linux-firmware
+Groupe              : 
+Collection          : base
+URL                 : https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+License             : GPL
+Contributeur(s)     : Spiky
+Empaqueteur         : tnut <tnut@nutyx.org>
+Version             : 20240115
+Release             : 1
+Date de construction: mer 17 jan 2024 10:36:48
+Date d'installation : dim 21 jan 2024 14:02:43
+Taille installée    : 26.90 Moctets
+Nombre de fichiers  : 133 fichier(s)
+Arch                : x86_64
+Install. manuelle   : Oui</pre>  
+ 
+ <h2>Supprimer à nouveau le jeu de paquets linux-firmware</h2>
+ On n'a plus besoin des 205 autres paquets du jeu.
+ On va donc d'abord supprimer le jeu au complet pour n'installer que le(s) paquet(s) concerné(s)
+
+   <pre class="command_user"><kbd>sudo cards remove -a linux-firmware</kbd></pre>
+   <pre class="output">[sudo] Mot de passe de thierry : 
+Obtenir les infos sur les 1260 paquets: 100 %
+SUPPRIME: (base) 3c574_cs-firmware 20240115-1, 3 fichiers: 100 %
+SUPPRIME: (base) 3c589_cs-firmware 20240115-1, 3 fichiers: 100 %
+SUPPRIME: (base) acenic-firmware 20240115-1, 5 fichiers: 100 %
+...
+..
+.
+SUPPRIME: (base) xhci-rcar-firmware 20240115-1, 5 fichiers: 100 %
+SUPPRIME: (base) xhci-tegra-firmware 20240115-1, 11 fichiers: 100 %
+SUPPRIME: (base) yam-firmware 20240115-1, 6 fichiers: 100 %</pre>
+ <div class="important">
+    <img alt="[Important]" src="../graphics/caution.gif" />
+    A nouveau, à ce stade, il ne faut surtout pas encore utiliser la commande sudo cards upgrade.
+    Cette commande supprime tous les archives de paquets dans le cache.
+    En cas de redémarrage, vous risquez de vous retrouver
+    avec un système non fonctionnel. INSTALLER D'ABORD le(s) paquet(s) concerné(s).   
+  </div>
+ 
+ <h2>Installer le(s) paquet(s) concerné(s)</h2>
+  On peut maintenant installer le paquet necessaire pour le bon fonctionnement de la machine:
+  <pre class="command_user"><kbd>sudo cards install i915-firmware</kbd></pre>
+  <pre class="output">[sudo] Mot de passe de thierry :
+Obtenir les infos sur les 1054 paquets: 100 %
+  AJOUTE: (base) i915-firmware 20240115-1, 133 fichiers: 100 %
+  AJOUTE: (base) r8169-firmware 20240115-1, 32 fichiers: 100 %
+post-installation: démarrée
+  /sbin/ldconfig -r /
+post-installation: finie</pre>
+ <h2>Redémarrer la machine</h2>
+  On peut maintenant redémarrer pour vérifier que tout s'est bien passé.
+ <h2>Conclusion</h2>
+  Vous avez maintenant un nombre limité de paquets pour la gestion de la machine.
+  Dans notre exemple, la taille est passée de <b><i>1.09 GOctet</i></b> à <b><i>26.90 Moctets</i></b>
+  soit quasi un <b><i>1Goctet</i></b> d'espace disque récupérée.
+ <p>
+  Vous pouvez également revérifier la sortie de la commande:
+    <pre class="command_user"><kbd>sudo dmesg|grep --ignore-case firmware</kbd></pre>
+  Si un nouveau message s'affiche, refaire la procédure en utilisant <a href="#4">la même methode.</a>  
