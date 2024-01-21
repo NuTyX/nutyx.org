@@ -29,11 +29,6 @@
        Version du kernel
       <th>
        Nom du paquet à installer
-     <tr class="odd">
-      <td>
-       4.14.x
-      <td>
-       kernel-414
      <tr class="even">
       <td>
        4.19.x
@@ -54,6 +49,16 @@
        5.15.x
       <td>
        kernel-515
+     <tr class="even">
+      <td>
+       6.1.x
+      <td>
+       kernel-61
+     <tr class="odd">
+      <td>
+       6.6.x
+      <td>
+       kernel-66
     </table>
 
  <h2>Mise à jour du kernel</h2>
