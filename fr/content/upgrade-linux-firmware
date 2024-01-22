@@ -89,11 +89,11 @@ post-installation: finie</pre>
  <pre class="output">Obtenir les infos sur les 1260 paquets: 100 %
 Paquet         Fichier
 i915-firmware  lib/firmware/i915/adls_dmc_ver2_01.bin</pre>
- <pre class="command_user"><kbd></kbd></pre>
+ <pre class="command_user"><kbd>cards query tgl_guc_70.bin</kbd></pre>
  <pre class="output">Obtenir les infos sur les 1260 paquets: 100 %
 Paquet         Fichier
 i915-firmware  lib/firmware/i915/tgl_guc_70.bin</pre>
- <pre class="command_user"><kbd></kbd></pre>
+ <pre class="command_user"><kbd>cards query tgl_huc.bin</kbd></pre>
  <pre class="output">Obtenir les infos sur les 1260 paquets: 100 %
 Paquet         Fichier
 i915-firmware  lib/firmware/i915/tgl_huc.bin</pre>
