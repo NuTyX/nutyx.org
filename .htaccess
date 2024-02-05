@@ -5,8 +5,8 @@ Options +FollowSymlinks
 RewriteEngine On
 RewriteBase  /
 
-RewriteRule ^([a-zA-Z0-9]+)/([[:alnum:]-\-_]+)\.html$ /$1/index.cgi?page=$2 [L]
-RewriteRule ^([a-zA-Z0-9]+)/([[:alnum:]-\-_]+)$ /$1/index.cgi?page=$2 [L]
+RewriteRule ^([a-zA-Z0-9]+)/([[:alnum:]-\.\-_]+)\.html$ /$1/index.cgi?page=$2 [L]
+RewriteRule ^([a-zA-Z0-9]+)/([[:alnum:]-\.\-_]+)$ /$1/index.cgi?page=$2 [L]
 
 RewriteCond %{HTTP:Accept-Language} (^fr) [NC]
 RewriteRule ^$ fr/ [R=301,L]
