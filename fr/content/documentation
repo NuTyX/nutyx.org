@@ -2,7 +2,7 @@
  <h2>Guides du nouvel utilisateur sur NuTyX</h2>
 
   <table width="100%" cellspacing="0">
-   <tr class="even">
+   <tr class="odd">
     <td class="lien_article">
       <a class="url" href="dictionary">Petit lexique du NuTyXien</a>
     </td>
@@ -11,7 +11,7 @@
     </td>
    </tr>   
 
-   <tr class="odd">
+   <tr class="even">
     <td class="lien_article">
       <a class="url" href="install">Installation automatique sur une seule partition</a>
     </td>
@@ -22,7 +22,7 @@
     </td>
    </tr>
 
-   <tr class="even">
+   <tr class="odd">
     <td class="lien_article">
       <a class="url" href="install-nutyx#4">Installation manuelle complète en utilisant une ISO LIVE</a>
     </td>
@@ -30,6 +30,16 @@
      Cette rubrique montre comment installer NuTyX manuellement en utilisant une connection internet.
      GRUB sera le chargeur de démarrage utilisé.
      Cette méthode peut être utilisée si votre matériel dispose du mode UEFI ou BIOS.
+     Vous pouvez utiliser n'importe quelle ISO live.
+    </td>
+   </tr>
+
+   <tr class="even">
+    <td class="lien_article">
+      <a class="url" href="cryptsetup-install">Installation manuelle sur une partition cryptée</a>
+    </td>
+    <td>
+     Cette rubrique montre comment installer NuTyX manuellement en utilisant une partition cryptée.
      Vous pouvez utiliser n'importe quelle ISO live.
     </td>
    </tr>
