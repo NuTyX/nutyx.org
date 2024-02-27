@@ -32,9 +32,7 @@
      It is up to <a href="faq#4">you to decide</a> whether to use the <a href="dictionary#ID070">ports</a> system, to compile and install your own source <a href="dictionary#ID005">packages</a>, or to be content with the binary packages that are natively integrated into the system.
     <p>
      It is inspired by the excellent <a href="http://www.linuxfromscratch.org/lfs/">Linux From Scratch documentation LFS</a> and <a href="http://www.linuxfromscratch.org/blfs/">Behind Linux From Scratch documentation BLFS</a>.
-    <div style="font-size:150%"><b>
-	 The 10 benefits of NuTyX
-	</b></div>
+  <h2> The 10 benefits of NuTyX</h2>
     <ol>
       <li>
        You can install NuTyX from almost any other distribution, thanks to the BASH <a href="downloads#5">script named install-nutyx</a>.

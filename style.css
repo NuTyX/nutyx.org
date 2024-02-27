@@ -5,15 +5,16 @@
 * {
  font-family:Verdana, sans-serif;
 }
+html,body{
+  font-family:sans-serif;
+}
 table {
- width: 100%;
- border-radius:10px;
+  width: 100%;
 }
 h1,h2 {
- font-family: Georgia, serif;
- padding-left: 0.2em;
+  font-family: Georgia, serif;
+  padding-left: 0.2em;
 }
-
 p {
   padding-left: 1em;
 }
@@ -21,95 +22,110 @@ br {
   padding-top: 1em;
 }
 footer {
-   text-align: center;
-   font-size: 75%;
+  text-align: center;
+  font-size: 75%;
 }
 pre {
-	padding: 0.5em 1em;
-	margin: 1em 0em 1em 2em;
-	font-weight: bold;
-	color: black;
-	font-family: monospace;
-	background-color: #D0D0D0;
+  padding: 0.5em 1em;
+  margin: 1em 0em 1em 2em;
+  color: #000;
+  font-size: 0.8em;
+  font-family: "Courier New", monospace;
 }
 nav {
-	padding-top: 1px;
+  padding-top: 1px;
+}
+img {
+  border:0;
 }
 
+td {
+  padding: 0.5em;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration:underline;
+}
+tr.header {
+  color: white;
+  background-color: #606060;
+}
+tr.odd, tr.even {
+  padding: 1em;
+}
 /*
  * class specific settings
  */
 /* horizontally center ul element */
 nav ul {
-	text-align: center;
+  text-align: center;
 }
 nav li {
 /* make list elements fall inline as block elements */
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
 /* next two lines only for display purposes */
-	text-align: center;
-	border: 1px solid black;
+  text-align: center;
+  border: 1px solid black;
 }
 nav li a {
-	font-size: 12px;
-	text-decoration: none;
-	float: left;
-	padding: 10px;
-	background-color: #333333;
-	color: #ffffff;
-	border-bottom: 1px;
-	border-bottom-color: #000000;
-	border-bottom-style: solid;
+  font-size: 12px;
+  text-decoration: none;
+  float: left;
+  padding: 10px;
+  background-color: #333333;
+  color: #ffffff;
+  border-bottom: 1px;
+  border-bottom-color: #000000;
+  border-bottom-style: solid;
 }
 nav li a:hover {
-	background-color:#9B1C26;
-	border-bottom-color:#000000;
-	border-bottom-style:solid;
+  background-color:#9B1C26;
+  border-bottom-color:#000000;
+  border-bottom-style:solid;
 }
-pre.command {
-	border-left: 0.2em solid #C70000;
+pre.command, pre.command_user {
+  border-left: 0.2em solid #C70000;
 }
 pre.command_user {
-	border-left: 0.2em solid #00C700;
+  border-left: 0.2em solid #00C700;
 }
 pre.output {
-	font-weight: normal;
+  font-weight: normal;
 }
 div.important {
-	margin: 1em 2em 1em 2em;
-	font-size: 1.2em;
-	color: #883333;
-	padding: 0.5em 0.5em 0.5em 0.5em;
-	border: 2px solid #866;
+  margin: 1em 2em 1em 2em;
+  font-size: 1.2em;
+  padding: 0.5em;
+  border: 2px solid #866;
 }
 div.note {
-	margin: 1em 2em 1em 0em;
-	font-size: 1em;
-	color:#333388;
-	border: 2px solid #dbddec;
-	padding: 0.5em 0.5em 0.5em 0.5em;
+  margin: 1em 2em 1em 0em;
+  font-size: 1em;
+  border: 2px solid #dbddec;
+  padding: 0.5em;
 }
 div.toc {
-	margin: 0em 0em 0em 0em;
-	font-size: 0.9em;
-	border: 1px solid #999999;
-	padding: 0em 2em 0em 1em;
-	width: -moz-max-content;
-	background-color: #e9e9ef;
+  margin: 0em;
+  font-size: 0.9em;
+  border: 1px solid #999999;
+  padding: 0em 2em 0em 1em;
+  width: -moz-max-content;
 }
 div.important img {
-	padding: 0.4em;
+  padding: 0.4em;
 }
 div.note img {
-	padding: 0em 0.4em;
+  padding: 0em 0.4em;
 }
 /* Last edited info */
 p.updated {
-	text-align: left;
-	font-size: small;
-	font-weight: bold;
-	font-style: italic;
+  text-align: left;
+  font-size: small;
+  font-weight: bold;
+  font-style: italic;
 }
 .center {
   display: block;
@@ -118,15 +134,17 @@ p.updated {
   width: 50%;
 }
 td.logo {
-   width: 25%; 
-   border: 1px;
-   border-style: dashed;
+  border: 1px;
+  border-style: dashed;
 }
 td.top-menu {
+  border: 0px;
+  padding: 0em;
 }
 a.menu {
-  text-align:center;
-  display:inline-block;
+  color: #000;
+  text-align: center;
+  display: inline-block;
   width: 100%;
   border: none;
   padding: 10px 0px;
@@ -134,88 +152,125 @@ a.menu {
   font-size: 18px;
   margin: 0;
   cursor: pointer;
-} 
+}
+a.post-link {
+  margin: 0.8em;
+}
 td.menu {
+  padding: 0em;
   width: 20%;
   border-radius:10px;
 }
 td.forum {
- vertical-align: top;
- text-align: center;
- border-radius:10px;
+  width: 160px;
+  vertical-align: top;
+  text-align: center;
+  border-radius:10px;
 }
 div.post-time {
- font-size: 0.9em;
- font-style: italic;
- padding-bottom: 0.4em;
+  font-size: 0.9em;
+  font-style: italic;
+  padding-bottom: 0.4em;
+  margin: 0.8em;
+
 }
 div.post-category {
- font-family: Georgia, serif;
- }
+  font-family: Georgia, serif;
+  margin: 0.8em; 
+}
 div.post-subject {
-	font-weight: bold;
+  font-weight: bold;
+  margin: 0.8em;
 }
 div.post-author {
- font-style: italic;
+  font-style: italic;
 }
 td.content {
-   vertical-align: top;
+  vertical-align: top;
+  margin-left: 0.8em;
 }
 
- @media print {
-	header, footer {
-		display: none;
-	}
+.lien_article {
+  text-align: center;
+}
+  @media print {
+    header, footer {
+      display: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
   * {
-    background-color:#FFFFFF;
     color: #000;
   }
-   h1.forum, td.forum, i.forum, a.forum, img.post-icon,
-   a.post-link, div.post-time, div.post-category,
-   div.post-subject, div.post-author, td.forum {
-   background-color: #E0E0E0;
+  h1.forum, td.forum, i.forum, a.forum, img.post-icon,
+  a.post-link, div.post-time, div.post-category,
+  div.post-subject, div.post-author, td.forum,
+  body {
+    background-color: #D0D0D0;
+  }
+  body {
+     background-color: #E0E0E0;
   }
   a.menu {
-   background-color:#AAAAAA;
+    background-color:#AAAAAA;
   }
-  a.post-link {
- color: #444444;
- }
-  tr.odd {
-   background-color: #D0D0D0;
+  a.post-link, .output {
+    color: #444444;
+  }
+  pre, tr.odd {
+    background-color: #D0D0D0;
   }
   tr.header {
-	 color: white;
-	 background-color: #606060;
-}
-
+    color: white;
+    background-color: #606060;
+  }
+  .sidebar, .toc {
+    background-color: #E0E0E0;
+  }
+  div.important {
+    color: #883333;
+  }
+  #search-field {
+    background-color: #E0E0E0;
+  }
 }
 @media (prefers-color-scheme: dark) {
   * {
-    background-color: #444444;
-    color:#BBBBBB;
+    color:#CBCBCB;
   }
    h1.forum, td.forum, i.forum, a.forum, img.post-icon,
    a.post-link, div.post-time, div.post-category,
-   div.post-subject, div.post-author, td.forum {
-   background-color: #666666;
+   div.post-subject, div.post-author, td.forum  {
+     background-color: #606060;
+  }
+  body {
+    background-color: #505050;
   }
   a.menu {
-   background-color:#666666;
+    background-color:#999999;
   }
-  a.post-link {
-   color: #B8B8B8;
+  a.post-link, .output {
+    color: #B8B8B8;
   }
-  tr.even {
-   background-color: #D0D0D0;
-  }
-  tr.odd {
-   background-color: #404040;
+  pre, tr.odd {
+    background-color: #404040;
   }
   tr.header {
-	 color: #BBBBBB;
-	 background-color: #444444;
+    color: #BBBBBB;
+    background-color: #444444;
+  }
+  .sidebar, .toc {
+    background-color: #666666;
+  }
+  div.important {
+    color: #DD8888;
+  }
+  div.note {
+    color: #8888DD;
+  }
+ #search-field {
+    background-color: #505050;
+ }
+
 }
