@@ -3,13 +3,17 @@
  */
 
 * {
- font-family:Verdana, sans-serif;
+ font-family: sans-serif;
 }
 html,body{
   font-family:sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 table {
-  width: 100%;
+/*
+ *   width: 100%;
+ */
 }
 h1,h2 {
  font-family: Georgia, serif;
@@ -34,9 +38,6 @@ footer {
 }
 pre {
   padding: 0.5em 1em;
-  margin: 1em 0em 1em 2em;
-  color: #000;
-  font-size: 0.8em;
   font-family: "Courier New", monospace;
 }
 nav {
@@ -146,9 +147,10 @@ table.page {
   border-radius: 10px;
   border-style: solid;
 }
+table.top-menu {
+  width: 100%;
+}
 td.logo {
-   border: 1px;
-   border-style: dashed;
 }
 td.top-menu {
   border: 0px;
@@ -209,7 +211,11 @@ td.content {
 		display: none;
 	}
 }
-
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  td.logo, td.forum {
+    display: none;
+  }
+}
 @media (prefers-color-scheme: light) {
   * {
     color: #000;
@@ -222,15 +228,20 @@ td.content {
   }
   body {
      background-color: #E0E0E0;
+     color: #202122;
+  }
+  a {
+    color: #3366cc;
   }
   a.menu {
     background-color:#AAAAAA;
   }
-  a.post-link, .output {
+  .output {
     color: #444444;
   }
   pre, tr.odd {
     background-color: #D0D0D0;
+    color: #000;
   }
   tr.header {
 	 color: white;
@@ -260,16 +271,22 @@ td.content {
      background-color: #606060;
   }
   body {
-	  background-color: #505050;
+	 background-color: #505050;
+  }
+  a {
+    color: #6699ee;
   }
   a.menu {
-     background-color:#999999;
+    background-color:#999999;
   }
-  a.post-link, .output {
-     color: #B8B8B8;
+  a.post-link {
+  }
+  .output {
+    color: #B8B8B8;
   }
   pre, tr.odd {
-     background-color: #404040;
+    background-color: #404040;
+    color: #B8B8B8;
   }
   tr.header {
      color: #BBBBBB;
