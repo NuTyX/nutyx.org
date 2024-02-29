@@ -3,21 +3,18 @@
  */
 
 * {
- font-family: sans-serif;
+  font-family: sans-serif;
 }
-html,body{
-  font-family:sans-serif;
-  font-size: 0.875rem;
+html {
+  font-size: 100%;
   line-height: 1.5;
 }
 table {
-/*
- *   width: 100%;
- */
 }
 h1,h2 {
- font-family: Georgia, serif;
- padding-left: 0.2em;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  padding-left: 0.2em;
 }
 input[type=text] {
   border: 2px solid #ccc;
@@ -33,16 +30,14 @@ br {
   padding-top: 1em;
 }
 footer {
-   text-align: center;
-   font-size: 75%;
+  text-align: center;
+  font-size: 0.75rem;
 }
 pre {
   padding: 0.5em 1em;
   font-family: "Courier New", monospace;
 }
-nav {
-  padding-top: 1px;
-}
+*/
 img {
   border:0;
 }
@@ -51,69 +46,41 @@ td {
   padding: 0.5em;
 }
 a {
-   text-decoration: none;
-}
-a:hover {
-   text-decoration:underline;
-}
-tr.header {
-	color: white;
-	background-color: #606060;
-}
-tr.odd, tr.even {
-	padding: 1em;
+  text-decoration: none;
 }
 /*
  * class specific settings
  */
-/* horizontally center ul element */
-nav ul {
-	text-align: center;
+a:hover {
+  text-decoration:underline;
 }
-nav li {
-/* make list elements fall inline as block elements */
-	position: relative;
-	display: inline-block;
-/* next two lines only for display purposes */
-	text-align: center;
-	border: 1px solid black;
+tr.header {
+  color: white;
+  background-color: #606060;
 }
-nav li a {
-	font-size: 12px;
-	text-decoration: none;
-	float: left;
-	padding: 10px;
-	background-color: #333333;
-	color: #ffffff;
-	border-bottom: 1px;
-	border-bottom-color: #000000;
-	border-bottom-style: solid;
-}
-nav li a:hover {
-	background-color:#9B1C26;
-	border-bottom-color:#000000;
-	border-bottom-style:solid;
+tr.odd, tr.even {
+  padding: 1em;
 }
 pre.command, pre.command_user {
-	border-left: 0.2em solid #C70000;
+  border-left: 0.2em solid #C70000;
 }
 pre.command_user {
-	border-left: 0.2em solid #00C700;
+  border-left: 0.2em solid #00C700;
 }
 pre.output {
-	font-weight: normal;
+  font-weight: normal;
 }
 div.important {
-	margin: 1em 2em 1em 2em;
-	font-size: 1.2em;
-	padding: 0.5em;
-	border: 2px solid #866;
+  margin: 1em 2em 1em 2em;
+  font-size: 1em;
+  padding: 0.5em;
+  border: 2px solid #866;
 }
 div.note {
-	margin: 1em 2em 1em 0em;
-	font-size: 1em;
-	border: 2px solid #dbddec;
-	padding: 0.5em;
+  margin: 1em 2em 1em 0em;
+  font-size: 1em;
+  border: 2px solid #dbddec;
+  padding: 0.5em;
 }
 div.toc {
   margin: 0em;
@@ -131,7 +98,7 @@ div.note img {
 /* Last edited info */
 p.updated {
   text-align: left;
-  font-size: small;
+  font-size: 0.8125rem;
   font-weight: bold;
   font-style: italic;
 }
@@ -164,7 +131,7 @@ a.menu {
   border: none;
   padding: 10px 0px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0;
   cursor: pointer;
 }
@@ -174,16 +141,17 @@ a.post-link {
 td.menu {
   padding: 0em;
   width: 20%;
-  border-radius:10px;
+  border-radius:5px;
 }
 td.forum {
+  font-size: 0.875rem;
   width: 160px;
   vertical-align: top;
   text-align: center;
   border-radius:10px;
 }
 div.post-time {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-style: italic;
   padding-bottom: 0.4em;
   margin: 0.8em;
@@ -200,6 +168,7 @@ div.post-author {
   font-style: italic;
 }
 td.content {
+  font-size: 0.875rem;
   vertical-align: top;
   margin-left: 0.8em;
 }
@@ -207,9 +176,9 @@ td.content {
   text-align: center;
 }
  @media print {
-	header, footer {
-		display: none;
-	}
+  header, footer {
+    display: none;
+  }
 }
 @media screen and (max-width: 1000px) and (orientation: portrait) {
   td.logo, td.forum {
@@ -227,13 +196,13 @@ td.content {
     background-color: #D0D0D0;
   }
   body {
-     background-color: #E0E0E0;
-     color: #202122;
+    background-color: #E0E0E0;
+    color: #202122;
   }
   a {
     color: #3366cc;
   }
-  a.menu {
+  td.menu {
     background-color:#AAAAAA;
   }
   .output {
@@ -244,22 +213,21 @@ td.content {
     color: #000;
   }
   tr.header {
-	 color: white;
-	 background-color: #606060;
+    color: white;
+    background-color: #606060;
   }
   .sidebar, .toc {
-	  background-color: #E0E0E0;
+    background-color: #E0E0E0;
   }
   div.important {
-         color: #883333;
- }
- #search-field {
-	 background-color: #E0E0E0;
- }
+    color: #883333;
+  }
+  #search-field {
+    background-color: #E0E0E0;
+  }
   table.page {
     border-color: #AAA;
-}
-
+  }
 }
 @media (prefers-color-scheme: dark) {
   * {
@@ -276,7 +244,7 @@ td.content {
   a {
     color: #6699ee;
   }
-  a.menu {
+  td.menu {
     background-color:#999999;
   }
   a.post-link {
@@ -306,5 +274,5 @@ td.content {
  }
   table.page {
     border-color: #BBB;
-}
+  }
 }
