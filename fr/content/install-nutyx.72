@@ -61,17 +61,17 @@
         <td>
          URL
         <td>
-         Adresse http du serveur de dépot distant (ou local).
+         Adresse http du serveur de dépot.
         <td>
          Permet de choisir son propre serveur de dépot.
        <tr class="odd">
         <td>
          VERSION
         <td>
-         Détermine la version à installer (rolling ou testing).
+         Détermine la version à installer, rolling ou testing.
         <td>
          Le nom de la version n'est pas vérifiée par le script.
-         <p>
+         <br>
          On peut donc choisir n'importe quelle valeur pour autant que celle-ci existe dans les dépots.
        <tr class="even">
         <td>
@@ -80,8 +80,8 @@
          Par défaut aucun kernel n'est installé, à vous de choisir le kernel à installer.
         <td>
          Nom des kernels disponible:
-        <p>
-         kernel-49, kernel-414, kernel-419, kernel-54, kernel-510, kernel-515, kernel ou linux-mainline.
+        <br>
+         kernel-419, kernel-54, kernel-510, kernel-515, kernel-61, kernel-66 ou kernel.
        <tr class="odd">
         <td>
          DEPOT

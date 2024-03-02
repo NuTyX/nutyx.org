@@ -55,7 +55,7 @@
         <td>
          URL
         <td>
-         The url adress of the mirror where are the binaries located (remote or local).
+         The url adress of the mirror where are the binaries.
         <td>
          We can use our own server.
        <tr class="odd">
@@ -65,7 +65,7 @@
          The version to be installed (testing or rolling).
         <td>
          The version is not checked by the script.
-         <p>
+         <br>
          We can then install any version as long it exist on the server.
        <tr class="even">
         <td>
@@ -74,8 +74,8 @@
          As per default they are no kernel installed, up to you to choose one.
         <td>
          Available kernel names:
-        <p>
-         kernel-49, kernel-414, kernel-419, kernel-54, kernel-510, kernel-515, kernel or linux-mainline.
+        <br>
+         kernel-419, kernel-54, kernel-510, kernel-515, kernel-61, kernel-66 or kernel.
        <tr class="odd">
         <td>
          DEPOT
