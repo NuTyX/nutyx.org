@@ -24,7 +24,6 @@ input[type=text]:focus {
   border-color: #ccc;
 }
 p {
-  padding-left: 1em;
 }
 br {
   padding-top: 1em;
@@ -37,7 +36,6 @@ pre {
   padding: 0.5em 1em;
   font-family: "Courier New", monospace;
 }
-*/
 img {
   border:0;
 }
@@ -53,10 +51,6 @@ a {
  */
 a:hover {
   text-decoration:underline;
-}
-tr.header {
-  color: white;
-  background-color: #606060;
 }
 tr.odd, tr.even {
   padding: 1em;
@@ -124,7 +118,6 @@ td.top-menu {
   padding: 0em;
 }
 a.menu {
-  color: #000;
   text-align: center;
   display: inline-block;
   width: 100%;
@@ -180,19 +173,16 @@ td.content {
     display: none;
   }
 }
-@media screen and (max-width: 1000px) and (orientation: portrait) {
-  td.logo, td.forum {
-    display: none;
-  }
-}
-@media (prefers-color-scheme: light) {
-  * {
+/* some browsers does not support:
+ * @media (prefers-color-scheme:xxx)
+ */
+  a.menu, pre, tr.odd {
     color: #000;
   }
    h1.forum, td.forum, i.forum, a.forum, img.post-icon,
    a.post-link, div.post-time, div.post-category,
    div.post-subject, div.post-author, td.forum,
-   body {
+   body, pre, tr.odd {
     background-color: #D0D0D0;
   }
   body {
@@ -208,12 +198,8 @@ td.content {
   .output {
     color: #444444;
   }
-  pre, tr.odd {
-    background-color: #D0D0D0;
-    color: #000;
-  }
   tr.header {
-    color: white;
+    color: #FFFFFF;
     background-color: #606060;
   }
   .sidebar, .toc {
@@ -228,18 +214,18 @@ td.content {
   table.page {
     border-color: #AAA;
   }
-}
 @media (prefers-color-scheme: dark) {
-  * {
-    color:#CBCBCB;
+  a.menu, pre, tr.odd {
+    color: #CBCBCB;
   }
    h1.forum, td.forum, i.forum, a.forum, img.post-icon,
    a.post-link, div.post-time, div.post-category,
-   div.post-subject, div.post-author, td.forum  {
+   div.post-subject, div.post-author, td.forum,
+   pre, tr.odd  {
      background-color: #606060;
   }
   body {
-	 background-color: #505050;
+    background-color: #505050;
   }
   a {
     color: #6699ee;
@@ -249,30 +235,34 @@ td.content {
   }
   a.post-link {
   }
-  .output {
+  pre, tr.odd, .output {
     color: #B8B8B8;
   }
   pre, tr.odd {
     background-color: #404040;
-    color: #B8B8B8;
   }
   tr.header {
-     color: #BBBBBB;
-     background-color: #444444;
+    color: #BBBBBB;
+    background-color: #444444;
   }
   .sidebar, .toc {
-     background-color: #666666;
+    background-color: #666666;
   }
   div.important {
-     color: #DD8888;
+    color: #DD8888;
   }
   div.note {
-     color: #8888DD;
+    color: #8888DD;
   }
  #search-field {
-     background-color: #505050;
+   background-color: #505050;
  }
   table.page {
     border-color: #BBB;
+  }
+}
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  td.logo, td.forum {
+    display: none;
   }
 }
