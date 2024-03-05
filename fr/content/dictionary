@@ -154,9 +154,6 @@
      <br><br>
       Le terme <i>port</i> fait référence à un dépôt distant contenant des <i>ports</i> et
       utilise un programme client capable de télécharger ces <i>ports</i> depuis ce dépot distant
-     <br><br>
-      NuTyX utilise l'utilitaire <i>ports</i> pour le téléchargement des <i>ports</i> depuis 
-      le dépot distant et les placent dans le dossier <i>/usr/ports/&lt;nom_de_<a href="#ID010">collection</a>&gt;</i>
 
     <a name='ID080'></a> 
     <h2>Le fichier 'Pkgfile'</h2>
