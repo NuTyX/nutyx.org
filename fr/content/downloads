@@ -41,7 +41,7 @@
 
    <tr class="odd">
 
-    <td class="lien_article"> 
+    <td class="url"> 
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE 64bits</a>
     <td>
        <p>
@@ -67,7 +67,7 @@
 
    <tr class="even">
 
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-XORG.iso"><img src="../graphics/downloads/xorg.png" alt="logo xorg"/><br/>XORG 64bits</a>
 
     <td>
@@ -88,7 +88,7 @@
 
    <tr class="odd">
 
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-JWM.iso"><img src="../graphics/downloads/jwm-blue.png" alt="logo jwm"/><br/>JWM 64bits</a>
 
     <td>
@@ -108,7 +108,7 @@
 
    <tr class="even">
 
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-CDE.iso"><img src="../graphics/downloads/cde.png" alt="logo cde"/><br/>CDE 64bits</a>
 
     <td>
@@ -128,7 +128,7 @@
 
    <tr class="odd">
 
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 64bits</a>
 
     <td>
@@ -149,7 +149,7 @@
 
    <tr class="even">
 
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-LXDE.iso"><img src="../graphics/downloads/lxde.png" alt="logo Lxde"/><br/>LXDE 64bits</a>
 
     <td>
@@ -169,7 +169,7 @@
 
    <tr class="odd">
 
-    <td class="lien_article">
+    <td class="url">
       <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 64bits</a>
     <td>
        <p>
@@ -188,7 +188,7 @@
 
    <tr class="even">
 
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-LXQT.iso"><img src="../graphics/downloads/lxqt.png" alt="logo lxqt"/><br/>LXQT 64bits</a>
     <td>
        <p>
@@ -206,7 +206,7 @@
 
    <tr class="odd">   
 
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-ENLIGHTENMENT.iso"><img src="../graphics/downloads/enlightenment.png" alt="logo enlightenment"/><br/>ENLIGHTENMENT 64bits</a>
     <td>
        <p>
@@ -224,7 +224,7 @@
 
    <tr class="even">
 
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE 64bits</a>
     <td>
        <p>
@@ -242,7 +242,7 @@
 
    <tr class="odd"> 
 
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-CINNAMON.iso"><img src="../graphics/downloads/cinnamon.png" alt="logo cinnamon"/><br/>CINNAMON 64bits</a>
     <td>
        <p>
@@ -260,7 +260,7 @@
 
    <tr class="even"> 
 
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-BUDGIE.iso"><img src="../graphics/downloads/budgie.png" alt="logo budgie"/><br/>BUDGIE 64bits</a>
     <td>
        <p>
@@ -278,7 +278,7 @@
 s
    <tr class="odd">
 
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME 64bits</a>
     <td>
        <p>
@@ -296,7 +296,7 @@ s
 
    <tr class="even">
 
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-KDE5.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE 64bits</a>
     <td>
        <p>
@@ -329,7 +329,7 @@ s
       <th>
        Information
      <tr class="even">
-      <td class="lien_article">
+      <td class="url">
         <a class="url" href="http://www.nutyx.org/install-nutyx"><img src="../graphics/downloads/script.png" alt="logo script"/>install-nutyx</a>
       </td>
       <td>

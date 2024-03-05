@@ -3,7 +3,7 @@
 
   <table width="100%" cellspacing="0">
    <tr class="odd">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="dictionary">A little lexicon for NuTyX users</a>
     </td>
     <td>
@@ -11,7 +11,7 @@
     </td>
    </tr>
    <tr class="even">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="install">Automatic installation on a single partition</a>
     </td>
     <td>
@@ -22,7 +22,7 @@
     </td>
    </tr>
    <tr class="odd">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="install-nutyx#4">Full manual installation using a LIVE media</a>
     </td>
     <td>
@@ -33,7 +33,7 @@
     </td>
    </tr>
    <tr class="even">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="finish-up">Finish up your installation</a>
     </td>
     <td>
@@ -41,7 +41,7 @@
     </td>
    </tr>
    <tr class="odd">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="base-commands">Base commands</a>
     </td>
     <td width="70%">
@@ -54,7 +54,7 @@
   <table width="100%" cellspacing="0">
 
    <tr class="even">
-    <td class="lien_article">
+    <td class="url">
      <a class="url" href="configuration-files">Configurations files of NuTyX</a>
     </td>
     <td>
@@ -64,7 +64,7 @@
    </tr>
 
    <tr class="odd">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="grub-install">Setting up GRUB</a>
     </td>
     <td >
@@ -74,7 +74,7 @@
    </tr>
 
    <tr class="even">
-     <td class="lien_article">
+     <td class="url">
        <a class="url" href="change-boot-kernel">Change default boot kernel</a>
      </td>
      <td>
@@ -84,7 +84,7 @@
    </tr>
 
    <tr class="odd">
-     <td class="lien_article">
+     <td class="url">
        <a class="url" href="initrd">Building an initrd</a>
      </td>
      <td>
@@ -94,7 +94,7 @@
    </tr>
 
    <tr class="even">
-     <td class="lien_article">
+     <td class="url">
        <a class="url" href="default-init-system">Change the default init system</a>
      </td>
      <td>
@@ -105,7 +105,7 @@
    </tr>
 
    <tr class="odd">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="nutyx-man">NuTyX manual of the 24.02 version</a>
     </td>
     <td>
@@ -115,7 +115,7 @@
    </tr>
 
    <tr class="even">
-     <td class="lien_article">
+     <td class="url">
        <a class="url" href="upgrade-nutyx">Update the distribution with upgrade-nutyx</a>
      </td>
      <td>
@@ -126,7 +126,7 @@
    </tr>
 
    <tr class="odd">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="setup-http">Setup of an HTTP server</a>
     </td>
     <td>
@@ -137,7 +137,7 @@
    </tr>
 
    <tr class="even">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="setup-nfs">Setup of a NFS server</a>
     </td>
     <td>
@@ -149,7 +149,7 @@
    </tr>
 
    <tr class="odd">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="install-nutyx#5">Produce a customised ISO</a>
     </td>
     <td>
@@ -161,7 +161,7 @@
    </tr>
 
    <tr class="even">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="qemu">Config and start a virtual machine with QEMU</a>
     </td>
     <td>
@@ -172,7 +172,7 @@
    </tr>
 
    <tr class="odd">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="sysvinit">Brief SysVinit overview</a>
     </td>
     <td>
@@ -186,7 +186,7 @@
   <table width="100%" cellspacing="0">
 
    <tr class="odd">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="build-package">How to build a package ?</a>
     </td>
     <td>
@@ -196,7 +196,7 @@
    </tr>
 
    <tr class="even">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="collections">Collections</a>
     </td>
     <td>
@@ -207,7 +207,7 @@
     </td>
 
    <tr class="odd">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="mybld">How to build your own packages in a chroot ?</a>
     </td>
     <td>
@@ -216,7 +216,7 @@
    </tr>
 
    <tr class="even">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="pkgfile">The Pkgfile file</a>
     </td>
     <td>
@@ -225,7 +225,7 @@
    </tr>
 
  <tr class="odd">
-    <td class="lien_article" >
+    <td class="url" >
       <a class="url" href="system-users">System users and groups</a>
     </td>
     <td>
