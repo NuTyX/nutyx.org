@@ -186,7 +186,7 @@ basename=${name/6-/}
     <p>
      This array <strong>source</strong> contains 2 variables: firefox.png and firefox.desktop.
      The source array from the recipe for the kernel provides a particularly good example:
-     <pre>source=(http://www.kernel.org/pub/linux/kernel/v3.0/linux-${_BaseVersion}.tar.bz2 \
+     <pre class="output">source=(http://www.kernel.org/pub/linux/kernel/v3.0/linux-${_BaseVersion}.tar.bz2 \
 	 config_64 config \
 	 http://www.kernel.org/pub/linux/kernel/v3.0/patch-$version.bz2 \
 	 http://downloads.nutyx.org/files/patchs/$name/broadcom-wl-kernel3-01.patch \
@@ -271,7 +271,7 @@ make DESTDIR=$PKG install
 url="http://docs.xfce.org/"
 
 maintainer="git.xfce.org/xfce/xfce4-libutils"
-packager="tnut <tnut@nutyx.org>"
+packager="tnut &lt;tnut@nutyx.org&gt;"
 
 makedepends=(glib intltool)
 
