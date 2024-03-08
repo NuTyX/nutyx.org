@@ -249,7 +249,7 @@ url='http://downloads.nutyx.org'
 
 license="GPL2"
 
-packager="tnut at nutyx dot org"
+packager="tnut &lt;tnut@nutyx.org&gt;"
 
 makedepends=(glib atk)
 run=(gtk-update-icon-cache)

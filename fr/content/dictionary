@@ -178,7 +178,7 @@
       <pre class="output">description='Mon premier paquet'
 url='http://downloads.nutyx.org'
 
-packager="tnut <tnut@nutyx.org>"
+packager="tnut &lt;tnut@nutyx.org&gt;"
 
 license="LGPL"
 
