@@ -2,6 +2,19 @@
  <h2>Beginner's User Guides on NuTyX</h2>
 
   <table width="100%" cellspacing="0">
+   <tr class="even">
+    <td class="url">
+     <a class="url" href="overview">An overview of the distribution</a>
+     </td>
+    <td>
+     We tell you everything about the NuTyX philosophy.
+     The influence of Linux From Scratch.
+     The Cards package manager.
+     The target audience of NuTyX.
+     The organization of the project.
+    </td>
+   </tr>
+
    <tr class="odd">
     <td class="url" >
       <a class="url" href="dictionary">A little lexicon for NuTyX users</a>
@@ -53,7 +66,7 @@
 
   <table width="100%" cellspacing="0">
 
-   <tr class="even">
+   <tr class="odd">
     <td class="url">
      <a class="url" href="configuration-files">Configurations files of NuTyX</a>
     </td>
@@ -63,7 +76,7 @@
     </td>
    </tr>
 
-   <tr class="odd">
+   <tr class="even">
     <td class="url" >
       <a class="url" href="grub-install">Setting up GRUB</a>
     </td>
@@ -73,7 +86,7 @@
     </td>
    </tr>
 
-   <tr class="even">
+   <tr class="odd">
      <td class="url">
        <a class="url" href="change-boot-kernel">Change default boot kernel</a>
      </td>
@@ -81,6 +94,16 @@
       You want to install an LTS kernel instead of the latest stable kernel installed by default when installing your NuTyX.
       This article shows you the procedure.
      </td>
+   </tr>
+
+   <tr class="even">
+    <td class="url">
+      <a class="url" href="upgrade-linux-firmware">Update the linux-firmware package</a>
+    </td>
+    <td>
+     You want to reduce the size of the linux-firmware package by only installing the firmware that concerns you.
+     This article shows you the procedure.
+    </td>
    </tr>
 
    <tr class="odd">

@@ -1,12 +1,10 @@
-First I want to thank Linux Magazine for giving me the chance to do this interview.
-
-<h2>0. Presentation</h2>
+<h2>1. Presentation</h2>
 
 My name is Thierry Nuttens and I am going to introduce you to the NuTyX project that I have maintained for over 16 years now.
 <p>
  My friend Spiky has become my right arm for over 3 years.
 
-<h2>1. NuTyX Philosophy</h2>
+<h2>2. NuTyX Philosophy</h2>
 
 I use NuTyX or Linux if you prefer because I think it's an operating system that meets my expectations.
 <p>
@@ -23,7 +21,7 @@ I use NuTyX or Linux if you prefer because I think it's an operating system that
  Besides, Ubuntu was making its debut...
  What interested me the most was to have a high-performance, reliable and easy-to-maintain system.
 
-<h2>2. The influence of LFS/BLFS</h2>
+<h2>3. The influence of LFS/BLFS</h2>
 
 My vision of Linux changed radically when I discovered the LFS project.
 <p>
@@ -67,7 +65,7 @@ My vision of Linux changed radically when I discovered the LFS project.
  The number of packages on NuTyX is approaching 2000.
  If we add the automatically generated subpackets, we reach 4500 packets.
 
-<h2>3. NuTyX is no longer a Linux From Scratch</h2>
+<h2>4. NuTyX is no longer a Linux From Scratch</h2>
 
  We start with its installation, today it is possible to install NuTyX in many ways.
  For beginners, several ISOs (LXDE, XFCE, MATE, KDE, GNOME, CINNAMON ready to install.
@@ -100,7 +98,7 @@ My vision of Linux changed radically when I discovered the LFS project.
 <p>
  Lxdm, lightdm, xdm, slim, gdm, sddm or dtlogin are available as session manager choices.
 
-<h3>NuTyX packages are organized into collections.</h3>
+<h3>4.1 NuTyX packages are organized into collections.</h3>
 
  Three collections form the heart of the system:
 <p>
@@ -163,7 +161,7 @@ My vision of Linux changed radically when I discovered the LFS project.
 <p>
  The packages to be updated are installed when the machine is shut down.
 
-<h3>NuTyX comes in two flavors or branches<h3>
+<h3>4.2 NuTyX comes in two flavors or branches</h3>
 
 A semi-frozen “rolling” version:
 <p>
@@ -182,7 +180,7 @@ A continuously updated “testing” version:
 <p>
  Given the extent of the updates, this "testing" version is not strongly recommended in "production" or on a machine of the end user.
 
-<h2>4. Difference between CARDS and other package managers.</h2>
+<h2>5. Difference between CARDS and other package managers.</h2>
 
 CARDS is written in a low level language.
 <p>
@@ -213,12 +211,12 @@ sys 0m1.230s
 #
 </kbd></pre>
 
-<h3>CARDS and NuTyX go hand in hand.</h3>
+<h3>5.1 CARDS and NuTyX go hand in hand.</h3>
  For example the mybld central command uses the install-nutyx script for its operation.
  <p>
   Packages are ALWAYS built in a chrooted environment.
 
-<h3>The original concepts of CARDS:</h3>
+<h3>5.2 The original concepts of CARDS:</h3>
 
 The collections are interdependent but independent of each other.
 <p>
@@ -347,7 +345,7 @@ As explained above, cards automatically manage the separation of base packages a
 <p>
  Last point, no cookies are installed when visiting the site www.nutyx.org.
 
-<h2>5. NuTyX Target Audience</h2>
+<h2>6. NuTyX Target Audience</h2>
 This is a recurring topic on NuTyX.
 <p>
  There is no graphical installer and therefore installing NuTyX is scary from the first screen.
@@ -368,7 +366,7 @@ This is a recurring topic on NuTyX.
 <p>
  Even if the user is an expert, he can very quickly install a NuTyX completely automatically.
 
-<h2>6. Organization of the NuTyX project.</h2>
+<h2>7. Organization of the NuTyX project.</h2>
 
 The organization is very simple.
 <p>
@@ -379,7 +377,7 @@ The organization is very simple.
 <p>
  Guth, whom I also salute very warmly, is a very discreet but very important person.
  He is responsible for the proper functioning of the master repository server.
- In 16 years, I don't remember having had a break.
+ In 17 years, I don't remember having had a break.
  He does an extraordinary job.
 <p>
  I support Spiky when he is in trouble with certain packages.
@@ -414,12 +412,13 @@ The organization is very simple.
   <li>
    And the cycle begins again.
  </ul>
-<h2>7. Statistics and acknowledgments</h2>
+<h2>8. Statistics and acknowledgments</h2>
 
  I could, if I wanted to, obtain statistics on the number of pages visited on the site of tuxfamily.org at:
- https://stats.tuxfamily.org/nutyx.org
+ <a href="https://stats.tuxfamily.org/nutyx.org">https://stats.tuxfamily.org/nutyx.org</a>
 <p>
- To know the number of downloads of ISOs, you have to go to the site https://sourgeforge.net/projects/nutyx/files.
+ To know the number of downloads of ISOs, you have to go to the site
+ <a href="https://sourceforge.net/projects/nutyx/files/">https://sourceforge.net/projects/nutyx/files</a>.
 <p>
  The ISOs are updated there each time the new NuTyX version is released.
 <p>
@@ -435,7 +434,7 @@ The organization is very simple.
  A huge thank you also to the Tuxfamily team for the logistical support of the nutyx.org site and the forums forum.nutyx and forums.nutyx.org.
  A big thank you especially to Sylvain who will have allowed the integration of the site and the access to the forums.
  The site being written in ... C++...
-<h2>8. I'm Spiky</h2>
+<h2>9. I'm Spiky</h2>
   Let me introduce myself, I,m Spiky.
 <p>
   I was a long time LFS/BLFS user, I was also looking for a package manager for my LFS.

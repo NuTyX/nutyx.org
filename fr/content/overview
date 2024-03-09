@@ -1,12 +1,10 @@
-D'abord je veux remercier Linux Magazine de m'avoir donner la chance de pouvoir réaliser cet interview.
-<p>
-<h2>0. Présentation</h2>
+<h2>1. Présentation</h2>
 
  Je m'appelle Thierry Nuttens et vais vous présenter le projet NuTyX que je maintiens maintenant depuis plus de 16 ans.
 <p>
  Mon ami Spiky est devenu mon bras droit depuis plus de 3 ans.s
 
-<h2>1. Philosophie de NuTyX</h2>
+<h2>2. Philosophie de NuTyX</h2>
 
  J'utilise NuTyX ou Linux si vous préférez parce que je pense que c'est un système d'exploitation qui répond à mes attentes.
 <p>
@@ -22,7 +20,7 @@ D'abord je veux remercier Linux Magazine de m'avoir donner la chance de pouvoir 
  D’ailleurs Ubuntu faisait ses débuts…
  Ce qui m’intéressait le plus, c’était d’avoir un système performant, fiable et avec une maintenance simple.
 
-<h2>2. L’influence de LFS/BLFS</h2>
+<h2>3. L’influence de LFS/BLFS</h2>
 
 Ma vision de Linux a radicalement changé lorsque j’ai découvert le projet LFS.
 <p>
@@ -64,7 +62,7 @@ Ma vision de Linux a radicalement changé lorsque j’ai découvert le projet LF
  Le nombre de paquets sur NuTyX approche les 2000.
  Si on rajoute les sous-paquets générés automatiquement, on atteind les 4500 paquets.
 
-<h2>3. NuTyX n’est plus une Linux From Scratch</h2>
+<h2>4. NuTyX n’est plus une Linux From Scratch</h2>
 
 On commence par son installation, aujourd’hui il est possible d’installer NuTyX de nombreuses façons.
 Pour les  débutants, plusieurs ISO (LXDE, XFCE, MATE, KDE, GNOME, CINNAMON prêtes à installer.
@@ -96,7 +94,7 @@ Pour les  débutants, plusieurs ISO (LXDE, XFCE, MATE, KDE, GNOME, CINNAMON prê
 <p>
  Lxdm, lightdm, xdm, slim, gdm, sddm ou dtlogin sont disponibles comme choix de gestionnaire de sessions.
 
-<h3>Les paquets de NuTyX sont organisé en collections.</h3>
+<h3>4.1 Les paquets de NuTyX sont organisé en collections.</h3>
 
  Trois collections constituent le cœur du système :
 <p>
@@ -160,7 +158,7 @@ Il contient également deux scripts très utiles:
 <p>
  Les paquets à mettre à jour sont installés lors de l'arrêt de la machine.
 
-<h3>NuTyX se décline en deux versions ou branches</h3> 
+<h3>4.2 NuTyX se décline en deux versions ou branches</h3> 
 
  Une version «rolling» semi-figée:
  <p>
@@ -177,7 +175,7 @@ Il contient également deux scripts très utiles:
  <p>
   Etant donné l'ampleur des mise à jour, cette version "testing" n'est fortement déconseillée en "production" ou sur une machine de l'utilisateur final.
 
-<h2>4. Différence entre CARDS et d’autres gestionnaires de paquets.</h2>
+<h2>5. Différence entre CARDS et d’autres gestionnaires de paquets.</h2>
 
  CARDS est écrit dans un langage de bas niveau.
 <p>
@@ -209,12 +207,12 @@ sys     0m1.230s
 # 
 </kbd></pre>
 
-<h3>CARDS et NuTyX sont parfaitement associés.</h3>
+<h3>5.1 CARDS et NuTyX sont parfaitement associés.</h3>
  Par exemple la commande centrale mybld utilise le script install-nutyx pour son fonctionnement.
 <p>
  Les paquets sont TOUJOURS construits dans un environnement chrooté.
 
-<h4>Les concepts originaux de CARDS:</h4>
+<h3>5.2 Les concepts originaux de CARDS:</h3>
 
 Les collections sont interdépendantes mais indépendantes les une des autres.
 <p>
@@ -337,7 +335,7 @@ Les collections sont interdépendantes mais indépendantes les une des autres.
 <p>
  Dernier point, aucun coockies n’est installé lors de la visite du site www.nutyx.org.
 
-<h2>5. Publique cible de NuTyX</h2>
+<h2>6. Publique cible de NuTyX</h2>
 
 C’est un sujet récurrent sur NuTyX.
 <p>
@@ -358,7 +356,7 @@ C’est un sujet récurrent sur NuTyX.
 <p>
  Même si l’utilisateur est un expert, il pourra très rapidement installer une NuTyX de façon totalement automatique.
 
-<h2>6. Organisation du projet NuTyX.</h2>
+<h2>7. Organisation du projet NuTyX.</h2>
 
  L’organisation est très simple.
 <p>
@@ -405,13 +403,14 @@ C’est un sujet récurrent sur NuTyX.
   <li>
    Et le cycle recommence.
  </ul>
-<h2>7. Statistiques et remerciements</h2>
+<h2>8. Statistiques et remerciements</h2>
 
 Je pourrai si je le voulais, obtenir des statistiques sur le nombre de pages visitées sur le site de
 tuxfamily.org à l'adresse:
-https://stats.tuxfamily.org/nutyx.org
+<a href="https://stats.tuxfamily.org/nutyx.org">https://stats.tuxfamily.org/nutyx.org</a>
 <p>
- Pour connaître le nombre de téléchargement des ISOs, il faut se rendre sur le site https://sourgeforge.net/projects/nutyx/files.
+ Pour connaître le nombre de téléchargement des ISOs, il faut se rendre sur le site
+ <a href="https://sourceforge.net/projects/nutyx/files/">https://sourceforge.net/projects/nutyx/files</a>.
 <p>
  Les ISOs y sont mise à jour à chaque sortie de la nouvelle version NuTyX
 <p>
@@ -429,7 +428,7 @@ https://stats.tuxfamily.org/nutyx.org
 <p>
  Un grand merci spécialement à Sylvain qui aura permit l'intégration du site et l'accès des forum.
  Le site étant écrit en ... C++...
-<h2>8. Moi c'est Spiky</h2>
+<h2>9. Moi c'est Spiky</h2>
  Je me présente, je suis Spiky.
 <p>
  Je suis un utilisateur de longue date de LFS/BLFS, je cherchais également un gestionnaire de paquets pour mon LFS.
