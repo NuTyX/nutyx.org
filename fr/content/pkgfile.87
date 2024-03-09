@@ -2,94 +2,115 @@
  <h2>Les variables d'aides pour l'empaquetage</h2>
   <h3>PKG</h3>
    Spécifie le dossier racine lors de l'empaquetage.
+
   <h3>SRC</h3>
    Spécifie le chemin complet du dossier racine des sources et de la compilation.
+
   <h3>PKGMK_SOURCE_DIR</h3>
    Spécifie le chemin complet du dossier dans lequel les sources sont téléchargées.
+
   <h3>PKGMK_WORK_DIR</h3>
    Spécifie le chemin complet du dossier de travail.
+
   <h3>PKGMK_NO_STRIP</h3>
    Commutateur pour déactiver la suppresion des symboles dans les binaires générés.
-   <p>
+   <br>
     Activé:
     <pre class="output">PKGMK_NO_STRIP="yes"</pre>
-   <p>
     Défaut: "no"
+
   <h3>PKGMK_IGNORE_UNPACK</h3>
     Commutateur pour ignorer l'extraction des fichiers depuis une archive source.
-   <p>
+   <br>
     Activé:
     <pre class="output">PKGMK_IGNORE_UNPACK="yes"</pre>
     Défaut: "no"
+
   <h3>PKGMK_COMPRESS_PACKAGE</h3>
     Commutateur pour activer la compression des archives des paquets binaires.
-   <p>
+   <br>
     Défaut: "yes"
+
   <h3>PKGMK_COMPRESS_MODE</h3>
     Commutateur pour choisir le mode de compression.
-   <p>
+   <br>
     Défaut: "xz"
-   <p>
+   <br>
     Valeurs possibles: gz, bz2 et xz
+
   <h3>PKGMK_KEEP_SOURCES</h3>
     Commutateur pour garder les sources:
-   <p>
+   <br>
     Défaut: "yes"
+
   <h3>PKGMK_KEEP_LA_LIBS</h3>
     Commutateur pour garder les librairies .la.
-   <p>
+   <br>
     Défaut: "no"
+
   <h3>PKGMK_CLEAN</h3>
     Commutateur pour nettoyer les archives des paquets produits.
-   <p>
+   <br>
     Défaut: "no"
+
   <h3>PKGMK_GROUPS</h3>
     Tableau des groupes possibles.
-   <p>
+   <br>
     Valeurs possibles: lib, devel, man, doc, service
-   <p>
+   <br>
     Défaut: (devel man doc service)
+
   <h3>PKGMK_LOCALES</h3>
     Tableau des locales générées (si existantes) à l'empaquetage.
+
   <h3>PKGMK_COLLECTIONS</h3>
     Tableau permettant à 'pkgmk' de trouver les dépendances automatiquement dans les dossiers.
-   <p>
+   <br>
     Valeurs possibles: (base cli cli-extra gui gui-extra <votre_collection>)
+
   <h3>PKGMK_IGNORE_REPO</h3>
+
   <h3>PKGMK_IGNORE_COLLECTION</h3>
+
   <h3>PKGMK_IGNORE_RUNTIMEDEPS</h3>
+
  <h2>Les variables pour le paquet</h2>
   <h3>description</h3>
    La description décrit les fonctionnalitées du paquet en 112 caractères maximums.
-  <p>
-   Rédigé en anglais.
+  <br>
+   Elle DOIT être rédigé en anglais.
+
   <h3>url</h3>
    L'URL spécifie l'adresse où l'on peut trouver de plus amples informations sur le paquet.
+
   <h3>license</h3>
    La license est spécifiée sous forme par exemple:
    <pre class="output">"GPL2, LGPL3"</pre>
+
   <h3>packager</h3>
    Le nom de l'empaqueteur est spécifié sous forme:
    <pre class="output">&lttnut tnut@nutyx.org&gt</pre>
+
   <h3>contributors</h3>
    La liste des empaqueteurs ayant contribué à la construction de ce paquet:
    <pre class="output">"Tnut,Pierre,Spiky"</pre>
 
   <h3>name</h3>
    Le nom du dossier dans lequel le(s) fichier(s) est le nom du paquet.
-   <p>
+   <br>
     Chaîne de caractères.
-   <p>
+   <br>
     Le nom d'un paquet doit obligatoirement contenir des lettres minuscules uniquement.
-   <p>
+   <br>
     Les caractères @ # / \ < > | ne sont pas autorisés dans le nom
-   <p>
+   <br>
     La longueur maximum d'un nom est déterminé par la longueur maximum du nom de fichier.
     Il est préférable de garder une taille la plus petite possible.
     Deux caractères au minimum.
+
   <h3>version</h3>
     Chaîne de caractères.
-   <p>
+   <br>
     Peut contenir toute valeur représentant la version des sources utilisées.
    <ul>
     <li>
@@ -101,32 +122,47 @@
     <li>
      development
    </ul>
+
   <h3>release</h3>
    Valeur entière entre 1 et 999.
-   <p>
+   <br>
     Utile pour informer mybld de recompiler le paquet.
-  <h3>makedepends</h3>
+
+  <h3>Les dépendances de compilation: makedepends</h3>
    Fourni la liste des dépendances de compilation du paquet.
-  <h3>run</h3>
+    <pre class="output">makedepends=(glib gtk3 libvorbis python)</pre>
+
+  <h3>Les dépendances de fonctionnement: run</h3>
    Fourni la liste des dépendances de fonctionnement du paquet.
+    <pre class="output">run=(desktop-file-utils gtk-update-icon-cache)</pre>
+
   <h3>categories</h3>
    Normalement détectées automatiquement, si ce n'est pas le cas, on peut les spécifier ici:
    <pre class="output">categories=(Office Graphics Education)</pre>
+
   <h3>set</h3>
    Ajoute le paquet au(x) jeu(x) de paquets spécifié(s)
    <pre class="output">set=(gnome cinnamon)</pre>
+
   <h3>alias</h3>
    Spécifie un nom synonyme.
    Le synonyme doit etre unique, autrement dit, il ne peut pas s'appeler par le nom d'un autre paquet dans la même collection.
+   Contrairement au nom, un alias peut contenir des majuscules.
+   <pre class="output">alias=(nom1 Nom2 nom3)</pre>
+
   <h3>source</h3>
     L'adresse des sources, le nom des fichiers necessaires pour la construction du paquet.
-   <p>
+   <br>
     Les fichiers dont les noms sont spécifiés dans le tableau des sources source() doivent se trouver dans le dossier du fichier Pkgfile.
-   <p>
-    Les fichiers pre et post install ne sont pas listés dans ce tableau.
+   <br>
+    Les fichiers .README, .pre et .post-install ne sont pas listés dans ce tableau.
+
+    <pre class="output">source=(config
+        http://downloads.siteinternetdupaquet.org/$name.$version.tar.xz)</pre>
+
   <h3>build</h3>
     La variable permet de prédéfinir la façon de construire le paquet
-   <p>
+   <br>
     Actuellement il existe plusieurs modes:
    <table>
     <caption>
@@ -225,27 +261,83 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr  \
 make
 make DESTDIR=$PKG install
       </pre>
+     <tr class="even">
+     <td>
+      kde6
+     <td>
+      <pre class="output">mkdir build
+cd  build
+cmake -DCMAKE_INSTALL_PREFIX=/usr  \
+      -DCMAKE_BUILD_TYPE=Release   \
+      -DBUILD_TESTING=OFF          \
+      -Wno-dev \
+      ../$name-$version
+make
+make DESTDIR=$PKG install
+      </pre>
    </table>
+
  <h2>Les fonctions</h2>
   Toutes les fonctions mentionnées ci-dessous sont optionnelles.
   Il est tout à fait possible de construire un paquet sans aucune d'entre elle.
+
   <h3>prepare</h3>
     Souvent utilisée pour renommer le dossier source ou pour appliquer un patch necessaire pour la compilation.
    <p>
     La fonction 'prepare' est executée avant la fonction 'build' ci-dessous.
+
   <h3>build</h3>
     Fonction principale pour la compilation du paquet.
     Si présente, elle sera toujours exécutée avant les fonctions ci-dessous.
+
   <h3>package</h3>
     Fonction optionnelle exécutée en dernier lieu. Peut être utilisée pour l'empaquetage du paquet.
+
   <h3>devel</h3>
     Fonction personnalisée si des actions spécifiques doivent être éffectuées sur le sous-paquet devel.
+
   <h3>doc</h3>
     Fonction personnalisée si des actions spécifiques doivent être éffectuées sur le sous-paquet doc.
+
   <h3>lib</h3>
     Fonction personnalisée si des actions spécifiques doivent être éffectuées sur le sous-paquet lib.
+
   <h3>man</h3>
     Fonction personnalisée si des actions spécifiques doivent être éffectuées sur le sous-paquet man.
+
   <h3>service</h3>
     Fonction personnalisée si des actions spécifiques doivent être éffectuées sur le sous-paquet service.
+
+ <h2>Le nom du dossier parent</h2>
+  Le dossier d'un paquet doit s'appeler par le nom du paquet,
+  la longueur du nom du dossier (et donc le nom du paquet) ne doit pas dépasser 50 caractères.
+   <ul>
+    <li>
+     Il ne peut pas contenir de majuscules, ne peut pas commencer par un chiffre.
+    <li>
+     Il doit commencer par une lettre minuscule
+    <li>
+     Il peut contenir les 26 lettres a à z, les 10 chiffres 0 à 9, et les trois symboles -, _ et +
+    </ul>
+     Exemple: /home/thierry/testing/gui/xorg-server
+    <br>
+      Ici le nom du paquet DOIT être <i><b>xorg-server</b></i>
+
+ <h2>Le contenu du dossier</h2>
+   En plus de l'indispensable fichier Pkgfile,
+   on peut également trouver un script de pré-installation et un script de post-installation.
+   Ils devront prendre le nom du paquet en préfix,
+   donc toujours avec xorg-server comme nom de paquet dans notre exemple:
+   <ul>
+    <li>
+     xorg-server.pre-install
+    <li>
+     xorg-server.post-install
+   </ul>
+   On peut également trouver un fichier README.
+   Il prendra également le nom du paquet en préfix:
+   <ul>
+    <li>
+      xorg-server.README
+   </ul>
 

@@ -2,94 +2,115 @@
  <h2>Packaging Helper Variables</h2>
   <h3>PKG</h3>
    Specifies the root folder when packaging.
+
   <h3>SRC</h3>
    Specifies the full path to the sources and compilation root folder.
+
   <h3>PKGMK_SOURCE_DIR</h3>
    Specifies the full path of the folder where sources are downloaded.
+
   <h3>PKGMK_WORK_DIR</h3>
    Specifies the full path to the working folder.
+
   <h3>PKGMK_NO_STRIP</h3>
    Switch to disable the removal of symbols in generated binaries.
-   <p>
+   <br>
     Enabled:
     <pre class="output">PKGMK_NO_STRIP="yes"</pre>
-   <p>
     Default: "no"
+
   <h3>PKGMK_IGNORE_UNPACK</h3>
     Switch to skip extracting files from a source archive.
-   <p>
+   <br>
     Enabled:
     <pre class="output">PKGMK_IGNORE_UNPACK="yes"</pre>
     Default: "no"
+
   <h3>PKGMK_COMPRESS_PACKAGE</h3>
     Switch to enable compression of binary package archives.
-   <p>
+   <br>
     Default: "yes"
+
   <h3>PKGMK_COMPRESS_MODE</h3>
     Switch to choose the compression mode.
-   <p>
+   <br>
     Default: "xz"
-   <P>
+   <br>
     Possible values: gz, bz2 and xz
+
   <h3>PKGMK_KEEP_SOURCES</h3>
     Switch to keep sources:
-   <P>
+   <br>
     Default: "yes"
+
   <h3>PKGMK_KEEP_LA_LIBS</h3>
     Switch to keep .la libraries.
-   <p>
+   <br>
     Default: "no"
+
   <h3>PKGMK_CLEAN</h3>
     Switch to clean up product package archives.
-   <p>
+   <br>
     Default: "no"
+
   <h3>PKGMK_GROUPS</h3>
     Table of possible groups.
-   <p>
+   <br>
     Possible values: lib, devel, man, doc, service
-   <p>
+   <br>
     Default: (devel man doc service)
+
   <h3>PKGMK_LOCALES</h3>
     Array of locales generated (if any) at packaging.
+
   <h3>PKGMK_COLLECTIONS</h3>
     Table allowing 'pkgmk' to find dependencies automatically in folders.
-   <p>
+   <br>
     Possible values: (base cli cli-extra gui gui-extra <your_collection>)
+
   <h3>PKGMK_IGNORE_REPO</h3>
+
   <h3>PKGMK_IGNORE_COLLECTION</h3>
+
   <h3>PKGMK_IGNORE_RUNTIMEDEPS</h3>
+
  <h2>The variables for the package</h2>
   <h3>description</h3>
    The description describes the features of the package in a maximum of 112 characters.
-   <p>
-    Written in English.
+   <br>
+    Must be written in English.
+
   <h3>url</h3>
    The URL specifies the address where more information about the package can be found.
+
   <h3>license</h3>
    The license name is specified as:
    <pre class="output">"GPL2, LGPL3"</pre>
+
   <h3>packager</h3>
    The packager name is specified as:
    <pre class="output">&lttnut tnut@nutyx.org&gt</pre>
+
   <h3>contributors</h3>
    The list of packagers who contributed to the build of this package:
    <pre class="output">"Tnut,Pierre,Spiky"</pre>
 
   <h3>name</h3>
    The name of the folder where the file(s) is the name of the package.
-   <p>
+   <br>
     String of characters.
-   <p>
+   <br>
     The name of a package must contain lowercase letters only.
-   <p>
+   <br>
     The characters @ # / \ < > | are not allowed in the name
-   <p>
+   <br>
     The maximum length of a name is determined by the maximum filename length.
     It is best to keep the size as small as possible.
     Minimum two characters.
+
   <h3>version</h3>
     String of characters.
-   <p>
+   <br>
     Can contain any value representing the version of the sources used.
    <ul>
     <li>
@@ -101,32 +122,46 @@
     <li>
      development
    </ul>
+
   <h3>release</h3>
     Integer value between 1 and 999.
-    <p>
+    <br>
      Useful for telling mybld to recompile the package.
-  <h3>makedepends</h3>
+
+  <h3>Compile dependencies: makedepends</h3>
    Provides the list of package build dependencies.
-  <h3>run</h3>
-   Provides the list of working dependencies of the package.
+     <pre class="output">makedepends=(glib gtk3 libvorbis python)</pre>
+
+  <h3>Runtime dependencies: run</h3>
+   Provides the list of runtime dependencies of the package.
+     <pre class="output">run=(desktop-file-utils gtk-update-icon-cache)</pre>
+
   <h3>categories</h3>
    Normally detected automatically, if not, you can specify them here:
    <pre class="output">categories=(Office Graphics Education)</pre>
+
   <h3>set</h3>
    Add the package to the specified package set(s)
    <pre class="output">set=(gnome cinnamon)</pre>
+
   <h3>alias</h3>
    Specifies a synonymous name.
    The synonym must be unique, ie it cannot be called by the name of another package in the same collection.
+    <pre class="output">alias=(nom1 Nom2 nom3)</pre>
+
   <h3>source</h3>
    The address of the sources, the name of the files necessary for the construction of the package.
-   <p>
+   <br>
     Files whose names are specified in the sources array source() must be in the folder of the Pkgfile file.
-   <p>
+   <br>
     Pre and post install files are not listed in this table.
+
+    <pre class="output">source=(config
+        http://downloads.packagename-website-adress.org/$name.$version.tar.xz)</pre>
+
   <h3>build</h3>
     The variable allows to predefine the way to build the package.
-   <p>
+   <br>
     Currently there are several modes:
    <table>
     <caption>
@@ -225,26 +260,82 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr  \
 make
 make DESTDIR=$PKG install
       </pre>
+     <tr class="even">
+     <td>
+      kde6
+     <td>
+      <pre class="output">mkdir build
+cd  build
+cmake -DCMAKE_INSTALL_PREFIX=/usr  \
+      -DCMAKE_BUILD_TYPE=Release   \
+      -DBUILD_TESTING=OFF          \
+      -Wno-dev \
+      ../$name-$version
+make
+make DESTDIR=$PKG install
+      </pre>
    </table>
+
  <h2>Functions</h2>
   All functions mentioned below are optional.
   It is entirely possible to build a package without any of them.
   <h3>prepare</h3>
     Often used to rename the source folder or to apply a patch needed for compilation.
-   <p>
+   <br>
     The 'prepare' function is executed before the 'build' function below.
+
   <h3>build</h3>
     Main function for compiling the package.
     If present, it will always be executed before the functions below.
+
   <h3>package</h3>
     Optional function performed last. Can be used for package wrapping.
+
   <h3>devel</h3>
     Custom function if specific actions should be performed on the devel subpackage.
+
   <h3>doc</h3>
     Custom function if specific actions should be performed on the doc subpackage.
+
   <h3>lib</h3>
     Custom function if specific actions should be performed on the lib subpackage.
+
   <h3>man</h3>
     Custom function if specific actions should be performed on the man subpackage.
+
   <h3>service</h3>
     Custom function if specific actions need to be performed on the service subpackage.
+
+ <h2>The name of the parent folder</h2>
+   The folder of a package must be called by the name of the package,
+   the length of the folder name (and therefore the package name) must not exceed 50 characters.
+    <ul>
+     <li>
+      It cannot contain capital letters, cannot start with a number.
+     <li>
+      It must start with a lowercase letter
+     <li>
+      It can contain the 26 letters a to z, the 10 numbers 0 to 9, and the three symbols -, _ and +
+    </ul>
+       Example: /home/thierry/testing/gui/xorg-server
+     <br>
+       Here the package name MUST be <i><b>xorg-server</b></i>
+
+  <h2>The contents of the folder</h2>
+    In addition to the essential Pkgfile,
+    You can also find a pre-installation script and a post-installation script.
+    They must take the name of the package as a prefix,
+    so always with xorg-server as package name in our example:
+    <ul>
+     <li>
+      xorg-server.pre-install
+     <li>
+      xorg-server.post-install
+    </ul>
+    You can also find a README file.
+    It will also take the package name as a prefix:
+    <ul>
+     <li>
+       xorg-server.README
+    </ul>
+
