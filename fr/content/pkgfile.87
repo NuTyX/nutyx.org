@@ -283,7 +283,7 @@ make DESTDIR=$PKG install
 
   <h3>prepare</h3>
     Souvent utilisée pour renommer le dossier source ou pour appliquer un patch necessaire pour la compilation.
-   <p>
+   <br>
     La fonction 'prepare' est executée avant la fonction 'build' ci-dessous.
 
   <h3>build</h3>
