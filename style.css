@@ -269,3 +269,8 @@ td.content {
     display: none;
   }
 }
+@media print {
+  td.forum, td.logo, td.top-menu, form {
+    display: none;
+  }
+}
