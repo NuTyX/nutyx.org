@@ -20,6 +20,7 @@
    Une fois l'ISO installée, faites une mise à jour pour installer les paquets de locales correspondants.
   <p>
    <a class="url" href="install">Cet article vous explique comment installer depuis zéro la distribution NuTyX sur votre machine</a>
+  </p>
  <h2>Pour le nouvel utilisateur sur NuTyX</h2>
   <p>
    Les ISOs permettent une installation en mode BIOS ou EFI.
@@ -275,7 +276,7 @@
        Environ 1.7 GO
 
    </tr>
-s
+
    <tr class="odd">
 
     <td class="url">
