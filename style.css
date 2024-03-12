@@ -52,6 +52,13 @@ a {
 a:hover {
   text-decoration:underline;
 }
+ul.hN {
+  list-style-type: none;
+}
+ul.h2 {
+  list-style-type: none;
+  padding:0;
+}
 tr.odd, tr.even {
   padding: 1em;
 }
@@ -168,11 +175,6 @@ td.content {
   vertical-align: top;
   margin-left: 0.8em;
 }
-@media print {
-  header, footer {
-    display: none;
-  }
-}
 /* some browsers does not support:
  * @media (prefers-color-scheme:xxx)
  */
@@ -270,7 +272,8 @@ td.content {
   }
 }
 @media print {
-  td.forum, td.logo, td.top-menu, form {
+  td.forum, td.logo, td.top-menu,
+  form, footer {
     display: none;
   }
 }
