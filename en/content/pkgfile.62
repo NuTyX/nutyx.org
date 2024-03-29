@@ -68,6 +68,12 @@
    <br>
     Possible values: (base cli cli-extra gui gui-extra <your_collection>)
 
+  <h3>PKGMK_DEPENDS</h3>
+    Table allowing 'pkgmk' to install circular dependencies .
+    Dependencies must be in one of the collections on which the package may depend.
+   <br>
+    Possible values: (package1 package2 ...)
+
   <h3>PKGMK_IGNORE_REPO</h3>
 
   <h3>PKGMK_IGNORE_COLLECTION</h3>

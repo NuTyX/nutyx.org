@@ -68,6 +68,12 @@
    <br>
     Valeurs possibles: (base cli cli-extra gui gui-extra <votre_collection>)
 
+  <h3>PKGMK_DEPENDS</h3>
+    Tableau permettant à 'pkgmk' d'installer les dépendances circulaires.
+    Les dépendances doivent se trouver dans une des collections dont le paquet peut dépendre.
+   <br>
+    Valeurs possibles: (paquet1 paquet2 ...)
+
   <h3>PKGMK_IGNORE_REPO</h3>
 
   <h3>PKGMK_IGNORE_COLLECTION</h3>
