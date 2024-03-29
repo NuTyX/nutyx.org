@@ -186,7 +186,8 @@
      <td>
      <pre class="output">mkdir build
 cd    build
-meson --prefix=/usr \
+meson setup --prefix=/usr \
+      --buildtype=release \
       ../$name-$version
 ninja
 DESTDIR=$PKG ninja install
@@ -227,7 +228,7 @@ make DESTDIR=$PKG install
       <td>
        python2
       <td>
-       <pre class="output">cd $name-$version
+       <pre class="output">cd ${_name}-$version
 python2 setup.py build
 python2 setup.py install --prefix=/usr --root=$PKG
        </pre>
@@ -235,7 +236,7 @@ python2 setup.py install --prefix=/usr --root=$PKG
       <td>
        python3
       <td>
-       <pre class="output">cd $name-$version
+       <pre class="output">cd ${_name}-$version
 python3 setup.py build
 python3 setup.py install --prefix=/usr --root=$PKG
        </pre>
@@ -243,7 +244,7 @@ python3 setup.py install --prefix=/usr --root=$PKG
      <td>
       xorg
      <td>
-      <pre class="output">cd $name-$version
+      <pre class="output">cd ${_name}-$version
 ./configure --prefix=/usr        \
             --sysconfdir=/etc    \
             --localstatedir=/var \
