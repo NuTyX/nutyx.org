@@ -78,7 +78,7 @@ post-installation: finie</pre>
  <h2>Identifier les firmwares chargés au démarrage</h2>
  Pour cela, on dispose d'une commande système: dmesg.
  La commande doit être lancé via le compte root pour obtenir les informations voulus.
-  <pre class="command_user"><kbd>sudo dmesg|grep --ignore-case firmware</kbd></pre>
+  <pre class="command_user"><kbd>sudo dmesg|grep -i firmware</kbd></pre>
   <pre class="output">[    9.750874] i915 0000:00:02.0: [drm] Finished loading DMC firmware i915/adls_dmc_ver2_01.bin (v2.1)
 [    9.756127] i915 0000:00:02.0: [drm] GT0: GuC firmware i915/tgl_guc_70.bin version 70.13.1
 [    9.756131] i915 0000:00:02.0: [drm] GT0: HuC firmware i915/tgl_huc.bin version 7.9.3
@@ -162,5 +162,5 @@ post-installation: finie</pre>
   soit quasi un <b><i>1Goctet</i></b> d'espace disque récupérée.
  <p>
   Vous pouvez également revérifier la sortie de la commande:
-    <pre class="command_user"><kbd>sudo dmesg|grep --ignore-case firmware</kbd></pre>
+    <pre class="command_user"><kbd>sudo dmesg|grep -i firmware</kbd></pre>
   Si un nouveau message s'affiche, refaire la procédure en utilisant <a href="#4">la même methode.</a>  
