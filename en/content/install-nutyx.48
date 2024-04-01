@@ -400,7 +400,7 @@ bash install-nutyx</kbd></pre>
    <p>
     Possible ISO names are:
       <p>
-    <i>strict, mini, base, cli, gui, xorg, gui_extra, openbox, jwm, lxde, xfce4, mate, gnome and kde5</i>
+    <i>strict, mini, base, cli, gui, xorg, openbox, jwm, lxde, xfce4, mate, gnome and kde6</i>
    <p>
     It is possible to test the command and thus view all the commands that are affected.
        <pre class="command_user"><kbd>ISO=gnome bash install-nutyx -t</kbd></pre>
@@ -443,14 +443,9 @@ BASE         : efibootmgr linux-firmware systemd runyx wireless-tools \
 wpa-supplicant
 CLI          : gpm gpm.service dosfstools make-ca xdg-user-dirs \
 sound-theme-freedesktop ntp ntp.service
-GUI          : flcards gvfs network-manager-applet
-GUI_EXTRA    : firefox thunderbird gparted leafpad scrot vlc telegram
+GUI          : flcards gvfs network-manager-applet firefox gparted leafpad scrot vlc
 XORG         : xorg-xinit xorg-xf86-input-synaptics xorg-xf86-input-wacom \
-xorg-xf86-video-ati xorg-xf86-video-fbdev xorg-xf86-video-intel \
-xorg-xf86-video-nouveau xorg-xf86-video-vesa xorg-xrandr xorg-setxkbmap
-GNOME_EXTRA  : epiphany seahorse-nautilus evolution simple-scan \
-gnome-weather gnome-chess balsa
-KDE5_EXTRA   : kdenlive k3b
+xorg-xrandr xorg-setxkbmap
 CDE          : cde
 OPENBOX      : lxdm openbox openbox-jp-theme
 JWM          : lxdm jwm
@@ -461,14 +456,14 @@ ENLIGHTENMENT: lightdm enlightenment
 XFCE4        : lxdm xfce4 xfce4-extra
 BUDGIE       : budgie
 MATE         : lightdm mate
-GNOME        : gnome
+GNOME        : gnome gnome-extra
 KDE5         : adwaita-qt kde5
 ISO Filename /mnt/hd/NuTyX_x86_64-21.03.0-rc4-GNOME.iso</pre>
   <p>
     As we can see, new variables are now available.
    These can also be redefined at your convenience:
   <p>
-   STRICT, BASE, CLI, GUI, GUI_EXTRA, XORG, GNOME, GNOME_EXTRA, KDE5, KDE5_EXTRA, BUDGIE, CINNAMON, ENLIGHTENMENT, CDE, OPENBOX, JWM, LXDE, XFCE4, MATE.
+   STRICT, BASE, CLI, GUI, XORG, GNOME, KDE6, BUDGIE, CINNAMON, ENLIGHTENMENT, CDE, OPENBOX, JWM, LXDE, XFCE4, MATE.
   <p>
    Each variable specify a set of packages to be installed.
    Each ISO name use a set of thoses variables to build up the specified ISO.
@@ -517,69 +512,68 @@ ISO Filename /mnt/hd/NuTyX_x86_64-21.03.0-rc4-GNOME.iso</pre>
      <td>
       JWM
      <td>
-      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + JWM
+      STRICT + BASE + CLI + GUI  + XORG + JWM
     <tr>
      <td>
       OPENBOX
      <td>
-      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + OPENBOX
+      STRICT + BASE + CLI + GUI + XORG + OPENBOX
     <tr>
      <td>
       LXDE
      <td>
-      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + LXDE
+      STRICT + BASE + CLI + GUI + XORG + LXDE
     <tr>
      <td>
       XFCE4
      <td>
-      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + XFCE4
+      STRICT + BASE + CLI + GUI + XORG + XFCE4
     <tr>
      <td>
       MATE
      <td>
-      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + MATE
+      STRICT + BASE + CLI + GUI + XORG + MATE
     <tr>
      <td>
       CDE
      <td>
-      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + CDE
+      STRICT + BASE + CLI + GUI + XORG + CDE
     <tr>
      <td>
       ENLIGHTENMENT
      <td>
-      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + ENLIGHTENMENT
+      STRICT + BASE + CLI + GUI + XORG + ENLIGHTENMENT
     <tr>
      <td>
       CINNAMON
      <td>
-      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + CINNAMON
+      STRICT + BASE + CLI + GUI + XORG + CINNAMON
     <tr>
      <td>
       BUDGIE
      <td>
-      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + BUDGIE
+      STRICT + BASE + CLI + GUI + XORG + BUDGIE
     <tr>
      <td>
       GNOME
      <td>
-      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + GNOME + GNOME_EXTRA
+      STRICT + BASE + CLI + GUI + XORG + GNOME
     <tr>
      <td>
       KDE5
      <td>
-      STRICT + BASE + CLI + GUI + GUI_EXTRA + XORG + KDE5 + KDE5_EXTRA
+      STRICT + BASE + CLI + GUI + XORG + KDE6
   </table>
  <h2>A few examples</h2>
-  <pre class="command_user"><kbd>sudo ISO=KDE5 install-nutyx</kbd></pre>
+  <pre class="command_user"><kbd>sudo ISO=KDE6 install-nutyx</kbd></pre>
   <p>
-   install and produce a standard kde5 ISO in the /mnt/hd directory.
+   install and produce a standard kde6 ISO in the /mnt/hd directory.
 
   <pre class="command_user"><kbd>sudo \
 ISO="lxde" \
 XORG="xorg-xf86-input-synaptics" \
 BASE="linux-firmware wireless-tools wpa-supplicant" \
-GUI="xorg-xrandr" \
-GUI_EXTRA="deadbeef geany firefox" \
+GUI="xorg-xrandr deadbeef geany firefox" \
 DEVEL="&& setup-nutyx start && echo 'ready ?' && read a" \
 CLI="dhcpcd openssh git cdrtools syslinux libisoburn dosfstools" \
 LFS="/MyIso" \
@@ -588,4 +582,4 @@ MOUNT="/media/www" \
 install-nutyx</kbd></pre>
    <p>
     install and produce a customised lxde ISO.
-    The BASE, CLI, GUI, XORG, GUI_EXTRA, DEVEL, LFS, MOUNT and DEPOT variables redefined.
+    The BASE, CLI, GUI, XORG, DEVEL, LFS, MOUNT and DEPOT variables redefined.
