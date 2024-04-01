@@ -427,10 +427,8 @@ sysvinit kernel efibootmgr linux-firmware systemd runyx wireless-tools \
 wpa-supplicant gpm gpm.service dosfstools make-ca xdg-user-dirs \
 sound-theme-freedesktop ntp ntp.service flcards gvfs network-manager-applet \
 xorg-xinit xorg-xf86-input-synaptics xorg-xf86-input-wacom \
-xorg-xf86-video-ati xorg-xf86-video-fbdev xorg-xf86-video-intel \
-xorg-xf86-video-nouveau xorg-xf86-video-vesa xorg-xrandr xorg-setxkbmap \
-firefox thunderbird gparted leafpad scrot vlc telegram gnome epiphany \
-seahorse-nautilus evolution simple-scan gnome-weather gnome-chess balsa
+xorg-xrandr xorg-setxkbmap firefox gparted leafpad scrot vlc gnome epiphany \
+evolution simple-scan gnome-weather gnome-chess
 DEVEL        :
 mkinitramfs $(basename /lib/modules/*)
 mv boot/initrd-* boot/initrd-stable
@@ -448,7 +446,7 @@ XORG         : xorg-xinit xorg-xf86-input-synaptics xorg-xf86-input-wacom \
 xorg-xrandr xorg-setxkbmap
 CDE          : cde
 OPENBOX      : lxdm openbox openbox-jp-theme
-JWM          : lxdm jwm
+JWM          : lxdm jwm jwm-miyolinux-theme
 LXDE         : lxdm lxde
 LXQT         : breeze-gtk sddm lxqt
 CINNAMON     : lightdm cinnamon
@@ -457,8 +455,8 @@ XFCE4        : lxdm xfce4 xfce4-extra
 BUDGIE       : budgie
 MATE         : lightdm mate
 GNOME        : gnome gnome-extra
-KDE5         : adwaita-qt kde5
-ISO Filename /mnt/hd/NuTyX_x86_64-21.03.0-rc4-GNOME.iso</pre>
+KDE6         : kde6
+ISO Filename /mnt/hd/NuTyX_x86_64-24.04.0-GNOME.iso</pre>
   <p>
     As we can see, new variables are now available.
    These can also be redefined at your convenience:
