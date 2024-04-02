@@ -1,29 +1,29 @@
-<h1>Latest news 10-02-2024</h1>
+<h1>Latest news 02-04-2024</h1>
 
 
- <h2>NuTyX 24.02.0 available with cards 2.7.4</h2>
+ <h2>NuTyX 24.04.0 available with cards 2.7.4</h2>
   <p>
-   Spiky and me are happy to announce the new version of NuTyX 24.02.0 and cards 2.7.4 .
+   Spiky and me are happy to announce the new version of NuTyX 24.04.0 and cards 2.7.4 .
   <p>
-   This release is mainly a set of package updates for security flaws, some of which are considered critical.
-
+    The novelty of this version is undoubtedly the release of KDE 6.
+    The new version of KDE based on Qt6 is now available on NuTyX.
  <h2>Updated packages</h2>
  <p>
-   SysV in 3.06 and systemd in 253.0 .
+   SysV in 3.09 and systemd in 253.0 .
  <p>
-   glibc in 2.39, curl in 8.6.0, python in 3.11.8, etc .
+   glibc in 2.39, curl in 8.7.1, python in 3.11.8, etc .
   <p>
-   The xorg-server graphics server version 21.1.10,
-   the Mesa 3D library in 23.2.1, Gtk4 4.12.4
-   and Qt 6.6.1.
+   The xorg-server graphics server version 21.1.11,
+   the Mesa 3D library in 24.0.4, Gtk4 4.14.1
+   and Qt 6.6.3.
   <p>
    <ul>
     <li>
-     The nvidia driver is update to version  535.154.05 .
+     The nvidia driver is update to version  550.67 .
     <li>
-     The legacy driver 470.xx series in version 470.223.02 .
+     The legacy driver 470.xx series in version 470.239.06 .
     <li>
-     The legacy driver 390.xx series in version 390.157.13 .
+     The legacy driver 390.xx series in version 390.157 .
    </ul>
   <p>
    The python interpreter is updated to version 3.11.8.
@@ -34,33 +34,33 @@
   <p>
    The GNOME desktop environment is also updated to version 45.3
    <p>
-   The KDE desktop environment is available in Plasma 5.27.10, Framework 5.114.0
-   and applications in 23.08.4.
+   The KDE desktop environment is available in Plasma 6.0.3, Framework 6.0.0
+   and applications in 24.02.1.
   <p>
-   Available browsers are: Firefox 122.0.1, Epiphany 45.2, etc
+   Available browsers are: Firefox 124.0.2, Epiphany 45.3, etc
   <p>
    Many desktop applications have been updated as well like Telegram-desktop 4.14.1,
-   Thunderbird 115.7.1, Scribus 1.5.8, Libreoffice 7.6.3.2, Gimp 2.10.36, etc.
+   Thunderbird 115.9.0, Scribus 1.6.1, Libreoffice 24.2.2.2, Gimp 2.10.36, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.19.306, 5.4.268, 5.10.209, 5.15.148, 6.1.77 and 6.6.16
-   and the latest stable version 6.7.4.
+   4.19.311, 5.4.273, 5.10.214, 5.15.153, 6.1.83 and 6.6.23
+   and the latest stable version 6.8.2.
   <p>
    The kernel change logs are available here:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.306">kernel 4.19.306 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.311">kernel 4.19.311 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.268">kernel 5.4.268 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.273">kernel 5.4.273 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.209">kernel 5.10.209 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.214">kernel 5.10.214 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.148">kernel 5.15.148 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.153">kernel 5.15.153 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.77">kernel 6.1.77 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.83">kernel 6.1.83 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.16">kernel 6.6.16 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.23">kernel 6.6.23 changelog</a>
  <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.7.4">kernel 6.7.4 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.8.2">kernel 6.8.2 changelog</a>
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
@@ -76,16 +76,25 @@
    CINNAMON,
    BUDGIE,
    GNOME,
-   KDE5.
+   KDE6.
   <p>
    They are available on the <a href="downloads">download page.</a>
 
  <h2>Upgrade process</h2>
   <p>
-   A simple:
- </p><pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
-   will make it.
-
+   This time it's a bit different if you are on KDE5 version.
+   Please do as follow:
+ </p><pre class="command_user"><kbd>sudo init 3
+ sudo cards remove kde5
+ sudo cards upgrade
+ sudo cards install kde6
+ sudo shutdown -y r 0</kbd></pre>
+  After reboot you should be able to loggin into Plasma KDE6.
+  <p>
+   For all the other ISO, a simple
+   </p><pre class="command_user"><kbd>sudo cards upgrade
+   shutdown -y -r 0</kbd></pre>
+   should make it.
  <h2>Thanks</h2>
   <p>
    With Thanks to the BLFS Team which helped out with a few problems we encountered.

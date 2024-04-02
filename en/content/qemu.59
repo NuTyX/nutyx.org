@@ -34,9 +34,9 @@ to be able to use qemu:
       Make sure the Downloaded iso is in ~/VM-qemu/iso dir.
    </ul>
   <p>
-   for example, the <b>64bits</b> <b>24.02.0</b> version <b>BASE</b> iso will be:
+   for example, the <b>64bits</b> <b>24.04.0</b> version <b>BASE</b> iso will be:
   <p>
-   <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-BASE.iso">https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.02.0-BASE.iso</a>
+   <a class="url" href="https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.04.0-BASE.iso">https://sourceforge.net/projects/nutyx/files/NuTyX_x86_64-24.04.0-BASE.iso</a>
   <ul>
    <li>
     Start the config script

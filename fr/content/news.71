@@ -1,29 +1,29 @@
-<h1>Dernière nouvelle 10-02-2024</h1>
+<h1>Dernière nouvelle 02-04-2024</h1>
 
 
- <h2>NuTyX 24.02.0 disponible avec cards 2.7.4</h2>
+ <h2>NuTyX 24.04.0 disponible avec cards 2.7.4</h2>
   <p>
-   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 24.02.0 et cards 2.7.4 .
-
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 24.04.0 et cards 2.7.4 .
   <p>
-   Cette version est principalement un ensemble de mise à jour de paquets pour raison de failles de sécurité dont certaines sont considérées comme critiques.
+   La nouveauté de cette version est sans aucun doute la sortie de KDE 6.
+   La nouvelle version de KDE basée sur Qt6 est désormais disponible sur NuTyX.
  <h2>Paquets mis à jour</h2>
   <p>
-   SysV en 3.06 et Systemd en 253.0 .
+   SysV en 3.09 et Systemd en 253.0 .
   <p>
-   glibc en 2.39, curl en 8.6.0, python en 3.11.8, etc .
+   glibc en 2.39, curl en 8.7.1, python en 3.11.8, etc .
   <p>
-   Le serveur graphique Xorg-server version 21.1.10.
-   la librairie Mesa 3D en 23.2.1, Gtk4 4.12.4
-   et Qt 6.6.1.
+   Le serveur graphique Xorg-server version 21.1.11.
+   la librairie Mesa 3D en 24.0.4, Gtk4 4.14.1
+   et Qt 6.6.3.
   <p>
     <ul>
       <li>
-        Le pilote nvidia est mis à jour en version 535.129.03 .
+        Le pilote nvidia est mis à jour en version 550.67 .
       <li>
-        Le pilote nvidia de la série 470.xx en version 470.223.02 .
+        Le pilote nvidia de la série 470.xx en version 470.239.06 .
       <li>
-        Le pilote nvidia de la série 390.xx en version 390.157.13 .
+        Le pilote nvidia de la série 390.xx en version 390.157 .
    </ul>
   <p>
    L'interpreteur Python est mis à jour en version 3.11.8.
@@ -32,35 +32,35 @@
   <p>
    L'environnement de bureau MATE est en version 1.26.2.
   <p>
-   L'environnement de bureau GNOME est également mis à jour en version 45.3
+   L'environnement de bureau GNOME est également mis à jour en version 46.0
   <p>
-   L'environnement de bureau KDE est disponible en Plasma 5.27.10, Framework 5.114.0
-   et les applications en 23.08.4.
+   L'environnement de bureau KDE est disponible en Plasma 6.0.3, Framework 6.0.0
+   et les applications en 24.02.1.
   <p>
-   Les navigateurs disponibles sont entre autre: Firefox 122.0.1, Epiphany 45.2, etc
+   Les navigateurs disponibles sont entre autre: Firefox 124.0.2, Epiphany 45.3, etc
   <p>
    De nombreuses applications on été mise à jour également comme Telegram-desktop 4.14.1,
-   Thunderbird 115.7.1, Scribus 1.5.8, Libreoffice 7.6.3.2, Gimp 2.10.36, etc.
+   Thunderbird 115.9.0, Scribus 1.6.1, Libreoffice 24.2.2.2, Gimp 2.10.36, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.19.306, 5.4.268, 5.10.209, 5.15.148, 6.1.77 et 6.6.16
-   et la dernière version stable 6.7.4.
+   4.19.311, 5.4.273, 5.10.214, 5.15.153, 6.1.83 et 6.6.23
+   et la dernière version stable 6.8.2.
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.306">kernel 4.19.306 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.311">kernel 4.19.311 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.268">kernel 5.4.268 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.273">kernel 5.4.273 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.209">kernel 5.10.209 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.214">kernel 5.10.214 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.148">kernel 5.15.148 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.153">kernel 5.15.153 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.77">kernel 6.1.77 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.83">kernel 6.1.83 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.16">kernel 6.6.16 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.23">kernel 6.6.23 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.7.4">kernel 6.7.4 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.8.2">kernel 6.8.2 changelog</a>
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
@@ -76,15 +76,25 @@
    CINNAMON,
    BUDGIE,
    GNOME,
-   KDE5.
+   KDE6.
   <p>
    Elles sont disponibles sur <a href="downloads">la page de téléchargement.</a>
 
 
  <h2>Mise à jour</h2>
   <p>
-   Une simple commande classique permet la mise à jour:
-   </p><pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
+   Cette fois, c'est un peu différent si vous êtes sur la version de KDE5.
+   Procédez comme suit:
+ </p><pre class="command_user"><kbd>sudo init 3
+ sudo cards remove kde5
+ sudo cards upgrade
+ sudo cards install kde6
+ sudo shutdown -y r 0</kbd></pre>
+  Après redémarrage you devriez pouvoir vous connecter sur Plasma KDE6.
+  <p>
+   Pour les autres ISOs, la simple commande classique permet la mise à jour:
+   </p><pre class="command_user"><kbd>sudo cards upgrade
+sudo shutdown -y -r 0</kbd></pre>
 
  <h2>Remerciements</h2>
   <p>
