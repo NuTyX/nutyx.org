@@ -1,6 +1,31 @@
 <h1>Latest news 02-04-2024</h1>
-
-
+ <h2>Fixed bugs</h2>
+  <table width="60%" cellspacing="0">
+   <tr>
+    <td>
+      Generating an initrd produce a disturbing message.
+    </td>
+    <td>
+      Fixed
+    </td>
+   </tr>
+   <tr>
+    <td>
+     The spanish version of the installer is not available anymore.
+    </td>
+    <td>
+     Fixed
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Login on KDEx(X11) not possible.
+    </td>
+    <td>
+     Fixed
+    </td>
+   </tr>
+  </table>
  <h2>NuTyX 24.04.0 available with cards 2.7.4</h2>
   <p>
    Spiky and me are happy to announce the new version of NuTyX 24.04.0 and cards 2.7.4 .
@@ -82,13 +107,13 @@
 
  <h2>Upgrade process</h2>
   <p>
-   This time it's a bit different if you are on KDE5 version.
+   This time it's a bit different if you are on KDE version5.
    Please do as follow:
  </p><pre class="command_user"><kbd>sudo init 3
- sudo cards remove kde5
- sudo cards upgrade
- sudo cards install kde6
- sudo shutdown -y r 0</kbd></pre>
+sudo cards remove kde5
+sudo cards upgrade
+sudo cards install kde6
+sudo shutdown -y r 0</kbd></pre>
   After reboot you should be able to loggin into Plasma KDE6.
   <p>
    For all the other ISO, a simple

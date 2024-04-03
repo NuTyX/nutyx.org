@@ -7,6 +7,33 @@
   <p>
    La nouveauté de cette version est sans aucun doute la sortie de KDE 6.
    La nouvelle version de KDE basée sur Qt6 est désormais disponible sur NuTyX.
+ <h2>Bugs corrigés</h2>
+  <table width="60%" cellspacing="0">
+   <tr>
+    <td>
+      La génération d'une initrd produit un message perturbant.
+    </td>
+    <td>
+      Fixé
+    </td>
+   </tr>
+   <tr>
+    <td>
+     La version espagnole de l'installateur n'est plus disponible.
+    </td>
+    <td>
+     Fixé
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Impossible de se logger en mode X11 sous KDE.
+    </td>
+    <td>
+     Fixé
+    </td>
+   </tr>
+  </table>
  <h2>Paquets mis à jour</h2>
   <p>
    SysV en 3.09 et Systemd en 253.0 .
@@ -80,16 +107,15 @@
   <p>
    Elles sont disponibles sur <a href="downloads">la page de téléchargement.</a>
 
-
  <h2>Mise à jour</h2>
   <p>
-   Cette fois, c'est un peu différent si vous êtes sur la version de KDE5.
+   Cette fois, c'est un peu différent si vous êtes sur la version 5 de KDE.
    Procédez comme suit:
  </p><pre class="command_user"><kbd>sudo init 3
- sudo cards remove kde5
- sudo cards upgrade
- sudo cards install kde6
- sudo shutdown -y r 0</kbd></pre>
+sudo cards remove kde5
+sudo cards upgrade
+sudo cards install kde6
+sudo shutdown -y r 0</kbd></pre>
   Après redémarrage you devriez pouvoir vous connecter sur Plasma KDE6.
   <p>
    Pour les autres ISOs, la simple commande classique permet la mise à jour:
