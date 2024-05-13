@@ -70,7 +70,7 @@
       <li>
        enlightenment
       <li>
-       kde5
+       kde6
       <li>
        lxde
       <li>
@@ -114,8 +114,8 @@
       Une dépendance est le nom d'un <a href="#ID005">paquet</a> <b>AAA</b> qui est nécessaire au fonctionnement
       ou à la compilation d'un autre <a href="#ID005">paquet</a> <b>BBB</b>.
      <br><br>
-      Le <a href="#ID005">paquet</a> <i>qtbase</i> est une dépendance utilisée par de nombreux <a href="#ID005">paquets</a>
-      de la <a href="./?branch=fixed&arch=x86_64&searchpkg=kde5">collection kde5</a>
+      Le <a href="#ID005">paquet</a> <i>qt6-base</i> est une dépendance utilisée par de nombreux <a href="#ID005">paquets</a>
+      de la <a href="./?branch=fixed&arch=x86_64&searchpkg=kde6">collection kde6</a>
 
 
     <a name='ID040'></a>

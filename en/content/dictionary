@@ -124,7 +124,7 @@
        <li>
         mate
        <li>
-        kde5
+        kde6
        <li>
         xorg 
       </ul>
@@ -160,7 +160,7 @@
     <h2>A dependency of a package</h2>
       A dependency is a <a href="#ID005">package</a> <b>AAA</b> needed either for running or for compiling another <a href="#ID005">package</a> <b>BBB</b>.
      <br><br>
-      A good example of a dependency is the <i>qtbase</i> <a href="#ID005">package</a> which is used by many <a href="#ID005">packages</a> of the <i>kde5</i> <a href="#ID010">collection</a>.
+      A good example of a dependency is the <i>qt6-base</i> <a href="#ID005">package</a> which is used by many <a href="#ID005">packages</a> of the <i>kde6</i> <a href="#ID010">collection</a>.
 
 
     <a name='ID040'></a>

@@ -558,7 +558,7 @@ ISO Filename /mnt/hd/NuTyX_x86_64-24.04.0-GNOME.iso</pre>
       STRICT + BASE + CLI + GUI + XORG + GNOME
     <tr>
      <td>
-      KDE5
+      KDE6
      <td>
       STRICT + BASE + CLI + GUI + XORG + KDE6
   </table>

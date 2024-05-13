@@ -16,7 +16,7 @@
 
  <h2>Desktop installation:</h2>
   You can now choose your favorite desktop.
-  Under NuTyX: kde5, xfce4, mate, lxde, openbox, enlightenment, cinnamon, cde, flwm, ratpoison, etc are available.
+  Under NuTyX: kde6, xfce4, mate, lxde, openbox, enlightenment, cinnamon, cde, flwm, ratpoison, etc are available.
   <p>
       <table>
        <caption><EM>Available desktops:</EM></caption>
@@ -25,9 +25,9 @@
         <th>Command:
        <tr class="odd">
         <td>
-         kde5
+         kde6
         <td>
-         <pre class="command_user"><kbd>get kde5</kbd></pre>
+         <pre class="command_user"><kbd>get kde6</kbd></pre>
        <tr class="even">
         <td>
          xfce4 xfce4-extra

@@ -412,7 +412,7 @@ bash install-nutyx</kbd></pre>
    <p>
     Les noms d'ISO possible sont: 
    <p>
-    <i>strict, mini, base, cli, gui, xorg, openbox, jwm, lxde, xfce4, mate, gnome et kde5</i>
+    <i>strict, mini, base, cli, gui, xorg, openbox, jwm, lxde, xfce4, mate, gnome et kde6</i>
    <p>
      Il est possible de faire un test de la commande et ainsi de visualiser toutes les commandes qui sont concernées.
    <pre class="command_user"><kbd>ISO=gnome bash install-nutyx -t</kbd></pre>

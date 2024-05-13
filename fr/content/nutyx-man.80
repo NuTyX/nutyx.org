@@ -176,7 +176,7 @@ eth1       IEEE 802.11abg
     Soit depuis la ligne de commande (expliqué ci-avant) la valeur de la variable est alors <b>cli</b>.
     Soit via wicd, mettez <b>wicd</b> comme valeur,
     soit networkmanager si vous avez installé l'interface graphique 'mate'
-    ou 'kde5', mettez alors <b>networkmanager</b>.
+    ou 'kde6', mettez alors <b>networkmanager</b>.
     </ul>
 
     <li><h3>Nom de la machine</h3></li>
