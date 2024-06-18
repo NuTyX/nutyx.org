@@ -1,30 +1,32 @@
-<h1>Latest news 15-05-2024</h1>
- <h2>NuTyX 24.05.0 available with cards 2.7.4</h2>
+<h1>Latest news 17-06-2024</h1>
+ <h2>NuTyX 24.06.1 available with cards 2.7.4</h2>
   <p>
-   Spiky and me are happy to announce the new version of NuTyX 24.05.0 and cards 2.7.4 .
+   Spiky and me are happy to announce the new version of NuTyX 24.06.1 and cards 2.7.4 .
   <p>
-    The novelty of this version is undoubtedly the release of KDE 6.
-    The new version of KDE based on Qt6 is now available on NuTyX.
+    The new version of LXQt 2.0 based on Qt6 is now available on NuTyX.
+
  <h2>Updated packages</h2>
  <p>
    SysV in 3.09 and systemd in 253.0 .
  <p>
-   glibc in 2.39, curl in 8.7.1, python in 3.12.3, etc .
+   glibc in 2.39, gcc 14.1.0, curl in 8.8.0, python in 3.12.4, etc .
   <p>
    The xorg-server graphics server version 21.1.13,
-   the Mesa 3D library in 24.0.6, Gtk4 4.14.4
-   and Qt 6.6.3.
+   the Mesa 3D library in 24.1.1, Gtk4 4.14.4
+   and Qt 6.7.1 .
   <p>
    <ul>
     <li>
-     The nvidia driver is update to version  550.78 .
+     The nvidia driver is update to version  550.90.07 .
     <li>
-     The legacy driver 470.xx series in version 470.239.06 .
+     The legacy driver 470.xx series in version 470.256.02 .
     <li>
      The legacy driver 390.xx series in version 390.157 .
    </ul>
   <p>
-   The python interpreter is updated to version 3.12.3.
+   The python interpreter is updated to version 3.12.4.
+  <p>
+   The LXQt desktop environment is a 2.0.1 version .
   <p>
    The XFCE desktop environment is updated to version 4.18.3.
   <p>
@@ -32,33 +34,33 @@
   <p>
    The GNOME desktop environment is also updated to version 46.1
    <p>
-   The KDE desktop environment is available in Plasma 6.0.4, Framework 6.1.0
-   and applications in 24.02.2.
+   The KDE desktop environment is available in Plasma 6.0.5, Framework 6.2.0
+   and applications in 24.05.0.
   <p>
-   Available browsers are: Firefox 125.0.3, Epiphany 46.0, etc
+   Available browsers are: Firefox 126.0.1, Epiphany 46.1, etc
   <p>
    Many desktop applications have been updated as well like Telegram-desktop 5.0.1,
-   Thunderbird 115.10.2, Scribus 1.6.1, Libreoffice 24.2.3.2, Gimp 2.10.38, etc.
+   Thunderbird 115.11.1, Scribus 1.6.2, Libreoffice 24.2.4.2, Gimp 2.10.38, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
-   4.19.313, 5.4.275, 5.10.216, 5.15.158, 6.1.90 and 6.6.30
-   and the latest stable version 6.8.9.
+   4.19.316, 5.4.278, 5.10.219, 5.15.158, 6.1.94 and 6.6.34
+   and the latest stable version 6.9.5.
   <p>
    The kernel change logs are available here:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.313">kernel 4.19.313 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.316">kernel 4.19.316 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.275">kernel 5.4.275 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.278">kernel 5.4.278 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.216">kernel 5.10.216 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.219">kernel 5.10.219 changelog</a>
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.158">kernel 5.15.158 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.90">kernel 6.1.90 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.94">kernel 6.1.94 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.30">kernel 6.6.30 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.34">kernel 6.6.34 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.8.9">kernel 6.8.9 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.9.5">kernel 6.9.5 changelog</a>
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
@@ -69,9 +71,9 @@
    XFCE4,
    JWM,
    LXQT,
+   CDE,
    ENLIGHTENMENT,
    MATE,
-   CINNAMON,
    BUDGIE,
    GNOME,
    KDE6.
