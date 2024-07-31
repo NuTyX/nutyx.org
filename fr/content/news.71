@@ -1,9 +1,9 @@
-<h1>Dernière nouvelle 17-06-2024</h1>
+<h1>Dernière nouvelle 30-07-2024</h1>
 
 
- <h2>NuTyX 24.6.3 disponible avec cards 2.7.4</h2>
+ <h2>NuTyX 24.07.0 disponible avec cards 2.7.4</h2>
   <p>
-   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 24.6.3 et cards 2.7.4 .
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 24.07.0 et cards 2.7.4 .
   <p>
    La nouvelle version de LXQt 2.0 basée sur Qt6 est désormais disponible sur NuTyX.
  <h2>Paquets mis à jour</h2>
@@ -35,17 +35,17 @@
   <p>
    L'environnement de bureau GNOME est également mis à jour en version 46.1
   <p>
-   L'environnement de bureau KDE est disponible en Plasma 6.0.5, Framework 6.2.0
-   et les applications en 24.05.0.
+   L'environnement de bureau KDE est disponible en Plasma 6.1.3, Framework 6.4.0
+   et les applications en 24.05.2.
   <p>
-   Les navigateurs disponibles sont entre autre: Firefox 126.0.1, Epiphany 46.1, etc
+   Les navigateurs disponibles sont entre autre: Firefox 128.0.3, Epiphany 46.1, etc
   <p>
    De nombreuses applications on été mise à jour également comme Telegram-desktop 5.0.1,
    Thunderbird 115.11.1, Scribus 1.6.2, Libreoffice 24.2.3.2, Gimp 2.10.38, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
    4.19.316, 5.4.278, 5.10.219, 5.15.158, 6.1.94 et 6.6.34
-   et la dernière version stable 6.9.5.
+   et la dernière version stable 6.10.2.
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
@@ -61,7 +61,7 @@
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.34">kernel 6.6.34 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.9.5">kernel 6.9.5 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.10.2">kernel 6.10.2 changelog</a>
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
@@ -85,26 +85,14 @@
   <table width="60%" cellspacing="0">
    <tr>
     <td>
-
+      L'installation depuis une clé USB échoue dans la majeur partie des cas.
+      <p>
+      Cette situation s'est aggravée avec le dernier kernel stable 6.9.x
+     <p>
+      Merci à Ahmed Nabil pour avoir remonté ce bug existant de très longue date.
     </td>
     <td>
-
-    </td>
-   </tr>
-   <tr>
-    <td>
-
-    </td>
-    <td>
-
-    </td>
-   </tr>
-   <tr>
-    <td>
-
-    </td>
-    <td>
-
+    Fixé
     </td>
    </tr>
   </table>

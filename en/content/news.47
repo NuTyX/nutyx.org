@@ -1,7 +1,7 @@
-<h1>Latest news 17-06-2024</h1>
- <h2>NuTyX 24.6.3 available with cards 2.7.4</h2>
+<h1>Latest news 30-07-2024</h1>
+ <h2>NuTyX 24.07.0 available with cards 2.7.4</h2>
   <p>
-   Spiky and me are happy to announce the new version of NuTyX 24.6.3 and cards 2.7.4 .
+   Spiky and me are happy to announce the new version of NuTyX 24.07.0 and cards 2.7.4 .
   <p>
     The new version of LXQt 2.0 based on Qt6 is now available on NuTyX.
 
@@ -34,17 +34,17 @@
   <p>
    The GNOME desktop environment is also updated to version 46.1
    <p>
-   The KDE desktop environment is available in Plasma 6.0.5, Framework 6.2.0
-   and applications in 24.05.0.
+   The KDE desktop environment is available in Plasma 6.1.3, Framework 6.4.0
+   and applications in 24.05.3.
   <p>
-   Available browsers are: Firefox 126.0.1, Epiphany 46.1, etc
+   Available browsers are: Firefox 128.0.3, Epiphany 46.1, etc
   <p>
    Many desktop applications have been updated as well like Telegram-desktop 5.0.1,
    Thunderbird 115.11.1, Scribus 1.6.2, Libreoffice 24.2.4.2, Gimp 2.10.38, etc.
   <p>
    Core NuTyX ships with Long Term Support (LTS) kernels:
    4.19.316, 5.4.278, 5.10.219, 5.15.158, 6.1.94 and 6.6.34
-   and the latest stable version 6.9.5.
+   and the latest stable version 6.10.2.
   <p>
    The kernel change logs are available here:
   <p>
@@ -60,7 +60,7 @@
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.34">kernel 6.6.34 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.9.5">kernel 6.9.5 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.10.2">kernel 6.10.2 changelog</a>
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
@@ -84,28 +84,18 @@
   <table width="60%" cellspacing="0">
    <tr>
     <td>
-
+      In most cases, installation from a USB key fails.
+     <p>
+      This situation has worsened with the latest stable kernel 6.9.x
+     <p>
+      Thanks to Ahmed Nabil for reporting this long-standing bug.
+     <p>
     </td>
     <td>
-
+       Fixed
     </td>
    </tr>
-   <tr>
-    <td>
 
-    </td>
-    <td>
-
-    </td>
-   </tr>
-   <tr>
-    <td>
-
-    </td>
-    <td>
-
-    </td>
-   </tr>
   </table>
 
  <h2>Upgrade process</h2>
