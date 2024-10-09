@@ -456,7 +456,7 @@ BUDGIE       : budgie
 MATE         : lightdm mate
 GNOME        : gnome gnome-extra
 KDE6         : kde6
-ISO Filename /mnt/hd/NuTyX_x86_64-24.07.1-GNOME.iso</pre>
+ISO Filename /mnt/hd/NuTyX_x86_64-24.10.1-GNOME.iso</pre>
   <p>
     As we can see, new variables are now available.
    These can also be redefined at your convenience:

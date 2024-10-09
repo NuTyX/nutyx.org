@@ -1,0 +1,63 @@
+<h1>Module-signing</h1>
+ <h2>Dictionary</h2>
+  <h3>X.509 certificate</h3>
+
+  <h3>algorithms</h3>
+   available algorithms:
+    <pre class="output"><kbd>SHA1
+    SHA224
+    SHA256
+    SHA384
+    SHA512 (default set)</kbd></pre>
+
+  <h3>signature</h3>
+
+  <h3>keys (private and public) and certificate</h3>
+   Cryptographic keypairs are required to generate and check signatures.
+   A private key is used to generate a signature and the corresponding public key is used to check it.
+   The private key is only needed during the build, after which it can be stored securely
+   for manual signing of kernel modules outside the kernel tree.
+   The public key gets built into the kernel so that it can be used to check the signatures as the modules are loaded.
+  <p>
+    The private key must be moved to a secure location and not kept in the root node of the kernel source tree.
+  <p>
+   it's in a PEM (Privacy Enhanced Mail) file locate normaly in certs directory.
+   The name of the NuTyX pem file is certs/nutyx_signing_key.pem
+   To generate the private key and the certificate:
+    <pre class="command"><kbd>openssl req -new -nodes -utf8 -sha256 -days 36500 -batch -x509 \
+   -config linux-x.x/certs/x509.genkey -outform PEM -out nutyx_signing_key.pem \
+   -keyout nutyx_signing_key.pem</kbd></pre>
+   Both the private key and the certificate will be stored in the nutyx_signing_key.pem file.
+  
+  <h3>scripts/sign-file</h3>
+   command for signing modules manualy (like for virtualbox or nvidia)
+   example of use:
+   <pre class="command"><kbd>scripts/sign-file sha512 kernel-signkey.priv \
+        kernel-signkey.x509 module.ko</kbd></pre>
+
+  <h3>certs/x509.genkey</h3>
+   This file needs to be changed from default via the CONFIG_MODULE_SIG_KEY value
+   <pre class="output"><kbd>CONFIG_MODULE_SIG_KEY="certs/nutyx_signing_key.pem"</kbd></pre>
+   
+   <pre class="output"><kbd>[ req ]
+default_bits = 4096
+distinguished_name = req_distinguished_name
+prompt = no
+string_mask = utf8only
+x509_extensions = myexts
+
+[ req_distinguished_name ]
+#O = Unspecified company
+CN = NuTyX Signed Modules
+emailAddress = tnut@nutyx.org
+
+[ myexts ]
+basicConstraints=critical,CA:FALSE
+keyUsage=digitalSignature
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid
+</kbd></pre>
+
+ <h2>Sources</h2>
+   https://www.kernel.org/doc/html/v4.15/admin-guide/
+
