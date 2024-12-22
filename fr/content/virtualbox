@@ -1,0 +1,74 @@
+<h1>Mise en place du lancement automatique d'une machine virtuelle dans virtualbox</h1>
+ <h2>Ajout du fichier /etc/default/virtualbox</h2>
+    <p>
+     Passez-en root:
+     <pre class="command_user"><kbd>su -</kbd></pre>
+    <p>
+     Créez le fichier /etc/default/virtualbox avec ceci:
+     <pre class="command"><kbd>cat  &gt; /etc/default/virtualbox &lt;&lt; EOF
+VBOXAUTOSTART_DB=/etc/vbox
+VBOXAUTOSTART_CONFIG=/etc/vbox/autostart.cfg
+EOF</kbd></pre>
+ <h2>Créer le fichier de configuration /etc/vbox/autostart.cfg</h2>
+       Créez le fichier /etc/vbox/autostart.cfg avec ceci:
+     <pre class="command"><kbd>cat  &gt; /etc/vbox/autostart.cfg &lt;&lt; EOF
+default_policy = deny
+thierry = {
+allow = true
+}
+EOF</kbd></pre>
+ Dans l'exemple ci-dessus, <i>thierry</i> est le nom d'utilisateur.
+ <h2>VBoxManage setproperty autostartdbpath /etc/vbox</h2>
+Revenir en mode utilisateur
+    <pre class="command"><kbd>exit</kbd></pre>
+  <p>
+   Tapez la commande:
+   <pre class="command_user"><kbd>VBoxManage setproperty autostartdbpath /etc/vbox</kbd></pre>
+ <h2>Créer un fichier de lancement et d'arrêt pour l'utilisateur</h2>
+    <pre class="command"><kbd>touch /etc/vbox/thierry.start
+touch /etc/vbox/thierry.stop</kbd></pre>
+   <p>
+    Ajustez les droits des fichiers créés:
+    <pre class="command"><kbd>chown thierry:thierry /etc/vbox/thierry.*</kbd></pre>
+
+ <h2>Copier le ficher /opt/Virtualbox/vboxautostart-service.sh dans /etc/rc.d/init.d</h2>
+    <pre class="command"><kbd>cp /etc/Virtualbox/vboxautostart-service.sh \
+/etc/rc.d/init.d/vboxautostart-service.sh</kbd></pre>
+
+ <h2>Créer les liens adéquoits pour le lancement et l'arrêt du service</h2>
+   En root:
+   <p>
+    Pour le lancement:
+   <pre class="command"><kbd>ln -sv ../init.d/vboxautostart-service \
+/etc/rc.d/rc3.d/S90vboxautostart-service
+ln -sv ../init.d/vboxautostart-service \
+/etc/rc.d/rc5.d/S90vboxautostart-service</kbd></pre>
+   <p>
+    Pour l'arrêt:
+<pre class="command"><kbd>ln -sv ../init.d/vboxautostart-service \
+/etc/rc.d/rc0.d/K10vboxautostart-service
+ln -sv ../init.d/vboxautostart-service \
+/etc/rc.d/rc6.d/K10vboxautostart-service</kbd></pre>
+ <h2>Créer le groupe vboxusers</h2>
+   En root:
+   <pre class="command"><kbd>groupadd -g 63 vboxusers</kbd></pre>
+ <h2>Ajouter l'utilisateur au groupe vboxusers</h2>
+   En root:
+   <pre class="command"><kbd>usermod -a -G vboxusers thierry</kbd></pre>
+   Ici l'utilisateur est: thierry
+  <p>
+   Un redémarrage de la machine est necessaire pour que le changement soit prit en compte:
+    <pre class="command"><kbd>reboot</kbd></pre>
+ <h2>Changer les accès du dossier /etc/vbox</h2>
+  En root:
+  <pre class="command"><kbd>chmod 1755 /etc/vbox</kbd></pre>
+ 
+ <h2>Activer le démarrage automatique de chaque machine virtuelle</h2>
+  Dans mon exemple le nom de la machine est ... nutyx:
+   <pre class="command_user"><kbd>VBoxManage modifyvm nutyx --autostart-enabled on</kbd></pre>
+ <h2>Vérification de la commande</h2>
+  Dans mon exemple le nom de la machine est ... nutyx:
+   <pre class="command_user"><kbd>VBoxManage showvminfo nutyx|grep start</kbd></pre>
+ <h2>Et voilà</h2>
+ Si vous avez suivi le tuto à la lettre, la machine virtuelle devrait démarrer et s'arreter
+ automatiquement au lancement de la machine et à l'arrêt.
