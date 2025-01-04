@@ -31,9 +31,9 @@ touch /etc/vbox/thierry.stop</kbd></pre>
     Ajustez les droits des fichiers créés:
     <pre class="command"><kbd>chown thierry:thierry /etc/vbox/thierry.*</kbd></pre>
 
- <h2>Copier le ficher /opt/Virtualbox/vboxautostart-service.sh dans /etc/rc.d/init.d</h2>
-    <pre class="command"><kbd>cp /etc/Virtualbox/vboxautostart-service.sh \
-/etc/rc.d/init.d/vboxautostart-service.sh</kbd></pre>
+ <h2>Copier le ficher /opt/VirtualBox/vboxautostart-service.sh dans /etc/rc.d/init.d</h2>
+    <pre class="command"><kbd>cp /etc/VirtualBox/vboxautostart-service.sh \
+/etc/rc.d/init.d/vboxautostart-service</kbd></pre>
 
  <h2>Créer les liens adéquoits pour le lancement et l'arrêt du service</h2>
    En root:
@@ -41,6 +41,8 @@ touch /etc/vbox/thierry.stop</kbd></pre>
     Pour le lancement:
    <pre class="command"><kbd>ln -sv ../init.d/vboxautostart-service \
 /etc/rc.d/rc3.d/S90vboxautostart-service
+ln -sv ../init.d/vboxautostart-service \
+/etc/rc.d/rc4.d/S90vboxautostart-service
 ln -sv ../init.d/vboxautostart-service \
 /etc/rc.d/rc5.d/S90vboxautostart-service</kbd></pre>
    <p>
