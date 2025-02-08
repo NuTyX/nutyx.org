@@ -66,7 +66,7 @@
 
   <table width="100%" cellspacing="0">
 
-   <tr class="odd">
+   <tr class="even">
     <td class="url">
      <a class="url" href="configuration-files">Configurations files of NuTyX</a>
     </td>
@@ -76,7 +76,7 @@
     </td>
    </tr>
 
-   <tr class="even">
+   <tr class="odd">
     <td class="url" >
       <a class="url" href="grub-install">Setting up GRUB</a>
     </td>
@@ -86,7 +86,7 @@
     </td>
    </tr>
 
-   <tr class="odd">
+   <tr class="even">
      <td class="url">
        <a class="url" href="change-boot-kernel">Change default boot kernel</a>
      </td>
@@ -96,7 +96,7 @@
      </td>
    </tr>
 
-   <tr class="even">
+   <tr class="odd">
     <td class="url">
       <a class="url" href="upgrade-linux-firmware">Update the linux-firmware package</a>
     </td>
@@ -106,7 +106,7 @@
     </td>
    </tr>
 
-   <tr class="odd">
+   <tr class="even">
      <td class="url">
        <a class="url" href="initrd">Building an initrd</a>
      </td>
@@ -116,23 +116,12 @@
      </td>
    </tr>
 
-   <tr class="even">
-     <td class="url">
-       <a class="url" href="default-init-system">Change the default init system</a>
-     </td>
-     <td>
-      You want to change the default init system.
-      This article shows you the procedure.
-      Follow the guide :) .
-      </td>
-   </tr>
-
    <tr class="odd">
     <td class="url" >
-      <a class="url" href="nutyx-man">NuTyX manual of the 24.10 version</a>
+      <a class="url" href="nutyx-man">NuTyX manual of the 25.02 version</a>
     </td>
     <td>
-     NuTyX manual for Version 24.10.
+     NuTyX manual for Version 25.02.
      Here you will find everything you need to know about configuring and using your NuTyX system.
      </td>
    </tr>

@@ -1,0 +1,126 @@
+<h1>Dernière nouvelle 23-06-2024</h1>
+
+
+ <h2>NuTyX 24.6.3 disponible avec cards 2.7.4</h2>
+  <p>
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 24.6.3 et cards 2.7.4 .
+  <p>
+   La nouvelle version de LXQt 2.0 basée sur Qt6 est désormais disponible sur NuTyX.
+ <h2>Paquets mis à jour</h2>
+  <p>
+   SysV en 3.09 et Systemd en 253.0 .
+  <p>
+   glibc en 2.39, gcc 14.1.0, curl en 8.8.0, python en 3.12.4, etc .
+  <p>
+   Le serveur graphique Xorg-server version 21.1.13.
+   la librairie Mesa 3D en 24.1.1, Gtk4 4.14.4
+   et Qt 6.7.1 .
+  <p>
+    <ul>
+      <li>
+        Le pilote nvidia est mis à jour en version 550.90.07 .
+      <li>
+        Le pilote nvidia de la série 470.xx en version 470.256.02 .
+      <li>
+        Le pilote nvidia de la série 390.xx en version 390.157 .
+   </ul>
+  <p>
+   L'interpreteur Python est mis à jour en version 3.12.4.
+  <p>
+   L'environnement de bureau LXQt est mis à jour en 2.0.1 .
+  <p>
+   L'environnement de bureau XFCE est mis à jour en version 4.18.3.
+  <p>
+   L'environnement de bureau MATE est en version 1.28.1.
+  <p>
+   L'environnement de bureau GNOME est également mis à jour en version 46.1
+  <p>
+   L'environnement de bureau KDE est disponible en Plasma 6.0.5, Framework 6.2.0
+   et les applications en 24.05.0.
+  <p>
+   Les navigateurs disponibles sont entre autre: Firefox 126.0.1, Epiphany 46.1, etc
+  <p>
+   De nombreuses applications on été mise à jour également comme Telegram-desktop 5.0.1,
+   Thunderbird 115.11.1, Scribus 1.6.2, Libreoffice 24.2.3.2, Gimp 2.10.38, etc.
+  <p>
+   NuTyX de base est livré avec les noyaux de support à long terme (LTS):
+   4.19.316, 5.4.278, 5.10.219, 5.15.158, 6.1.94 et 6.6.34
+   et la dernière version stable 6.9.5.
+  <p>
+   Les journaux de modifications des noyaux sont disponibles ici:
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.316">kernel 4.19.316 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.278">kernel 5.4.278 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.219">kernel 5.10.219 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.158">kernel 5.15.158 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.94">kernel 6.1.94 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.34">kernel 6.6.34 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.9.5">kernel 6.9.5 changelog</a>
+  <p>
+   Une ISO de BASE (propose le mode console sans environnement de bureau).
+  <p>
+   12 bureaux sont maintenant disponibles:
+   XORG,
+   OPENBOX,
+   LXDE,
+   XFCE4,
+   JWM,
+   CDE,
+   LXQT,
+   ENLIGHTENMENT,
+   MATE,
+   BUDGIE,
+   GNOME,
+   KDE6.
+  <p>
+   Elles sont disponibles sur <a href="downloads">la page de téléchargement.</a>
+
+ <h2>Bugs connus</h2>
+  <table width="60%" cellspacing="0">
+   <tr>
+    <td>
+      L'installation depuis une clé USB échoue dans la majeur partie des cas.
+      <p>
+      Cette situation s'est aggravée avec le dernier kernel stable 6.9.x
+     <p>
+      Merci à Ahmed Nabil pour avoir remonté ce bug existant de très longue date.
+    </td>
+    <td>
+    Fixé
+    </td>
+   </tr>
+  </table>
+
+ <h2>Mise à jour</h2>
+  <p>
+   Cette fois, c'est un peu différent si vous êtes sur la version 5 de KDE.
+   Procédez comme suit:
+ </p><pre class="command_user"><kbd>sudo init 3
+sudo cards remove kde5
+sudo cards upgrade
+sudo cards install kde6
+sudo shutdown -y r 0</kbd></pre>
+  Après redémarrage you devriez pouvoir vous connecter sur Plasma KDE6.
+  <p>
+   Pour les autres ISOs, la simple commande classique permet la mise à jour:
+   </p><pre class="command_user"><kbd>sudo cards upgrade
+sudo shutdown -y -r 0</kbd></pre>
+
+ <h2>Remerciements</h2>
+  <p>
+   Merci aux utilisateurs de NuTyX pour nous avoir remonté certains problèmes liés aux paquets.
+  <p>
+   Avec nos remerciements à l'équipe BLFS qui a aidé à résoudre quelques problèmes.
+  <p>
+   Merci à Spiky pour sa grande patience et sa générosité pour la mise à jour des très nombreux paquets.
+
+ <h2>Anciennes nouvelles</h2>
+  <p>
+   Les anciennes nouvelles sont disponible <a href="old-news/?C=M;O=D">ici</a>.
+

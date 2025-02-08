@@ -1,0 +1,127 @@
+<h1>Latest news 30-07-2024</h1>
+ <h2>NuTyX 24.07.0 available with cards 2.7.4</h2>
+  <p>
+   Spiky and me are happy to announce the new version of NuTyX 24.07.0 and cards 2.7.4 .
+  <p>
+    The new version of LXQt 2.0 based on Qt6 is now available on NuTyX.
+
+ <h2>Updated packages</h2>
+ <p>
+   SysV in 3.09 and systemd in 253.0 .
+ <p>
+   glibc in 2.39, gcc 14.1.0, curl in 8.8.0, python in 3.12.4, etc .
+  <p>
+   The xorg-server graphics server version 21.1.13,
+   the Mesa 3D library in 24.1.1, Gtk4 4.14.4
+   and Qt 6.7.1 .
+  <p>
+   <ul>
+    <li>
+     The nvidia driver is update to version  550.90.07 .
+    <li>
+     The legacy driver 470.xx series in version 470.256.02 .
+    <li>
+     The legacy driver 390.xx series in version 390.157 .
+   </ul>
+  <p>
+   The python interpreter is updated to version 3.12.4.
+  <p>
+   The LXQt desktop environment is a 2.0.1 version .
+  <p>
+   The XFCE desktop environment is updated to version 4.18.3.
+  <p>
+   The MATE desktop environment is a 1.28.1 version .
+  <p>
+   The GNOME desktop environment is also updated to version 46.1
+   <p>
+   The KDE desktop environment is available in Plasma 6.1.3, Framework 6.4.0
+   and applications in 24.05.3.
+  <p>
+   Available browsers are: Firefox 128.0.3, Epiphany 46.1, etc
+  <p>
+   Many desktop applications have been updated as well like Telegram-desktop 5.0.1,
+   Thunderbird 115.11.1, Scribus 1.6.2, Libreoffice 24.2.4.2, Gimp 2.10.38, etc.
+  <p>
+   Core NuTyX ships with Long Term Support (LTS) kernels:
+   4.19.316, 5.4.278, 5.10.219, 5.15.158, 6.1.94 and 6.6.34
+   and the latest stable version 6.10.2.
+  <p>
+   The kernel change logs are available here:
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.316">kernel 4.19.316 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.278">kernel 5.4.278 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.219">kernel 5.10.219 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.158">kernel 5.15.158 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.94">kernel 6.1.94 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.34">kernel 6.6.34 changelog</a>
+  <p>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.10.2">kernel 6.10.2 changelog</a>
+  <p>
+   A BASE ISO (proposed in command line interface edition only without graphical interface).
+  <p>
+   12 desktops are now available in:
+   XORG,
+   OPENBOX,
+   LXDE,
+   XFCE4,
+   JWM,
+   LXQT,
+   CDE,
+   ENLIGHTENMENT,
+   MATE,
+   BUDGIE,
+   GNOME,
+   KDE6.
+  <p>
+   They are available on the <a href="downloads">download page.</a>
+
+ <h2>Fixed bugs</h2>
+  <table width="60%" cellspacing="0">
+   <tr>
+    <td>
+      In most cases, installation from a USB key fails.
+     <p>
+      This situation has worsened with the latest stable kernel 6.9.x
+     <p>
+      Thanks to Ahmed Nabil for reporting this long-standing bug.
+     <p>
+    </td>
+    <td>
+       Fixed
+    </td>
+   </tr>
+
+  </table>
+
+ <h2>Upgrade process</h2>
+  <p>
+   This time it's a bit different if you are on KDE version5.
+   Please do as follow:
+ </p><pre class="command_user"><kbd>sudo init 3
+sudo cards remove kde5
+sudo cards upgrade
+sudo cards install kde6
+sudo shutdown -y r 0</kbd></pre>
+  After reboot you should be able to loggin into Plasma KDE6.
+  <p>
+   For all the other ISO, a simple
+   </p><pre class="command_user"><kbd>sudo cards upgrade
+shutdown -y -r 0</kbd></pre>
+   should make it.
+ <h2>Thanks</h2>
+  <p>
+   With Thanks to the BLFS Team which helped out with a few problems we encountered.
+  <p>
+   Thanks to Spiky for his patience and his generosity in upgrading all thoses many packages.
+  <p>
+   Thanks to all you guys that have giving us positive or negative feedbacks about the distribution.
+
+ <h2>Old news</h2>
+  <p>
+   Old news is available <a href="old-news/?C=M;O=D">here</a>.
+

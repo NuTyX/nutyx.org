@@ -1,16 +1,16 @@
-<h1>Dernière nouvelle 06-10-2024</h1>
+<h1>Dernière nouvelle 08-02-2025</h1>
 
 
- <h2>NuTyX 24.10.0 disponible avec cards 2.7.4</h2>
+ <h2>NuTyX 25.02.5 disponible avec cards 3.1.0</h2>
   <p>
-   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 24.10.0 et cards 2.7.4 .
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 25.02.5 et cards 3.1.0 .
   <p>
    La nouvelle version de LXQt 2.0 basée sur Qt6 est désormais disponible sur NuTyX.
  <h2>Paquets mis à jour</h2>
   <p>
    SysV en 3.09 et Systemd en 253.0 .
   <p>
-   glibc en 2.39, gcc 14.1.0, curl en 8.8.0, python en 3.12.4, etc .
+   glibc en 2.39, gcc 14.1.0, curl en 8.8.0, python en 3.13.1, etc .
   <p>
    Le serveur graphique Xorg-server version 21.1.13.
    la librairie Mesa 3D en 24.1.1, Gtk4 4.14.4
@@ -25,7 +25,7 @@
         Le pilote nvidia de la série 390.xx en version 390.157 .
    </ul>
   <p>
-   L'interpreteur Python est mis à jour en version 3.12.4.
+   L'interpreteur Python est mis à jour en version 3.13.1.
   <p>
    L'environnement de bureau LXQt est mis à jour en 2.0.1 .
   <p>
@@ -65,48 +65,25 @@
   <p>
    Une ISO de BASE (propose le mode console sans environnement de bureau).
   <p>
-   12 bureaux sont maintenant disponibles:
-   XORG,
+   5 bureaux sont maintenant disponibles:
    OPENBOX,
-   LXDE,
    XFCE4,
    JWM,
-   CDE,
-   LXQT,
-   ENLIGHTENMENT,
    MATE,
-   BUDGIE,
    GNOME,
    KDE6.
   <p>
    Elles sont disponibles sur <a href="downloads">la page de téléchargement.</a>
 
- <h2>Bugs connus</h2>
-  <table width="60%" cellspacing="0">
-   <tr>
-    <td>
-      L'installation depuis une clé USB échoue dans la majeur partie des cas.
-      <p>
-      Cette situation s'est aggravée avec le dernier kernel stable 6.9.x
-     <p>
-      Merci à Ahmed Nabil pour avoir remonté ce bug existant de très longue date.
-    </td>
-    <td>
-    Fixé
-    </td>
-   </tr>
-  </table>
+
 
  <h2>Mise à jour</h2>
   <p>
    Cette fois, c'est un peu différent si vous êtes sur la version 5 de KDE.
    Procédez comme suit:
- </p><pre class="command_user"><kbd>sudo init 3
-sudo cards remove kde5
+ </p><pre class="command_user"><kbd>sudo cards upgrade
 sudo cards upgrade
-sudo cards install kde6
 sudo shutdown -y r 0</kbd></pre>
-  Après redémarrage you devriez pouvoir vous connecter sur Plasma KDE6.
   <p>
    Pour les autres ISOs, la simple commande classique permet la mise à jour:
    </p><pre class="command_user"><kbd>sudo cards upgrade

@@ -1,7 +1,7 @@
-<h1>Latest news 06-10-2024</h1>
- <h2>NuTyX 24.10.0 available with cards 2.7.4</h2>
+<h1>Latest news 08-02-2025</h1>
+ <h2>NuTyX 25.02.5 available with cards 3.1.0</h2>
   <p>
-   Spiky and me are happy to announce the new version of NuTyX 24.10.0 and cards 2.7.4 .
+   Spiky and me are happy to announce the new version of NuTyX 25.02.5 and cards 3.1.0 .
   <p>
     The new version of LXQt 2.0 based on Qt6 is now available on NuTyX.
 
@@ -9,7 +9,7 @@
  <p>
    SysV in 3.09 and systemd in 253.0 .
  <p>
-   glibc in 2.39, gcc 14.1.0, curl in 8.8.0, python in 3.12.4, etc .
+   glibc in 2.39, gcc 14.1.0, curl in 8.8.0, python in 3.13.1, etc .
   <p>
    The xorg-server graphics server version 21.1.13,
    the Mesa 3D library in 24.1.1, Gtk4 4.14.4
@@ -64,17 +64,11 @@
   <p>
    A BASE ISO (proposed in command line interface edition only without graphical interface).
   <p>
-   12 desktops are now available in:
-   XORG,
+   6 desktops are now available in:
    OPENBOX,
-   LXDE,
    XFCE4,
    JWM,
-   LXQT,
-   CDE,
-   ENLIGHTENMENT,
    MATE,
-   BUDGIE,
    GNOME,
    KDE6.
   <p>
@@ -102,12 +96,9 @@
   <p>
    This time it's a bit different if you are on KDE version5.
    Please do as follow:
- </p><pre class="command_user"><kbd>sudo init 3
-sudo cards remove kde5
+ </p><pre class="command_user"><kbd>sudo cards upgrade
 sudo cards upgrade
-sudo cards install kde6
 sudo shutdown -y r 0</kbd></pre>
-  After reboot you should be able to loggin into Plasma KDE6.
   <p>
    For all the other ISO, a simple
    </p><pre class="command_user"><kbd>sudo cards upgrade
