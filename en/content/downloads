@@ -39,47 +39,6 @@
 
    <tr class="odd">
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-25.02.5-JWM.iso"><img src="../graphics/downloads/jwm-blue.png" alt="logo jwm"/><br/>JWM 64bits</a>
-    <td>
-     <p>
-     The ISO contains a NuTyX customised JWM desktop.
-     <p>
-      Init system: SystemV and systemd
-     <p>
-      DHCP client: YES
-     <p>
-      Wireless tools: wireless-tools, wpa-supplicant
-     <p>
-      Firmwares: YES
-     <p>
-      EFI bootmanager: YES
-     <p>
-      kernel: Last LTS kernel.
-     <p>
-        SHA1 64bits: 1a3a119d69468756e34d17fc6626876185a81ef8
-      <td>
-       Approx. 1.5 GO
-   </tr>
-
-   <tr class="even">
-    <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemd/NuTyX_x86_64-25.02.5-JWM.iso"><img src="../graphics/downloads/jwm-blue.png" alt="logo jwm"/><br/>JWM 64bits</a>
-    <td>
-     <p>
-      The ISO contains a NuTyX customised JWM desktop.
-     <p>
-      Init system: systemd
-     <p>
-      kernel: Last LTS kernel.
-     <p>
-      SHA1 64bits: 7aae6e694dc93666edd9a809f7bf583b7bfc2624
-    <td>
-       Approx. 1.5 GO
-   </tr>
-
-
-   <tr class="odd">
-    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-25.02.5-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 64bits</a>
     <td>
      <p>
@@ -197,6 +156,22 @@
 
    <tr class="even">
     <td class="url">
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemd/NuTyX_x86_64-25.02.5-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME 64bits</a>
+    <td>
+     <p>
+      The ISO contains a GNOME desktop.
+     <p>
+      Init system: systemd
+     <p>
+      kernel: Last LTS kernel.
+     <p>
+      SHA1 64bit: 0f5e7f9e91510fba6bd60d2327fcbe8d68668596
+      <td>
+       Approx. 2.1 GO
+   </tr>
+
+   <tr class="odd">
+    <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-25.02.5-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE 64bits</a>
     <td>
      <p>
@@ -211,7 +186,7 @@
        Approx. 2.4 GO
    </tr>
 
-   <tr class="odd">
+   <tr class="even">
     <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemd/NuTyX_x86_64-25.02.5-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE 64bits</a>
     <td>

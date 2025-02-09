@@ -5,70 +5,68 @@
   <p>
    Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 25.02.5 et cards 3.1.0 .
   <p>
-   La nouvelle version de LXQt 2.0 basée sur Qt6 est désormais disponible sur NuTyX.
+   Désormais les systèmes d'initialisation sont séparés.
+   Un jeu d'ISO est disponible en systemV 3.13 et un en systemd 257
  <h2>Paquets mis à jour</h2>
   <p>
-   SysV en 3.09 et Systemd en 253.0 .
+   SysV en 3.13 et Systemd en 257.0 .
   <p>
-   glibc en 2.39, gcc 14.1.0, curl en 8.8.0, python en 3.13.1, etc .
+   glibc en 2.39, gcc 14.2.0, curl en 8.12.0, python en 3.13.2, etc .
   <p>
-   Le serveur graphique Xorg-server version 21.1.13.
-   la librairie Mesa 3D en 24.1.1, Gtk4 4.14.4
-   et Qt 6.7.1 .
+   Le serveur graphique Xorg-server version 21.1.15.
+   la librairie Mesa 3D en 24.3.3, Gtk4 4.16.2
+   et Qt 6.8.2 .
   <p>
     <ul>
       <li>
-        Le pilote nvidia est mis à jour en version 550.90.07 .
+        Le pilote nvidia est mis à jour en version 550.144.03 .
       <li>
         Le pilote nvidia de la série 470.xx en version 470.256.02 .
       <li>
         Le pilote nvidia de la série 390.xx en version 390.157 .
    </ul>
   <p>
-   L'interpreteur Python est mis à jour en version 3.13.1.
+   L'interpreteur Python est mis à jour en version 3.13.2.
   <p>
-   L'environnement de bureau LXQt est mis à jour en 2.0.1 .
+   L'environnement de bureau LXQt est mis à jour en 2.1.1 .
   <p>
-   L'environnement de bureau XFCE est mis à jour en version 4.18.3.
+   L'environnement de bureau XFCE est mis à jour en version 4.20.0.
   <p>
-   L'environnement de bureau MATE est en version 1.28.1.
+   L'environnement de bureau MATE est en version 1.28.2.
   <p>
-   L'environnement de bureau GNOME est également mis à jour en version 46.1
+   L'environnement de bureau GNOME est également mis à jour en version 47.1
   <p>
-   L'environnement de bureau KDE est disponible en Plasma 6.1.3, Framework 6.4.0
-   et les applications en 24.05.2.
+   L'environnement de bureau KDE est disponible en Plasma 6.2.5, Framework 6.10.0
+   et les applications en 24.12.2.
   <p>
-   Les navigateurs disponibles sont entre autre: Firefox 128.0.3, Epiphany 46.1, etc
+   Les navigateurs disponibles sont entre autre: Firefox 135.0, Epiphany 47.3.1, etc
   <p>
-   De nombreuses applications on été mise à jour également comme Telegram-desktop 5.0.1,
-   Thunderbird 115.11.1, Scribus 1.6.2, Libreoffice 24.2.3.2, Gimp 2.10.38, etc.
+   De nombreuses applications on été mise à jour également comme Telegram-desktop 5.10.7,
+   Thunderbird 128.6.0esr, Scribus 1.6.3, Libreoffice 24.8.4.2, Gimp 2.10.38, etc.
   <p>
    NuTyX de base est livré avec les noyaux de support à long terme (LTS):
-   4.19.316, 5.4.278, 5.10.219, 5.15.158, 6.1.94 et 6.6.34
-   et la dernière version stable 6.10.2.
+   5.4.290, 5.10.234, 5.15.178, 6.1.128, 6.6.76 et 6.12.13
+   et la dernière version stable 6.13.2.
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.19.316">kernel 4.19.316 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.290">kernel 5.4.290 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.278">kernel 5.4.278 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.234">kernel 5.10.234 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.219">kernel 5.10.219 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.178">kernel 5.15.178 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.158">kernel 5.15.158 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.128">kernel 6.1.128 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.94">kernel 6.1.94 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.76">kernel 6.6.76 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.34">kernel 6.6.34 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.12.13">kernel 6.12.13 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.10.2">kernel 6.10.2 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.13.2">kernel 6.13.2 changelog</a>
   <p>
-   Une ISO de BASE (propose le mode console sans environnement de bureau).
-  <p>
-   5 bureaux sont maintenant disponibles:
+   4 bureaux sont maintenant disponibles dans chaque système d'initialisation:
    OPENBOX,
    XFCE4,
-   JWM,
    MATE,
    GNOME,
    KDE6.
@@ -79,15 +77,11 @@
 
  <h2>Mise à jour</h2>
   <p>
-   Cette fois, c'est un peu différent si vous êtes sur la version 5 de KDE.
    Procédez comme suit:
- </p><pre class="command_user"><kbd>sudo cards upgrade
-sudo cards upgrade
+ </p><pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
+ Pour mettre à jour cards 2.x vers 3.x . Ensuite:
+<pre class="command_user"><kbd>sudo cards upgrade
 sudo shutdown -y r 0</kbd></pre>
-  <p>
-   Pour les autres ISOs, la simple commande classique permet la mise à jour:
-   </p><pre class="command_user"><kbd>sudo cards upgrade
-sudo shutdown -y -r 0</kbd></pre>
 
  <h2>Remerciements</h2>
   <p>
