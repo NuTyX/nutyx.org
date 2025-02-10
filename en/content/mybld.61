@@ -100,53 +100,8 @@ git config --global user.email "james@nutyx.org"</kbd></pre>
     You can specify a custom address and version in the <b>~/.mybld</b> configuration file
     via the <b>URL</b> and <b>VERSION</b> variables.
 
-  <h3>Configuration of cards</h3>
-    By default, the cards configuration specifies the collections available on the official NuTyX server.
-    In order to be able to install, keep or remove future personal packages, you must specify in the file
-    <i>/etc/cards.conf</i> source each collection independently.
-    <p>
-     In the configuration below, personal packages will be stored in folders:
-     <i><b>/home/tnut/www/x86_64/&lt;branch_name&gt;/&lt;collection_name&gt;</b></i> 
-    <p>
-     Official collections remain on the remote server.
-    <p>
-     The contents of /etc/cards.conf file after modifications:     
-     <pre class="output"># No global url should be defined
-# We need to specify an url only
-# for remote repositories collection
-# Default global server URL 
-# url http://downloads.nutyx.org
-#
-# My own repository (this repository) without specified url 
-/home/tnut/www/x86_64/&lt;branch_name&gt;/&lt;collection_name&gt;
-#
-## For all the graphical applications and desktops
-dir /var/lib/pkg/depot/gui-extra|http://downloads.nutyx.org
-#
-## For a minimal graphical interface
-dir /var/lib/pkg/depot/gui|http://downloads.nutyx.org
-#
-## For all the console applications
-dir /var/lib/pkg/depot/cli-extra|http://downloads.nutyx.org
-#
-## For a minimal console interface
-dir /var/lib/pkg/depot/cli|http://downloads.nutyx.org
-#
-## Chroot system without reboot possibilities for a chroot
-dir /var/lib/pkg/depot/base|http://downloads.nutyx.org
-#
-## Normaly you want to keep base and
-base /var/lib/pkg/depot/base
-#
-#
-## If you want to keep more collections remove comments below
-# Adjust to your needs
-#
-# base /var/lib/pkg/depot/cli
-# base /var/lib/pkg/depot/cli-extra
-# base /var/lib/pkg/depot//gui
-# base /var/lib/pkg/depot/gui-extra
-# base /var/lib/pkg/depot/...</pre>
+
+
  <h2>Using the command</h2> 
   <h3>(Re)Compile a package</h3>
    <p>
@@ -170,30 +125,6 @@ Type exit when finish.
  Good luck !!!
  
 </pre>
-  <h3>A new command is born</h3>
-   Depending of the collection the package you want to build, you get a new command named <b>&ltcollection_name&gt</b>.
-   <p>
-    In this example <i>nftables</i> package belong to <i>cli-extra</i> collection so we can now type:
-    <pre class="command"><kbd>cli-extra -h</kbd></pre>
-    <pre class="output">usage: cli-extra [option]
-options:
-  -a,--all             will build all the ports of the 'cli-extra'
-                       collection in the right order
-  -l,--list            will list all the ports of the 'cli-extra'
-                       collection in the right order
-  -ru,--remove-url     remove the URL part in /etc/cards.conf file
-                       for the 'cli-extra' collection
-  -cp,--check-ports    check if new ports are available
-  -cb,--check-binaries check if binaries are uptodate
-  -d,--dry             check if binaries are different
-                       then the ports but dont build anything
-  -s,--sync            synchronise binaries from rsync server
-                         location
-  -c,--config          printout the configuration
-  -h,--help            print help and exit
-  -v,--version         print version and exit
-  -u,--usage           print the recommended way of using the
-                       'cli-extra' script</pre>
 
   <h3>Where is what</h3>
   That's now the big question.
@@ -222,7 +153,7 @@ options:
       <td>
        nftables Pkgfile
       <td>
-       /DEPOT/cli-extra/nftables/Pkgfile
+       /mybld/rolling/cli-extra/nftables/Pkgfile
      <tr class="odd">
       <td>
        Sources files
@@ -242,7 +173,7 @@ options:
     </table>
   <h3>Go on with compilation</h3>
   So let's give a try to compile nftables now. Just type:
-  <pre class="command"><kbd>cli-extra nftables</kbd></pre>
+  <pre class="command"><kbd>cards create nftables</kbd></pre>
   Compilation with start just like normal.
   <p>
    If an error occur now, it will just return to the prompt:
@@ -262,11 +193,9 @@ Alternatively, you may set the environment variables
 See the pkg-config man page for more details.
 =======> ERROR: Building 
  '/DEPOT/cli-extra/nftables/nft....cards.tar.xz' failed.
-cards 2.4.124 create:
+cards 3.1.0 create:
   could not parse Pkgfile: While running 'build()'</pre>
 
-   
-   
   <h3>Fix the issue</h3>
    We can now fix the issue by adjusting the deps:
    <pre class="command"><kbd>cards install libnftnl libnftnl.devel</kbd></pre>
@@ -297,7 +226,7 @@ install -Dm644 ../nftables.conf "$PKG/etc/nftables/nftables.conf"</kbd></pre>
  
   <h3>Packing up</h3>
   when Pkgfile is complete, we can go back to the Pkgfile directory and use the command pkgmk -po to finish the job:
-  <pre class="command"><kbd>cd /DEPOT/cli-extra/nftables/
+  <pre class="command"><kbd>cd /mybld/rolling/cli-extra/nftables/
 pkgmk -po</kbd></pre>
  <h2>Help</h2>
   <p>
