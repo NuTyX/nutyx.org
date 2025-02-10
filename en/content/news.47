@@ -1,10 +1,59 @@
 <h1>Latest news 08-02-2025</h1>
+
  <h2>NuTyX 25.02.5 available with cards 3.1.0</h2>
   <p>
    Spiky and me are happy to announce the new version of NuTyX 25.02.5 and cards 3.1.0 .
+ <h2>What's new</h2>
+  <h3>2 separated init systems</h3>
+   <p>
+    From now on, init system are separated.
+    One set of ISOs is available in each init system. 
+  <h3>Cards 3.0</h3>
+   <p>
+    A year of development will have been necessary.
+   <p>
+    No new runtime dependencies for cards.
+   <p>
+    Packages are now signed with the <a href="https://en.wikipedia.org/wiki/EdDSA#Ed25519">ED25519 EdDSA algorithm</a>.
+   <p>
+ Hash is now via SHA512 instead of MD5Sum.
+   <p>
+ The archive name of a package is now easier to read.
+   <p>
+ The /etc/cards.conf configuration file has been simplified.
+   <p>
+ New commands (cards functions) are introduced:
+ <ul>
+ <li>
+ cards repo for metadata verification/generation
+ <li>
+ cards dependent for displaying a package's reverse dependencies
+ <li> 
+ cards key for generating the key pair for signing packages
+ </ul>
+ <p>
+ Existing commands have been improved:
+     <ul>
+      <li>
+       cards search allows search in package names only
+      <li>
+       cards files and cards query allows search in installed packages AND in repositories
+      <li>
+       cards diff displays all necessary information on package validity.
+      <li>
+       cards info displays new info such as signature, hash sum, dependencies
+      <li>
+       mybld command has been completely redesigned and requires much less time to perform tasks.
+     </ul>
   <p>
-   From now on, init system are separated.
-   One set of ISOs is available in each init system. 
+   The cards deprecate and cards base commands have been removed.
+  <p>
+   The package building process is now done exclusively in an isolated NuTyX.
+    The 'mybld' command now automatically checks for faulty dynamic links.
+  <p>
+   You will find all the details on the website, on https://github.com/NuTyX/cards
+   and in the Changelog file of cards.doc package.
+
  <h2>Updated packages</h2>
  <p>
    SysV in 3.13 and systemd in 257.0 .

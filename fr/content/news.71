@@ -1,12 +1,60 @@
 <h1>Dernière nouvelle 08-02-2025</h1>
 
-
  <h2>NuTyX 25.02.5 disponible avec cards 3.1.0</h2>
   <p>
    Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 25.02.5 et cards 3.1.0 .
-  <p>
-   Désormais les systèmes d'initialisation sont séparés.
-   Un jeu d'ISO est disponible en systemV 3.13 et un en systemd 257
+ <h2>Quoi de neuf</h2>
+  <h3>2 Systèmes d'initialisation totalement séparés</h3>
+   <p>
+    Désormais les systèmes d'initialisation sont séparés.
+    Un jeu d'ISO est disponible en systemV 3.13 et un en systemd 257
+  <h3>Cards 3.0</h3>
+   <p>
+    Un an de développement aura été necessaire.
+   <p>
+    Aucune nouvelles dépendances de fonctionnement de cards.
+   <p>
+    Les paquets sont désormais signés avec l'<a href="https://fr.wikipedia.org/wiki/EdDSA#Ed25519">algorithme ED25519 EdDSA</a>.
+   <p>
+    Le hashage est maintenant via SHA512 au lieu de MD5Sum.
+   <p>
+    Le nom de l'archive d'un paquet est désormais plus simple à lire.
+   <p>
+    Le fichier de configuration /etc/cards.conf est simplifié.
+   <p>
+    Des nouvelles commandes (fonctions de cards) sont introduites:
+     <ul>
+      <li>
+       cards repo pour la vérification / la génération des metadata
+      <li>
+       cards dependent pour afficher les dépendances inverse d'un paquet
+      <li> 
+       cards key pour générer la paire de clés pour la signature des paquets
+     </ul>
+   <p>
+    Les commandes déjà existantes ont été amélioré:
+     <ul>
+      <li>
+       cards search permet la recherche dans les noms de paquet uniquement
+      <li>
+       cards files et cards query permet la recherche dans les paquets installés ET dans les dépots
+      <li>
+       cards diff affiche toutes informations necessaires sur la validitée des paquets.
+      <li>
+       cards info affiche de nouvelles infos telle que la signature, la somme hash, les dépendances
+      <li>
+       mybld a complètement été revue et necessite beaucoup moins de temps pour effectuer les tâches.
+     </ul>
+    <p>
+     Les commandes cards depcreate et cards base ont été supprimées.
+    <p>
+     Le processus de construction des paquets se fait désormais exclusivement dans une
+     NuTyX isolée.
+     La commande 'mybld' vérifie désormais automatiquement les liens dynamiques defectueux.
+    <p>
+     Vous trouverez tous les détails dans la documetation sur le site, sur https://github.com/NuTyX/cards et dans le 
+     fichier du journal des changement dans le paquet cards.doc .
+       
  <h2>Paquets mis à jour</h2>
   <p>
    SysV en 3.13 et Systemd en 257.0 .
