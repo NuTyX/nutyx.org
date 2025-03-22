@@ -1,6 +1,6 @@
 <h1>Téléchargements</h1>
  <h2>Introduction</h2>
-   La version stable actuelle de NuTyX est la <b>25.02</b>.
+   La version stable actuelle de NuTyX est la <b>25.03</b>.
   <p>
    Les ISOs sont disponibles en 64 bits "Rolling" releases.
   <p>
@@ -43,17 +43,55 @@
    <tr class="even">
 
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-25.02.5-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE sysV</a>
+
+    <td>
+       <p>
+         L'ISO contient une installation de base sans interface graphique.
+       <p>
+        Système d'initialisation: SysV
+       <p>
+        kernel: Dernier kernel LTS (6.12).
+       <p>
+        SHA1 64bits: f2e4e4f6c00e2dda952e7b51b58b8d7b9a00fce4
+    <td>
+       Environ 974 MO
+
+   </tr>
+
+   <tr class="odd">
+
+    <td class="url">
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE systemd</a>
+
+    <td>
+       <p>
+         L'ISO contient une installation de base sans interface graphique.
+       <p>
+        Système d'initialisation: systemd
+       <p>
+        kernel: Dernier kernel LTS (6.12).
+       <p>
+        SHA1 64bits: 56338eda8171be41cbc21d8ed41876256f575c7a
+    <td>
+       Environ 976 MO
+
+   </tr>
+
+   <tr class="even">
+
+    <td class="url">
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX sysV</a>
 
     <td>
        <p>
         L'ISO contient le bureau OpenBox customisé NuTyX comme interface graphique.
        <p>
-        Système d'initialisation: SystemV
+        Système d'initialisation: SysV
        <p>
-        kernel: Dernier kernel LTS.
+        kernel: kernel LTS (6.6).
        <p>
-        SHA1 64bits: ee9675871abd04e8b6c0fce082347aed8960c209
+        SHA1 64bits: f6ee698feaf0a50b9ed8c8b4aa70636c1ee86ec2
     <td>
        Environ 1.7 GO
 
@@ -62,7 +100,7 @@
    <tr class="odd">
 
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemd/NuTyX_x86_64-25.02.5-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX systemd</a>
 
     <td>
        <p>
@@ -70,9 +108,9 @@
        <p>
         Système d'initialisation: systemd
        <p>
-        kernel: Dernier kernel LTS.
+        kernel: kernel LTS (6.6).
        <p>
-        SHA1 64bits: d077986a286a0c4b337d7ed349c961563242f8e9
+        SHA1 64bits: ff04294ab6b8f7e42dd2d4d3ffc102654fc990b0
     <td>
        Environ 1.7 GO
 
@@ -81,16 +119,16 @@
    <tr class="even">
 
     <td class="url">
-      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-25.02.5-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 64bits</a>
+      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE sysV</a>
     <td>
        <p>
         L'ISO contient le bureau XFCE4 comme interface graphique.
        <p>
-        Système d'initialisation: SystemV
+        Système d'initialisation: SysV
        <p>
-        kernel: Dernier kernel LTS.
+        kernel: kernel LTS (6.6).
        <p>
-        SHA1 64bits: bcac9ae47defb411d6d7e3ca29c352a7f8aeadc1
+        SHA1 64bits: 9eea0b3de0b027d181678d6108db243d6f07e475
     <td>
        Environ 1.7 GO
 
@@ -101,16 +139,16 @@
    <tr class="odd">
 
     <td class="url">
-      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemd/NuTyX_x86_64-25.02.5-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE 64bits</a>
+      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE systemd</a>
     <td>
        <p>
         L'ISO contient le bureau XFCE4 comme interface graphique.
        <p>
         Système d'initialisation: systemd
        <p>
-        kernel: Dernier kernel LTS.
+        kernel: kernel LTS (6.6).
        <p>
-        SHA1 64bits: 4221f9101745d713cdf3b6c49de91dacc35282b4
+        SHA1 64bits: c7d731905b29bcdd7722b48d13b39ec3dcf55029
     <td>
        Environ 1.7 GO
 
@@ -119,16 +157,52 @@
    <tr class="even">
 
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-25.02.5-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-ENLIGHTENMENT.iso"><img src="../graphics/downloads/enlightenment.png" alt="logo enlightenment"/><br/>ENLIGHTENMENT sysV</a>
+    <td>
+       <p>
+        L'ISO contient le bureau ENLIGHTENMENT comme interface graphique.
+       <p>
+        Système d'initialisation: SysV
+       <p>
+        kernel: kernel LTS (6.6).
+       <p>
+        SHA1 64bits: 80790f2e2f73f768a2d2ef1926b72a8e26964c6f
+      <td>
+       Environ 2.1 GO
+
+   </tr>
+
+   <tr class="odd">
+
+    <td class="url">
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-ENLIGHTENMENT.iso"><img src="../graphics/downloads/enlightenment.png" alt="logo enlightenment"/><br/>ENLIGHTENMENT systemd</a>
+    <td>
+       <p>
+        L'ISO contient le bureau ENLIGHTENMENT comme interface graphique.
+       <p>
+        Système d'initialisation: systemd
+       <p>
+        kernel: kernel LTS (6.6).
+       <p>
+        SHA1 64bits: 895511e95a9f9a9e724acaab3852ed36ca06570e
+      <td>
+       Environ 2.1 GO
+
+   </tr>
+
+   <tr class="even">
+
+    <td class="url">
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE sysV</a>
     <td>
        <p>
         L'ISO contient le bureau MATE comme interface graphique.
        <p>
-        Système d'initialisation: SystemV
+        Système d'initialisation: SysV
        <p>
-        kernel: Dernier kernel LTS.
+        kernel: kernel LTS (6.6).
        <p>
-        SHA1 64bits: 2dc53ab563945da8b526a7a4dd36a1e4d6872f7e
+        SHA1 64bits: 09e656e40f85fd1b9f222eb8dd09817571225181
       <td>
        Environ 1.9 GO
 
@@ -137,16 +211,16 @@
    <tr class="odd">
 
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemd/NuTyX_x86_64-25.02.5-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE systemd</a>
     <td>
        <p>
         L'ISO contient le bureau MATE comme interface graphique.
        <p>
         Système d'initialisation: systemd
        <p>
-        kernel: Dernier kernel LTS.
+        kernel: kernel LTS (6.6).
        <p>
-        SHA1 64bits: 240dd73c0cd89e39ea161486e823dfe82b2c6ad6
+        SHA1 64bits: 20baf1d1aa4cf3e6d2a20a58cb0658ab1ca0a6b9
       <td>
        Environ 1.9 GO
 
@@ -155,16 +229,16 @@
    <tr class="even">
 
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-25.02.5-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME sysV</a>
     <td>
        <p>
         L'ISO contient le bureau GNOME comme interface graphique.
        <p>
-        Système d'initialisation: SystemV
+        Système d'initialisation: SysV
        <p>
-        kernel: Dernier kernel LTS.
+        kernel: kernel LTS (6.6).
        <p>
-        SHA1 64bits: 59502f930d53944adb12db40a87f6d04219d4e57
+        SHA1 64bits: a41b28538d7a87ef2255fa901e5ea58ee89eda3c
       <td>
        Environ 2.0 GO
 
@@ -173,16 +247,16 @@
    <tr class="odd">
 
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemd/NuTyX_x86_64-25.02.5-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME systemd</a>
     <td>
        <p>
         L'ISO contient le bureau GNOME comme interface graphique.
        <p>
         Système d'initialisation: systemd
        <p>
-        kernel: Dernier kernel LTS.
+        kernel: kernel LTS (6.6).
        <p>
-        SHA1 64bits: 0f5e7f9e91510fba6bd60d2327fcbe8d68668596
+        SHA1 64bits: a6ccfebc71f4bc243bf380931bf2e56c3748a164
       <td>
        Environ 2.0 GO
 
@@ -191,16 +265,16 @@
    <tr class="even">
 
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-25.02.5-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE sysV</a>
     <td>
        <p>
         L'ISO contient le bureau KDE6 comme interface graphique.
        <p>
-        Système d'initialisation: SystemV
+        Système d'initialisation: SysV
        <p>
-        kernel: Dernier kernel LTS.
+        kernel: kernel LTS (6.6).
        <p>
-        SHA1 64bits: 58389247bd07f0ab8a2ac60b905bc2cc78dc6866
+        SHA1 64bits: 71a297f36c262efa81ce2e4a53d2c6da10fe3a97
       <td>
        Environ 2.4 GO
 
@@ -209,16 +283,16 @@
    <tr class="odd">
 
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemd/NuTyX_x86_64-25.02.5-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE 64bits</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE systemd</a>
     <td>
        <p>
         L'ISO contient le bureau KDE6 comme interface graphique.
        <p>
         Système d'initialisation: systemd
        <p>
-        kernel: Dernier kernel LTS.
+        kernel: kernel LTS (6.6).
        <p>
-        SHA1 64bits: 3098bb29301d5a924c1cb2e3fd5aa9219c646188
+        SHA1 64bits: 7b787c8442a817e57dd31fbedf5e1bce6eb3f2a5
       <td>
        Environ 2.4 GO
 
@@ -278,7 +352,7 @@ sdc  8:0:0:0    disk TDKMedia Trans-It_Drive  PMAP 07991E033A9CAF0E usb</pre>
  <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
    La commande qui suit va supprimer toutes les données qui se trouvent sur la clé.
   </div>
-   <pre class="command"><kbd>dd if=/chemin/vers/l'/iso/NuTyX_x86_64-25.02.5-JWM.iso of=/dev/sdX status=progress
+   <pre class="command"><kbd>dd if=/chemin/vers/l'/iso/NuTyX_x86_64-25.03.1-OPENBOX.iso of=/dev/sdX status=progress
 sync</kbd></pre>  <p>
    Si vous êtes sous Windows:
   <p>

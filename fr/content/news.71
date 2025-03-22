@@ -1,8 +1,8 @@
-<h1>Dernière nouvelle 08-02-2025</h1>
+<h1>Dernière nouvelle 08-03-2025</h1>
 
- <h2>NuTyX 25.02.5 disponible avec cards 3.1.0</h2>
+ <h2>NuTyX 25.03.1 disponible avec cards 3.2.1</h2>
   <p>
-   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 25.02.5 et cards 3.1.0 .
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 25.03.1 et cards 3.2.1 .
  <h2>Quoi de neuf</h2>
   <h3>2 Systèmes d'initialisation totalement séparés</h3>
    <p>
@@ -112,7 +112,7 @@
   <p>
    <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.13.2">kernel 6.13.2 changelog</a>
   <p>
-   4 bureaux sont maintenant disponibles dans chaque système d'initialisation:
+   5 bureaux sont maintenant disponibles dans chaque système d'initialisation:
    OPENBOX,
    XFCE4,
    MATE,
