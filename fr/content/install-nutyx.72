@@ -455,15 +455,10 @@ GUI          : flcards gvfs network-manager-applet firefox gparted \
 leafpad scrot vlc 
 XORG         : xorg-xinit xorg-xf86-input-synaptics xorg-xf86-input-wacom \
 xorg-xrandr xorg-setxkbmap
-CDE          : cde
 OPENBOX      : lxdm openbox openbox-jp-theme
 JWM          : lxdm jwm jwm-miyolinux-theme
 LXDE         : lxdm lxde
-LXQT         : breeze-gtk sddm lxqt
-CINNAMON     : lightdm cinnamon
-ENLIGHTENMENT: lightdm enlightenment
 XFCE4        : lxdm xfce4 xfce4-extra
-BUDGIE       : budgie
 MATE         : lightdm mate
 GNOME        : gnome gnome-extra
 KDE6         : kde6
@@ -472,7 +467,7 @@ ISO Filename /mnt/hd/NuTyX_x86_64-25.04.2-GNOME.iso</pre>
  Comme on peut le voir, de nouvelles variables sont désormais disponible.
  Celles-ci peuvent également être redéfinies à votre convenance:
  <p>
-  STRICT, BASE, CLI, GUI, XORG, GNOME, KDE6, BUDGIE, CINNAMON, ENLIGHTENMENT, CDE, OPENBOX, JWM, LXDE, XFCE4, MATE.
+  STRICT, BASE, CLI, GUI, XORG, GNOME, KDE6, OPENBOX, JWM, LXDE, XFCE4, MATE.
  <p>
   Chaque variable spécifie un jeu de paquets à installer.
   Chaque nom d'ISO utilise un ensemble de ces variables pour assembler l'ISO spécifiée.
@@ -544,26 +539,6 @@ ISO Filename /mnt/hd/NuTyX_x86_64-25.04.2-GNOME.iso</pre>
       STRICT + BASE + CLI + GUI + XORG + MATE
     <tr>
      <td>
-      CDE
-     <td>
-      STRICT + BASE + CLI + GUI + XORG + CDE
-    <tr>
-     <td>
-      ENLIGHTENMENT
-     <td>
-      STRICT + BASE + CLI + GUI + XORG + ENLIGHTENMENT
-    <tr>
-     <td>
-      CINNAMON
-     <td>
-      STRICT + BASE + CLI + GUI + XORG + CINNAMON
-    <tr>
-     <td>
-      BUDGIE
-     <td>
-      STRICT + BASE + CLI + GUI + XORG + BUDGIE
-    <tr>
-     <td>
       GNOME
      <td>
       STRICT + BASE + CLI + GUI + XORG + GNOME
@@ -583,7 +558,7 @@ ISO="lxde" \
 XORG="xorg-xf86-input-synaptics" \
 BASE="linux-firmware wireless-tools wpa-supplicant" \
 GUI="xorg-xrandr deadbeef geany firefox" \
-DEVEL="&& setup-nutyx start && echo 'ready ?' && read a" \
+DEVEL="setup-nutyx start && echo 'ready ?' && read a" \
 CLI="dhcpcd openssh git cdrtools syslinux libisoburn dosfstools" \
 LFS="/MyIso" \
 DEPOT="/media/www" \
