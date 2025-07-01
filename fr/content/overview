@@ -65,12 +65,12 @@ Ma vision de Linux a radicalement changé lorsque j’ai découvert le projet LF
 <h2>4. NuTyX n’est plus une Linux From Scratch</h2>
 
 On commence par son installation, aujourd’hui il est possible d’installer NuTyX de nombreuses façons.
-Pour les  débutants, plusieurs ISO (LXDE, XFCE, MATE, KDE, GNOME, CINNAMON prêtes à installer.
+Pour les  débutants, plusieurs ISO (XFCE4, MATE, KDE6, GNOME, ...) prêtes à installer.
 <p>
  Chaque ISO permet une installation automatique, semi-manuel en mode directe ou en mode live, depuis la ram ou depuis l’ISO montée, et enfin un script  permet d’installer la distribution en mode manuel.
 <p>
  En plus du dernier kernel stable, tous les kernel LTS sont disponibles.
- Chaque kernel LTS est un paquet distinct. La version des paquets kernel-414, kernel-419, kernel-54, kernel-510, kernel-515 et kernel-61 ne change jamais, seul les patchs upstream sont appliqués.
+ Chaque kernel LTS est un paquet distinct. La version des paquets kernel-54, kernel-510, kernel-515, kernel-61, kernel-66 et kernel-612 ne change jamais, seul les patchs upstream sont appliqués.
  Ils sont disponible toute la durée de vie de ceux-ci.
 <p>
  Une fois arrivé en fin de vie, cards informe l'utilisateur lors de l'installation/mise à jour.
