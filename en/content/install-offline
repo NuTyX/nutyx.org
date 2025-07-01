@@ -45,7 +45,7 @@
     <p>
      In this article the destination partition will be <b>/dev/sda4</b>.
      A minimum size of 15 Gbytes will allow you to install all the available graphical interfaces
-     <b>xfce4, lxde, gnome, mate and kde5</b> and will give you the possibility of adding a set of frequently used applications.
+     <b>xfce4, gnome, mate and kde6</b> and will give you the possibility of adding a set of frequently used applications.
     <p>
      When the script is running it uses some variables. The most important one is:
     <pre class="output">LFS</pre>
@@ -87,24 +87,7 @@ $LFS/var/lib/pkg/depot/base/</kbd></pre>
      We will check the integrity of the script before we use it.
     <pre class="command"><kbd>md5sum -c install-nutyx.md5sum</kbd></pre>
     <pre class="output">install-nutyx: OK</pre>
-    <p>
-     Before we launch the script with the correct variables, we need to put the <b>/etc/install-nutyx.conf.d/cards.conf</b> file in the right place.
 
-   <h2>Put the /etc/install-nutyx.conf.d/cards.conf file in place</h2>
-
-    <p>
-     The <b>install-nutyx</b> script can use preconfiguration of some files.
-     This means if it finds one of those files in the <b>/etc/install-nutyx.conf.d/</b>,
-     the script will use the one found instead of the internal one of the script.
-     We will then adapt the <b>cards.conf</b> file of our NuTyX for an "offline" installation
-     by mentioning the only collection available for the installation
-    <b>base</b> <u>without specifying the download URL</u>.
-    <pre class="command"><kbd>mkdir -p /etc/install-nutyx.conf.d
-cat &gt; /etc/install-nutyx.conf.d/cards.conf  &lt;&lt; EOF
-dir /var/lib/pkg/depot/base
-base /var/lib/pkg/depot/base
-locale de
-EOF</kbd></pre>
     <p>
      We are now ready to start the installation of NuTyX.
 
