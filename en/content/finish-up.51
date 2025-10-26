@@ -16,7 +16,7 @@
 
  <h2>Desktop installation:</h2>
   You can now choose your favorite desktop.
-  Under NuTyX: kde6, xfce4, mate, lxde, openbox, enlightenment, cinnamon, cde, flwm, ratpoison, etc are available.
+  Under NuTyX: kde6, xfce4, gnome, etc are available.
   <p>
       <table>
        <caption><EM>Available desktops:</EM></caption>
@@ -35,64 +35,9 @@
          <pre class="command_user"><kbd>get xfce4 xfce4-extra</kbd></pre>
        <tr class="odd">
         <td>
-         mate
+         gnome
         <td>
-         <pre class="command_user"><kbd>get mate</kbd></pre>
-       <tr class="even">
-        <td>
-         lxde
-        <td>
-         <pre class="command_user"><kbd>get lxde</kbd></pre>
-       <tr class="odd">
-        <td>
-         openbox
-        <td>
-         <pre class="command_user"><kbd>get openbox</kbd></pre>
-        <tr class="even">
-        <td>
-         enlightenment
-        <td>
-         <pre class="command_user"><kbd>get enlightenment</kbd></pre>
-       <tr class="odd">
-        <td>
-         cinnamon
-        <td>
-         <pre class="command_user"><kbd>get cinnamon</kbd></pre>
-       <tr class="even">
-        <td>
-         cde
-        <td>
-         <pre class="command_user"><kbd>get cde</kbd></pre>
-       <tr class="odd">
-        <td>
-         jwm
-        <td>
-         <pre class="command_user"><kbd>get jwm</kbd></pre>
-        <tr class="even">
-        <td>
-         blackbox
-        <td>
-         <pre class="command_user"><kbd>get blackbox</kbd></pre>
-        <tr class="odd">
-        <td>
-         icewm
-        <td>
-         <pre class="command_user"><kbd>get icewm</kbd></pre>
-        <tr class="even">
-        <td>
-         ratpoison
-        <td>
-         <pre class="command_user"><kbd>get ratpoison</kbd></pre>
-        <tr class="odd">
-        <td>
-         flwm
-        <td>
-         <pre class="command_user"><kbd>get flwm</kbd></pre>
-         <tr class="even">
-        <td>
-         i3
-        <td>
-         <pre class="command_user"><kbd>get i3</kbd></pre>
+         <pre class="command_user"><kbd>get gnome gnome-extra</kbd></pre>
     </table>
   <p>
 
@@ -146,8 +91,8 @@ xclock -geometry 50x50-1+1 &
 xterm -geometry 80x50+494+51 &
 xterm -geometry 80x20+494-0 &
 exec xterm -geometry 80x66+0+0 -name login</pre>
-   with the name of your installed graphical interface above.  For example, for mate:
-   <pre class="output">exec mate-session</pre>
+   with the name of your installed graphical interface above.  For example, for xfce4:
+   <pre class="output">exec xfce4-session</pre>
 
   <h3>Starting the graphical server from a non graphical console</h3>
     We install the graphical server and the initialiser:

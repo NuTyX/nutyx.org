@@ -65,7 +65,7 @@ Ma vision de Linux a radicalement changé lorsque j’ai découvert le projet LF
 <h2>4. NuTyX n’est plus une Linux From Scratch</h2>
 
 On commence par son installation, aujourd’hui il est possible d’installer NuTyX de nombreuses façons.
-Pour les  débutants, plusieurs ISO (XFCE4, MATE, KDE6, GNOME, ...) prêtes à installer.
+Pour les  débutants, plusieurs ISO (XFCE4, KDE6, GNOME, ...) prêtes à installer.
 <p>
  Chaque ISO permet une installation automatique, semi-manuel en mode directe ou en mode live, depuis la ram ou depuis l’ISO montée, et enfin un script  permet d’installer la distribution en mode manuel.
 <p>

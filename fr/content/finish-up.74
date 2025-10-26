@@ -15,7 +15,7 @@
  <h2>Installation d'un bureau:</h2>
   On commence par choisir un bureau.
  <p>
-  Sous NuTyX, vous avez le choix entre: kde6, xfce4, mate, lxde, openbox, cinnamon, cde, enlightenment, ratpoison, flubox, flwm, i3, icewm, jwm, openbox, blackbox etc
+  Sous NuTyX, vous avez le choix entre: kde6, xfce4, enlightenment, gnome etc
   <p>
       <table>
        <caption><EM>Quelques exemples de bureaux disponibles</EM></caption>
@@ -32,66 +32,16 @@
           xfce4 xfce4-extra
          <td>
           <pre class="command_user"><kbd>get xfce4 xfce4-extra</kbd></pre>
-       <tr class="odd">
-        <td>
-         mate
-        <td>
-         <pre class="command_user"><kbd>get mate</kbd></pre>
-       <tr class="even">
-        <td>
-         lxde
-        <td>
-         <pre class="command_user"><kbd>get lxde</kbd></pre>
-       <tr class="odd">
-        <td>
-         openbox
-        <td>
-         <pre class="command_user"><kbd>get openbox</kbd></pre>
         <tr class="even">
         <td>
          enlightenment
         <td>
          <pre class="command_user"><kbd>get enlightenment</kbd></pre>
-       <tr class="odd">
-         <td>
-          cinnamon
-         <td>
-          <pre class="command_user"><kbd>get cinnamon</kbd></pre>
-       <tr class="even">
-         <td>
-          cde
-         <td>
-          <pre class="command_user"><kbd>get cde</kbd></pre>
-       <tr class="odd">
-        <td>
-         jwm
-        <td>
-         <pre class="command_user"><kbd>get jwm</kbd></pre>
-        <tr class="even">
-        <td>
-         blackbox
-        <td>
-         <pre class="command_user"><kbd>get blackbox</kbd></pre>
         <tr class="odd">
         <td>
          icewm
         <td>
          <pre class="command_user"><kbd>get icewm</kbd></pre>
-        <tr class="even">
-        <td>
-         ratpoison
-        <td>
-         <pre class="command_user"><kbd>get ratpoison</kbd></pre>
-        <tr class="odd">
-        <td>
-         flwm
-        <td>
-         <pre class="command_user"><kbd>get flwm</kbd></pre>
-        <tr class="even">
-        <td>
-         i3
-        <td>
-         <pre class="command_user"><kbd>get i3</kbd></pre>
      </table>
  
  <h2>Installation d'un gestionnaire de connection</h2>
@@ -107,11 +57,6 @@
       <tr class="sidebar">
         <th>Nom:
         <th>Nom du paquet à installer:
-      <tr class="odd">
-       <td>
-        lxdm
-       <td>
-        <pre class="command_user"><kbd>get lxdm</kbd></pre>
       <tr class="even">
        <td>
         lightdm
@@ -146,8 +91,8 @@ xclock -geometry 50x50-1+1 &
 xterm -geometry 80x50+494+51 &
 xterm -geometry 80x20+494-0 &
 exec xterm -geometry 80x66+0+0 -name login</pre>
-    avec le nom de votre interface graphique installée ci-desssus, par exemple pour mate:
-    <pre class="output">exec mate-session</pre>
+    avec le nom de votre interface graphique installée ci-desssus, par exemple pour xfce4:
+    <pre class="output">exec xfce4-session</pre>
 
    <h3>Lancement du serveur graphique depuis une console non graphique</h3>
      On installe le serveur graphique et son initialisateur:
