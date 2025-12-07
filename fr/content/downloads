@@ -78,43 +78,6 @@
 
    </tr>
 
-   <tr class="even">
-
-    <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX sysV</a>
-
-    <td>
-       <p>
-        L'ISO contient le bureau OpenBox customisé NuTyX comme interface graphique.
-       <p>
-        Système d'initialisation: SysV
-       <p>
-        kernel: kernel LTS (6.6).
-       <p>
-        SHA1 64bits: f6ee698feaf0a50b9ed8c8b4aa70636c1ee86ec2
-    <td>
-       Environ 1.7 GO
-
-   </tr>
-
-   <tr class="odd">
-
-    <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-OPENBOX.iso"><img src="../graphics/downloads/Openbox-72.png" alt="logo cde"/><br/>OPENBOX systemd</a>
-
-    <td>
-       <p>
-        L'ISO contient le bureau OpenBox customisé NuTyX comme interface graphique.
-       <p>
-        Système d'initialisation: systemd
-       <p>
-        kernel: kernel LTS (6.6).
-       <p>
-        SHA1 64bits: ff04294ab6b8f7e42dd2d4d3ffc102654fc990b0
-    <td>
-       Environ 1.7 GO
-
-   </tr>
 
    <tr class="even">
 
@@ -154,97 +117,8 @@
 
    </tr>
 
-   <tr class="even">
-
-    <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-ENLIGHTENMENT.iso"><img src="../graphics/downloads/enlightenment.png" alt="logo enlightenment"/><br/>ENLIGHTENMENT sysV</a>
-    <td>
-       <p>
-        L'ISO contient le bureau ENLIGHTENMENT comme interface graphique.
-       <p>
-        Système d'initialisation: SysV
-       <p>
-        kernel: kernel LTS (6.6).
-       <p>
-        SHA1 64bits: 80790f2e2f73f768a2d2ef1926b72a8e26964c6f
-      <td>
-       Environ 2.1 GO
-
-   </tr>
-
-   <tr class="odd">
-
-    <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-ENLIGHTENMENT.iso"><img src="../graphics/downloads/enlightenment.png" alt="logo enlightenment"/><br/>ENLIGHTENMENT systemd</a>
-    <td>
-       <p>
-        L'ISO contient le bureau ENLIGHTENMENT comme interface graphique.
-       <p>
-        Système d'initialisation: systemd
-       <p>
-        kernel: kernel LTS (6.6).
-       <p>
-        SHA1 64bits: 895511e95a9f9a9e724acaab3852ed36ca06570e
-      <td>
-       Environ 2.1 GO
-
-   </tr>
 
    <tr class="even">
-
-    <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE sysV</a>
-    <td>
-       <p>
-        L'ISO contient le bureau MATE comme interface graphique.
-       <p>
-        Système d'initialisation: SysV
-       <p>
-        kernel: kernel LTS (6.6).
-       <p>
-        SHA1 64bits: 09e656e40f85fd1b9f222eb8dd09817571225181
-      <td>
-       Environ 1.9 GO
-
-   </tr>
-
-   <tr class="odd">
-
-    <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-MATE.iso"><img src="../graphics/downloads/mate.png" alt="logo mate"/><br/>MATE systemd</a>
-    <td>
-       <p>
-        L'ISO contient le bureau MATE comme interface graphique.
-       <p>
-        Système d'initialisation: systemd
-       <p>
-        kernel: kernel LTS (6.6).
-       <p>
-        SHA1 64bits: 20baf1d1aa4cf3e6d2a20a58cb0658ab1ca0a6b9
-      <td>
-       Environ 1.9 GO
-
-   </tr>
-
-   <tr class="even">
-
-    <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME sysV</a>
-    <td>
-       <p>
-        L'ISO contient le bureau GNOME comme interface graphique.
-       <p>
-        Système d'initialisation: SysV
-       <p>
-        kernel: kernel LTS (6.6).
-       <p>
-        SHA1 64bits: a41b28538d7a87ef2255fa901e5ea58ee89eda3c
-      <td>
-       Environ 2.0 GO
-
-   </tr>
-
-   <tr class="odd">
 
     <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME systemd</a>
@@ -262,7 +136,7 @@
 
    </tr>
 
-   <tr class="even">
+   <tr class="odd">
 
     <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE sysV</a>
@@ -280,7 +154,7 @@
 
    </tr>
 
-   <tr class="odd">
+   <tr class="even">
 
     <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE systemd</a>
