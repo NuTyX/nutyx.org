@@ -74,6 +74,9 @@
    <br>
     Possible values: (package1 package2 ...)
 
+  <h3>PKGMK_MESON_OPTIONS</h3>
+    Additionals options list for a package using the build=meson function.
+
   <h3>PKGMK_IGNORE_REPO</h3>
 
   <h3>PKGMK_IGNORE_COLLECTION</h3>
