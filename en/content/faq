@@ -1,41 +1,5 @@
   <h1>Frequently asked questions</h1>
 
-   <h2>How to register to the Mailing Lists</h2>
-    <p>
-     It's done in a few steps:
-     <ul>
-      <li>
-        Send an email to one of &lt;mailing_list_name&gt;-request@nutyx.org (<i>nutyx-support-request@nutyx.org</i> for example) by specifying:
-       <b><i>subscribe</i></b> as the subject.
-      <li>
-       You will receive a confirmation mail. Check your spam mail.
-      <li>
-       Simply answer this last email by choosing "Reply" on your favorite email software.
-      <li>
-       After a few minutes, you will receive an  email that confirms you are registered on the mailing-list
-      </ul>
-      <table>
-       <caption><EM>Available Mailing Lists:</EM></caption>
-       <tr class="sidebar">
-        <th>
-         Mailing List name:
-        <th>
-         email adress:
-        <th>
-         Short description:
-       <tr class="even">
-        <td>
-         nutyx-support<td>nutyx-support@nutyx.org<td>To get some support about NuTyX
-       <tr class="odd">
-        <td>
-         nutyx-annonce<td>nutyx-annonce@nutyx.org<td>To get news about NuTyX
-       <tr class="even">
-        <td>
-         nutyx-dev<td>nutyx-dev@nutyx.org<td>To discuss about development and future of NuTyX
-     </table>
-    <p>
-     The archives are available at: <a href="https://listengine.tuxfamily.org/nutyx.org/">https://listengine.tuxfamily.org/nutyx.org/</a>
-
    <h2>NuTyX is not a multi-lib</h2>
     <p>
      It takes much more time to build up a multilib distribution.

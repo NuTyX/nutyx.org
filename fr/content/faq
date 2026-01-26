@@ -1,32 +1,5 @@
   <h1>Foire aux questions</h1>
 
-   <h2>Comment s'inscrire sur la liste de diffusion</h2>
-    <p>
-     Cela se fait en plusieurs étapes :
-     <ul>
-      <li>
-       Vous envoyez un courriel à &lt;Nom_de_la_Liste_de_diffusion&gt;-request@nutyx.org (<i>nutyx-support-request@nutyx.org</i> par exemple) en y mettant:
-       <b><i>subscribe</i></b> dans le sujet.
-      <li>
-       Vous allez recevoir un courriel de confirmation. Vérifier si le message est considéré comme un spam.
-      <li>
-       Répondez simplement ce dernier courriel en choisissant "Répondre" sur votre logiciel favori.
-      <li>
-       Après quelques minutes vous recevrez un dernier courriel confirmant votre adhésion à la liste de diffusion.
-      </ul>
-      <table>
-       <caption><EM>Listes de diffusion disponibles:</EM></caption>
-       <tr class="sidebar">
-        <th>Nom de la Liste de diffusion:
-        <th>Adresse courriel:
-        <th>Brève description:
-       <tr class="even"><td>nutyx-support<td>nutyx-support@nutyx.org<td>Pour obtenir du support concernant l'utilisation de NuTyX
-       <tr class="odd"><td>nutyx-annonce<td>nutyx-annonce@nutyx.org<td>Pour recevoir les nouvelles concernant l'avancement de NuTyX
-       <tr class="even"><td>nutyx-dev<td>nutyx-dev@nutyx.org<td>Pour discuter du développement de NuTyX
-     </table>
-     <p>
-      Les archives des listes de diffusions sont disponibles à l'adresse: <a href="https://listengine.tuxfamily.org/nutyx.org/">https://listengine.tuxfamily.org/nutyx.org/</a>
-
    <h2>NuTyX n'est pas une multi-lib</h2>
     <p>
      La mise en oeuvre d'une distribution multilib demande beaucoup plus de travail. Normalement toutes les librairies doivent être compilées en 64 et en 32 bits.
@@ -72,7 +45,7 @@
         <a href="build-in-chroot">il devra impérativement compiler ces paquets dans une chroot</a> sinon la compilation échouera par manque de dépendances de developpement.
        </div>
       <p>
-       La construction des paquets se font toujours dans une chroot via la commande <a href="mybld">mybld</a>.
+       La construction des paquets se fait toujours dans une chroot via la commande <a href="mybld">mybld</a>.
       <p>
        Cela évite deux problèmes importants:
        <ul>
