@@ -39,116 +39,67 @@
 
    <tr class="odd">
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE sysV</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-26.02.2-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE sysV</a>
     <td>
      <p>
       The ISO contains a base system withount any graphical interface.
      <p>
-      Init system: SysV
-     <p>
-      kernel: Last LTS kernel (6.12).
-     <p>
-      SHA1 64bits: f2e4e4f6c00e2dda952e7b51b58b8d7b9a00fce4
-      <td>
-       Approx. 974 MO
-   </tr>
-
-
-   <tr class="even">
-    <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-BASE.iso"><img src="../graphics/downloads/terminal.png" alt="logo console"/><br/>BASE systemd</a>
-    <td>
-     <p>
-      The ISO contains a NuTyX customised Openbox desktop.
-     <p>
       Init system: systemd
      <p>
-      kernel: Last LTS kernel (6.12).
+      kernel: Last LTS kernel (6.18).
      <p>
-      SHA1 64bits: 56338eda8171be41cbc21d8ed41876256f575c7a
+      SHA1 64bits: 20f38d9fc0a31a2e04ba1936dff7b642a63b2e40
       <td>
-       Approx. 976 MO
-   </tr>
-
-   <tr class="odd">
-    <td class="url">
-      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE sysV</a>
-    <td>
-     <p>
-      The ISO contains a XFCE4 desktop.
-     <p>
-      Init system: SysV
-     <p>
-      kernel:  LTS kernel (6.6).
-     <p>
-      SHA1 64bits: 9eea0b3de0b027d181678d6108db243d6f07e475
-      <td>
-       Approx. 1.7 GO
+       Approx. 1.1 GB
    </tr>
 
    <tr class="even">
     <td class="url">
-      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE systemd</a>
+      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-26.02.2-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE systemd</a>
     <td>
      <p>
       The ISO contains a XFCE4 desktop.
      <p>
       Init system: systemd
      <p>
-      kernel:  LTS kernel (6.6).
+      kernel:  LTS kernel (6.18).
       <p>
-      SHA1 64bits: c7d731905b29bcdd7722b48d13b39ec3dcf55029
+      SHA1 64bits: 127d9778f42551caf8ed767bf773ec2c47e6c5be
       <td>
-       Approx. 1.7 GO
+       Approx. 1.8 GB
    </tr>
 
 
    <tr class="odd">
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME systemd</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-26.02.2-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME systemd</a>
     <td>
      <p>
       The ISO contains a GNOME desktop.
      <p>
       Init system: systemd
      <p>
-      kernel:  LTS kernel (6.6).
+      kernel:  LTS kernel (6.18).
      <p>
-      SHA1 64bit: a6ccfebc71f4bc243bf380931bf2e56c3748a164
+      SHA1 64bit: 945c5df7901e965c4e3dbdd4134c56d109e723b2
       <td>
-       Approx. 2.0 GO
+       Approx. 2.1 GB
    </tr>
 
    <tr class="even">
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-sysV-25.03.1-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE sysV</a>
-    <td>
-     <p>
-      The ISO contains a KDE6 desktop.
-     <p>
-      Init system: SysV
-     <p>
-      kernel:  LTS kernel (6.6).
-     <p>
-        SHA1 64bits: 71a297f36c262efa81ce2e4a53d2c6da10fe3a97
-      <td>
-       Approx. 2.4 GO
-   </tr>
-
-   <tr class="odd">
-    <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-25.03.1-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE systemd</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-systemd-26.02.2-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE systemd</a>
     <td>
      <p>
       The ISO contains a KDE6 desktop.
      <p>
       Init system: systemd
      <p>
-      kernel:  LTS kernel (6.6).
+      kernel:  LTS kernel (6.18).
      <p>
-      SHA1 64bits: 7b787c8442a817e57dd31fbedf5e1bce6eb3f2a5
+      SHA1 64bits: 4c6c30c5b3657b0db184de40e2c6fcced3e2cb90
     <td>
-      Approx. 2.4 GO
+      Approx. 2.5 GB
    </tr>
   </table>
 
@@ -203,7 +154,7 @@ sdc  8:0:0:0    disk TDKMedia Trans-It_Drive  PMAP 07991E033A9CAF0E usb</pre>
   <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
    The following command will delete all data that is on the USB key.
   </div>
-  <pre class="command"><kbd>dd if=/path/to/the/iso/NuTyX_x86_64-25.03.1-OPENBOX.iso of=/dev/sdX status=progress
+  <pre class="command"><kbd>dd if=/path/to/the/iso/NuTyX_x86_64-systemd-26.02.2-XFCE4.iso of=/dev/sdX status=progress
 sync</kbd></pre>
    If you are using Windows:
   <p>

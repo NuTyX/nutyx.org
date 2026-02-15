@@ -462,7 +462,7 @@ XFCE4        : lxdm xfce4 xfce4-extra
 MATE         : lightdm mate
 GNOME        : gnome gnome-extra
 KDE6         : kde6
-ISO Filename /mnt/hd/NuTyX_x86_64-25.04.2-GNOME.iso</pre>
+ISO Filename /mnt/hd/NuTyX_x86_64-26.02.2-GNOME.iso</pre>
 <p>
  Comme on peut le voir, de nouvelles variables sont désormais disponible.
  Celles-ci peuvent également être redéfinies à votre convenance:

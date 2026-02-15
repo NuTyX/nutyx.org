@@ -34,9 +34,9 @@ to be able to use qemu:
       Assurez-vous que l'iso téléchargé se trouve dans le répertoire ~/VM-qemu/iso.
    </ul>
   <p>
-   par exemple, l'iso <b>64bits</b> version <b>25.04.2</b> de <b>JWM</b>  sera :
+   par exemple, l'iso <b>64bits</b> version <b>26.02.2</b> de <b>JWM</b>  sera :
   <p>
-   <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-25.04.2-XFCE4.iso">https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-25.04.2-XFCE4.iso</a>
+   <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-26.02.2-XFCE4.iso">https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-26.02.2-XFCE4.iso</a>
   <ul>
    <li>
     Démarrer le script de configuration
