@@ -1,151 +1,149 @@
-<h1>Latest news 08-03-2025</h1>
+<h1>Latest news 16-02-2026</h1>
 
- <h2>NuTyX 26.02.2 available with cards 3.2.1</h2>
+ <h2>NuTyX 26.02.2 available with cards 3.4.3</h2>
   <p>
-   Spiky and me are happy to announce the new version of NuTyX 26.02.2 and cards 3.2.1 .
+   Spiky and me are happy to announce the new version of NuTyX 26.02.2 and cards 3.4.3 .
+<h2>The short version</h2>
+  <ol>
+   <li>
+    sysV is at the end of its life, only one initialization system: systemd.
+   </li>
+   <li>
+    Switching from sysV to systemd without reinstalling is not a good idea.
+   </li>
+   <li>
+    NuTyX sysV maintained until the end of 2026.
+   </li>
+   <li>
+    3 ISO graphics: XFCE, GNOME and KDE6.
+   </li>
+   <li>
+    1 Basic non-graphic ISO for pros.
+   </li>
+  </ol>
+ <h2>The long version</h2>
+   <p>
+    After nearly 19 years, NuTyX slowly abandoned the sysV initialization system developed more than 40 years ago (1983).
+    This means concretely:
+   <p>
+    Only the following packages will continue to receive updates until December 2026:
+    <ol>
+     <li>
+      The kernels. Note that the kernel-510, kernel-515, kernel-66 and
+kernel-612 also come to the end of their life in December 2026.
+     </li>
+     <li>
+      Firefox and Thunderbird
+     </li>
+     <li>
+      Discord and Telegram
+     </li>
+     <li>
+      XFCE 4.20
+     </li>
+     <li>
+      Security updates
+     </li>
+    </ol>
+   <p>
+    Now, the distribution focuses on a single initialization system: systemd.
+   <p>
+    The two main offices GNOME and KDE6 will soon no longer be operational under sysV.
+   <p>
+    systemd will stop compatibility with sysv in its next version 260.
+   <p>
+    <a href="https://www.linuxfromscratch.org/lfs/read.html">The linux from scratch</a> team also decided to stop the sys-V version by the end of 2026.
+   <p>
+    The transition from sysV to systemd is possible but is not recommended at all.
+    On the other hand, a new installation keeps your personal datas.
+
+ <h2>Installing/Migrating from sysV to systemd</h2>
+  <h3>Good to know</h3>
+   <p>
+    The installation requires 4 Gyga bytes of RAM and a disk space of 20 GB minimum for the system.
+   <p>
+    The installation can be done in bios or uefi mode. The detection is done automatically.
+   <p>
+    If you are lucky enough to be able to install in uefi mode, the uefi partition size can be very small.
+    Attention all machines do not accept an efi partition below 50 MB (virtualbox e.g.).
+   <p>
+    To test the ISO gnome in virtual, it is imperative to activate the 3d in the virtual machine.
+    Preferably use virtualbox.
+
+  <h3>Methods of installation</h3>
+   <p>
+    The installation is very fast and very safe, indeed the installer will never format a partition without asking the user.
+   <p>
+    So if you do not replace the partition on which your data is
+located, you do not fail to lose your personal data. When in doubt, make
+ a backup. ;)
+   <p>
+    You have the choice between 3 installation modes:
+    <ol>
+     <li>
+      Direct
+     </li>
+     <li>
+      From the live
+     </li>
+     <li>
+      For savvy users, from the live via the installation script 'install-nutyx'
+     </li>
+    </ol>
+   <p>
+    4 ISO are available:
+    The basic system (without graphical interface), XFCE4, GNOME and KDE6.
+   <p>
+    They are available on <a href="downloads">the download page.</a>
+
+ <h2>Update (only possible if you are already on the NuTyX systemd)</h2>
+   <p>
+    Do the following:
+   </p><pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
+   <pre class="command_user"><kbd>sudo cards upgrade
+sudo shutdown -r 0</kbd></pre>
+
  <h2>What's new</h2>
-  <h3>2 separated init systems</h3>
-   <p>
-    From now on, init system are separated.
-    One set of ISOs is available in each init system. 
-  <h3>Cards 3.0</h3>
-   <p>
-    A year of development will have been necessary.
-   <p>
-    No new runtime dependencies for cards.
-   <p>
-    Packages are now signed with the <a href="https://en.wikipedia.org/wiki/EdDSA#Ed25519">ED25519 EdDSA algorithm</a>.
-   <p>
- Hash is now via SHA512 instead of MD5Sum.
-   <p>
- The archive name of a package is now easier to read.
-   <p>
- The /etc/cards.conf configuration file has been simplified.
-   <p>
- New commands (cards functions) are introduced:
- <ul>
- <li>
- cards repo for metadata verification/generation
- <li>
- cards dependent for displaying a package's reverse dependencies
- <li> 
- cards key for generating the key pair for signing packages
- </ul>
- <p>
- Existing commands have been improved:
-     <ul>
-      <li>
-       cards search allows search in package names only
-      <li>
-       cards files and cards query allows search in installed packages AND in repositories
-      <li>
-       cards diff displays all necessary information on package validity.
-      <li>
-       cards info displays new info such as signature, hash sum, dependencies
-      <li>
-       mybld command has been completely redesigned and requires much less time to perform tasks.
-     </ul>
   <p>
-   The cards deprecate and cards base commands have been removed.
+   glibc in 2.42, gcc 15.2.0, systemd in 259.1, curl in 8.18.0 .
   <p>
-   The package building process is now done exclusively in an isolated NuTyX.
-    The 'mybld' command now automatically checks for faulty dynamic links.
+   The Xorg-server graphic server version 21.1.21.
   <p>
-   You will find all the details on the website, on https://github.com/NuTyX/cards
-   and in the Changelog file of cards.doc package.
-
- <h2>Updated packages</h2>
- <p>
-   SysV in 3.13 and systemd in 257.0 .
- <p>
-   glibc in 2.39, gcc 14.2.0, curl in 8.12.0, python in 3.13.2, etc .
+   the Mesa 3D library in 25.3.2
   <p>
-   The xorg-server graphics server version 21.1.15,
-   the Mesa 3D library in 24.3.3, Gtk4 4.16.2
-   and Qt 6.8.2 .
+   Gtk4 4.20.3
   <p>
-   <ul>
-    <li>
-     The nvidia driver is update to version  550.144.03 .
-    <li>
-     The legacy driver 470.xx series in version 470.256.02 .
-    <li>
-     The legacy driver 390.xx series in version 390.157 .
-   </ul>
+   Qt 6.10.1
   <p>
-   The python interpreter is updated to version 3.13.2.
+   The nvidia driver is updated to version 580.126.09 .
   <p>
-   The LXQt desktop environment is a 2.1.1 version .
+   The Python interpreter is updated to version 3.14.3.
   <p>
-   The XFCE desktop environment is updated to version 4.20.0.
+   The XFCE desktop environment is updated to version 4.20.1.
   <p>
-   The MATE desktop environment is a 1.28.2 version .
+   The GNOME desktop environment is also updated to version 49.1
   <p>
-   The GNOME desktop environment is also updated to version 47.1
-   <p>
-   The KDE desktop environment is available in Plasma 6.2.5, Framework 6.10.0
-   and applications in 24.12.2.
+   The KDE desktop environment is available in Plasma 6.5.5, Framework 6.22.0 and applications in 25.12.2.
   <p>
-   Available browsers are: Firefox 135.0, Epiphany 47.3.1, etc
+   The browsers available are: Firefox 147.0.3 and Epiphany 49.2.
   <p>
-   Many desktop applications have been updated as well like Telegram-desktop 5.10.7,
-   Thunderbird 128.6.0esr, Scribus 1.6.3, Libreoffice 24.8.4.2, Gimp 2.10.38, etc.
+   Many applications have also been updated as Telegram-desktop 5.10.7,
+   Thunderbird 140.7.1esr, Scribus 1.6.4, Libreoffice 25.8.4.2, Gimp 3.0.6, etc.
   <p>
-   Core NuTyX ships with Long Term Support (LTS) kernels:
-   5.4.290, 5.10.234, 5.15.178, 6.1.128, 6.6.76 and 6.12.13
-   and the latest stable version 6.13.2.
+   Long-term support linux nuclei (LTS):
+   6.6.124, 6.12.70 and 6.18.10.
+  ><p>
+   The latest stable version of the linux 6.19 kernel.
   <p>
-   The kernel change logs are available here:
+   The kernel modification logs are available here:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.4.290">kernel 5.4.290 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.124">kernel 6.6.124 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.234">kernel 5.10.234 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.12.70">kernel 6.12.70 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.15.178">kernel 5.15.178 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.18.10">kernel 6.18.10 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.128">kernel 6.1.128 changelog</a>
-  <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.76">kernel 6.6.76 changelog</a>
-  <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.12.13">kernel 6.12.13 changelog</a>
-  <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.13.2">kernel 6.13.2 changelog</a>
-  <p>
-   5 desktops are now available in:
-   OPENBOX,
-   XFCE4,
-   MATE,
-   GNOME,
-   KDE6.
-  <p>
-   They are available on the <a href="downloads">download page.</a>
-
- <h2>Fixed bugs</h2>
-  <table width="60%" cellspacing="0">
-   <tr>
-    <td>
-      In most cases, installation from a USB key fails.
-     <p>
-      This situation has worsened with the latest stable kernel 6.9.x
-     <p>
-      Thanks to Ahmed Nabil for reporting this long-standing bug.
-     <p>
-    </td>
-    <td>
-       Fixed
-    </td>
-   </tr>
-
-  </table>
-
- <h2>Upgrade process</h2>
-  <p>
-   Please do as follow:
- </p>
-  <pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
- Now your cards package is uptodate, continue with:
-  <pre class="command_user"><kbd>sudo cards upgrade
-sudo shutdown -y r 0</kbd></pre>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.19">kernel 6.19 changelog</a>
 
  <h2>Thanks</h2>
   <p>
