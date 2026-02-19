@@ -3,7 +3,7 @@
  <h2>The keyboard</h2>
   <ul>
    <li>
-    /etc/sysconfig/console
+    /etc/vconsole
    <li>
     /etc/X11/xorg.xonf.d/20-keyboard.conf
   </ul>
@@ -12,9 +12,9 @@
  <li>
   /sys/class/net/
  <li>
-  /etc/sysconfig/network
+  /etc/systemd/network
  <li>
-  /etc/sysconfif/ifconfig.&lt;name_of_the_network_card&gt;
+  /etc/systemd/network/10-default.network
  <li>
   /etc/wpa_supplicant.&lt;name_of_the_wifi&gt;
  <li>
@@ -40,7 +40,7 @@
  <h2>The clock</h2>
   <ul>
    <li>
-    /etc/sysconfig/clock
+    /etc/adjtime
   </ul>
  <h2>Boot of the machine</h2>
   <ul>
@@ -50,30 +50,40 @@
  <h2>Manual kernel modules loading and loading parameters</h2>
  <ul>
   <li>
-   /etc/sysconfig/profile.d/modules.d/
+   /etc/modules-load.d/
   <li>
-   /etc/sysconfig/modprobe.d/
+   /etc/modprobe.d/
  </ul>
  <h2>Files and folders creation (normaly temporair) at boot time</h2>
  <ul>
   <li>
-   /etc/sysconfig/createfiles
+   /etc/tmpfiles.d
  </ul>
  <h2>Services launch scripts locations</h2>
  <ul>
   <li>
-   /etc/rc.d/init.d/
+   /etc/systemd/
  </ul>
 
 <h2>User's scripts location</h2>
  <ul>
   <li>
-   /home/&lt;nom_de_utilisateur&gt;/.bashrc
+   /home/&lt;username&gt;/.bashrc
   <li>
-   /home/&lt;nom_de_utilisateur&gt;/.bash_profile
+   /home/&lt;username&gt;/.bash_profile
  </ul>
- <h2>LXDM graphical Login</h2>
+ <h2>SDDM graphical Login</h2>
   <ul>
    <li>
-    /etc/lxdm/lxdm.conf
+    /etc/sddm.config
+  </ul>
+ <h2>GDM graphical Login</h2>
+  <ul>
+   <li>
+    /etc/gdm/custom.conf
+  </ul>
+ <h2>lightdm graphical Login</h2>
+  <ul>
+   <li>
+    /etc/lightdm/lightdm.conf
   </ul>

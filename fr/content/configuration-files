@@ -3,7 +3,7 @@
  <h2>Le clavier</h2>
   <ul>
    <li>
-    /etc/sysconfig/console
+    /etc/vconsole
    <li>
     /etc/X11/xorg.xonf.d/00-keyboard.conf
   </ul>
@@ -12,9 +12,9 @@
  <li>
   /sys/class/net/
  <li>
-  /etc/sysconfig/network
+  /etc/systemd/network
  <li>
-  /etc/sysconfif/ifconfig.&lt;nom_de_la_carte_réseau&gt;
+  /etc/systemd/network/10-default.network
  <li>
   /etc/wpa_supplicant.&lt;nom_de_la_carte_wifi&gt;
  <li>
@@ -40,7 +40,7 @@
  <h2>L'horloge</h2>
   <ul>
    <li>
-    /etc/sysconfig/clock
+    /etc/adjtime
   </ul>
  <h2>L'amorçage de la machine</h2>
   <ul>
@@ -50,19 +50,19 @@
  <h2>Chargement manuel de modules du kernel, Parametres de chargement des modules du kernel</h2>
  <ul>
   <li>
-   /etc/sysconfig/profile.d/modules.d/
+   /etc/modules-load.d/
   <li>
-   /etc/sysconfig/modprobe.d/
+   /etc/modprobe.d/
  </ul>
  <h2>Création de fichiers/ dossiers (normalement temporaires) au démarrage</h2>
  <ul>
   <li>
-   /etc/sysconfig/createfiles
+   /etc/tmpfiles.d
  </ul>
  <h2>Emplacement des scripts de lancement des services</h2>
  <ul>
   <li>
-   /etc/rc.d/init.d/
+   /etc/systemd
  </ul>
 
 <h2>Emplacement des scripts des utilisateurs</h2>
@@ -72,8 +72,18 @@
   <li>
    /home/&lt;nom_de_utilisateur&gt;/.bash_profile
  </ul>
- <h2>Login graphique via lxdm</h2>
+ <h2>Login graphique via SDDM</h2>
   <ul>
    <li>
-    /etc/lxdm/lxdm.conf
+    /etc/sddm.config
+  </ul>
+ <h2>Login graphique via GDM</h2>
+  <ul>
+   <li>
+    /etc/gdm/custom.conf
+  </ul>
+ <h2>Login graphique via lightdm</h2>
+  <ul>
+   <li>
+    /etc/lightdm/lightdm.conf
   </ul>
