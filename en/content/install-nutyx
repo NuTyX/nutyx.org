@@ -229,161 +229,6 @@ URL="http://192.168.0.254" \
 CHROOT="acl attr expat" \
 bash install-nutyx</kbd></pre>
 
-  <p>
-   If you want to have your own configuration,
-   it's possible to place your configuration files in the <b>/etc/install-nutyx.conf.d/</b> folder.
-
-   When you run the script, if files are found there, they will be used instead of the default ones.
-  <p>
-       <table width="100%" cellspacing="0">
-        <caption><EM>Recognised configuration files list:</EM></caption>
-       <tr class="sidebar">
-        <th>
-        File name
-        <th>
-       File final path destionation
-       <tr>
-        <td>
-         cards.conf
-        </td>
-        <td>
-         /etc/cards.conf
-        </td>
-       <tr>
-        <td>
-         pkgmk.conf
-        </td>
-        <td>
-         /etc/pkgmk.conf
-        </td>
-       <tr>
-        <td>
-         fstab
-        </td>
-        <td>
-         /etc/fstab
-        </td>
-       <tr>
-        <td>
-         .bashrc
-        </td>
-        <td>
-         /root/.bashrc and /home/&lt;username&gt;/.bashrc
-        </td>
-       <tr>
-        <td>
-         bashrc
-        </td>
-        <td>
-         /etc/bashrc
-        </td>
-       <tr>
-        <td>
-         profile
-        </td>
-        <td>
-         /etc/profile
-        </td>
-       <tr>
-        <td>
-         hosts
-        </td>
-        <td>
-         /etc/hosts
-        </td>
-      <tr>
-        <td>
-         inputrc
-        </td>
-        <td>
-         /etc/inputrc
-        </td>
-      <tr>
-        <td>
-         rc_site
-        </td>
-        <td>
-         /etc/sysconfig/rc_site
-        </td>
-      <tr>
-        <td>
-         .bash_profile
-        </td>
-        <td>
-         /root/.bash_profile and /home/&lt;username&gt;/.bash_profile
-        </td>
-      <tr>
-       <td>
-        .dmrc
-       </td>
-       <td>
-        /etc/skel/.dmrc
-       </td>
-      <tr>
-       <td>
-        shells
-       </td>
-       <td>
-        /etc/shells
-       </td>
-      <tr>
-       <td>
-        dircolors.sh
-       </td>
-       <td>
-        /etc/profile.d/dircolors.sh
-       </td>
-      <tr>
-       <td>
-        extrapaths.sh
-       </td>
-       <td>
-        /etc/profile.d/extrapaths.sh
-       </td>
-      <tr>
-       <td>
-        readline.sh
-       </td>
-       <td>
-        /etc/profile.d/readline.sh
-       </td>
-      <tr>
-       <td>
-        umask.sh
-       </td>
-       <td>
-        /etc/profile.d/umask.sh
-       </td>
-      <tr>
-       <td>
-        modules
-       </td>
-       <td>
-        /etc/sysconfig/modules
-       </td>
-      <tr>
-       <td>
-        createfiles
-       </td>
-       <td>
-        /etc/sysconfig/createfiles
-       </td>
-      <tr>
-       <td>
-        mouse
-       </td>
-       <td>
-        /etc/sysconfig/mouse
-       </td>
-     </table>
-  <p>
-   As a conclusion:
-  <div class="important">
-        <img alt="[Important]" src="../graphics/caution.gif" />
-        Don't forget to remove/check the <i>/etc/install-nutyx.conf</i> file and
-        the contents of the <i>/etc/install-nutyx.d/</i> directory if necessary.
-        Found files will be read and used by the script and allow a more powerful configuration. 
-  </div>
  <h2> Produce a customised ISO</h2>
     <div class="important"><img alt="[Important]" src="../graphics/caution.gif" />
     Producing an ISO is only possible on NuTyX.
@@ -398,7 +243,7 @@ bash install-nutyx</kbd></pre>
    <p>
     Possible ISO names are:
       <p>
-    <i>strict, mini, base, cli, gui, xorg, openbox, jwm, lxde, xfce4, mate, gnome and kde6</i>
+    <i>mini, base, cli, gui, xorg, xfce4, gnome and kde6</i>
    <p>
     It is possible to test the command and thus view all the commands that are affected.
        <pre class="command_user"><kbd>ISO=gnome bash install-nutyx -t</kbd></pre>
@@ -422,8 +267,8 @@ shadow bc less libcap util-linux kmod kbd pam gdbm e2fsprogs libpipeline \
 gettext procps-ng psmisc sudo tzdata iproute2 iana-etc groff man-db \
 cards.man nutyx.man dialog cpio squashfs lsb-release grub eudev sysklogd \
 sysvinit kernel efibootmgr linux-firmware systemd runyx wireless-tools \
-wpa-supplicant gpm gpm.service dosfstools make-ca xdg-user-dirs \
-sound-theme-freedesktop ntp ntp.service flcards gvfs network-manager-applet \
+wpa-supplicant gpm dosfstools make-ca xdg-user-dirs \
+sound-theme-freedesktop nano gvfs network-manager-applet \
 xorg-xinit xorg-xf86-input-synaptics xorg-xf86-input-wacom \
 xorg-xrandr xorg-setxkbmap firefox gparted leafpad scrot vlc gnome epiphany \
 evolution simple-scan gnome-weather gnome-chess
@@ -437,16 +282,12 @@ STRICT       : kernel
 MINI         : dhcpcd
 BASE         : efibootmgr linux-firmware systemd runyx wireless-tools \
 wpa-supplicant
-CLI          : gpm gpm.service dosfstools make-ca xdg-user-dirs \
-sound-theme-freedesktop ntp ntp.service
-GUI          : flcards gvfs network-manager-applet firefox gparted leafpad scrot vlc
+CLI          : gpm gpm dosfstools make-ca xdg-user-dirs \
+sound-theme-freedesktop nano
+GUI          : gvfs network-manager-applet firefox gparted leafpad scrot vlc
 XORG         : xorg-xinit xorg-xf86-input-synaptics xorg-xf86-input-wacom \
 xorg-xrandr xorg-setxkbmap
-OPENBOX      : lxdm openbox openbox-jp-theme
-JWM          : lxdm jwm jwm-miyolinux-theme
-LXDE         : lxdm lxde
-XFCE4        : lxdm xfce4 xfce4-extra
-MATE         : lightdm mate
+XFCE4        : galculator lightdm xfce4 xfce4-extra
 GNOME        : gnome gnome-extra
 KDE6         : kde6
 ISO Filename /mnt/hd/NuTyX_x86_64-26.02.5-GNOME.iso</pre>
@@ -454,7 +295,7 @@ ISO Filename /mnt/hd/NuTyX_x86_64-26.02.5-GNOME.iso</pre>
     As we can see, new variables are now available.
    These can also be redefined at your convenience:
   <p>
-   STRICT, BASE, CLI, GUI, XORG, GNOME, KDE6, OPENBOX, JWM, LXDE, XFCE4, MATE.
+   BASE, CLI, GUI, XORG, GNOME, KDE6, XFCE4.
   <p>
    Each variable specify a set of packages to be installed.
    Each ISO name use a set of thoses variables to build up the specified ISO.
@@ -469,79 +310,53 @@ ISO Filename /mnt/hd/NuTyX_x86_64-26.02.5-GNOME.iso</pre>
       ISO name
      <th>
       Used variable(s)
-    <tr> 
-     <td>
-      STRICT
-     <td>
-      STRICT
     <tr>
      <td>
       MINI
      <td>
-      STRICT + MINI
+      MINI
     <tr>
      <td>
       BASE
      <td>
-      STRICT + BASE
+      MINI + BASE
     <tr>
      <td>
       CLI
      <td>
-      STRICT + BASE + CLI
+      MINI + BASE + CLI
     <tr>
      <td>
       GUI
      <td>
-      STRICT + BASE + CLI + GUI
+      MINI + BASE + CLI + GUI
     <tr>
      <td>
       XORG
      <td>
-      STRICT + BASE + CLI + GUI + XORG
-    <tr>
-     <td>
-      JWM
-     <td>
-      STRICT + BASE + CLI + GUI  + XORG + JWM
-    <tr>
-     <td>
-      OPENBOX
-     <td>
-      STRICT + BASE + CLI + GUI + XORG + OPENBOX
-    <tr>
-     <td>
-      LXDE
-     <td>
-      STRICT + BASE + CLI + GUI + XORG + LXDE
+      MINI + BASE + CLI + GUI + XORG
     <tr>
      <td>
       XFCE4
      <td>
-      STRICT + BASE + CLI + GUI + XORG + XFCE4
-    <tr>
-     <td>
-      MATE
-     <td>
-      STRICT + BASE + CLI + GUI + XORG + MATE
+      MINI + BASE + CLI + GUI + XORG + XFCE4
     <tr>
      <td>
       GNOME
      <td>
-      STRICT + BASE + CLI + GUI + XORG + GNOME
+      MINI + BASE + CLI + GUI + XORG + GNOME
     <tr>
      <td>
       KDE6
      <td>
-      STRICT + BASE + CLI + GUI + XORG + KDE6
-  </table>
+      MINI + BASE + CLI + GUI + XORG + KDE6  </table>
  <h2>A few examples</h2>
   <pre class="command_user"><kbd>sudo ISO=KDE6 install-nutyx</kbd></pre>
   <p>
    install and produce a standard kde6 ISO in the /mnt/hd directory.
 
   <pre class="command_user"><kbd>sudo \
-ISO="lxde" \
+ISO="xfce4" \
 XORG="xorg-xf86-input-synaptics" \
 BASE="linux-firmware wireless-tools wpa-supplicant" \
 GUI="xorg-xrandr deadbeef geany firefox" \
@@ -552,5 +367,5 @@ DEPOT="/media/www" \
 MOUNT="/media/www" \
 install-nutyx</kbd></pre>
    <p>
-    install and produce a customised lxde ISO.
+    install and produce a customised xfce4 ISO.
     The BASE, CLI, GUI, XORG, DEVEL, LFS, MOUNT and DEPOT variables redefined.
