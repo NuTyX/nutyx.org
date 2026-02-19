@@ -1,6 +1,6 @@
 <h1>Downloads</h1>
  <h2>Introduction</h2>
-   The current stable release of NuTyX is named <b>25.04</b>.
+   The current stable release of NuTyX is named <b>26.02</b>.
   <p>
    ISO images are available in "Rolling" releases.
   <p>
@@ -18,8 +18,6 @@
    Onces the ISO installed, make an upgrade of your system to get the locales installed.
    <p>
    Typical installation of NuTyX on a single partition <a class="url" href="install">from scratch on your PC is located here</a>.
-  <p>
-   You can also find a lot of various ISOS <a href="http://linuxtracker.org/index.php?page=torrents&search=nutyx">on linuxtracker website</a>.
   </p>
 <h2>For the new user coming to NuTyX</h2>
  <p>
