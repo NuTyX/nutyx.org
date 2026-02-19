@@ -19,17 +19,13 @@
      <p>
          <img src="graphics/nutyx-man/SelectKeyboard.png">
      <p>
-      Le fichier <b>/etc/sysconfig/console</b> définit la configuration du clavier en mode console cad non graphique.
+      Le fichier <b>/etc/vconsole.conf</b> définit la configuration du clavier en mode console cad non graphique.
       Un exemple de configuration de la console:
      <pre class="output"><kbd>
 FONT="LatGrkCyr-8x16"
-UNICODE="1"
-LOGLEVEL=1
-KEYMAP=fr_CH-latin1.map</kbd></pre>
+KEYMAP=fr_CH-latin1</kbd></pre>
      <p>
       La variable FONT définit la police utilisée.
-      La variable UNICODE spécifie l'usage de l'encodage utf8.
-      LOGLEVEL définit le niveau verbal de l'amorçage de la machine entre 1 et 7.
       KEYMAP définit la configuration du clavier utilisé.
       Toutes les dispositions de clavier sont listées dans le dossier <b>/lib/kbd/keymaps/i386/</b>.
       Toutes les polices disponibles sont listées dans le dossier <b>/lib/kbd/consolefonts/ </b>.
@@ -95,32 +91,11 @@ KEYMAP=fr_CH-latin1.map</kbd></pre>
        <p>
         <img src="graphics/nutyx-man/EnterDomain.png">
        <p>
-       Le fichier <b>/etc/sysconfig/network</b> contient toutes les informations réseau.
-       <pre class="output"><kbd># Hostname of this machine
-HOSTNAME='nutyx'
-
-# Network manager (connman/networkmanager/cli/nothing)
-MANAGER=''
-
-# Wait or not for network
-NETWORKWAIT='no'
-
-# init delay for initialisation of Networkmanager
-LINKDELAY='15'
-
-# init delay to wait after initialisation of Networkmanager
-NETWORKDELAY='0'</kbd></pre>
-         Le script s'occupant du réseau s'adaptera en fonction de l'application installée.
-        <p>
-         Si <b>connman</b> est trouvé, le service connman sera lancé, si <b>networkmanager</b> est trouvé, le service networkmanager sera lancé.
-        <p>
-         Si les 2 applications sont installées, c'est le service networkmanager qui sera lancé.
-        <p>
-         Si aucune des 2 n'est trouvée, ce sera le script en ligne de commande qui sera lancé.
-        <p>
+       Le fichier <b>/etc/systemd/network/10-default.network</b> contient toutes les informations réseau.
+       <p>
          Dans le cas d'utilisation d'une adresse statique,
          il est nécessaire de spécifier la (les) adtresse(s) IP du (des) serveur(s) de noms de domaine (DNS).
-        <p>
+       <p>
          Par exemple, si vous souhaitez utiliser les serveurs de google, mettez ceci dans le fichier <b>/etc/resolv.conf</b>:
        <pre class="output"><kbd>nameserver 8.8.8.8
 nameserver 8.8.4.4
@@ -146,38 +121,30 @@ nameserver 8.8.4.4
      Si le résultat de la commande affiche ce genre d'informations:
      <pre class="command"><kbd>iwconfig</kbd></pre>
      peut retourner:
-     <pre class="output">eth0       no wireless extensions.
+     <pre class="output">eno0       no wireless extensions.
 
-eth1       IEEE 802.11abg 
+eno1       IEEE 802.11abg
            Mode:Managed  Frequency:2.417 GHz  Access Point: C4:3D:C7:9F:D0:CF
            Tx-Power=200 dBm
            Retry  long limit:7   RTS thr:off   Fragment thr:off
            Encryption key:off
            Power Management:off</pre>
    <p>
-    Dans l'exemple ci-dessus, la carte eth1 supporte le wifi,
+    Dans l'exemple ci-dessus, la carte en1 supporte le wifi,
     il suffit donc de produire le fichier de configuration qui sera utilisé pour la connection réseau.
     <b>ATTENTION</b> il est important de respecter le nom du fichier de configuration afin que le script puisse le retrouver:
    <p>
-    Dans cet exemple, le nom de la carte sera <b>eth1</b>, le nom du réseau wifi s'appellera <b>casabianca</b> et la clé d'accès <b>Gg6!-@1234</b>.
+    Dans cet exemple, le nom de la carte sera <b>en1</b>, le nom du réseau wifi s'appellera <b>casabianca</b> et la clé d'accès <b>Gg6!-@1234</b>.
    <p>
     Sur la base de ces infos, produisez le fichier de configuration
-    <pre class="command"><kbd>wpa_passphrase "<b>casabianca</b>" "<b>Gg6!-@1234</b>" &gt; /etc/wpa_supplicant.conf.eth1</kbd></pre>
+    <pre class="command"><kbd>wpa_passphrase "<b>casabianca</b>" "<b>Gg6!-@1234</b>" &gt; /etc/wpa_supplicant.conf.eno1</kbd></pre>
    <p>
     Ajoutez également le fichier de configuration du réseau comme expliqué plus haut.
    <p>
-    Dans cet exemple il s'agit de créer le fichier <b>/etc/sysconfig/ifconfig.eth1</b>.
+    Dans cet exemple il s'agit de créer le fichier <b>/etc/systemd/network/eno1.network</b>.
    <p>
     Une fois terminé, vous pouvez relancer le réseau de votre machine à l'aide de la commande:
-    <pre class="command"><kbd>/etc/rc.d/init.d/network restart</kbd></pre>
-    Veuillez également vérifier la définition de la variable <b>MANAGER</b> qui est définie dans le fichier <b>/etc/sysconfig/network</b>.
-   <p>
-    La gestion du service réseau peut se faire:
-    Soit depuis la ligne de commande (expliqué ci-avant) la valeur de la variable est alors <b>cli</b>.
-    Soit via wicd, mettez <b>wicd</b> comme valeur,
-    soit networkmanager si vous avez installé l'interface graphique 'mate'
-    ou 'kde6', mettez alors <b>networkmanager</b>.
-    </ul>
+    <pre class="command"><kbd>sudo systemctl restart systemd-networkd</kbd></pre>
 
     <li><h3>Nom de la machine</h3></li>
      <p>
@@ -331,7 +298,7 @@ swapon /SWAP</kbd></pre>
 
    <li><h3>Modification/création de fichiers/dossier au démarrage de la machine</h3></li>
     <p>
-     Le fichier <b>/etc/sysconfig/createfiles</b> définit les fichiers / dossiers qui doivent être créés lors de l'amorçage de la machine.
+     Le dossier <b>/etc/tmpfiles.d</b> contient les fichiers qui doivent être créés lors de l'amorçage de la machine.
    </ol>
 
  <h2>GESTION DES PAQUETS BINAIRES DISTANTS (ET INSTALLES)</h2>
@@ -375,7 +342,7 @@ swapon /SWAP</kbd></pre>
     <p>
      Affiche la liste des paquets pouvant être mis à jour.
      <pre class="command"><kbd>cards diff -i</kbd></pre>
-    </ol>
+  </ol>
 
  <h2>GESTION DES PAQUETS BINAIRES EN LOCAL (mode utilisateur avancé)</h2>
   <p>
@@ -476,8 +443,7 @@ UPGRADE         ^etc/X11/XF86Config$    NO</pre>
       Les sous-paquets peuvent donc être changé en fonction de cette variable.
      <p>
       Exemple: <b>PKGMK_GROUPS=(devel man)</b> produira un paquet de base (qui comprendra donc la <b>doc</b> et le <b>service</b>, un paquet.man et un paquet.devel.
-      </ol>
-
+   </ol>
  <h2>SERVICES</h2>
   <p>
    Les différents services sont disponibles sous le nom &lt;nomduservice&gt;.service.
@@ -518,11 +484,10 @@ UPGRADE         ^etc/X11/XF86Config$    NO</pre>
  <h2>FICHIERS</h2>
       <pre class="output"><b>/etc/cards.conf,
 /etc/pkgmk.conf,
-/etc/sysconfig/console,
-/etc/sysconfig/clock,
-/etc/sysconfig/network,
+/etc/vconsole,
+/etc/adjtime,
+/etc/systemd/network/10-default.network,
 /etc/wpa_supplicant.conf.*,
-/etc/sysconfig/ifconfig.*,
 /boot/grub/grub.cfg,
 /etc/fstab,
 /etc/profile.d/i18n.sh,

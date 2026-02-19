@@ -24,16 +24,14 @@
         <pre class="command_user">sudo setup-nutyx -ck</kbd></pre>
        <p>
         <img src="graphics/nutyx-man/SelectKeyboard.png">
-        The file <b>/etc/sysconfig/console</b> defines the configuration of the keyboard when you are not in graphical mode.
+        The file <b>/etc/vconsole.conf</b> defines the configuration of the keyboard when you are not in graphical mode.
        <p>
         Here is an example of a console configuration:
-        <pre class="output"><kbd>FONT="LatGrkCyr-8x16"
-UNICODE="1"
-LOGLEVEL=1
-KEYMAP=fr_CH-latin1.map</kbd></pre>
+     <pre class="output"><kbd>
+FONT="LatGrkCyr-8x16"
+KEYMAP=fr_CH-latin1</kbd></pre>
+       <p>
         The FONT variable defines the font that will be used.
-        The UNICODE variable specifies the use of utf8 coding.
-        LOGLEVEL defines the level of verbosity during the booting process (1 for least verbose, 7 for most).
         KEYMAP defines the keyboard mapping.
         All available keyboard maps are listed in the folder <b>/lib/kbd/keymaps/i386/</b>.
         Available fonts are listed in the folder <b>/lib/kbd/consolefonts/</b>.
@@ -102,23 +100,11 @@ KEYMAP=fr_CH-latin1.map</kbd></pre>
        <p>
         <img src="graphics/nutyx-man/EnterDomain.png">
        <p>
-        The file <b>/etc/sysconfig/network</b> contains all the network information.
-        <pre class="output"><kbd>HOSTNAME='nutyx'        # Hostname of this machine
-MANAGER=''              # Network manager (wicd/networkmanager/cli/nothing)
-NETWORKWAIT='no'        # Wait or not for network
-LINKDELAY='15'          # init delay for initialisation of Networkmanager
-NETWORKDELAY='0'        # init delay to wait after initialisation of Networkmanager</kbd></pre>
+        The file <b>/etc/systemd/network/10-default.network</b> contains all the network information.
 
-          The script taking care of the network will adapt by checking which application is installed.
-         <p>
-          If <b>wicd</b> is found, the wicd service will be started; if <b>networkmanager</b> is found, the networkmanager service will be started.
-         <p>
-          If both applications are installed, <b>networkmanager</b> is started preferentially.
-         <p>
-          If neither is found, the cli script will be started.
-         <p>
-          For a static address configuration, it is necessary to specify the address of your DNS servers manually.
-          For example, if you wish to use the google DNS servers, put this in the file <b>/etc/resolv.conf</b>:
+      <p>
+        For a static address configuration, it is necessary to specify the address of your DNS servers manually.
+        For example, if you wish to use the google DNS servers, put this in the file <b>/etc/resolv.conf</b>:
 
 <pre class="output"><kbd>nameserver 8.8.8.8
 nameserver 8.8.4.4
@@ -142,9 +128,9 @@ EOF
    <p>
     To know the name of the network card, use the command (as root): <pre class="command"><kbd>iwconfig</kbd></pre> 
     If the result is something like:
-    <pre class="output">eth0       no wireless extensions.
+    <pre class="output">eno0       no wireless extensions.
 
-eth1       IEEE 802.11abg 
+eno1       IEEE 802.11abg
            Mode:Managed  Frequency:2.417 GHz  Access Point: C4:3D:C7:9F:D0:CF
            Tx-Power=200 dBm
            Retry  long limit:7   RTS thr:off   Fragment thr:off
@@ -164,16 +150,10 @@ eth1       IEEE 802.11abg
     <p>
      Then we add the configuration file as explained in the manual under the configuration section.
     <p>
-     In this example, we have to create the file <b>/etc/sysconfig/ifconfig.eth1</b>.
+     In this example, we have to create the file <b>/etc/systemd/network/eno1.network</b>.
     <p>
      Once this is done, you can restart the network by restarting the service:
-<pre class="command"><kbd>/etc/rc.d/init.d/network restart</kbd></pre>
-     Make sure you adjust the definition of the variable <b>MANAGER</b> as defined in the file <b>/etc/sysconfig/network</b>.
-    <p>
-     The management of the network service can be done through the command line.
-     The value of the variable is then <b>cli</b>.
-     If you want to use wicd, put <b>wicd</b> as a value;
-     if networkmanager (which comes with the 'mate' graphical interface), then put <b>networkmanager</b>.
+<pre class="command"><kbd>sudo systemctl restart systemd-networkd</kbd></pre>
 
       <li><h3>Setting the name of your computer</h3></li>
        <p>
@@ -328,12 +308,12 @@ swapon /SWAP</kbd></pre>
        <p>
         File syntax example, the file <b>/etc/modprobe.d/ati.conf</b> contains:
        <pre class="output">blacklist radeon</pre>
-      <li><h3>Modify/Create folders/files at booting</h3></li></ul>
+      <li><h3>Modify/Create folders/files at booting</h3></
       <p>
-       The file <b>/etc/sysconfig/createfiles</b> specifies files and/or folders that need to be created or modified automatically when the machine starts.
+       The folder <b>/etc/tmpfiles.d</b> contains files that need to be created or modified automatically when the machine starts.
       <p>
        It is unlikely that you will need to adjust these.
-     
+   </ol>
  <h2>BINARY PACKAGE MANAGEMENT (REMOTE)</h2>
   <ol><li><h3>Configuration of cards</h3></li>
    <p>
@@ -485,11 +465,10 @@ Here are listed the configuration files mentioned in this manual. You may like t
    <p>
     <pre class="output"><b>/etc/cards.conf,
 /etc/pkgmk.conf,
-/etc/sysconfig/console,
-/etc/sysconfig/clock,
-/etc/sysconfig/network,
+/etc/vconsole,
+/etc/adjtime,
+/etc/systemd/network/10-default.network,
 /etc/wpa_supplicant.conf.*,
-/etc/sysconfig/ifconfig.*,
 /boot/grub/grub.cfg,
 /etc/fstab,
 /etc/profile.d/i18n.sh,
