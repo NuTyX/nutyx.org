@@ -100,10 +100,10 @@
      <br><br>
       Most of available packages are split into such groups.
      <br><br>
-      Current groups include: <a href="./?branch=fixed&arch=x86_64&searchpkg=devel">devel</a>,
-      <a href="./?branch=fixed&arch=x86_64&searchpkg=man">man</a>,
-      <a href="./?branch=fixed&arch=x86_64&searchpkg=doc">doc</a>,
-      lib and <a href="./?branch=fixed&arch=x86_64&searchpkg=service">service</a>
+      Current groups include: <a href="./?branch=systemd&arch=x86_64&searchpkg=devel">devel</a>,
+      <a href="./?branch=systemd&arch=x86_64&searchpkg=man">man</a>,
+      <a href="./?branch=systemdd&arch=x86_64&searchpkg=doc">doc</a>,
+      lib and <a href="./?branch=systemd&arch=x86_64&searchpkg=service">service</a>
       and each available locale <b>fr, de, da, it, pt, tr, ru, sv, nn, es, nl, fi, etc</b>.
 
 
@@ -116,17 +116,15 @@
        <li>
         printer
        <li>
-        enlightenment
-       <li>
-        lxde
-       <li>
         xfce4
        <li>
-        mate
+        gnome
        <li>
         kde6
        <li>
-        xorg 
+        xorg
+       <li>
+        etc...
       </ul>
       <br><br>
        Most of the case a set of package is a graphical interface.
@@ -149,7 +147,7 @@
        Even if it's not realy usefull, it's possible to install a collection.
        For example the command:
        <pre class="command_user"><kbd>get gui</kbd></pre>
-       will install the complete <a href="http://www.nutyx.org/en/?type=col&branch=rolling&arch=x86_64&searchpkg=gui">gui collection</a> and all the dependencies.
+       will install the complete <a href="http://www.nutyx.org/en/?type=col&branch=systemd&arch=x86_64&searchpkg=gui">gui collection</a> and all the dependencies.
 
     <a name='ID030'></a>
     <h2>A category of packages</h2>
@@ -272,18 +270,18 @@ make DESTDIR=$PKG install
     <h2>Branchs</h2>
      <ul>
       <li>
-       The "testing" branch
+       The "testingd" branch
        <br>
-        This is the testing version of NuTyX.
+        This is the testingd version of NuTyX.
        <br>
         Packages are frequently updated.
        <br><br>
       <li>
-        The "rolling" branch
+        The "systemd" branch
        <br>
         The update process is done on a week based.
         A larger update takes place between 1 and 3 months maximum.
-        Updates comes from the "testing" branch and are normally reliable.
+        Updates comes from the "testingd" branch and are normally reliable.
      </ul>
 
     <a name='ID100'></a>

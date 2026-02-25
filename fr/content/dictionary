@@ -53,9 +53,9 @@
      <br>
       La plupart des paquets sont répartis dans ces groupes.
      <br>
-      Les groupes actuels sont: <a href="./?branch=rolling&arch=x86_64&searchpkg=devel">devel</a>, <a href="./?branch=rolling&arch=x86_64&searchpkg=man">man</a>,
-      <a href="./?branch=testing&arch=x86_64&searchpkg=doc">doc</a>, lib et
-      <a href="./?branch=testing&arch=x86_64&searchpkg=service">service</a> ainsi que chaque locale disponible
+      Les groupes actuels sont: <a href="./?branch=systemd&arch=x86_64&searchpkg=devel">devel</a>, <a href="./?branch=systemd&arch=x86_64&searchpkg=man">man</a>,
+      <a href="./?branch=systemd&arch=x86_64&searchpkg=doc">doc</a>, lib et
+      <a href="./?branch=systemd&arch=x86_64&searchpkg=service">service</a> ainsi que chaque locale disponible
      <br>
       fr, de, da, it, pt, tr, ru, sv, nn, es, nl, fi, etc</b>
 
@@ -68,15 +68,11 @@
       <li>
        printer
       <li>
-       enlightenment
-      <li>
        kde6
       <li>
-       lxde
-      <li>
-       mate
-      <li>
        xfce4
+      <li>
+       gnome
       <li>
        etc...
      </ul>
@@ -101,7 +97,7 @@
       Même si cela n'a pas grand intérêt, il est possible d'installer une collection.
       Par exemple, la commande:
       <pre class="command_user"><kbd>get gui</kbd></pre>
-      installera  <a href="http://www.nutyx.org/fr/?type=col&branch=rolling&arch=x86_64&searchpkg=gui">tous les paquets de la collection gui</a> ainsi que leurs dépendances respectives.
+      installera  <a href="http://www.nutyx.org/fr/?type=col&branch=systemd&arch=x86_64&searchpkg=gui">tous les paquets de la collection gui</a> ainsi que leurs dépendances respectives.
 
     <a name='ID030'></a>
     <h2>Une catégorie de paquets</h2>
@@ -206,15 +202,15 @@ make DESTDIR=$PKG install
     <h2>Les branches</h2>
      <ul>
       <li>
-       La branche "testing"
+       La branche "testingd"
        <br>
         C'est la version de tests de NuTyX. Tous les paquets y sont mis à jour aussi rapidement que possible.
       <li>
-       La branche "rolling"
+       La branche "systemd"
        <br>
         Les mise à jour se font de manière plus espacées cad plus ou moins chaque semaine pour les paquets finaux.
         Une mise à jour plus importante a lieu entre 1 et 3 mois maximum. 
-        Les mises à jour proviennent de la branche "testing" et sont normalement fiables.
+        Les mises à jour proviennent de la branche "testingd" et sont normalement fiables.
      </ul>
 
     <a name='ID100'></a>
