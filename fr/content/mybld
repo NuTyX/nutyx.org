@@ -152,7 +152,7 @@ Type exit when finish.
       <td>
        nftables Pkgfile
       <td>
-       /mybld/rolling/cli-extra/nftables/Pkgfile
+       /mybld/systemd/cli-extra/nftables/Pkgfile
      <tr class="odd">
       <td>
        Sources files
@@ -225,7 +225,7 @@ install -Dm644 ../nftables.conf "$PKG/etc/nftables/nftables.conf"</kbd></pre>
  
   <h3>Empaqueter</h3>
   Lorsque toutes les commandes du Pkgfile ont été tapé, on peut alors se rendre dans le dossier du Pkgfile et utiliser la commande pkgmk -po pour finir le paquet:
-  <pre class="command"><kbd>cd /mybld/rolling/cli-extra/nftables/
+  <pre class="command"><kbd>cd /mybld/systemd/cli-extra/nftables/
 pkgmk -po</kbd></pre>
  <h2>Aide</h2>
   <p>

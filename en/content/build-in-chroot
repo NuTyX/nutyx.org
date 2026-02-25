@@ -17,7 +17,7 @@
 
  <h2>Installation of your chroot</h2>
   <p>
-    <pre class="command"><kbd>VERSION="rolling" install-nutyx</kbd></pre>
+    <pre class="command"><kbd>VERSION="systemd" install-nutyx</kbd></pre>
 
  <h2>Enter the chroot</h2>
   <p>
@@ -107,10 +107,10 @@ EOF</kbd></pre>
     <pre class="command"><kbd>mkdir -p /usr/ports/perso</kbd></pre>
     <p>
      We can now synchronise all the binaries:
-    <h3>The rolling branch</h3>
+    <h3>The systemd branch</h3>
     <pre class="command"><kbd>for i in base cli gui
 do
-  rsync -avz --delete-after rsync://downloads.nutyx.org/nutyx/`uname -m`/rolling/$i/ \
+  rsync -avz --delete-after rsync://downloads.nutyx.org/nutyx/$(uname -m)/systemd/$i/ \
   /usr/ports/$i/
 done</kbd></pre>
     <p>

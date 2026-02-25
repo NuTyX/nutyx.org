@@ -68,7 +68,7 @@
         <td>
          VERSION
         <td>
-         Détermine la version à installer, rolling ou testing.
+         Détermine la version à installer, systemd ou testingd.
         <td>
          Le nom de la version n'est pas vérifiée par le script.
          <br>
@@ -114,7 +114,7 @@
      <pre class="output">URL="http://localhost"
 DEPOT="/DEPOT"
 LFS="/mnt/lfs"
-VERSION="rolling"</pre>
+VERSION="systemd"</pre>
 
   <h2>Utilisation typique du script: Installer NuTyX depuis l'iso 'LIVE'</h2>
        <ul>
@@ -219,9 +219,9 @@ umount -Rv /mnt/hd
        </ul>
       
        <p>
-        Par défaut, ce sera la branche rolling qui sera choisie à l'installation, il est possible de spécifier la branche que l'on souhaite installer.
+        Par défaut, ce sera la branche systemd qui sera choisie à l'installation, il est possible de spécifier la branche que l'on souhaite installer.
         Pour installer une version spécifique de NuTyX, on utilise la variable <i><b>VERSION</b></i>. A condition que la version existe sur le miroir de dépot:
-        <pre class="command"><kbd>VERSION="testing" bash install-nutyx</kbd></pre>
+        <pre class="command"><kbd>VERSION="testingd" bash install-nutyx</kbd></pre>
        <p>
         Par défaut, ce sera l'URL par défaut qui sera utilisée lors du téléchargement et la configuration de la NuTyX.
         Pour spécifier une URL personalisée, on utilise la variable <i><b>URL</b></i>
@@ -233,7 +233,7 @@ umount -Rv /mnt/hd
        <p>
         On peut spécifier plusieurs variables:
         <pre class="command"><kbd>LFS="/MINI-ISO" \
-VERSION="rolling" \
+VERSION="systemd" \
 URL="http://192.168.0.254" \
 CHROOT="acl attr expat" \
 bash install-nutyx</kbd></pre>
@@ -262,12 +262,12 @@ List of variables:
 
 LFS          : /mnt/hd
 URL          : http://downloads.nutyx.org
-VERSION      : rolling
+VERSION      : systemd
 KERNEL       :
 DEPOT        : /var/lib/pkg/depot
 MOUNT        :
 SHELL        : /bin/bash
-DEPOT_BASE   : http://downloads.nutyx.org/x86_64/rolling/base
+DEPOT_BASE   : http://downloads.nutyx.org/x86_64/systemd/base
 CHROOT       : nutyx busybox curl gcc bzip2 glibc zlib lz4 xz zstd \
 libarchive openssl cards
 CORE         : acl attr bash coreutils readline expat ncurses lzo gmp \

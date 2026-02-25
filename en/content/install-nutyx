@@ -62,7 +62,7 @@
         <td>
          VERSION
         <td>
-         The version to be installed (testing or rolling).
+         The version to be installed (testingd or systemd).
         <td>
          The version is not checked by the script.
          <br>
@@ -105,7 +105,7 @@
      <pre class="output">URL="http://localhost"
 DEPOT="/DEPOT"
 LFS="/mnt/lfs"
-VERSION="rolling"</pre>
+VERSION="systemd"</pre>
 
  <h2>Typical example of the script: Install a NuTyX from the 'LIVE' iso</h2>  
        <ul>
@@ -209,10 +209,10 @@ umount -Rv /mnt/hd
          Remove the bootable media and restart the machine.
        </ul>
        <p>
-        By default, it will be the rolling branch of the NuTyX installed; it's possible to specify another branch.
+        By default, it will be the systemd branch of the NuTyX installed; it's possible to specify another branch.
         Specify the name of the branch via the <i><b>VERSION</b></i> variable.
         It should exist on the depot server.
-        <pre class="command"><kbd>VERSION="testing" bash install-nutyx</kbd></pre>
+        <pre class="command"><kbd>VERSION="testingd" bash install-nutyx</kbd></pre>
        <p>
         The default URL will be used for downloading and configuration of NuTyX.
         To instead specify another URL, use the  <i><b>URL</b></i> variable.
@@ -224,7 +224,7 @@ umount -Rv /mnt/hd
        <p>
         You can combine several variables:
         <pre class="command"><kbd>LFS="/MINI-ISO" \
-VERSION="rolling" \
+VERSION="systemd" \
 URL="http://192.168.0.254" \
 CHROOT="acl attr expat" \
 bash install-nutyx</kbd></pre>
@@ -253,12 +253,12 @@ List of variables:
 
 LFS          : /mnt/hd
 URL          : http://downloads.nutyx.org
-VERSION      : rolling
+VERSION      : systemd
 KERNEL       :
 DEPOT        : /var/lib/pkg/depot
 MOUNT        :
 SHELL        : /bin/bash
-DEPOT_BASE   : http://downloads.nutyx.org/x86_64/rolling/base
+DEPOT_BASE   : http://downloads.nutyx.org/x86_64/systemd/base
 CHROOT       : nutyx busybox curl gcc bzip2 glibc zlib lz4 xz zstd \
 libarchive openssl cards
 CORE         : acl attr bash coreutils readline expat ncurses lzo gmp \

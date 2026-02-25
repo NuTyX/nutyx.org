@@ -17,7 +17,7 @@
 
  <h2>Installation de la chroot</h2>
   <p>
-   <pre class="command"><kbd>VERSION="rolling" install-nutyx</kbd></pre>
+   <pre class="command"><kbd>VERSION="systemd" install-nutyx</kbd></pre>
 
  <h2>Entrer dans la chroot</h2>
   <p>
@@ -108,7 +108,7 @@ EOF</kbd></pre>
      On peut maintenant synchroniser l'ensemble des binaires:
      <pre class="command"><kbd>for i in base cli gui
 do
-  rsync -avz --delete-after rsync://downloads.nutyx.org/nutyx/`uname -m`/rolling/$i/ \
+  rsync -avz --delete-after rsync://downloads.nutyx.org/nutyx/$(uname -m)/systemd/$i/ \
   /usr/ports/$i/
 done</kbd></pre>
     <p>
