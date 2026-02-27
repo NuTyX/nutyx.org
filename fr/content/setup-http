@@ -34,7 +34,7 @@ EOF</kbd></pre>
  <h2>Lancement du service</h2>
   <p>
    On active le service http via le terminal toujours en root:
-   <pre class="command"><kbd>/etc/rc.d/init.d/httpd start</kbd></pre>
+   <pre class="command"><kbd>systemctl start httpd</kbd></pre>
    <pre class="output">  *   Starting Apache HTTP daemon... [  OK  ]</pre>
   <p>
    Vous pouvez vérifier le bon fonctionnement de votre serveur http, en allant à l'adresse: <a href=http://localhost/>http://localhost/</a> avec votre navigateur favori.

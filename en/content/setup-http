@@ -34,7 +34,7 @@ EOF</kbd></pre>
  <h2>Service starting</h2>
   <p>
    Activate the service, still as root:
-   <pre class="command"><kbd>/etc/rc.d/init.d/httpd start</kbd></pre>
+   <pre class="command"><kbd>systemctl start httpd</kbd></pre>
    <pre class="output">  *   Starting Apache HTTP daemon... [  OK  ]</pre>
   <p>
    You can check the result of your work by going to the URL address: <a href=http://localhost/>http://localhost/</a> with your favorite browser.
