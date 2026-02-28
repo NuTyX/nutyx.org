@@ -41,8 +41,6 @@
       XFCE4
      <li>
       KDE6
-     <li>
-      ENLIGHTENMENT
    </ul>
   <h2>La gestion des collections par cards</h2>
    De par leur conception, chaque collection possède son propre fichier contenant les meta-données.
@@ -131,4 +129,4 @@
  </ul>
    
   <h2>Et maintenant ?</h2>
-   Les collections n'ont désormais plus de secrets, il est temps de se lancer <a href="mybld">dans la compilation dans un environnement isolé</a>.
+   Les collections n'ont désormais plus de secrets, il est temps de se lancer <a href="build-package">dans la création de votre premier paquet</a>.

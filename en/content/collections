@@ -41,8 +41,6 @@
       XFCE4
      <li>
       KDE6
-     <li>
-       ENLIGHTENMENT
     </ul>
   <h2>Collections management via cards</h2>
    Because of their concept, each collection contains it's own meta-data files.
@@ -129,4 +127,4 @@
  </ul>
    
   <h2>And now ?</h2>
-   Collections have no more secrets for you. Now is the time to try to <a href="mybld">compile in an isolated chroot</a>.
+   Collections have no more secrets for you. Now is time to try to <a href="build-package">create your first package</a>.
