@@ -1,16 +1,16 @@
-<h1>How to build a first package</h1>
+<h1>How to create a first package</h1>
 
  <a name='#ID010'></a>
- <h2>Why should you contribute?</h2>
+ <h2>Why should create your own packages?</h2>
   <div class="introduction">
-   Today NuTyX has about <a href="packages" title="Read in another windows" class="external" onclick="window.open(this.href); return false;">1,700 applications</a> available in binary form.
+   Today NuTyX has about <a href="packages" title="Read in another windows" class="external" onclick="window.open(this.href); return false;">2000 applications</a> available in binary form.
    In one sense, that's a lot.
    But it really isn't when you consider that new programs are released on the net every day, many under open source licences.
   </div>
   <p>
    It's clear that you will never see all these programs ready for installation on NuTyX.
    Just using the <a href="https://github.com/">github</a> web site,
-   we can find more than 52,000,000 repositories for all platforms. 
+   we can find billions of repositories for all platforms. 
   <p>
    If you find the application of your dreams,
    you will have to find all the dependencies,
@@ -26,7 +26,7 @@
    <li>
     Download the source code of the application.
    <li>
-    Check the MD5SUM (strongly recommended but not always possible).
+    Check the signature (strongly recommended but not always possible).
    <li>
     Extract sources into a working directory.
    <li>
@@ -45,7 +45,7 @@ make install</pre>
   <p>
    That's it! Your new program is built and installed on your NuTyX system.
   <p>
-   That's one way to do it... but as you can see, there are a few disadvantages:
+   That's one way to do it... but as you will see, there are a few disadvantages:
   <ul>
    <li>
     You do not know what files have been installed.
@@ -334,8 +334,8 @@ build() {
    By default, all the collections are under a folder you choose.
  <h3>The recipe</h3>
   <p>
-   We create first the folder: the "perso" collection and the folder of the package.
-  <pre class="command_user"><kbd>sudo mkdir -p /usr/ports/perso/nano</kbd></pre>
+   We create first the folder of the package.
+  <pre class="command_user"><kbd>sudo mkdir -p nano</kbd></pre>
   <pre class="command"><kbd>echo '
 description="Text Editor"
 maintainer="Nano team"
@@ -360,20 +360,13 @@ cd $name-$version
 make
 make DESTDIR=$PKG install
 rm $PKG/usr/share/info/dir
-}' &gt; /usr/ports/perso/nano/Pkgfile</kbd></pre>     
+}' &gt; nano/Pkgfile</kbd></pre>     
 
- <h3>Install the development packages</h3>
-  <pre class="command_user"><kbd>get cards.devel</kbd></pre>
+  <p>
+   Congratulations, you create your first package.
 
- <h3>Compile the package</h3>
-  <pre class="command_user"><kbd>cd /usr/ports/perso/nano
-sudo pkgmk -d</kbd></pre>
-
- <h3>Install the package</h3>
-  <pre class="command_user"><kbd>sudo pkgadd nano1*</kbd></pre>
-
- <h3>The configuration files</h3>
-  <h4>The /etc/cards.conf file</h4>
+ <h2>The configuration files</h2>
+  <h3>The /etc/cards.conf file</h3>
    <p>
     This file is always present on a NuTyX installation.</p>
    <p>
@@ -381,24 +374,25 @@ sudo pkgmk -d</kbd></pre>
    <p>
     The <b>/etc/cards.conf</b> file will reflect the way you use NuTyX. 
    <p>
-    All the <a href="dictionary#ID010">collections</a> that you want to use in your NuTyX can be specified in two ways:
+    All the <a href="dictionary#ID010">collections</a> that you want to use in your NuTyX can be specified in 3 ways:
      <ol>
       <li>
-       configuration example of <b>cli</b> collection in  binaries from a remote server
-       <pre class="output">dir /var/lib/pkg/depot/cli|http://downloads.nutyx.org</pre>
+       configuration example of <b>cli</b> collection in  binaries from a remote server.
+       This form is depreciate and won't be supported in the future.
+       <pre class="output">dir /var/lib/pkg/depot/cli|https://downloads.nutyx.org</pre>
       <li>
-       configuration example of <b>cli</b> in local ports
-       <pre class="output">dir /usr/ports/cli</pre>
+       configuration example of <b>cli</b> in local collection
+       <pre class="output">dir /home/thierry/www/x86_64/systemd/cli</pre>
+      <li>
+       another example of <b>gui</b> local collection with cards 3.x
+       <pre class="output">collection gui
+depot  /home/thierry/www/x86_64/systemd</pre>
      </ol>
-    <p>
-     This file is also responsible for the list of packages you want to keep when you execute the command:
-     <pre class="command"><kbd>cards base -r</kbd></pre>
-     And finally, it specifies which location should be installed.
     <p>
      You can find more information by reading the cards.conf manual
      <pre class="command"><kbd>man cards.conf</kbd></pre>     
 
-   <h4>The /etc/pkgmk.conf file</h4>
+   <h3>The /etc/pkgmk.conf file</h3>
     <p>
      This file is used when compiling news ports.
      It specifies all the variables used by the <b>pkgmk</b> command.
@@ -406,7 +400,7 @@ sudo pkgmk -d</kbd></pre>
      Please take the time to read the main page of pkgmk.conf
      <pre class="command"><kbd>man pkgmk.conf</kbd></pre>
 
-      <h5>Example of /etc/pkgmk.conf file</h5>
+    <h4>Example of /etc/pkgmk.conf file</h4>
 <pre class="output">export CFLAGS="-O2 -pipe"
 export CXXFLAGS="${CFLAGS}"
 
@@ -440,6 +434,6 @@ esac
 # PKGMK_IGNORE_COLLECTION="yes"
 # PKGMK_IGNORE_RUNTIMEDEPS="yes"</pre>
 
- <h2>Conclusion</h2>
+ <h2>And now ?</h2>
   <p>
-   We are now ready to build our packages. Lets see now what's a <a href="collections">collection.</a>
+   We are now ready to build our packages. It's time now to try to <a href="mybld">compile your own NuTyX packages</a>... finally <img src="../graphics/smiley-wink.gif" alt="Wink" title="Wink" />.

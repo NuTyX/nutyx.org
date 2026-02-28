@@ -1,12 +1,12 @@
 <h1>Comment construire un premier paquet ?</h1>
  <a name='ID010'></a>
- <h2>Pourquoi vouloir construire un paquet ?</h2>
+ <h2>Introduction</h2>
  <p>
-  NuTyX dispose actuellement de quelques <a href="packages" title="Lire dans une autre fenêtre" class="external" onclick="window.open(this.href); return false;">1700 applications</a> disponibles en binaires.
+  NuTyX dispose actuellement de quelques <a href="packages" title="Lire dans une autre fenêtre" class="external" onclick="window.open(this.href); return false;">2000 applications</a> disponibles en binaires.
   C'est à la fois beaucoup et pas beaucoup en effet tous les jours ou presque sortent de nouvelles applications sous licence libre (ou pas)
  <p>
   Vous l'avez compris, vous ne trouverez jamais TOUTES les applications disponibles sur le net pr&ecirc;tes &agrave; &ecirc;tre install&eacute;es sur NuTyX.
-  Rien que sur le site de <a href="http://sourceforge.net/">sourceforge.net</a>,  on peut y trouver plus de 5000 applications toutes plateformes confondues.
+  Rien que sur le site de <a href="https://github.com">github.com</a>,  on peut y trouver un nombre incalculable d' applications toutes plateformes confondues.
   Si vous avez trouvez l'application de vos rêves, il faudra  par un moyen ou un autre la compiler, l'installer et la faire fonctionner dans NuTyX.
   Pour cela nous allons vous demander de contribuer un petit peu. C'est vous qui allez construire le <a href="dictionary#ID005">paquet</a>... Si vous le voulez bien.
  <p>
@@ -17,7 +17,7 @@
    <li>
     Télécharger les sources de l'application.
    <li>
-    Vérifier la somme MD5 (vivement recommendé mais hélas pas toujours possible).
+    Vérifier la signature de contrôle (vivement recommendé mais hélas pas toujours possible).
    <li>
     Extraire les sources dans un dossier de travail.
    <li>
@@ -35,7 +35,7 @@ make install</pre>
    <p>
     Et voil&agrave; votre nouvelle application est compil&eacute;e et disponible dans NuTyX.
    <p>
-    C'est une façon de faire, mais comme vous pouvez le constater, elle n'est pas sans inconvénients:
+    C'est une façon de faire, mais comme vous allez le constater, elle n'est pas sans inconvénients:
    <ul>
     <li>
      Aucun moyen de retrouver les fichiers installés.
@@ -54,9 +54,7 @@ make install</pre>
    <p>
     NuTyX dispose d'outils tr&egrave;s faciles d'emploi qui vous faciliteront grandement la tâche et surtout qui vous permetteront
     de maintenir et int&eacute;grer la nouvelle application fra&icirc;chement compil&eacute;e.
-   <p>
-    Je vous invite aussi à aller lire <a href="faq#4">la FAQ</a> pour prendre connaissance des modes de compilation sous NuTyX.
- <a name='ID020'></a>
+
  <h2>Quelles sont les connaissances nécessaires pour construire un paquet ?</h2>
   <h3>Introduction</h3>
     <p>
@@ -287,7 +285,7 @@ make DESTDIR=$PKG install
     On y indique les dépendances nécéssaires séparées par un espace.<img src="../graphics/smiley-laughing.gif" alt="Laughing" title="Laughing" />.    
 
  <a name='ID050'></a>
- <h2>Construire votre premier paquet</h2>
+ <h2>Créer votre premier paquet</h2>
 
    <div class="important"><img alt="[Important]" src="../graphics/caution.gif" />
       Pour ce paquet, on n'utilisera pas d'environnement isolé aussi appelé <a href="dictionary#ID100">chroot</a>.
@@ -325,8 +323,8 @@ make DESTDIR=$PKG install
 
   <h3>La recette</h3>
    <p>
-   On crée les répertoires nécessaires: la collection "perso" et le dossier du paquet.
-<pre class="command_user"><kbd>sudo mkdir -p /usr/ports/perso/nano</kbd></pre>
+   On crée le dossier du paquet.
+<pre class="command_user"><kbd>sudo mkdir -p nano</kbd></pre>
   <pre class="command"><kbd>echo '
 description="Command line Text Editor"
 maintainer="Nano team"
@@ -351,20 +349,13 @@ cd $name-$version
 make
 make DESTDIR=$PKG install
 rm $PKG/usr/share/info/dir
-}' &gt; /usr/ports/perso/nano/Pkgfile</kbd></pre>
+}' &gt; nano/Pkgfile</kbd></pre>
 
-  <h3>Installation des paquets de développement</h3>
-   <pre class="command_user"><kbd>get cards.devel</kbd></pre>
+  <p>
+   Félicitations, vous venez de créer votre premier paquet.
 
-  <h3>Compilation du paquet</h3>
-   <pre class="command_user"><kbd>cd /usr/ports/perso/nano
-sudo pkgmk -d</kbd></pre>
-
-  <h3>Installation du paquet</h3>
-   <pre class="command_user"><kbd>sudo pkgadd nano1*</kbd></pre>
-
-  <h3>Les différents fichiers de configuration</h3>
-   <h4>Le fichier /etc/cards.conf</h4>
+ <h2>Les différents fichiers de configuration</h2>
+  <h3>Le fichier /etc/cards.conf</h3>
     <p>
      Ce fichier est toujours présent dans une installation NuTyX.
     <p>
@@ -372,32 +363,33 @@ sudo pkgmk -d</kbd></pre>
     <p>
      C'est le fichier <b>/etc/cards.conf</b> qui reflètera votre façon d'utiliser NuTyX.
     <p>
-     Toutes les <a href="dictionary#ID010">collections</a> que vous souhaitez utiliser dans votre NuTyX peuvent y être spécifiées sous 2 formes possibles:
+     Toutes les <a href="dictionary#ID010">collections</a> que vous souhaitez utiliser dans votre NuTyX peuvent y être spécifiées sous 3 formes possibles:
      <ol>
       <li>
-        exemple de configuration de la collection <b>cli</b> en binaires depuis un serveur de dépot distant
-        <pre class="output">dir /var/lib/pkg/depot/cli|http://downloads.nutyx.org</pre>
+        exemple de configuration de la collection <b>cli</b> en binaires depuis un serveur de dépot distant.
+        Cette forme est dépréciée et ne sera plus supportée dans le futur.
+        <pre class="output">dir /var/lib/pkg/depot/cli|https://downloads.nutyx.org</pre>
       <li>
-        exemple de configuration de la collection <b>cli</b> en ports locals
-        <pre class="output">dir /usr/ports/cli</pre>
+        exemple de configuration de la collection <b>cli</b> en collection locale
+        <pre class="output">dir /home/thierry/www/x86_64/systemd/cli</pre>
+      <li>
+        autre exemple de configuration de la collection <b>gui</b> en collection locale sous cartds 3.x
+        <pre class="output">collection gui
+depot /home/thierry/www/x86_64/systemd</pre>
      </ol>
-    <p>
-     Il est également responsable de la liste des paquets que vous souhaitez conserver lorsque vous exécutez la commande:
-     <pre class="command"><kbd>cards base -r</kbd></pre>
-     Et enfin il spécifie quelles locales seront installées
     <p>
      Vous trouverez plus d'informations en consultant le manuel de cards.conf
      <pre class="command"><kbd>man cards.conf</kbd></pre>
          
-    <h4>Le fichier /etc/pkgmk.conf</h4>
+  <h3>Le fichier /etc/pkgmk.conf</h3>
      <p>
-      Ce fichier est utilisé lors de la compilation de nouveaux ports.
+      Ce fichier est utilisé lors de la compilation des nouveaux paquets.
       Il spécifie toutes les variables reconnues par la commande <b>pkgmk</b>
      <p>
       Veuillez prendre note des différentes variables qui sont à votre disposition en consultant le manuel de pkgmk.conf
       <pre class="command"><kbd>man pkgmk.conf</kbd></pre>
 
-     <h5>Exemple de fichier /etc/pkgmk.conf</h5>
+    <h4>Exemple de fichier /etc/pkgmk.conf</h4>
 <pre class="output">export CFLAGS="-O2 -pipe"
 export CXXFLAGS="${CFLAGS}"
 
@@ -433,4 +425,4 @@ esac
  <h2>Conclusion</h2>
   <p>
   Nous voilà prêts pour la compilation de paquets.
-  Nous allons maintenant voir ce qu'est <a href="collections">une collection.</a>
+  Il est temps de se lancer dans la <a href="mybld">compilation d'un paquet NuTyX</a>... finalement <img src="../graphics/smiley-wink.gif" alt="Wink" title="Wink" />.
