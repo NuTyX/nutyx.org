@@ -199,16 +199,6 @@
 
    <tr class="odd">
     <td class="url" >
-      <a class="url" href="build-package">How to build a package ?</a>
-    </td>
-    <td>
-     This tutorial explains how to build a NuTyX package from scratch.
-     We talk about the functionality (both basic and advanced) of the <b>cards</b> package manager.
-    </td>
-   </tr>
-
-   <tr class="even">
-    <td class="url" >
       <a class="url" href="collections">Collections</a>
     </td>
     <td>
@@ -217,6 +207,17 @@
      Collections are organised in five different sets.
      Each set has a dedicated responsibility. 
     </td>
+   </tr>
+
+  <tr class="even">
+    <td class="url" >
+      <a class="url" href="build-package">How to build a package ?</a>
+    </td>
+    <td>
+     This tutorial explains how to build a NuTyX package from scratch.
+     We talk about the functionality (both basic and advanced) of the <b>cards</b> package manager.
+    </td>
+   </tr>
 
    <tr class="odd">
     <td class="url" >
@@ -236,7 +237,7 @@
     </td>
    </tr>
 
- <tr class="odd">
+   <tr class="odd">
     <td class="url" >
       <a class="url" href="system-users">System users and groups</a>
     </td>

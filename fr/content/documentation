@@ -213,32 +213,12 @@
     </td>
    </tr>
 
-   <tr class="odd">
-    <td class="url" >
-     <a class="url" href="sysvinit">Bref aperçu de SysVinit</a>
-    </td>
-    <td>
-     Une brève description pas à pas sur SysVinit.
-     Décrit les niveaux d'exécution et fournit l'essentiel pour aider un utilisateur à comprendre et à gérer rapidement son système.
-   </tr>
-
   </table>
 
  <h2>Guides du contributeur</h2>
 
   <table width="100%" cellspacing="0">
     <tr class="odd">
-    <td class="url" >
-      <a class="url" href="build-package">Comment construire un paquet ?</a>
-    </td>
-    <td>
-     Ce tutoriel vous explique comment construire depuis zéro un <a href="dictionary#ID005">paquet</a> pour NuTyX.
-     On y aborde toutes les fonctionnalités (de base et avancées) du gestionnaire de 
-     <a href="dictionary#ID005">paquets</a> <a href="dictionary#ID000">cards</a>.
-    </td>
-   </tr>
-
-   <tr class="even">
     <td class="url" >
       <a class="url" href="collections">Les différentes collections</a>
     </td>
@@ -250,12 +230,23 @@
     </td>
    </tr>
 
+   <tr class="even">
+    <td class="url" >
+      <a class="url" href="build-package">Comment créer un premier paquet</a>
+    </td>
+    <td>
+     Ce tutoriel vous explique comment construire depuis zéro un <a href="dictionary#ID005">paquet</a> pour NuTyX.
+     On y aborde toutes les fonctionnalités (de base et avancées) du gestionnaire de 
+     <a href="dictionary#ID005">paquets</a> <a href="dictionary#ID000">cards</a>.
+    </td>
+   </tr>
+
    <tr class="odd">
     <td class="url" >
       <a class="url" href="mybld">Comment construire ses paquets dans une chroot ?</a>
     </td>
     <td>
-     Cet article explique comment construire vos paquets dans un environnement isolé.
+     Cet article explique comment construire vos paquets dans un environnement isolé via la commande <b>mybld</b>.
     </td>
    </tr>
 
@@ -268,6 +259,7 @@
     </td>
    </tr>
 
+
    <tr class="odd">
     <td class="url" >
       <a class="url" href="system-users">Tableau des utilisateurs et groupes système</a>
@@ -276,6 +268,5 @@
      Tableau de référence des utilisateurs et groupes du système NuTyX.
     </td>
    </tr>
-
 
   </table>
