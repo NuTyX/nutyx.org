@@ -5,8 +5,7 @@
    If  you wondering how to install a complete graphical interface, continue reading.
 
  <h2>Updating the meta data about available packages</h2>
-  We need to inform your NuTyX about all the available packages that can be installed.
-  An <a href="dictionary#ID300">alias</a> is available for that:
+  We need to inform your NuTyX about all the available packages that can be installed:
   <pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
   <pre class="output">[sudo] password for charly:</pre>
   You enter now the password you specified during the installation, and upgrade process starts:
@@ -16,7 +15,7 @@
 
  <h2>Desktop installation:</h2>
   You can now choose your favorite desktop.
-  Under NuTyX: kde6, xfce4, gnome, etc are available.
+  Under NuTyX: kde6, xfce4 and gnome are available.
   <p>
       <table>
        <caption><EM>Available desktops:</EM></caption>
@@ -30,7 +29,7 @@
          <pre class="command_user"><kbd>get kde6</kbd></pre>
        <tr class="even">
         <td>
-         xfce4 xfce4-extra
+         xfce4
         <td>
          <pre class="command_user"><kbd>get xfce4 xfce4-extra</kbd></pre>
        <tr class="odd">
@@ -52,11 +51,6 @@
      <tr class="sidebar">
       <th>Name:
       <th>Command:
-     <tr class="odd">
-      <td>
-       lxdm
-      <td>
-       <pre class="command_user"><kbd>get lxdm</kbd></pre>
       <tr class="even">
       <td>
        lightdm
@@ -64,18 +58,15 @@
        <pre class="command_user"><kbd>get lightdm</kbd></pre>
      <tr class="odd">
       <td>
-       slim
+       plasma-login-manager
       <td>
-       <pre class="command_user"><kbd>get slim</kbd></pre>
+       <pre class="command_user"><kbd>get plasma-login-manager</kbd></pre>
      <tr class="even">
       <td>
        sddm
       <td>
        <pre class="command_user"><kbd>get sddm</kbd></pre>
    </table>
-    <p>
-     The login managers configuration file is located in:
-     <pre class="output"><kbd>/etc/sysconfig/xdm</kbd></pre>
 
   <h3>Manual graphical login</h3>
     The <i>xdm</i> login manager will be install.
@@ -178,9 +169,7 @@ exec xterm -geometry 80x66+0+0 -name login</pre>
   <h3>Internet Browser</h3>
    <pre class="command_user"><kbd>get firefox</kbd></pre>
    or
-   <pre class="command_user"><kbd>get chromium</kbd></pre>
-   or
-   <pre class="command_user"><kbd>get chrome</kbd></pre>
+   <pre class="command_user"><kbd>get epiphany</kbd></pre>
 
   <h3>Mail client</h3>
    <pre class="command_user"><kbd>get thunderbird</kbd></pre>
@@ -189,8 +178,6 @@ exec xterm -geometry 80x66+0+0 -name login</pre>
    <pre class="command_user"><kbd>get libreoffice</kbd></pre>  <h3>Instant message</h3>
 
   <h3>Instant message</h3>
-   <pre class="command_user"><kbd>get pidgin</kbd></pre>
-   or
    <pre class="command_user"><kbd>get telegram-desktop</kbd></pre>
    or
    <pre class="command_user"><kbd>get discord</kbd></pre>
@@ -203,8 +190,7 @@ exec xterm -geometry 80x66+0+0 -name login</pre>
    <pre class="command_user"><kbd>get network-manager-applet</kbd></pre>
 
  <h2>And to finish up</h2>
-   The easiest way is to reboot your machine.  After reboot, you will be prompted to choose your login name via lxdm or slim.
-   If you have installed <i>slim</i>, you should press F1 to select the right desktop to login to.
+   The easiest way is to reboot your machine.  After reboot, you will be prompted to choose your login name via sddm, plasma-login-manager or lightdm.
    <pre class="command_user"><kbd>sudo reboot</kbd></pre>
 
  <h2>Conclusion</h2>

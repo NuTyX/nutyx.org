@@ -4,8 +4,7 @@
    Si vous connaîssez déjà NuTyX, vous pouvez directement vous diriger sur la documentation du site.
    Par contre si vous vous demandez comment installer une interface graphique complète, continuez la lecture.
  <h2>Mise à jour des informations concernant les paquets disponibles</h2>
-  Il faut commencer par renseigner les paquets disponibles à votre nouvelle installation. 
-  Un <a href="dictionary#ID300">alias</a> est disponible à cet effet:
+  Il faut commencer par renseigner les paquets disponibles à votre nouvelle installation:
   <pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
   <pre class="output">[sudo] password for thierry:</pre>
   Vous entrez le mot de passe que vous avez choisi lors de l'installation et la mise à jour commence:
@@ -15,7 +14,7 @@
  <h2>Installation d'un bureau:</h2>
   On commence par choisir un bureau.
  <p>
-  Sous NuTyX, vous avez le choix entre: kde6, xfce4, enlightenment, gnome etc
+  Sous NuTyX, vous avez le choix entre: kde6, xfce4 et gnome.
   <p>
       <table>
        <caption><EM>Quelques exemples de bureaux disponibles</EM></caption>
@@ -29,19 +28,14 @@
           <pre class="command_user"><kbd>get kde6</kbd></pre>
        <tr class="even">
          <td>
-          xfce4 xfce4-extra
+          gnome
          <td>
-          <pre class="command_user"><kbd>get xfce4 xfce4-extra</kbd></pre>
-        <tr class="even">
-        <td>
-         enlightenment
-        <td>
-         <pre class="command_user"><kbd>get enlightenment</kbd></pre>
+          <pre class="command_user"><kbd>get gnome gnome-extra</kbd></pre>
         <tr class="odd">
         <td>
-         icewm
+         xfce4
         <td>
-         <pre class="command_user"><kbd>get icewm</kbd></pre>
+         <pre class="command_user"><kbd>get xfce4 xfce4-extra</kbd></pre>
      </table>
  
  <h2>Installation d'un gestionnaire de connection</h2>
@@ -64,18 +58,15 @@
         <pre class="command_user"><kbd>get lightdm</kbd></pre>
       <tr class="odd">
        <td>
-        slim
+        plasma-login-manager
        <td>
-        <pre class="command_user"><kbd>get slim</kbd></pre>
+        <pre class="command_user"><kbd>get plasma-login-manager</kbd></pre>
       <tr class="even">
        <td>
         sddm
        <td>
         <pre class="command_user"><kbd>get sddm</kbd></pre>
     </table>
-    <p>
-     Le fichier de configuration des gestionnaires de connection se trouve dans:
-     <pre class="output"><kbd>/etc/sysconfig/xdm</kbd></pre>
 
 
    <h3>Lancement graphique manuel</h3>
@@ -182,9 +173,7 @@ exec xterm -geometry 80x66+0+0 -name login</pre>
    <h3>Navigateur pour surfer sur internet</h3>
     <pre class="command_user"><kbd>get firefox</kbd></pre>
     ou
-    <pre class="command_user"><kbd>get chrome</kbd></pre>
-    ou
-    <pre class="command_user"><kbd>get chromium</kbd></pre>
+    <pre class="command_user"><kbd>get epiphany</kbd></pre>
 
    <h3>Client de messagerie electronique</h3>
     <pre class="command_user"><kbd>get thunderbird</kbd></pre>
@@ -193,8 +182,6 @@ exec xterm -geometry 80x66+0+0 -name login</pre>
     <pre class="command_user"><kbd>get libreoffice</kbd></pre>
 
    <h3>Messagerie instantanée</h3>
-    <pre class="command_user"><kbd>get pidgin</kbd></pre>
-    ou
     <pre class="command_user"><kbd>get telegram-desktop</kbd></pre>
     ou
     <pre class="command_user"><kbd>get discord</kbd></pre>
@@ -207,8 +194,7 @@ exec xterm -geometry 80x66+0+0 -name login</pre>
 
  <h2>Et pour finir</h2>
    Le plus simple maintenant redémarrez votre machine.
-   Après le redémarrage, vous serez accueilli par le gestionnaire de connection lxdm, slim ou xdm.
-   Pour <i>slim</i>, pressez la touche F1 pour choisir le bureau adéquat.
+   Après le redémarrage, vous serez accueilli par le gestionnaire de connection sddm, lightdm, plasma-login-manager ou xdm.
    <pre class="command_user"><kbd>sudo reboot</kbd></pre>
  <h2>Conclusion</h2>
   Je vous invite à prendre connaîssance <a href="base-commands">des commandes de base pour que vous puissiez allez plus loin dans votre installation.</a>
