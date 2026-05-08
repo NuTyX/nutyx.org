@@ -1,79 +1,83 @@
-<h1>Dernière nouvelle 16-02-2026</h1>
+<h1>Dernière nouvelle 20-04-2026</h1>
 
- <h2>NuTyX 26.02.2 disponible avec cards 3.4.3</h2>
+ <h2>NuTyX 26.04.3 disponible avec cards 3.4.7</h2>
   <p>
-   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 26.02.2 et cards 3.4.3 .
+   Spiky et moi-même sommes heureux d'annoncer la nouvelle version de NuTyX 26.04.3 et cards 3.4.7 .
  <h2>La version courte</h2>
   <ol>
    <li>
-    sysV est en fin de vie, un seul système d'initialisation: systemd.
+    Fichiers restant de sysV tous supprimés.
    </li>
    <li>
-    Passer de sysV en systemd sans réinstaller n'est pas une bonne idée.
-   </li>
-   <li>
-    NuTyX sysV maintenue jusque fin 2026.
+    Installateur et initrd complètement repensés.
+    Ils fonctionnent désormais avec l'aide de busybox, systemd et quelques outils supplémentaires.
    </li>
    <li>
     3 ISO graphiques: XFCE, GNOME et KDE6.
    </li>
-   <li>
-    1 ISO de base non graphique pour les pros.
-   </li>
   </ol>
  <h2>La version longue</h2>
    <p>
-    Après près de 19 ans, NuTyX abandonne lentement le système d'initialisation sysV développé y a plus de 40 ans (1983).
-    Cela signifie concrètement:
-   <p>
-    Seul les paquets suivant continueront à recevoir des mise à jour jusqu'à décembre 2026:
-    <ol>
-     <li>
-      Les kernels. A noter que les kernel-510, kernel-515, kernel-66 et kernel-612 arrivent également en fin de vie en décembre 2026.
-     </li>
-     <li>
-      Firefox et Thunderbird
-     </li>
-     <li>
-      Discord et Telegram
-     </li>
-     <li>
-      XFCE 4.20
-     </li>
-     <li>
-      les mise à jour de sécurité
-     </li>
-    </ol>
-   <p>
     Désormais, la distribution se concentre sur un seul système d'initialisation: systemd.
    <p>
-    Les deux bureaux principaux GNOME et KDE6 ne seront bientôt plus fonctionnels sous sysV.
+    systemd 260 retire la compatibilitée avec sysV.
    <p>
-    systemd arrêtera la compatibilitée avec sysv dans sa prochaine version 260.
+    Le passage de sysV à systemd n'est plus possible.
    <p>
-    L'équipe de <a href="https://www.linuxfromscratch.org/lfs/read.html">linux from scratch</a> a également décidé d'arrêter la version sys-V d'ici fin 2026.
-   <p>
-    Le passage de sysV à systemd est possible mais n'est absolument pas recommendée.
     D'autre part une installation neuve garde vos dossiers personnels.
 
- <h2>Installation/Migration de sysV vers systemd</h2>
+ <h2>Installation</h2>
   <h3>Bon à savoir</h3>
    <p>
     L'installation necessite 4 Gyga octets de RAM et un espace disque de 20 GB minimum pour le système.
+   <p>
+    L'espace disque necessaire pour NuTyX varie selon votre usage.
+    20 GB est un bon compromis si vous décidez d'ajouter des flatpak.
+    L'espace disque utilisée par ces derniers peut rapidement devenir gourmant.
+
+  <h3>Méthodes d'installations</h3>
    <p>
     L'installation peut se faire en mode bios ou mode uefi. La détection se fait automatiquement.
    <p>
     Si vous avez la chance de pouvoir installer en mode uefi, la taille de partition uefi peut être très petite.
     Attention toutes les machines n'acceptent pas une partition efi en dessous de 50 MO (virtualbox par ex.).
-   <p>
-    Pour tester l'ISO gnome en virtuel, il faut impérativement activer la 3d dans la machine virtuelle.
-    Utilisez de préférence virtualbox.
 
-  <h3>Méthodes d'installations</h3>
-   <p>
+  <p>
     L'installation est très rapide et très sûr, en effet l'installateur ne formattera jamais une partition sans demander à l'utilisateur.
    <p>
-    Donc si vous ne reformattez pas la partition sur laquelle se trouve vos données, vous ne riquez pas de perdre vos données personnelles. Dans le doute, faîtes une sauvegarde. ;)
+    Donc si vous ne reformattez pas la partition sur laquelle se trouve vos données, vous ne riquez pas de perdre vos données personnelles.
+    Dans le doute, faîtes une sauvegarde. ;)
+   <p>
+    L'installateur fonctionne de manière très simple et très directe:
+    Néanmoins, une installation suppose que les critères suivants soit remplis:
+    <ol>
+     <li>
+      Le disque cible est unique et totalement vierge cad qu'aucune table de partition existe.
+      Dans ce cas, l'installateur créera automatiquement les 3 (ou 2 partitions en bios) partitions necessaire pour une installation.
+      Un message de confirmation s'affichera pour demander si l'utilisateur est prêt pour l'installation sur la partition cible créée.
+      Une fois confirmée, l'installation démarre.
+     </li>
+     <li>
+      Une seule partition de type Linux non formatée.
+      Dans ce cas, l'installateur demandera pour formatter la SEULE partition trouvée en ext4 et l'utilisera comme destination.
+      Une fois confirmée, l'installation démarre.
+     </li>
+     <li>
+      Une seule partition de type Linux formatée en ext4
+      Un message de confirmation s'affichera pour demander si l'utilisateur est prêt pour l'installation sur la partition cible créée.
+      Une fois confirmée, l'installation démarre.
+      <p>
+       En bonus, si l'utilisateur reprend le même nom d'utilisateur, tous les fichiers et dossiers personnels seront conservés, donc restaurés.
+     </li>
+     <li>
+      Plusieurs disques et/ou plusieurs partitions.
+      L'utilisateur choisira le disque cible et la partition cible.
+      Si la partition est déjà formatée, un message de confirmation s'affichera pour demander si l'utilisateur est prêt pour l'installation sur la partition cible créée.
+      Une fois confirmée, l'installation démarre.
+      Si la partition n'est pas formatée,l'installateur demandera pour formater la partition cible choisie.
+      Une fois confirmé, l'installation démarre.
+     </li>
+    </ol>
    <p>
     Vous avez le choix entre 3 modes d'installation:
     <ol>
@@ -81,72 +85,77 @@
       Direct
      </li>
      <li>
-      Depuis le live
+      Direct depuis la RAM
      </li>
      <li>
       Pour les utilisateurs avertis, depuis le live via le script d'installation 'install-nutyx'
      </li>
     </ol>
    <p>
-    4 ISO sont disponible:
-    Le système de base (sans interface graphique), XFCE4, GNOME et  KDE6.
+    3 ISO sont disponible:
+    XFCE4, GNOME et  KDE6.
    <p>
     Elles sont disponibles sur <a href="downloads">la page de téléchargement.</a>
 
-  <h2>Mise à jour (uniquement possible si vous êtes déjà sur la NuTyX systemd) </h2>
+  <h2>Mise à jour </h2>
    <p>
     Procédez comme suit:
-   </p><pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
    <pre class="command_user"><kbd>sudo cards upgrade
 sudo shutdown -r 0</kbd></pre>
 
  <h2>Quoi de neuf</h2>
   <p>
-   glibc en 2.42, gcc 15.2.0, systemd en 259.1, curl en 8.18.0 .
+   glibc en 2.43, gcc 15.2.0, systemd en 260.1, curl en 8.19.0 .
   <p>
-   Le serveur graphique Xorg-server version 21.1.21.
+   Le serveur graphique Xorg-server version 21.1.22.
   <p>
-   la librairie Mesa 3D en 25.3.2
+   la librairie Mesa 3D en 26.0.4
   <p>
-   Gtk4 4.20.3
+   Wayland en 1.24.0
   <p>
-   Qt 6.10.1
+   Gtk4 4.22.2
   <p>
-   Le pilote nvidia est mis à jour en version 580.126.09 .
+   Qt 6.11.0
   <p>
-   L'interpreteur Python est mis à jour en version 3.14.3.
+   Le pilote nvidia est mis à jour en version 595.58.03 .
   <p>
-   L'environnement de bureau XFCE est mis à jour en version 4.20.1.
+   L'interpreteur Python est mis à jour en version 3.14.4 .
   <p>
-   L'environnement de bureau GNOME est également mis à jour en version 49.1
+   L'environnement de bureau XFCE est mis à jour en version 4.20.2 .
   <p>
-   L'environnement de bureau KDE est disponible en Plasma 6.5.5, Framework 6.22.0 et les applications en 25.12.2.
+   L'environnement de bureau GNOME est également mis à jour en version 50.1
   <p>
-   Les navigateurs disponibles sont: Firefox 147.0.3 et Epiphany 49.2.
+   L'environnement de bureau KDE est disponible en Plasma 6.6.4, Framework 6.25.0 et les applications en 26.04.0 .
   <p>
-   De nombreuses applications on été mise à jour également comme Telegram-desktop 5.10.7,
-   Thunderbird 140.7.1esr, Scribus 1.6.4, Libreoffice 25.8.4.2, Gimp 3.0.6, etc.
+   Les navigateurs disponibles sont: Firefox 149.0.2 et Epiphany 50.3 .
+  <p>
+   De nombreuses applications on été mise à jour également comme Telegram-desktop 6.7.6 ,
+   Thunderbird 140.9.1esr, Scribus 1.6.6, Libreoffice 26.2.2.2, Gimp 3.2.2, etc.
   <p>
    Les noyaux linux de support à long terme (LTS):
-   6.6.124, 6.12.70 et 6.18.10.
+   6.6.135, 6.12.82 et 6.18.23.
   <p>
-   La dernière version stable du noyau linux 6.19.
+   La dernière version stable du noyau linux 7.0 .
   <p>
    Les journaux de modifications des noyaux sont disponibles ici:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.124">kernel 6.6.124 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.135">kernel 6.6.135 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.12.70">kernel 6.12.70 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.12.82">kernel 6.12.82 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.18.10">kernel 6.18.10 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.18.23">kernel 6.18.23 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.19">kernel 6.19 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v7.x/ChangeLog-7.0">kernel 7.0 changelog</a>
 
  <h2>Remerciements</h2>
   <p>
-   Merci aux utilisateurs de NuTyX pour nous avoir remonté nombreux problèmes liés à cette nouvelle version systemd.
+   Merci aux utilisateurs de NuTyX pour nous avoir remonté nombreux problèmes liés à cette nouvelle version.
   <p>
    Avec nos remerciements à l'équipe BLFS qui a aidé à résoudre quelques problèmes.
+  <p>
+   Merci à Distrowatch.org pour nous avoir signaler certains problèmes majeurs.
+  <p>
+   Merci à Alexis pour son aide sur le paquet fastfetch.
   <p>
    Merci à Spiky pour sa grande patience et sa générosité pour la mise à jour des très nombreux paquets.
 

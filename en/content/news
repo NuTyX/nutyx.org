@@ -1,76 +1,44 @@
-<h1>Latest news 16-02-2026</h1>
+<h1>Latest news 20.04-2026</h1>
 
- <h2>NuTyX 26.02.2 available with cards 3.4.3</h2>
+ <h2>NuTyX 26.04.3 available with cards 3.4.7</h2>
   <p>
-   Spiky and me are happy to announce the new version of NuTyX 26.02.2 and cards 3.4.3 .
+   Spiky and me are happy to announce the new version of NuTyX 26.04.3 and cards 3.4.7 .
 <h2>The short version</h2>
   <ol>
    <li>
-    sysV is at the end of its life, only one initialization system: systemd.
+    Remaining sysV files all removed.
    </li>
    <li>
-    Switching from sysV to systemd without reinstalling is not a good idea.
-   </li>
-   <li>
-    NuTyX sysV maintained until the end of 2026.
+    Installer and initrd completly review.
+    They now works with busybox, systemd and a couple of extras tools.
    </li>
    <li>
     3 ISO graphics: XFCE, GNOME and KDE6.
    </li>
-   <li>
-    1 Basic non-graphic ISO for pros.
-   </li>
   </ol>
  <h2>The long version</h2>
    <p>
-    After nearly 19 years, NuTyX slowly abandoned the sysV initialization system developed more than 40 years ago (1983).
-    This means concretely:
-   <p>
-    Only the following packages will continue to receive updates until December 2026:
-    <ol>
-     <li>
-      The kernels. Note that the kernel-510, kernel-515, kernel-66 and
-kernel-612 also come to the end of their life in December 2026.
-     </li>
-     <li>
-      Firefox and Thunderbird
-     </li>
-     <li>
-      Discord and Telegram
-     </li>
-     <li>
-      XFCE 4.20
-     </li>
-     <li>
-      Security updates
-     </li>
-    </ol>
-   <p>
     Now, the distribution focuses on a single initialization system: systemd.
    <p>
-    The two main offices GNOME and KDE6 will soon no longer be operational under sysV.
+    systemd 260 remove compatibility with sysv.
    <p>
-    systemd will stop compatibility with sysv in its next version 260.
-   <p>
-    <a href="https://www.linuxfromscratch.org/lfs/read.html">The linux from scratch</a> team also decided to stop the sys-V version by the end of 2026.
-   <p>
-    The transition from sysV to systemd is possible but is not recommended at all.
+    The transition from sysV to systemd is impossible.
     On the other hand, a new installation keeps your personal datas.
 
- <h2>Installing/Migrating from sysV to systemd</h2>
+ <h2>Installation</h2>
   <h3>Good to know</h3>
    <p>
     The installation requires 4 Gyga bytes of RAM and a disk space of 20 GB minimum for the system.
+   <p>
+    The amount of disk space required for NuTyX depends on your usage.
+    20 GB is a good starting point if you decide to install Flatpak. 
+
+  <h3>Methods of installation</h3>
    <p>
     The installation can be done in bios or uefi mode. The detection is done automatically.
    <p>
     If you are lucky enough to be able to install in uefi mode, the uefi partition size can be very small.
     Attention all machines do not accept an efi partition below 50 MB (virtualbox e.g.).
-   <p>
-    To test the ISO gnome in virtual, it is imperative to activate the 3d in the virtual machine.
-    Preferably use virtualbox.
-
-  <h3>Methods of installation</h3>
    <p>
     The installation is very fast and very safe, indeed the installer will never format a partition without asking the user.
    <p>
@@ -78,76 +46,112 @@ kernel-612 also come to the end of their life in December 2026.
 located, you do not fail to lose your personal data. When in doubt, make
  a backup. ;)
    <p>
+    The installer works in a very simple and straightforward manner:
+    However, an installation requires that the following criteria be met:
+    <ol>
+     <li>
+      The target disk is unique and completely blank, meaning no partition table exists.
+      In this case, the installer will automatically create the 3 (or 2 in BIOS) partitions required for installation.
+      A confirmation message will appear asking if the user is ready to install on the created target partition.
+      Once confirmed, the installation begins.
+     </li>
+     <li>
+      A single unformatted Linux partition.
+      In this case, the installer will ask to format the ONLY partition found as ext4 and will use it as the destination.
+      Once confirmed, the installation begins.
+     </li>
+     <li>
+      A single Linux partition formatted as ext4
+      A confirmation message will appear asking if the user is ready to install on the target partition.
+      Once confirmed, the installation begins.
+     <p>
+      As an added bonus, if the user keeps the same username, all personal files and folders will be preserved and restored.
+     </li>
+     <li>
+       Multiple disks and/or multiple partitions.
+      The user will select the target disk and the target partition.
+      If the partition is already formatted, a confirmation message will appear asking if the user is ready to install on the target partition.
+      Once confirmed, the installation begins.
+      If the partition is not formatted, the installer will ask to format the selected target partition in ext4.
+      Once confirmed, the installation begins.
+     </li>
+    </ol>
+   <p>
     You have the choice between 3 installation modes:
     <ol>
      <li>
       Direct
      </li>
      <li>
-      From the live
+      Direct from RAM
      </li>
      <li>
       For savvy users, from the live via the installation script 'install-nutyx'
      </li>
     </ol>
    <p>
-    4 ISO are available:
-    The basic system (without graphical interface), XFCE4, GNOME and KDE6.
+    3 ISO are available:
+    XFCE4, GNOME and KDE6.
    <p>
     They are available on <a href="downloads">the download page.</a>
 
- <h2>Update (only possible if you are already on the NuTyX systemd)</h2>
+ <h2>Upgrade</h2>
    <p>
     Do the following:
-   </p><pre class="command_user"><kbd>sudo cards upgrade</kbd></pre>
    <pre class="command_user"><kbd>sudo cards upgrade
 sudo shutdown -r 0</kbd></pre>
 
  <h2>What's new</h2>
   <p>
-   glibc in 2.42, gcc 15.2.0, systemd in 259.1, curl in 8.18.0 .
+   glibc in 2.43, gcc 15.2.0, systemd in 260.1, curl in 8.19.0 .
   <p>
-   The Xorg-server graphic server version 21.1.21.
+   The Xorg-server graphic server version 21.1.22 .
   <p>
-   the Mesa 3D library in 25.3.2
+   the Mesa 3D library in 26.0.4 .
   <p>
-   Gtk4 4.20.3
+   Wayland in 1.24.0
   <p>
-   Qt 6.10.1
+   Gtk4 4.22.2 .
   <p>
-   The nvidia driver is updated to version 580.126.09 .
+   Qt 6.11.0 .
   <p>
-   The Python interpreter is updated to version 3.14.3.
+   The nvidia driver is updated to version 595.58.03 .
   <p>
-   The XFCE desktop environment is updated to version 4.20.1.
+   The Python interpreter is updated to version 3.14.4 .
   <p>
-   The GNOME desktop environment is also updated to version 49.1
+   The XFCE desktop environment is updated to version 4.20.2 .
   <p>
-   The KDE desktop environment is available in Plasma 6.5.5, Framework 6.22.0 and applications in 25.12.2.
+   The GNOME desktop environment is also updated to version 50.1 .
   <p>
-   The browsers available are: Firefox 147.0.3 and Epiphany 49.2.
+   The KDE desktop environment is available in Plasma 6.6.4, Framework 6.25.0 and applications in 26.04.0 .
   <p>
-   Many applications have also been updated as Telegram-desktop 5.10.7,
-   Thunderbird 140.7.1esr, Scribus 1.6.4, Libreoffice 25.8.4.2, Gimp 3.0.6, etc.
+   The browsers available are: Firefox 149.0.2 and Epiphany 50.3.
   <p>
-   Long-term support linux nuclei (LTS):
-   6.6.124, 6.12.70 and 6.18.10.
+   Many applications have also been updated as Telegram-desktop 6.7.6 ,
+   Thunderbird 140.9.1esr, Scribus 1.6.6, Libreoffice 26.2.2.2, Gimp 3.2.2, etc.
+  <p>
+   Long-term support linux kernels (LTS):
+   6.6.135, 6.12.82 and 6.18.23.
   ><p>
-   The latest stable version of the linux 6.19 kernel.
+   The latest stable version of the linux 7.0 kernel.
   <p>
    The kernel modification logs are available here:
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.124">kernel 6.6.124 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.6.135">kernel 6.6.135 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.12.70">kernel 6.12.70 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.12.82">kernel 6.12.82 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.18.10">kernel 6.18.10 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.18.23">kernel 6.18.23 changelog</a>
   <p>
-   <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.19">kernel 6.19 changelog</a>
+   <a href="https://cdn.kernel.org/pub/linux/kernel/v7.x/ChangeLog-7.0">kernel 7.0 changelog</a>
 
  <h2>Thanks</h2>
   <p>
    With Thanks to the BLFS Team which helped out with a few problems we encountered.
+  <p>
+   Thanks to Distrowatch.org for pointing out some major issues with the installer.
+  <p>
+   Thanks to Alexis for helping on fastfetch package.
   <p>
    Thanks to Spiky for his patience and his generosity in upgrading all thoses many packages.
   <p>
