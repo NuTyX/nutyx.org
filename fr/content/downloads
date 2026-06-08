@@ -1,6 +1,6 @@
 <h1>Téléchargements</h1>
  <h2>Introduction</h2>
-   La version stable actuelle de NuTyX est la <b>26.04</b>.
+   La version stable actuelle de NuTyX est la <b>26.06</b>.
   <p>
    Les ISOs sont disponibles en 64 bits "Rolling" releases.
   <p>
@@ -41,16 +41,14 @@
    <tr class="odd">
 
     <td class="url">
-      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.04.3-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE</a>
+      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.06.1-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE</a>
     <td>
        <p>
         L'ISO contient le bureau XFCE4 comme interface graphique.
        <p>
-        Système d'initialisation: systemd
-       <p>
         kernel: kernel LTS (6.18).
        <p>
-        SHA1 64bits: 097d858436649c4c7dc3b451f59bb4fe8a54583f
+        SHA1 64bits: ec6d33c8e1884ac0145eafa48a62043737893ed6
     <td>
        Environ 1.8 GO
 
@@ -60,16 +58,14 @@
    <tr class="even">
 
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.04.3-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.06.1-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME</a>
     <td>
        <p>
         L'ISO contient le bureau GNOME comme interface graphique.
        <p>
-        Système d'initialisation: systemd
-       <p>
         kernel: kernel LTS (6.18).
        <p>
-        SHA1 64bits: c00347265e7a2ee730a044b4b7c1509ccb0da05e
+        SHA1 64bits: 19168902b8be5e6e0ef26502e34c98ec47467f26
       <td>
        Environ 2.1 GO
 
@@ -78,16 +74,14 @@
    <tr class="odd">
 
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.04.3-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.06.1-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE</a>
     <td>
        <p>
         L'ISO contient le bureau KDE6 comme interface graphique.
        <p>
-        Système d'initialisation: systemd
-       <p>
         kernel: kernel LTS (6.18).
        <p>
-        SHA1 64bits: a5b8b3a4cb13bccdaf84effc7e1be6dcf52e93e9
+        SHA1 64bits: 29891372158e3dfaaf0325b3fe23c5706f652890
       <td>
        Environ 2.5 GO
 
@@ -147,7 +141,7 @@ sdc  8:0:0:0    disk TDKMedia Trans-It_Drive  PMAP 07991E033A9CAF0E usb</pre>
  <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
    La commande qui suit va supprimer toutes les données qui se trouvent sur la clé.
   </div>
-   <pre class="command"><kbd>dd if=/chemin/vers/l'/iso/NuTyX_x86_64-26.04.3-XFCE4.iso of=/dev/sdX status=progress
+   <pre class="command"><kbd>dd if=/chemin/vers/l'/iso/NuTyX_x86_64-26.06.1-XFCE4.iso of=/dev/sdX status=progress
 sync</kbd></pre>  <p>
    Si vous êtes sous Windows:
   <p>
