@@ -18,7 +18,7 @@
    <p>
     We start by cloning the GIT project containing all the NuTyX recipes:
     <pre class="command_user"><kbd>git clone -b &ltbranch&gt https://github.com/NuTyX/x86_64.git &ltbranch&gt</kbd></pre>
-    The variable &ltbranch&gt can take <i>testingd</i> or <i>systemd</i> as value.
+    The variable &ltbranch&gt can be: <i>systemd</i> as value.
     <p>
     Once the GIT project in place, we move to the root of it,
     indeed the command <i><b>mybld</b></i> uses information from the GIT
@@ -41,9 +41,6 @@ git config --global user.email "james@nutyx.org"</kbd></pre>
     The <b><i>mybld</i></b> command uses a set of folders for its operation,
     they must therefore be created using the command:
     <pre class="command_user"><kbd>mybld -I</kbd></pre>
-   <p>
-    You can adjust the operating folders locations in the configuration file <b><i>~/.mybld</i></b>
-    via the variables <b>ROOT</b>, <b>ROOTMOUNT</b> and <b>VERSION</b>.
 
   <h3>Available Collections</h3>
    <p>
@@ -141,34 +138,34 @@ Type exit when finish.
        Location
      <tr class="even">
       <td>
-       DEPOT
+       The root of the DEPOT
       <td>
        /DEPOT
      <tr class="odd">
       <td>
-       cli-extra collection DEPOT
+       The cli-extra collection DEPOT
       <td>
        /DEPOT/cli-extra
      <tr class="even">
       <td>
-       nftables Pkgfile
+       The nftables Pkgfile
       <td>
        /mybld/systemd/cli-extra/nftables/Pkgfile
      <tr class="odd">
       <td>
-       Sources files
+       The sources files
       <td>
        /sources
      <tr class="even">
       <td>
-       Compilation logs
+       The compilation logs
       <td>
        /LOGS
      <tr class="odd">
       <td>
-       working directory
+       The working directories
       <td>
-       /tmp/work/src and
+       /tmp/work/src <i>and</i>
        /tmp/work/pkg
     </table>
   <h3>Go on with compilation</h3>

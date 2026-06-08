@@ -16,7 +16,7 @@
   <h3>Les recettes du projet GIT</h3>
    On  commence par cloner le projet GIT contenant toutes les recettes des paquets 64 bits de la NuTyX:
    <pre class="command_user"><kbd>git clone -b &ltbranch&gt https://github.com/NuTyX/x86_64.git &ltbranch&gt</kbd></pre>
-   La variable &ltbranch&gt peut prendre les valeurs <i>testingd</i> ou <i>systemd</i>.
+   La variable &ltbranch&gt peut prendre la valeur actuelle: <i>systemd</i>.
    <p>
    Une fois le projet GIT en place, on se déplace à la racine de celui-ci,
    en effet la commande <i><b>mybld</b></i> utilise des information du GIT
@@ -40,9 +40,6 @@ git config --global user.email "francois@nutyx.org"</kbd></pre>
     La commande <i><b>mybld</b></i> utilise un ensemble de dossiers pour son fonctionnement,
     il faut donc les créer via la commande:
     <pre class="command_user"><kbd>mybld -I</kbd></pre>
-   <p>
-    Vous pouvez ajuster l'emplacement des dossiers de fonctionnement dans le fichier de configuration <i><b>~/.mybld</b></i>
-    via les variables <b>ROOT</b>, <b>ROOTMOUNT</b> et <b>VERSION</b>.
 
   <h3>Collections disponibles</h3>
     Choisissez la collection sur laquelle vous souhaitez travailler.
@@ -140,34 +137,34 @@ Type exit when finish.
        Emplacement
      <tr class="even">
       <td>
-       DEPOT
+       La racine des DEPOT
       <td>
        /DEPOT
      <tr class="odd">
       <td>
-       cli-extra collection DEPOT
+       Le DEPOT binaire de la collection cli-extra
       <td>
        /DEPOT/cli-extra
      <tr class="even">
       <td>
-       nftables Pkgfile
+       Le Pkgfile de nftables
       <td>
        /mybld/systemd/cli-extra/nftables/Pkgfile
      <tr class="odd">
       <td>
-       Sources files
+       Les fichiers sources
       <td>
        /sources
      <tr class="even">
       <td>
-       Compilation logs
+       Les logs de compilation
       <td>
        /LOGS
      <tr class="odd">
       <td>
-       working directory
+       Les dossiers de travail
       <td>
-       /tmp/work/src and
+       /tmp/work/src <i>et</i>
        /tmp/work/pkg
     </table>
   <h3>Continuer avec la compilation</h3>
