@@ -12,7 +12,7 @@
   <p>
    This script allows the installation of a base NuTyX in a folder.
   <p>
-   It's signature can be verified by downloading the <a class="url" href="http://download.nutyx.org/install-nutyx.md5sum">http://download.nutyx.org/install-nutyx.md5sum</a> file.
+   It's signature can be verified by downloading the <a class="url" href="https://www.nutyx.org/install-nutyx.md5sum">https://www.nutyx.org/install-nutyx.md5sum</a> file.
 
   <div class="important">
     <img alt="[Important]" src="../graphics/caution.gif" />
@@ -75,7 +75,7 @@
         <td>
          Available kernel names:
         <br>
-         kernel-419, kernel-54, kernel-510, kernel-515, kernel-61, kernel-66 or kernel.
+         kernel-66, kernel-612, kernel-618, kernel-mainline or kernel.
        <tr class="odd">
         <td>
          DEPOT
@@ -252,13 +252,13 @@ bash install-nutyx</kbd></pre>
 List of variables: 
 
 LFS          : /mnt/hd
-URL          : http://downloads.nutyx.org
+URL          : https://downloads.nutyx.org
 VERSION      : systemd
 KERNEL       :
 DEPOT        : /var/lib/pkg/depot
 MOUNT        :
-SHELL        : /bin/bash
-DEPOT_BASE   : http://downloads.nutyx.org/x86_64/systemd/base
+SHELL        : /usr/bin/bash
+DEPOT_BASE   : https://downloads.nutyx.org/x86_64/systemd/base
 CHROOT       : nutyx busybox curl gcc bzip2 glibc zlib lz4 xz zstd \
 libarchive openssl cards
 CORE         : acl attr bash coreutils readline expat ncurses lzo gmp \
@@ -266,23 +266,17 @@ flex file gzip mpc mpfr grep sed findutils binutils inetutils diffutils \
 shadow bc less libcap util-linux kmod kbd pam gdbm e2fsprogs libpipeline \
 gettext procps-ng psmisc sudo tzdata iproute2 iana-etc groff man-db \
 cards.man nutyx.man dialog cpio squashfs lsb-release grub eudev sysklogd \
-sysvinit kernel efibootmgr linux-firmware systemd runyx wireless-tools \
-wpa-supplicant gpm dosfstools make-ca xdg-user-dirs \
-sound-theme-freedesktop nano gvfs network-manager-applet \
-xorg-xinit xorg-xf86-input-synaptics xorg-xf86-input-wacom \
-xorg-xrandr xorg-setxkbmap firefox gparted leafpad scrot vlc gnome epiphany \
-evolution simple-scan gnome-weather gnome-chess
-DEVEL        :
-mkinitramfs $(basename /lib/modules/*)
-mv boot/initrd-* boot/initrd-stable
-cards purge
+sysvinit kernel efibootmgr linux-firmware wireless-tools wpa-supplicant \
+gpm dosfstools make-ca xdg-user-dirs sound-theme-freedesktop nano gvfs \
+network-manager-applet xorg-xinit xorg-xf86-input-synaptics \
+xorg-xf86-input-wacom xorg-xrandr xorg-setxkbmap firefox gparted leafpad \
+scrot vlc gnome epiphany evolution simple-scan gnome-weather gnome-chess
+DEVEL        : cards purge
 exit 0
 ISO          : GNOME
-STRICT       : kernel
-MINI         : dhcpcd
-BASE         : efibootmgr linux-firmware systemd runyx wireless-tools \
-wpa-supplicant
-CLI          : gpm gpm dosfstools make-ca xdg-user-dirs \
+MINI         : kernel
+BASE         : efibootmgr linux-firmware wireless-tools wpa-supplicant
+CLI          : gpm dosfstools make-ca xdg-user-dirs \
 sound-theme-freedesktop nano
 GUI          : gvfs network-manager-applet firefox gparted leafpad scrot vlc
 XORG         : xorg-xinit xorg-xf86-input-synaptics xorg-xf86-input-wacom \
@@ -290,7 +284,7 @@ xorg-xrandr xorg-setxkbmap
 XFCE4        : galculator lightdm xfce4 xfce4-extra
 GNOME        : gnome gnome-extra
 KDE6         : kde6
-ISO Filename /mnt/hd/NuTyX_x86_64-26.04.5-GNOME.iso</pre>
+ISO Filename /mnt/hd/NuTyX_x86_64-26.06.1-GNOME.iso</pre>
   <p>
     As we can see, new variables are now available.
    These can also be redefined at your convenience:

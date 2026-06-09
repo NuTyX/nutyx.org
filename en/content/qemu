@@ -34,9 +34,9 @@ to be able to use qemu:
       Make sure the Downloaded iso is in ~/VM-qemu/iso dir.
    </ul>
   <p>
-   for example, the <b>64bits</b> <b>26.04.3</b> version <b>JWM</b> iso will be:
+   for example, the <b>64bits</b> <b>26.06.1</b> version <b>XFCE4</b> iso will be:
   <p>
-   <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-26.04.3-XFCE4.iso">https://sourceforge.net/projects/nutyx/files/ISOs/systemv/NuTyX_x86_64-26.04.3-XFCE4.iso</a>
+   <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.06.1-XFCE4.iso">https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.06.1-XFCE4.iso</a>
   <ul>
    <li>
     Start the config script
@@ -109,13 +109,5 @@ to be able to use qemu:
   <p>
    This will give 2 Warnings " You didn't state WHICH VM to start, but it will list all availble VM's.
    Select the 1 you want. Simply enter the Name of which VM.
-  <p>
-   <ul>
-    <li>
-     There is a nice feature if Zenity is availble.
-     The script will use that to list all VM's.
-     <p>
-      Just select VM and hit "OK"
-   </ul>
   <p>
    Enjoy your qemu installation.

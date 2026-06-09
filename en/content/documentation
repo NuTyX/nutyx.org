@@ -118,10 +118,10 @@
 
    <tr class="odd">
     <td class="url" >
-      <a class="url" href="nutyx-man">NuTyX manual of the 26.04 version</a>
+      <a class="url" href="nutyx-man">NuTyX manual of the 26.06 version</a>
     </td>
     <td>
-     NuTyX manual for Version 26.04.
+     NuTyX manual for Version 26.06.
      Here you will find everything you need to know about configuring and using your NuTyX system.
      </td>
    </tr>
@@ -180,16 +180,6 @@
      It's very easy to create and use a virtual machine with QEMU.
      When you install QEMU on NuTyX, 2 very handy scripts can be used: <b>configvm</b> and <b>startvm</b>.
      Thoses scripts makes live so easy with QEMU.
-    </td>
-   </tr>
-
-   <tr class="odd">
-    <td class="url" >
-      <a class="url" href="sysvinit">Brief SysVinit overview</a>
-    </td>
-    <td>
-	 A brief walkthrough on SysVinit.
-	 Describes runlevels and provides the bare essentials to aid a user in quickly understanding and managing their system.
     </td>
    </tr>
   </table>   
