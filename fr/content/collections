@@ -77,6 +77,7 @@
      <li>
       <b>base</b>:
     La collection <i>base</i> étant la collection contenant le système de base minimum, elle sera toujours necessaire.
+    <p>
     Toutes les autres collections dépendent donc de la collection <i>base</i>. 
     <li>
      <b>cli</b>:
@@ -86,19 +87,18 @@
     <li>
      <b>gui</b>:
     La collection <i>gui</i> contient toutes les librairies et applications pouvant être utilisées par une interface graphique.
-    Les collections <i>base</i> et <i>cli</i> sont les dépendances de la collection <i>gui</i> pouvant être utilisées par une interface graphique.
     <p>
     Les collections <i>base</i> et <i>cli</i> sont les dépendances de la collection <i>gui</i>.    
     <li>
      <b>cli-extra</b>:
-    La collection <i>cli-extra</i> contient des applications pouvant être utilisées par une interface en ligne de commande.
+    La collection <i>cli-extra</i> contient les différents kernels et firmwares.
     <p>
      Les collections <i>base</i> et <i>cli</i> sont les dépendances de la collection <i>cli-extra</i>.
     <li>
      <b>gui-extra</b>:
     La collection <i>gui-extra</i> contient des applications pouvant être utilisés par une interface graphique et toutes les interfaces graphique disponible sous NuTyX.
     <p>
-     Les collections <i>base</i>, <i>cli</i> et <i>gui</i>sont les dépendances de la collection <i>gui-extra</i>
+     Les collections <i>base</i>, <i>cli</i> et <i>gui</i> sont les dépendances de la collection <i>gui-extra</i>
 
    </ul>
  <h2>Les differents groupes de collection</h2>

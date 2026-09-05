@@ -75,11 +75,6 @@ git config --global user.email "james@nutyx.org"</kbd></pre>
        base cli gui
      <tr class="odd">
       <td>
-       cli-extra
-      <td>
-       base cli cli-extra
-     <tr class="even">
-      <td>
        gui-extra
       <td>
        base cli gui gui-extra

@@ -77,27 +77,29 @@
      <li>
       <b>base</b>:
        The <i>base</i> collection is the set of a minimum base system, it will always be needed.
+      <p>
        All the others collections depend on the <i>base</i> collection.
     <li>
      <b>cli</b>:
        The <i>cli</i> collection contains all the libraries and applications used by a command line interface.
      <p>
-      Only the <i>base</i> collection is a dependencie of the <i>cli</i> collection.
+       Only the <i>base</i> collection is a dependencie of the <i>cli</i> collection.
     <li>
      <b>gui</b>:
       The <i>gui</i> collection contains all the libraries and applications used by a graphical interface.
+     <p>
       The <i>base</i> and <i>cli</i> collections are dependencies of the <i>gui</i> collection.
     <li>
      <b>cli-extra</b>:
-      The <i>cli-extra</i> collection contains applications used by a command line interface.
-    <p>
+      The <i>cli-extra</i> collection contains all the kernels and firmwares.
+     <p>
       The <i>base</i> and <i>cli</i> collections are the dependencies of the <i>gui</i> collection.
 
     <li>
      <b>gui-extra</b>:
-     The <i>gui-extra</i> collection contains apllications used by a graphical interface.
-    <p>
-     The <i>base</i>, <i>cli</i> and <i>gui</i> are the dependencies of the <i>gui-extra</i> collection.
+      The <i>gui-extra</i> collection contains apllications used by a graphical interface.
+     <p>
+      The <i>base</i>, <i>cli</i> and <i>gui</i> are the dependencies of the <i>gui-extra</i> collection.
    </ul>
  <h2>The groups of collection</h2>
   <h3>A. The base system collection</h3>
