@@ -294,7 +294,7 @@ xorg-xrandr xorg-setxkbmap
 XFCE4        : galculator lightdm xfce4 xfce4-extra
 GNOME        : gnome gnome-extra
 KDE6         : kde6
-ISO Filename /mnt/hd/NuTyX_x86_64-26.06.1-GNOME.iso</pre>
+ISO Filename /mnt/hd/NuTyX_x86_64-26.09.0-GNOME.iso</pre>
 <p>
  Comme on peut le voir, de nouvelles variables sont désormais disponible.
  Celles-ci peuvent également être redéfinies à votre convenance:

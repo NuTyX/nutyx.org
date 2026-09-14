@@ -1,6 +1,6 @@
 <h1>Downloads</h1>
  <h2>Introduction</h2>
-   The current stable release of NuTyX is named <b>26.06</b>.
+   The current stable release of NuTyX is named <b>26.09</b>.
   <p>
    ISO images are available in "Rolling" releases.
   <p>
@@ -37,14 +37,14 @@
 
    <tr class="even">
     <td class="url">
-      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.06.1-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE</a>
+      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.09.0-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE</a>
     <td>
      <p>
       The ISO contains a XFCE4 desktop.
      <p>
       kernel:  LTS kernel (6.18).
       <p>
-      SHA1 64bits: ec6d33c8e1884ac0145eafa48a62043737893ed6
+      SHA1 64bits: fed37d5d0f011fa34bc35658a53f55381ea5bb70
       <td>
        Approx. 2.1 GB
    </tr>
@@ -52,28 +52,28 @@
 
    <tr class="odd">
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.06.1-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.09.0-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME</a>
     <td>
      <p>
       The ISO contains a GNOME desktop.
      <p>
       kernel:  LTS kernel (6.18).
      <p>
-      SHA1 64bit: 19168902b8be5e6e0ef26502e34c98ec47467f26
+      SHA1 64bit: 9ff83cf7bf72b9b782a42707aecf21d20c851089
       <td>
        Approx. 2.3 GB
    </tr>
 
    <tr class="even">
     <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.06.1-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE</a>
+     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.09.0-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE</a>
     <td>
      <p>
       The ISO contains a KDE6 desktop.
      <p>
       kernel:  LTS kernel (6.18).
      <p>
-      SHA1 64bits: 29891372158e3dfaaf0325b3fe23c5706f652890
+      SHA1 64bits: f969ea319126ddcb98ae60e6ea59b611f0953822
     <td>
       Approx. 2.8 GB
    </tr>
@@ -130,7 +130,7 @@ sdc  8:0:0:0    disk TDKMedia Trans-It_Drive  PMAP 07991E033A9CAF0E usb</pre>
   <div class="important"><img alt="[Important]" src="../graphics/caution.gif" >
    The following command will delete all data that is on the USB key.
   </div>
-  <pre class="command"><kbd>dd if=/path/to/the/iso/NuTyX_x86_64-26.06.1-XFCE4.iso of=/dev/sdX status=progress
+  <pre class="command"><kbd>dd if=/path/to/the/iso/NuTyX_x86_64-26.09.0-XFCE4.iso of=/dev/sdX status=progress
 sync</kbd></pre>
    If you are using Windows:
   <p>
