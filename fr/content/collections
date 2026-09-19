@@ -28,12 +28,8 @@
      Librairies et utilitaires pour une interface en ligne de commande (cli)
     <li>
      Librairies et utilitaires pour une interface graphique (gui)
-    <li>
-     Librairies et utilitaires supplémentaires pour une interface en ligne de commande (cli-extra)
-    <li>
-     Librairies et utilitaires supplémentaires pour une interface graphique (gui-extra)
    </ul>
-    Actuellement, les interfaces graphique les plus courantes se trouvent dans la collection gui-extra:
+    Actuellement, les interfaces graphique les plus courantes se trouvent dans la collection gui:
    <ul>
      <li>
       GNOME
@@ -53,22 +49,22 @@
     <p>
      Elle se fait de la façon suivante:
     <p>
-     cli-extra -> cli -> base
+     cli-extra -> gui -> cli -> base
     <p>
      gui-extra -> gui -> cli -> base
     <p>
      Grâce à cette hiérachie bien établie, le concept suivant est défini:
      <ul>
       <li>
-       Un paquet de la collection <i>base</i> utilise uniquement des dépendances en provenance de la collection <i><u>base</u></i>.
+       Un paquet de la collection <i>base</i> peut utiliser uniquement des dépendances en provenance de la collection <i><u>base</u></i>.
       <li>
-       Un paquet de la collection <i>cli</i> utilise des dépendances en provenance des collections <i><u>base</u></i> ou <i><u>cli</u></i>.
+       Un paquet de la collection <i>cli</i> peut utiliser des dépendances en provenance des collections <i><u>base</u></i> ou <i><u>cli</u></i>.
       <li>
-       Un paquet de la collection <i>cli-extra</i> utilise des dépendances en provenance des collections <i><u>base ou cli</u></i>.
+       Un paquet de la collection <i>gui</i> peut utiliser des dépendances en provenance des collections <i><u>base, cli</u></i> ou <i><u>gui</u></i>.
       <li>
-       Un paquet de la collection <i>gui</i> utilise des dépendances en provenance des collections <i><u>base, cli</u></i> ou <i><u>gui</u></i>.
+       Un paquet de la collection <i>cli-extra</i> peut utiliser des dépendances en provenance des collections <i><u>base, cli</u></i> ou <i><u>gui</u></i>.
       <li>
-       Un paquet de la collection <i>gui-extra</i> y compris les interfaces graphiques, utilise des dépendances en provenance des collections <i><u>base, cli</u></i> ou <i><u>gui</u></i>.
+       Un paquet de la collection <i>gui-extra</i> peut utiliser des dépendances en provenance des collections <i><u>base, cli</u></i> ou <i><u>gui</u></i>.
      </ul>
 
   <h2>Leur interdépendances</h2>
@@ -93,10 +89,10 @@
      <b>cli-extra</b>:
     La collection <i>cli-extra</i> contient les différents kernels et firmwares.
     <p>
-     Les collections <i>base</i> et <i>cli</i> sont les dépendances de la collection <i>cli-extra</i>.
+     Les collections <i>base</i>, <i>cli</i> et <i>gui</i> sont les dépendances de la collection <i>cli-extra</i>.
     <li>
      <b>gui-extra</b>:
-    La collection <i>gui-extra</i> contient des applications pouvant être utilisés par une interface graphique et toutes les interfaces graphique disponible sous NuTyX.
+    La collection <i>gui-extra</i> contient des applications qui ne sont pas compilée sous NuTyX.
     <p>
      Les collections <i>base</i>, <i>cli</i> et <i>gui</i> sont les dépendances de la collection <i>gui-extra</i>
 

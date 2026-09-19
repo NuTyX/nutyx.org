@@ -28,12 +28,8 @@
      Librairies and utilities for a command line interface (cli)
     <li>
      Librairies and utilities for a graphical user interface (gui)
-    <li>
-     Extra librairies and utilities for a command line interface (cli-extra)
-    <li>
-     Extra librairies and utilities for a graphical user interface (gui-extra)
    </ul>
-    At the moment, some  of the most common graphical interfaces are available in gui-extra collection:
+    At the moment, some  of the most common graphical interfaces are available in gui collection:
    <ul>
      <li>
       GNOME
@@ -64,11 +60,11 @@
       <li>
        A package from the <i>cli</i> collection can only use dependencies from <i><u>base</u></i> or <i><u>cli</u></i> collections.
       <li>
-       A package from the <i>cli-extra</i> collection can only use dependencies from <i><u>base</u></i> or <i><u>cli</u></i> collections.
-      <li>
        A package from the <i>gui</i> collection can only use dependencies from <i><u>base</u></i>, <i><u>cli</u></i> or <i><u>gui</u></i> collections.
       <li>
-       A package from the <i>gui-extra</i> collection, including all available graphical interfaces on NuTyX,  can only use dependencies from <i><u>base</u></i>, <i><u>cli</u></i> or <i><u>gui</u></i> collections.
+       A package from the <i>cli-extra</i> collection, including all the kernels and firmwares can only use dependencies from <i><u>base</u></i>, <i><u>cli</u></i> or <i><u>gui</u></i> collections.
+      <li>
+       A package from the <i>gui-extra</i> collection, including all packages not compiled on NuTyX, can only use dependencies from <i><u>base</u></i>, <i><u>cli</u></i> or <i><u>gui</u></i> collections.
      </ul>
 
   <h2>Interdependencies</h2>
@@ -93,11 +89,11 @@
      <b>cli-extra</b>:
       The <i>cli-extra</i> collection contains all the kernels and firmwares.
      <p>
-      The <i>base</i> and <i>cli</i> collections are the dependencies of the <i>gui</i> collection.
+      The <i>base</i>, <i>cli</i> and <i>gui</i> collections are the dependencies of the <i>gui</i> collection.
 
     <li>
      <b>gui-extra</b>:
-      The <i>gui-extra</i> collection contains apllications used by a graphical interface.
+      The <i>gui-extra</i> collection contains all application not compiled on NuTyX.
      <p>
       The <i>base</i>, <i>cli</i> and <i>gui</i> are the dependencies of the <i>gui-extra</i> collection.
    </ul>
