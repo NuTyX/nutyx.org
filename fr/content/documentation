@@ -182,17 +182,6 @@
 
    <tr class="even">
     <td class="url" >
-      <a class="url" href="setup-firewall">Mise en place d'un parefeu simple avec Iptables</a>
-    </td>
-    <td>
-     Ce petit guide explique la mise en place d'un pare-feu "de base" sur NuTyX. 
-     Il devrait vous permettre d'avoir un pare-feu qui démarre et s'éteint automatiquement avec votre réseau, 
-     tout en protégeant votre machine.
-    </td>
-   </tr>
-
-   <tr class="odd">
-    <td class="url" >
       <a class="url" href="install-nutyx#5">Produire une ISO installable</a>
     </td>
     <td>
@@ -202,7 +191,7 @@
     </td>
    </tr>
 
-   <tr class="even">
+   <tr class="odd">
     <td class="url" >
       <a class="url" href="qemu">Configurer et Lancer une machine virtuelle avec QEMU</a>
     </td>

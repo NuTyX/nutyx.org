@@ -35,36 +35,7 @@
     <th>
       Size
 
-   <tr class="even">
-    <td class="url">
-      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.09.0-XFCE4.iso"><img src="../graphics/downloads/xfce.png" alt="logo Xfce4"/><br/>XFCE</a>
-    <td>
-     <p>
-      The ISO contains a XFCE4 desktop.
-     <p>
-      kernel:  LTS kernel (6.18).
-      <p>
-      SHA1 64bits: fed37d5d0f011fa34bc35658a53f55381ea5bb70
-      <td>
-       Approx. 2.1 GB
-   </tr>
-
-
    <tr class="odd">
-    <td class="url">
-     <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.09.0-GNOME.iso"><img src="../graphics/downloads/gnome.png" alt="logo gnome"/><br/>GNOME</a>
-    <td>
-     <p>
-      The ISO contains a GNOME desktop.
-     <p>
-      kernel:  LTS kernel (6.18).
-     <p>
-      SHA1 64bit: 9ff83cf7bf72b9b782a42707aecf21d20c851089
-      <td>
-       Approx. 2.3 GB
-   </tr>
-
-   <tr class="even">
     <td class="url">
      <a class="url" href="https://sourceforge.net/projects/nutyx/files/ISOs/NuTyX_x86_64-26.09.0-KDE6.iso"><img src="../graphics/downloads/kde.png" alt="logo kde"/><br/>KDE</a>
     <td>
@@ -75,7 +46,7 @@
      <p>
       SHA1 64bits: f969ea319126ddcb98ae60e6ea59b611f0953822
     <td>
-      Approx. 2.8 GB
+      Approx. 3.2 GB
    </tr>
   </table>
 
